@@ -1,0 +1,103 @@
+.wrap{
+    position: relative;
+    padding-bottom: 200px; 
+}
+.item{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.item h1{
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+.wrap .layui-carousel{
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+}
+.box{
+    display: inline-block;
+    width: 50%;
+    padding: 40px 80px 0;
+}
+.box img{
+    width: 100%;
+}
+.box h3{
+    margin: 20px 0 10px;
+    font-size: 18px;
+    color: #f39800;
+}
+.box p{
+    text-align: justify;
+    color: #a4a4a4;
+    font-size: 12px;
+    line-height: 20px;
+}
+.box a{
+    float: right;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #f39800;
+}
+.layui-carousel-arrow{
+    color: #f39800;
+}
+.layui-icon{
+    background-color: #fff;
+    box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+}
+.layui-carousel[lay-arrow=always] .layui-carousel-arrow{
+    left: -15px;
+}
+.layui-carousel[lay-arrow=always] .layui-carousel-arrow[lay-type=add]{
+    right: -15px;
+}
+img.qr-code{
+    position: absolute;
+    bottom: -60px;
+    right: 200px;
+}
+.clear{
+	clear: both;
+}
+/* 职位发展 */
+.job div{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #f39800;
+}
+.job div:nth-child(2){
+    margin: 0 5%;
+}
+.job h2{
+    margin: 10px 0;
+    font-size: 24px;
+}
+.job h2 span{
+    font-size: 18px;
+}
+.job h4{
+    margin: 10px 0;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+}
+.job p{
+    height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+}
+.job a{
+    float: right;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #f39800;
+    background-color: #fff;
+}
