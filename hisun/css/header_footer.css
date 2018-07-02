@@ -33,15 +33,15 @@ header .logo{
 	border: 0;
 	z-index: 10;
 }
-.layui-nav-child dd:hover{
-	background: none;
-}
 .layui-nav .layui-nav-child a{
 	color: #fff;
 }
 .layui-nav .layui-nav-child a:hover{
 	background: none;
 	color: #f39800;
+}
+.layui-nav-child dd:hover{
+	background: none;
 }
 .layui-nav .layui-this:after{
 	width: 0;
