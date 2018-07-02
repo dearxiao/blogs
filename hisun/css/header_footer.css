@@ -18,7 +18,7 @@ header .logo{
 	font-size: 16px;
 }
 .layui-nav .layui-nav-item a:hover{
-	background-color: #0061cb
+	color: #f39800;
 }
 .layui-nav:hover + .shade{
 	display: block;
