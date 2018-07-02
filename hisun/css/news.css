@@ -1,3 +1,4 @@
+a{transition: all .2s linear;}
 .wrap{
     position: relative;
     padding: 80px 0 120px; 
@@ -15,11 +16,13 @@
 }
 .news li{
     margin-bottom: 50px;
+    overflow: hidden;
 }
 .li-left{
     width: 40%;
     height: 240px;
     vertical-align: top;
+    transition: all .2s linear;
 }
 .li-left:hover{
     transform: scale(1.05);

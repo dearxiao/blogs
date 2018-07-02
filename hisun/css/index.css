@@ -1,4 +1,4 @@
-
+a{cursor: pointer;}
 .product{
 	width: 1200px;
 	margin: 0 auto;
@@ -12,6 +12,7 @@
 }
 .product div img{
 	width: 60%;
+	transition: all .2s linear;
 }
 .product div img:hover{
 	transform: translateX(-6px);
@@ -28,10 +29,12 @@
 }
 .intro{
 	background-color: #f39800;
+	overflow: hidden;
 }
 .intro-left{
 	width: 57%;
 	vertical-align: top;
+	transition: all .2s linear;
 }
 .intro-left:hover{
 	transform: scale(1.05);
@@ -73,6 +76,10 @@
 	color: #fff;
 	border: 0;
 	background-color: #db7100;
+	cursor: pointer;
+}
+.intro-right button:hover{
+	color: #333;
 }
 .news{
 	padding: 100px 0;
@@ -93,6 +100,8 @@
 	display: inline-block;
 	width: 29.33%;
 	margin: 0 2%;
+	transition: all .3s linear;
+	cursor: pointer;
 }
 .news li img{
 	width: 100%;

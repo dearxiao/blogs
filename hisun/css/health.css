@@ -21,6 +21,7 @@
     display: inline-block;
     width: 50%;
     padding: 40px 80px 0;
+    cursor: pointer;
 }
 .box img{
     width: 100%;
@@ -77,7 +78,7 @@ img.qr-code{
     background-color: #f39800;
 }
 .job div img:hover{
-    transform: scale(1.05);
+	transform: translateY(-5px);
 }
 .job div:nth-child(2){
     margin: 0 5%;

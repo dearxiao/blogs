@@ -4,7 +4,7 @@ onload = function () {
         carousel.render({ //轮播
             elem: '#test1',
             width: '100%' ,
-            height: '600px',
+            height: '800px',
         });
         carousel.render({ //动物健康
 			elem: '#test2',
