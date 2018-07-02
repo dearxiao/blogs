@@ -21,6 +21,9 @@
     height: 240px;
     vertical-align: top;
 }
+.li-left:hover{
+    transform: scale(1.05);
+}
 .li-right{
     display: inline-block;
     width: 60%;
@@ -41,6 +44,9 @@
     color: #a4a4a4;
     font-size: 12px;
     line-height: 18px;
+}
+.li-right p:hover{
+    color: #f39800;
 }
 .li-right span{
     color: #a4a4a4;

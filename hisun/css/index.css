@@ -13,6 +13,9 @@
 .product div img{
 	width: 60%;
 }
+.product div img:hover{
+	transform: translateX(-6px);
+}
 .product div h2{
 	line-height: 3;
 	font-size: 18px;
@@ -29,6 +32,9 @@
 .intro-left{
 	width: 57%;
 	vertical-align: top;
+}
+.intro-left:hover{
+	transform: scale(1.05);
 }
 .intro-right{
 	display: inline-block;
@@ -93,6 +99,9 @@
 	margin-bottom: 10px;
 	border-left: 10px solid #f39800;
 }
+.news li img:hover{
+	box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+}
 .news li p{
 	height: 32px;
 	overflow: hidden;
@@ -102,6 +111,9 @@
 }
 .news li h3{
 	font-size: 16px;
+}
+.news li h3:hover{
+	color: #f39800;
 }
 img.qr-code{
 	float: right;

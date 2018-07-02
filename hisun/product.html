@@ -82,11 +82,89 @@
 		</div>
 	</div>
 	<div class="wrap">
-		<div class="product-list">
+		<div class="product-list list0">
 			<a href="product_detail.html">
 				<img src="images/product.jpg">
 				<div>
 					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<img class="qr-code" src="images/qr-code.png">
+			<div class="clear"></div>
+		</div>
+		<div class="product-list list1">
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒2 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒 <span>/56mg</span></h2>
+					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
+				</div>
+			</a>
+			<img class="qr-code" src="images/qr-code.png">
+			<div class="clear"></div>
+		</div>
+		<div class="product-list list2">
+			<a href="product_detail.html">
+				<img src="images/product.jpg">
+				<div>
+					<h2>海乐秒222 <span>/56mg</span></h2>
 					<p>海乐秒海乐秒海乐秒海乐秒海乐秒</p>
 				</div>
 			</a>
@@ -148,14 +226,26 @@
 		<p class="copyright">Copyright©2004-2018   All right Reserved    京ICP备12021388号-2</p>
 	</footer>
 	<script src="layui/layui.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
 	<script>
-		layui.use(['element', 'carousel'], function(){
-			var element = layui.element, carousel = layui.carousel
-			carousel.render({
-				elem: '#test1',
-				width: '100%' ,
-				// height: '900px',
-			});
+		$('.product div').on('click', function () {
+			var that = this
+			var n = $(this).index()
+			for (let i = 0; i < 3; i++) {
+				var path = $('.product div:eq('+i+') img').attr('src')
+				var path = path.replace('2', '')
+				$('.product div:eq('+i+') img').attr('src', path)
+			}
+			if (n == 0) {
+				$(that).children('img').attr('src', 'images/pig2.png')
+			} else if (n == 1){
+				$(that).children('img').attr('src', 'images/dairycow2.png')
+			} else {
+				$(that).children('img').attr('src', 'images/pet2.png')
+			}
+			$('.product-list').hide()
+			$('.list'+n+'').show()
 		})
 	</script>
 </body>

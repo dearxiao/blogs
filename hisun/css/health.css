@@ -25,6 +25,9 @@
 .box img{
     width: 100%;
 }
+.box img:hover{
+    transform: scale(1.05);
+}
 .box h3{
     margin: 20px 0 10px;
     font-size: 18px;
@@ -72,6 +75,9 @@ img.qr-code{
     margin-top: 20px;
     color: #fff;
     background-color: #f39800;
+}
+.job div img:hover{
+    transform: scale(1.05);
 }
 .job div:nth-child(2){
     margin: 0 5%;
