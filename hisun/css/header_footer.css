@@ -1,3 +1,6 @@
+.menu{
+	display: none;
+}
 .layui-nav{
 	position: fixed;
 	top: 0;
@@ -40,7 +43,7 @@ header .logo{
 	background: none;
 	color: #f39800;
 }
-.layui-nav-child dd:hover{
+.layui-nav-child dd:active{
 	background: none;
 }
 .layui-nav .layui-this:after{
@@ -147,4 +150,12 @@ footer .site{
 	footer .logo{
         display: none;
     }
+}
+@media screen and (max-width: 768px) {
+	.layui-nav{
+		display: none;
+	}
+	.menu{
+		display: inline-block;
+	}
 }

@@ -1,4 +1,8 @@
 onload = function () {
+	$('.menu').click(function () {
+		$('.layui-nav').slideToggle()
+	})
+
     layui.use(['element', 'carousel'], function(){
         var element = layui.element, carousel = layui.carousel
         carousel.render({ //轮播
