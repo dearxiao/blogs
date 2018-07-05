@@ -34,6 +34,7 @@ header .logo{
 }
 .layui-nav .layui-nav-item a:hover{
 	color: #f39800;
+	background-color: #0061cb;
 }
 .layui-nav:hover + .shade{
 	display: block;
