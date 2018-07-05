@@ -1,5 +1,6 @@
 var mySwiper = new Swiper ('.swiper-container', {
-    loop: true,
+	loop: true,
+	autoplay: true,
     
     // 如果需要分页器
     pagination: {
