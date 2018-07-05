@@ -56,7 +56,10 @@ header .logo{
 	color: #f39800;
 }
 .layui-nav-child dd:active{
-	background: none;
+	background: none !important;
+}
+.layui-nav-child dd a:active{
+	background: none !important;
 }
 .layui-nav .layui-this:after{
 	width: 0;
