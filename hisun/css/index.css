@@ -125,7 +125,7 @@ a{cursor: pointer;}
 	opacity: 0;
 }
 .news li img:hover{
-	box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+    box-shadow: 2px -2px 10px #ececec, -2px 2px 10px #ececec;
 }
 .news li p{
 	height: 32px;

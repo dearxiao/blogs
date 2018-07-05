@@ -15,7 +15,7 @@
 .wrap .layui-carousel{
     margin-top: 20px;
     background-color: #fff;
-    box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+    box-shadow: 2px -2px 10px #ececec, -2px 2px 10px #ececec;
 }
 .box{
     display: inline-block;
@@ -57,7 +57,7 @@
 }
 .layui-icon{
     background-color: #fff;
-    box-shadow: 2px -2px 10px #cbcbcb, -2px 2px 10px #cbcbcb;
+    box-shadow: 2px -2px 10px #ececec, -2px 2px 10px #ececec;
 }
 .layui-carousel[lay-arrow=always] .layui-carousel-arrow{
     left: -15px;
