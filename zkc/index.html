@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png">中国康复技术转化及发展促进协会</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-this" href="#">首页</a></li>
+                    <li><a href="#">关于协会</a></li>
+                    <li><a href="#">项目集锦</a></li>
+                    <li><a href="#">行业智库</a></li>
+                    <li><a href="#">协会动态</a></li>
+                    <li><a href="#">申请入会</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="images/banner1.jpg"></div>
+            <div class="swiper-slide"><img src="images/banner1.jpg"></div>
+        </div>
+        <div class="slogan">
+            <h4>将梦想照进现实</h4>
+            <h5>大健康领域的筑梦者</h5>
+            <button>查看更多</button>
+        </div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination"></div>
+		
+		<!-- 如果需要导航按钮 -->
+		<!-- <div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> -->
+    </div>
+    <ul class="introduce">
+        <li>
+            <h3>化茧成蝶 <br> 促进技术成果转化</h3>
+            <p>我们和您一样，始终认为科研成果只有转化为服务，才能使这个世界更加活力有爱。因此，我们掌握核心技术驱动力，为实现技术成果转化提供更广泛的交流机会，帮助科研院所和各类组织进行新技术产品的评估与落地</p>
+        </li>
+        <li>
+            <h3>群英荟萃 <br> 推荐行业技术发展</h3>
+            <p>我们和您一样，始终认为科研成果只有转化为服务，才能使这个世界更加活力有爱。因此，我们掌握核心技术驱动力，为实现技术成果转化提供更广泛的交流机会，帮助科研院所和各类组织进行新技术产品的评估与落地</p>
+        </li>
+        <li>
+            <h3>聚沙成塔，珠联璧合 <br> 主力产业升级</h3>
+            <p>我们和您一样，始终认为科研成果只有转化为服务，才能使这个世界更加活力有爱。因此，我们掌握核心技术驱动力，为实现技术成果转化提供更广泛的交流机会，帮助科研院所和各类组织进行新技术产品的评估与落地</p>
+        </li>
+    </ul>
+    <div class="project">
+        <div class="top">
+            <h1>项目促进</h1>
+            <h6>project</h6>
+            <img src="images/line1.png">
+        </div>
+        <div class="project-left">
+            <div class="detail">
+                <p>中日养老联合研发项目</p>
+                <span>北京 2018.6.6</span>
+            </div><br>
+            <img src="images/china-map.png">
+        </div>
+        <ul class="project-right">
+            <h3>最新项目促进列表</h3>
+            <li>高血压精准防治十万人基因队列项目</li>
+            <li>自闭症儿童早期筛查与言语康复治疗项目</li>
+            <li>着眼15大子行业，纵观全球医疗器械市场</li>
+            <li>协会赴成都考察，推进“医美之都”建设步伐</li>
+            <li>【2017年3月】养老康护职业技能培训</li>
+        </ul>
+    </div>
+	<script src="js/swiper.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            loop: true,
+            // autoplay: true,
+            
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // 如果需要前进后退按钮
+            // navigation: {
+            //   nextEl: '.swiper-button-next',
+            //   prevEl: '.swiper-button-prev',
+            // },
+        })
+    </script>
+</body>
+
+</html>

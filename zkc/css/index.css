@@ -1,0 +1,116 @@
+.swiper-container{
+    margin-top: 80px;
+}
+.slogan{
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    color: #fff;
+    z-index: 3;
+}
+.slogan h4{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.slogan h5{
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.slogan button{
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #0174ed;
+}
+.introduce{
+    /* max-width: 1200px; */
+    margin: 5% auto;
+    overflow: hidden;
+}
+.introduce li{
+    float: left;
+    width: 32%;
+    padding: 3% 3% 3% 10%;
+    letter-spacing: 1px;
+}
+.introduce li:nth-child(1){
+    background: url(../images/index1.png) no-repeat;
+    background-size: 100%;
+}
+.introduce li:nth-child(2){
+    margin: 0 2%;
+    background: url(../images/index2.png) no-repeat;
+    background-size: 100%;
+}
+.introduce li:nth-child(3){
+    background: url(../images/index3.png) no-repeat;
+    background-size: 100%;
+}
+.introduce li h3{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #6d6d6d;
+}
+.introduce li p{
+    height: 100px;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.project{
+    padding: 5% 5%;
+    color: #fff;
+    background-color: #083f85;
+}
+.top{
+    text-align: center;
+}
+.top h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.top h6{
+    font-size: 16px;
+    line-height: 2;
+}
+.project-left{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.project-left .detail{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 36px;
+    color: #222;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.project-left .detail p{
+    margin: 0;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    background-color: #ffcc45;
+}
+.project-left img{
+    width: 70%;
+    margin-left: 10%;
+}
+.project-right{
+    display: inline-block;
+    padding-left: 20px;
+    color: #fff;
+    background: url(../images/line.png) no-repeat left 70%;
+    background-size: auto 80%;
+}
+.project-right h3{
+    font-size: 32px;
+}
+.project-right li{
+    font-size: 16px;
+    line-height: 2.4;
+}
