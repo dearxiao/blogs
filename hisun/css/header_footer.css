@@ -76,11 +76,8 @@ header .logo{
 	background-color: rgba(3, 73, 149, .7);
 	z-index: 5;
 }
-.layui-carousel{
-	z-index: 1;
-}
-.layui-carousel img{
-	width: 100%;
+.swiper-container{
+	margin-top: 80px;
 }
 .slogan{
 	text-align: center;
@@ -187,6 +184,9 @@ footer .site{
 		float: left;
 		margin: 10px 20px;
 		height: 25px;
+	}
+	.swiper-container{
+		margin-top: 45px;
 	}
 	.layui-nav .logo{
 		display: none;

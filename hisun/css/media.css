@@ -17,6 +17,7 @@
     }
     img.qr-code{
         margin-right: 5%;
+        right: 5%;
     }
     .product-list, .product-msg{
         width: 100%;

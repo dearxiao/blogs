@@ -1,3 +1,17 @@
+var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+})
 onload = function () {
 	var width = document.body.clientWidth
 	if (width < 760) {
@@ -12,22 +26,11 @@ onload = function () {
 	});
     layui.use(['element', 'carousel'], function(){
         var element = layui.element, carousel = layui.carousel
-        var banner = carousel.render({ //轮播
-            elem: '#test1',
-            width: '100%',
-            height: '500px',
-		});
 		var height = '480px'
 		if (width < 1200) {
-			banner.reload({
-				height: '360px',
-			})
 			height = '420px'
 		}
 		if (width < 760) {
-			banner.reload({
-				height: '230px',
-			})
 			height = '280px'
 		}
         carousel.render({ //动物健康
