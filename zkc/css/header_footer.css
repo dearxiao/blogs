@@ -1,0 +1,237 @@
+.menu{
+	display: none;
+	float: right;
+	height: 25px;
+	margin: 10px 20px;
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: #034995;
+	z-index: 99;
+}
+header .logo{
+	float: left;
+	margin: 10px 0;
+	z-index: 999;
+}
+.layui-nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0 5% 0 20px;
+	text-align: right;
+	background-color: #034995;
+	z-index: 99;
+}
+.layui-nav .layui-nav-item{
+	line-height: 80px;
+}
+.layui-nav .layui-nav-item a{
+	font-size: 16px;
+}
+.layui-nav .layui-nav-item a:hover{
+	color: #f39800;
+}
+.layui-nav:hover + .shade{
+	display: block;
+}
+.layui-nav .layui-nav-more{
+	display: none;
+}
+.layui-nav-child{
+	top: 75px;
+	background: none;
+	box-shadow: none; 
+	border: 0;
+	z-index: 10;
+}
+.layui-nav .layui-nav-child a{
+	color: #fff;
+}
+.layui-nav .layui-nav-child a:hover{
+	background: none;
+	color: #f39800;
+}
+.layui-nav-child dd:active{
+	background: none !important;
+}
+.layui-nav-child dd a:active{
+	background: none !important;
+}
+.layui-nav .layui-this:after{
+	width: 0;
+}
+.layui-nav-bar{
+	display: none;
+}
+.shade{
+	display: none;
+	position: fixed;
+	top: 80px;
+	width: 100%;
+	height: 110px;
+	background-color: rgba(3, 73, 149, .7);
+	z-index: 5;
+}
+.swiper-container{
+	margin-top: 80px;
+}
+.slogan{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 80px;
+	letter-spacing: 5px;
+	background-color: #034995;
+}
+.wrap{
+	background: url(../images/news-bg.png) no-repeat bottom;
+}
+footer{
+	padding: 50px 0;
+	text-align: center;
+	background-color: #034995;
+}
+footer .logo{
+	height: 100px;
+	margin: 55px 50px 0 0;
+	vertical-align: top;
+}
+footer ul{
+	display: inline-block;
+	text-align: left;
+    height: 150px;
+    margin-top: 30px;
+	padding: 0 30px;
+	border-left: 5px solid #f39800;
+}
+footer ul h2{
+	color: #fff;
+	font-size: 18px;
+}
+footer a{
+	display: inline-block;
+	margin: 10px 5px 5px;
+	padding: 10px 25px;
+	color: #f39800;
+	background-color: #00356f;
+}
+footer .introduce{
+	display: inline-block;
+	width: 300px;
+	padding: 0 30px;
+    margin-top: 30px;
+	text-align: left;
+	vertical-align: top;
+	color: #fff;
+	border-left: 5px solid #f39800;
+}
+footer .introduce h4{
+	font-size: 18px;
+	line-height: 30px;
+}
+footer .introduce p{
+	height: 120px;
+	overflow: hidden;
+	font-size: 14px;
+	line-height: 20px;
+}
+footer .site{
+	display: inline-block;
+	padding: 0 30px;
+    margin-top: 30px;
+	text-align: left;
+	font-size: 14px;
+	color: #fff;
+	line-height: 25px;
+	border-left: 5px solid #f39800;
+}
+.copyright{
+	margin: 50px 0 0;
+	text-align: center;
+	color: #034995;
+	font-size: 12px;
+	line-height: 40px;
+	background-color: #00356f;
+}
+@media screen and (max-width: 1500px) {
+	footer .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px) {
+	.layui-nav .layui-nav-item a{
+		padding: 0 10px;
+	}
+	.layui-carousel img{
+		height: 100%;
+	}
+	footer{
+		text-align: left;
+	}
+    footer ul, footer .introduce, footer .site{
+        margin-left: 5%;
+    }
+	footer ul{
+		display: block;
+	}
+}
+@media screen and (max-width: 760px) {
+	header .logo{
+		float: left;
+		margin: 10px 20px;
+		height: 25px;
+	}
+	.swiper-container{
+		margin-top: 45px;
+	}
+	.layui-nav .logo{
+		display: none;
+	}
+	.layui-nav{
+		display: none;
+		top: 45px;
+		right: 0;
+		width: 40%;
+		overflow-y: scroll;
+	}
+	.layui-nav-itemed>.layui-nav-child{
+		background-color: #034995 !important;
+	}
+	.layui-nav-tree .layui-nav-item a{
+		padding: 0;
+	}
+	.layui-nav-tree .layui-nav-child a{
+		padding: 0;
+		font-size: 12px;
+		line-height: 24px;
+		height: 24px;
+	}
+	.menu{
+		display: inline-block;
+	}
+	.layui-carousel img{
+		height: 100%;
+	}
+    img.qr-code{
+        width: 100px;
+		margin-top: 30px;
+		right: 5%;
+    }
+    footer{
+        text-align: left;
+    }
+    footer a{
+        padding: 5px 15px; 
+    }
+    footer ul, footer .introduce, footer .site{
+        margin-left: 10%;
+        padding: 0 10px;
+    }
+    footer .introduce p{
+        height: 80px;
+    }
+}
