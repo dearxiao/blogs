@@ -1,0 +1,92 @@
+
+@media screen and (max-width: 1200px) {
+	.product{
+        width: 100%;
+    }
+    .intro-left{
+        width: 50%;
+    }
+    .intro-right {
+        padding-top: 2%;
+    }
+    .intro-right ul{
+        margin: 10px 0;
+    }
+    .news ul{
+        width: 100%;
+    }
+    img.qr-code{
+        margin-right: 5%;
+    }
+    .product-list, .product-msg{
+        width: 100%;
+    }
+    .reasearch{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .reasearch li{
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slogan{
+        line-height: 40px;
+    }
+    .product div p{
+        height: 100px;
+        overflow: hidden;
+        text-align: justify;
+    }
+    .intro-left{
+        width: 100%;
+    }
+    .intro-right{
+        padding: 3%;
+    }
+    .news{
+        padding: 30px 0 100px;
+    }
+    .news h1{
+        margin-bottom: 20px;
+    }
+	.news ul{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .news ul::-webkit-scrollbar,  .reasearch::-webkit-scrollbar{
+        display: none;
+    }
+    .news ul>div{
+        width: 768px;
+    }
+    .news li{
+        float: left;
+    }
+    .product-list a{
+        width: 40%;
+        margin: 5%;
+    }
+    .product-list h2{
+        font-size: 24px;
+    }
+    .product-list h2 span{
+        font-size: 18px;
+    }
+    .wrap h1{
+        width: 98px;
+        font-size: 24px;
+    }
+    .consociation img{
+        width: 20%;
+        margin: 20px 10px 0;
+    }
+    .reasearch{
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .reasearch>div{
+        width: 800px;
+        margin: 0 20px;
+    }
+}

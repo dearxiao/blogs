@@ -25,13 +25,14 @@ a{cursor: pointer;}
 .product div p{
 	font-size: 12px;
 	color: #868686;
-	line-height: 1.6;
+	line-height: 20px;
 }
 .intro{
 	background-color: #f39800;
 	overflow: hidden;
 }
 .intro-left{
+	display: inline-block;
 	width: 57%;
 	vertical-align: top;
 	transition: all .2s linear;
@@ -60,6 +61,8 @@ a{cursor: pointer;}
 	}
 }
 .intro-right li span{
+	margin-right: 10px;
+	margin-left: -10px;
 	color: #db7100;
 	font-size: 24px;
 	font-family: sans-serif;

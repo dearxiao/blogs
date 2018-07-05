@@ -1,0 +1,58 @@
+@media screen and (max-width: 1200px) {
+    .item{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .news{
+        padding: 0 5%;
+        width: 100%;
+    }
+    .li-right h3{
+        margin-top: 10px;
+    }
+    .li-right p{
+        height: 100px;
+    }
+    .box{
+        padding: 20px 40px 0;
+    }
+    img.qr-code{
+        right: 5%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrap{
+        padding: 30px 0 100px;
+    }
+    .item h1{
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .box{
+        padding: 5%;
+    }
+    .box p{
+        height: 80px;
+        overflow: hidden;
+    }
+    .box a{
+        margin-top: 10px;
+    }
+    .wrap ul h1{
+        width: 98px;
+        margin: 0 auto 20px;
+        font-size: 24px;
+    }
+    .box h3{
+        margin: 10px 0 0;
+        height: 50px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .job div{
+        width: 100%;
+    }
+    .job div:nth-child(2){
+        margin: 5% 0 0;
+    }
+}

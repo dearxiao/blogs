@@ -42,11 +42,12 @@ a{transition: all .2s linear;}
 }
 .li-right p{
     padding-bottom: 20px;
-    height: 54px;
+    height: 60px;
+    overflow: hidden;
     text-align: justify;
     color: #a4a4a4;
     font-size: 12px;
-    line-height: 18px;
+    line-height: 20px;
 }
 .li-right p:hover{
     color: #f39800;
