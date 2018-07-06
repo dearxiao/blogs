@@ -27,12 +27,13 @@ onload = function () {
 	});
     layui.use(['element', 'carousel'], function(){
         var element = layui.element, carousel = layui.carousel
-		var height = '480px'
+		var height = '480px', height2
 		if (width < 1200) {
 			height = '420px'
 		}
 		if (width < 760) {
 			height = '280px'
+			height2 = '210px'
 		}
         carousel.render({ //动物健康
 			elem: '#test2',
@@ -53,7 +54,7 @@ onload = function () {
         carousel.render({ //社会责任
 			elem: '#test4',
 			width: '100%' ,
-			height: height,
+			height: height2,
 			autoplay: false,
 			arrow: 'always',
 			indicator: 'none'
@@ -61,7 +62,7 @@ onload = function () {
         carousel.render({
 			elem: '#test5',
 			width: '100%' ,
-			height: height,
+			height: height2,
 			autoplay: false,
 			arrow: 'always',
 			indicator: 'none'
@@ -69,7 +70,7 @@ onload = function () {
         carousel.render({
 			elem: '#test6',
 			width: '100%' ,
-			height: height,
+			height: height2,
 			autoplay: false,
 			arrow: 'always',
 			indicator: 'none'

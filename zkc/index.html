@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/specialist.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             </div>
         </div>
     </nav>
-    <div class="swiper-container">
+    <div class="swiper-container carousel">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide"><img src="images/banner1.jpg"></div>
             <div class="swiper-slide"><img src="images/banner1.jpg"></div>
@@ -91,11 +92,63 @@
             <li>【2017年3月】养老康护职业技能培训</li>
         </ul>
     </div>
+    <div class="swiper-container specialist">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+                <img src="images/specialist1.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <img src="images/specialist2.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <img src="images/specialist3.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <img src="images/specialist2.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <img src="images/specialist1.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+			<div class="swiper-slide">
+                <img src="images/specialist1.jpg">
+                <div class="title">
+                    <p>巴德年院士</p>
+                    <span>中国工程院院士</span>
+                </div>
+            </div>
+        </div>
+		<!-- 如果需要分页器 -->
+		<!-- <div class="swiper-pagination"></div> -->
+		
+		<!-- 如果需要导航按钮 -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+    </div>
 	<script src="js/swiper.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        var mySwiper = new Swiper ('.swiper-container', {
+        var carousel = new Swiper ('.carousel', {
             loop: true,
             // autoplay: true,
             
@@ -110,6 +163,24 @@
             //   prevEl: '.swiper-button-prev',
             // },
         })
+        var specialist = new Swiper ('.specialist', {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 30,
+            // autoplay: true,
+            
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            
+            // 如果需要前进后退按钮
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        })
+  
     </script>
 </body>
 

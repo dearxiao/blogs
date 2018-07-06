@@ -2,7 +2,7 @@
 	display: none;
 	float: right;
 	height: 25px;
-	margin: 10px 20px;
+	margin: 15px 20px;
 }
 header{
 	position: fixed;
@@ -14,7 +14,8 @@ header{
 }
 header .logo{
 	float: left;
-	margin: 10px 0;
+	height: 50px;
+	margin: 15px 0;
 	z-index: 999;
 }
 .layui-nav{
@@ -33,7 +34,7 @@ header .logo{
 	font-size: 16px;
 }
 .layui-nav .layui-nav-item a:hover{
-	color: #f39800;
+	color: #fff;
 	background-color: #0061cb;
 }
 .layui-nav:hover + .shade{
@@ -44,6 +45,8 @@ header .logo{
 }
 .layui-nav-child{
 	top: 75px;
+	text-align: left;
+	line-height: 30px;
 	background: none;
 	box-shadow: none; 
 	border: 0;
@@ -73,12 +76,12 @@ header .logo{
 	position: fixed;
 	top: 80px;
 	width: 100%;
-	height: 110px;
+	height: 115px;
 	background-color: rgba(3, 73, 149, .7);
 	z-index: 5;
 }
 .swiper-container{
-	margin-top: 80px;
+	margin-top: 78px;
 }
 .slogan{
 	text-align: center;
@@ -92,13 +95,13 @@ header .logo{
 	background: url(../images/news-bg.png) no-repeat bottom;
 }
 footer{
-	padding: 50px 0;
+	padding: 60px 0 80px;
 	text-align: center;
 	background-color: #034995;
 }
 footer .logo{
-	height: 100px;
-	margin: 55px 50px 0 0;
+	height: 80px;
+	margin: 65px 50px 0 0;
 	vertical-align: top;
 }
 footer ul{
@@ -110,13 +113,13 @@ footer ul{
 	border-left: 5px solid #f39800;
 }
 footer ul h2{
-	color: #fff;
+	color: #5daaff;
 	font-size: 18px;
 }
 footer a{
 	display: inline-block;
-	margin: 10px 5px 5px;
-	padding: 10px 25px;
+	margin: 10px 5px 0;
+	padding: 10px 20px;
 	color: #f39800;
 	background-color: #00356f;
 }
@@ -131,6 +134,7 @@ footer .introduce{
 	border-left: 5px solid #f39800;
 }
 footer .introduce h4{
+	margin-bottom: 10px;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -184,7 +188,7 @@ footer .site{
 	header .logo{
 		float: left;
 		margin: 10px 20px;
-		height: 25px;
+		height: 35px;
 	}
 	.swiper-container{
 		margin-top: 45px;
@@ -210,6 +214,9 @@ footer .site{
 		font-size: 12px;
 		line-height: 24px;
 		height: 24px;
+	}
+	.layui-nav-child{
+		text-align: right;
 	}
 	.menu{
 		display: inline-block;

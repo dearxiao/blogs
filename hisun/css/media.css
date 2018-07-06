@@ -19,8 +19,12 @@
         margin-right: 5%;
         right: 5%;
     }
-    .product-list, .product-msg{
+    .product-list{
         width: 100%;
+    }
+    .product-msg{
+        width: 100%;
+        padding: 30px 5% 150px;
     }
     .reasearch{
         width: 100%;
@@ -64,6 +68,9 @@
     .news li{
         float: left;
     }
+    .news li::before{
+        height: 62%;
+    }
     .product-list a{
         width: 40%;
         margin: 5%;
@@ -77,6 +84,27 @@
     .wrap h1{
         width: 98px;
         font-size: 24px;
+    }
+    .product-msg {
+        width: 100%;
+        padding: 30px 5% 100px;
+    }
+    .product-msg .msg-left{
+        width: 70%;
+        margin: 0 15%;
+        height: auto;
+    }
+    .product-msg .msg-right{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .product-msg h1{
+        width: 300px;
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 40px;
+        border-bottom: 3px solid #f39800;
     }
     .consociation img{
         width: 20%;

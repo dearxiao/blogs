@@ -19,11 +19,11 @@ a{cursor: pointer;}
 }
 .product div h2{
 	line-height: 3;
-	font-size: 18px;
+	font-size: 20px;
 	color: #333;
 }
 .product div p{
-	font-size: 12px;
+	font-size: 14px;
 	color: #868686;
 	line-height: 20px;
 }

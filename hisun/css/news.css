@@ -38,24 +38,29 @@ a{transition: all .2s linear;}
     margin: 40px 0 10px;
     color: #f39800;
     font-size: 18px;
+    font-weight: 600;
     line-height: 20px;
 }
 .li-right p{
-    padding-bottom: 20px;
     height: 60px;
     overflow: hidden;
     text-align: justify;
     color: #a4a4a4;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 .li-right p:hover{
     color: #f39800;
 }
 .li-right span{
+    display: inline-block;
+    width: 30%;
+    margin-top: 6%;
+    padding-top: 20px;
     color: #a4a4a4;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 20px;
+    border-top: 2px solid #f39800;
 }
 img.qr-code{
     position: absolute;

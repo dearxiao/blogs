@@ -19,6 +19,7 @@
     margin: 10px 0 30px;
     text-align: center;
     font-size: 18px;
+    font-weight: 600;
     color: #f39800;
     letter-spacing: 3px;
 }
@@ -33,7 +34,7 @@
     transition: all .2s linear;
 }
 .reasearch li:hover{
-    box-shadow: 2px -2px 10px #ececec, -2px 2px 10px #ececec;
+    box-shadow: 0 0 30px rgba(208, 208, 208, .5);
 }
 .reasearch li:nth-child(2){
     margin: 0 5%;
@@ -53,7 +54,7 @@
     font-size: 18px;
     line-height: 50px;
     background-color: #fff;
-    box-shadow: 2px -2px 10px #ececec, -2px 2px 10px #ececec;
+    box-shadow: 0 0 30px rgba(208, 208, 208, .5);
 }
 .consociation{
     text-align: center;
