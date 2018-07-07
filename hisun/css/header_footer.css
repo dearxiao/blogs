@@ -90,6 +90,7 @@ header .logo{
 	text-align: center;
 	font-size: 80px;
 	font-weight: 600;
+	font-family: 宋体;
 	color: #fff;
 	letter-spacing: 20px;
 	z-index: 10;
@@ -106,13 +107,16 @@ header .logo{
 	background-color: #f49800;
 	z-index: 10;
 }
+.swiper-pagination-bullet-active{
+	background-color: #f39800;
+}
 .swiper-slide h3{
 	top: 52%;
 }
 .slogan{
 	text-align: center;
 	color: #a3cbf5;
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 80px;
 	letter-spacing: 5px;
 	background-color: #034995;
