@@ -61,24 +61,14 @@
     color: #9c9c9c;
 }
 .project{
-    padding: 5% 5%;
+    padding: 5% 0 0;
     color: #fff;
     background-color: #083f85;
-}
-.top{
-    text-align: center;
-}
-.top h1{
-    font-size: 30px;
-    font-weight: 600;
-}
-.top h6{
-    font-size: 16px;
-    line-height: 2;
 }
 .project-left{
     display: inline-block;
     width: 50%;
+    margin-bottom: 5%;
     text-align: center;
 }
 .project-left .detail{
@@ -103,6 +93,7 @@
 .project-right{
     display: inline-block;
     padding-left: 20px;
+    margin-left: 8%;
     vertical-align: middle;
     color: #fff;
     background: url(../images/line.png) no-repeat left 70%;
@@ -114,4 +105,91 @@
 .project-right li{
     font-size: 16px;
     line-height: 2.4;
+}
+.project button{
+    float: left;
+    width: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #005aa8;
+    border: 0;
+}
+.project .select{
+    background-color: #0174ed;
+}
+.specialist .top, .contact .top{
+    margin: 5% 0;
+}
+.specialist h6, .contact h6{
+    color: #747474;
+}
+.data{
+    padding: 5% 0;
+    color: #fff;
+    background: url(../images/bg1.png) no-repeat;
+    background-size: 100%;
+}
+.data div{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.data li{
+    float: left;
+    width: 29.33%;
+    margin: 0 2%;
+    text-align: center;
+}
+.data h1{
+    font-size: 60px;
+}
+.data span{
+    font-size: 14px;
+}
+.contact ul{
+    max-width: 1200px;
+    margin: 0 auto 10%;
+    overflow: hidden;
+}
+.contact li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.contact li img{
+    width: 15%;
+}
+.contact li h2{
+    color: #222;
+    font-size: 18px;
+}
+.contact li span{
+    color: #333;
+    font-size: 12px;
+}
+.apply{
+    padding: 3% 10%;
+    background-color: #195db2;
+}
+.apply-left{
+    display: inline-block;
+}
+.apply-left h2{
+    font-size: 20px;
+    line-height: 2;
+    color: #fff;
+    font-weight: 600;
+}
+.apply-left p{
+    color: #d5e0ee;
+}
+.apply-right{
+    float: right;
+    padding: 10px 40px;
+    margin-top: 40px; 
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 1px solid #fff;
 }

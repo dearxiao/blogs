@@ -1,0 +1,172 @@
+
+.banner .text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+}
+.banner h1{
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.banner p{
+    margin: 3% 0 10%;
+    font-size: 24px;
+}
+.banner .text li{
+    display: inline-block;
+    padding: 5px 0 0 20px;
+    margin-right: 20px;
+    width: 200px;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.banner li span{
+    vertical-align: top;
+    font-size: 24px;
+}
+.banner .li-right{
+    display: inline-block;
+}
+.banner li h6{
+    margin: 0;
+    font-size: 14px;
+}
+.banner li p{
+    margin: 0;
+    font-size: 12px;
+}
+.news{
+    padding: 5% 0 3%;
+}
+.news .top h6{
+    color: #747474;
+}
+.swiper1{
+    margin: 0 5%;
+    padding: 4% 0;
+    font-size: 0;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    background-color: #bdddff;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    border: 4px solid #6391cb;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 10px;
+}
+.swiper1 img{
+    width: 40%;
+    vertical-align: top;
+}
+.swiper1 .intro{
+    display: inline-block;
+    width: 60%;
+    padding: 10% 5% 0;
+    color: #282828;
+}
+.swiper1 .intro h5{
+    font-size: 18px;
+}
+.swiper1 .intro h2{
+    margin: 20px 0 5px;
+    font-size: 24px;
+}
+.swiper1 .intro p{
+    margin: 20px 0 12%;
+    text-align: justify;
+    font-size: 12px;
+    color: #5d5d5d;
+}
+.swiper1 .intro .line{
+    height: 2px;
+    width: 100px;
+    background-color: #070707;
+}
+.swiper1 .intro a{
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 6px;
+    background: #6391cb url(../images/arrow.png) no-repeat 85%;
+    background-size: 6%;
+}
+.talent{
+    padding: 7% 0;
+    text-align: center;
+    color: #fff;
+    background: url(../images/bg4.png) no-repeat;
+    background-size: 100%;
+}
+.talent h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.talent h4{
+    margin: 3% 0;
+    font-size: 24px;
+}
+.talent a{
+    display: inline-block;
+    margin-top: 60px;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.activity0{
+    background-color: #fdfdfd;
+}
+.activity{
+    /* max-width: 1200px;
+    margin: 0 auto; */
+    margin: 0 5%;
+    padding: 5% 1%;
+    font-size: 0;
+}
+.activity .swiper-slide{
+    box-shadow: 0 0 30px rgba(222, 222, 222, .5)
+}
+.activity .swiper-slide>img{
+    width: 50%;
+    vertical-align: top;
+}
+.activity .intro{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.activity .intro h2{
+    margin-top: 20%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.activity .intro img{
+    margin: 10% 0;
+}
+.activity .intro p{
+    color: #666;
+    font-size: 18px;
+}
+.activity .intro a{
+    display: inline-block;
+    margin-top: 10%;
+    padding: 5px 20px;
+    font-size: 12px;
+    color: #999;
+    border-radius: 30px;
+    border: 1px solid #999;
+}

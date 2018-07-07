@@ -29,12 +29,12 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="nav-this" href="#">首页</a></li>
-                    <li><a href="#">关于协会</a></li>
-                    <li><a href="#">项目集锦</a></li>
-                    <li><a href="#">行业智库</a></li>
-                    <li><a href="#">协会动态</a></li>
-                    <li><a href="#">申请入会</a></li>
+                    <li><a class="nav-this" href="index.html">首页</a></li>
+                    <li><a href="about.html">关于协会</a></li>
+                    <li><a href="item.html">项目集锦</a></li>
+                    <li><a href="industry.html">行业智库</a></li>
+                    <li><a href="association.html">协会动态</a></li>
+                    <li><a href="apply.html">申请入会</a></li>
                 </ul>
             </div>
         </div>
@@ -91,8 +91,15 @@
             <li>协会赴成都考察，推进“医美之都”建设步伐</li>
             <li>【2017年3月】养老康护职业技能培训</li>
         </ul>
+        <button class="select">中国地区项目</button>
+        <button>国际地区项目</button>
     </div>
     <div class="swiper-container specialist">
+        <div class="top">
+            <h1>合作专家</h1>
+            <h6>Cooperation Expert</h6>
+            <img src="images/line1.png">
+        </div>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
                 <img src="images/specialist1.jpg">
@@ -144,6 +151,90 @@
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
     </div>
+    <ul class="data">
+        <div>
+            <li>
+                <h1>150+</h1>
+                <span>优质项目资源集结</span>
+            </li>
+            <li>
+                <h1>100+</h1>
+                <span>顶级院士专家汇集</span>
+            </li>
+            <li>
+                <h1>200+</h1>
+                <span>合作伙伴全方位共促行业发展</span>
+            </li>
+        </div>
+    </ul>
+    <div class="contact">
+        <div class="top">
+            <h1>联系我们</h1>
+            <h6>Contact Us</h6>
+            <img src="images/line1.png">
+        </div>
+        <ul>
+            <li>
+                <img src="images/contact1.png">
+                <h2>联系电话</h2>
+                <span>010-84376368</span>
+            </li>
+            <li>
+                <img src="images/contact2.png">
+                <h2>电子传真</h2>
+                <span>010-84376368</span>
+            </li>
+            <li>
+                <img src="images/contact3.png">
+                <h2>加入我们</h2>
+                <span>info@carttp.org</span>
+            </li>
+            <li>
+                <img src="images/contact4.png">
+                <h2>在线留言</h2>
+                <span>点击留言</span>
+            </li>
+        </ul>
+    </div>
+    <div class="apply">
+        <div class="apply-left">
+            <h2>入会申请</h2>
+            <p>众行业优秀企业都已成为协会会员，加入我们，一起共促发展</p>
+        </div>
+        <a class="apply-right">立即加入</a>
+    </div>
+    <footer>
+        <ul>
+            <li><h6>关于协会</h6><p>组织和章程</p></li>
+            <li><h6>项目集锦</h6><p>产业资源</p><p>技术转化</p><p>科研团队</p></li>
+            <li><h6>行业智库</h6><p>政策解读</p><p>行业资讯</p><p>业界洞察</p></li>
+            <li><h6>协会动态</h6><p>协会新闻</p><p>近期活动</p><p>人才培训</p> </li>
+            <li><h6>申请入会</h6><p>个人会员</p><p>企业会员</p></li>
+        </ul>
+        <div class="footer-right">
+            <div class="code">
+                <div>
+                    <img src="images/wx.png">
+                    <h6>官方微信公众号</h6>
+                </div>
+                <div>
+                    <img src="images/wb.png">
+                    <h6>中康促微博</h6>
+                </div>
+            </div>
+            <div class="site">
+                <p>北京市朝阳区北辰西路8号北辰世纪中心A座302室</p>
+                <p>010-84376368</p>
+                <p>info@carttp.org</p>
+            </div>
+            <div class="wx">
+                <img src="images/wx2.png">
+                <img src="images/wb2.png">
+            </div>
+        </div>
+        <p class="copyright">Copyright ©2018 <span>中国康复技术转化及发展促进会</span> 版权所有</p>
+    </footer>
+
 	<script src="js/swiper.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -155,18 +246,12 @@
             // 如果需要分页器
             pagination: {
                 el: '.swiper-pagination',
-            },
-            
-            // 如果需要前进后退按钮
-            // navigation: {
-            //   nextEl: '.swiper-button-next',
-            //   prevEl: '.swiper-button-prev',
-            // },
+            }
         })
         var specialist = new Swiper ('.specialist', {
             loop: true,
             slidesPerView: 5,
-            spaceBetween: 30,
+            spaceBetween: 40,
             // autoplay: true,
             
             // 如果需要分页器
@@ -180,7 +265,19 @@
               prevEl: '.swiper-button-prev',
             },
         })
-  
+        $('.project button').click(function () {
+            var n = $(this).index()
+            console.log(n)
+            $('.project button').removeClass('select')
+            $(this).addClass('select')
+            if (n == 3) {
+                $('.project-left img').attr('src', 'images/china-map.png')
+                $('.detail').css('opacity', 1)
+            } else {
+                $('.project-left img').attr('src', 'images/world-map.png')
+                $('.detail').css('opacity', 0)
+            }
+        })
     </script>
 </body>
 

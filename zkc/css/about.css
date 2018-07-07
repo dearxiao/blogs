@@ -1,0 +1,152 @@
+
+.banner{
+    position: relative;
+}
+.banner .text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+}
+.banner h1{
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.banner p{
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+.banner span{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 宋体;
+}
+.top{
+    margin: 4% 0;
+}
+.top h6{
+    color: #747474;
+}
+.specialist0{
+    background-color: #f7f7f7;
+}
+.introduce ul{
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #fff;
+    font-size: 0;
+}
+.introduce ul li{
+    display: inline-block;
+    margin-bottom: 1%;
+    padding: 50px 0 0 30px;
+    height: 150px;
+    vertical-align: top;
+}
+.introduce ul h2{
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.introduce ul span{
+    font-size: 12px;
+}
+.introduce .line{
+    height: 3px;
+    width: 100px;
+    margin: 5px 0;
+    background-color: #99c7f8;
+}
+.w28{
+    width: 28%;
+}
+.w14{
+    width: 13%;
+}
+.bg1{
+    background-color: #0174ed;
+}
+.bg2{
+    background-color: #51a6ff;
+}
+.bg3{
+    background-color: #2666b5;
+}
+.m1{
+    margin: 0 1%;
+}
+.ml1{
+    margin-left: 1%;
+}
+.m2{
+    margin: 0 1.5%
+}
+.constitution{
+    padding: 5% 0;
+    text-align: center;
+    color: #fff;
+    background: url(../images/bg2.png) no-repeat;
+    background-size: 100%;
+}
+.constitution h1{
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.constitution h3{
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+.constitution a{
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 20px; 
+    color: #fff;
+    font-size: 14px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.branch ul{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.branch li{
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 4%;
+}
+.branch li img{
+    width: 20%;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.branch .li-right{
+    display: inline-block;
+    width: 80%;
+    padding-left: 6%;
+}
+.branch .li-right h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #202a30;
+}
+.branch .li-right p{
+    margin-bottom: 25px;
+    height: 100px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #666;
+}
+.branch .li-right a{
+    font-size: 12px;
+    color: #2562b3;
+}
+.w12{
+    display: inline-block;
+    width: 12.5%
+}
