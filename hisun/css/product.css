@@ -2,7 +2,8 @@
 .product{
 	width: 1200px;
 	margin: 0 auto;
-	font-size: 0;
+    font-size: 0;
+    background-color: #fff;
 }
 .product div{
 	display: inline-block;

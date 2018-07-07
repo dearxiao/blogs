@@ -24,7 +24,7 @@ header .logo{
 	width: 100%;
 	padding: 0 5% 0 20px;
 	text-align: right;
-	background-color: #034995;
+	background-color: rgba(3, 73, 149, .88);
 	z-index: 99;
 }
 .layui-nav .layui-nav-item{
@@ -82,6 +82,31 @@ header .logo{
 }
 .swiper-container{
 	margin-top: 78px;
+}
+.swiper-slide h1{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+	letter-spacing: 20px;
+	z-index: 10;
+}
+.swiper-slide h2, .swiper-slide h3{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	padding: 0 20px;
+	font-size: 70px;
+	font-style: italic;
+	color: #fff;
+	letter-spacing: 10px;
+	background-color: #f49800;
+	z-index: 10;
+}
+.swiper-slide h3{
+	top: 52%;
 }
 .slogan{
 	text-align: center;
@@ -174,6 +199,16 @@ footer .site{
 	.layui-carousel img{
 		height: 100%;
 	}
+	.swiper-slide h1{
+		font-size: 40px;
+		letter-spacing: 10px;
+	}
+	.swiper-slide h2, .swiper-slide h3{
+		font-size: 40px;
+	}
+	.swiper-slide h3{
+		top: 62%;
+	}
 	footer{
 		text-align: left;
 	}
@@ -193,6 +228,17 @@ footer .site{
 	.swiper-container{
 		margin-top: 45px;
 	}
+	.swiper-slide h1{
+		font-size: 24px;
+		letter-spacing: 5px;
+	}
+	.swiper-slide h2, .swiper-slide h3{
+		font-size: 24px;
+		letter-spacing: 5px;
+	}
+	.swiper-slide h3{
+		top: 60%;
+	}
 	.layui-nav .logo{
 		display: none;
 	}
@@ -204,7 +250,7 @@ footer .site{
 		overflow-y: scroll;
 	}
 	.layui-nav-itemed>.layui-nav-child{
-		background-color: #034995 !important;
+		background-color: rgba(3, 73, 149, .1) !important;
 	}
 	.layui-nav-tree .layui-nav-item a{
 		padding: 0;
