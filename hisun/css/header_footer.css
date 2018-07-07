@@ -18,6 +18,9 @@ header .logo{
 	margin: 15px 0;
 	z-index: 999;
 }
+header .logo0{
+	display: none;
+}
 .layui-nav{
 	position: fixed;
 	top: 0;
@@ -233,6 +236,9 @@ footer .site{
 		margin: 10px 20px;
 		height: 35px;
 	}
+	header .logo0{
+		display: inline-block;
+	}
 	.swiper-container{
 		margin-top: 45px;
 	}
@@ -254,10 +260,12 @@ footer .site{
 		display: none;
 		top: 45px;
 		right: 0;
-		width: 40%;
+		width: auto;
+		padding: 0 30px;
 		overflow-y: scroll;
 	}
 	.layui-nav-itemed>.layui-nav-child{
+		display: none;
 		background-color: rgba(3, 73, 149, .1) !important;
 	}
 	.layui-nav-tree .layui-nav-item a{
