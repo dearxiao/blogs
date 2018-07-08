@@ -56,7 +56,7 @@
 }
 .items li{
     display: inline-block;
-    padding: 7% 7% 5%;
+    padding: 7% 0 5%;
     margin-bottom: 5%;
     width: 30%;
     background-color: #fff;
@@ -76,6 +76,7 @@
 .items li p{
     height: 100px;
     margin-bottom: 30px;
+    padding: 0 20%;
     overflow: hidden;
     text-align: justify;
     font-size: 14px;
