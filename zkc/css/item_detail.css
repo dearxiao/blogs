@@ -1,0 +1,201 @@
+
+.banner .text{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #fff;
+}
+.banner h1{
+    width: 260px;
+    padding-left: 3%;
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #528ece;
+}
+.banner h1 img{
+    width: 16%;
+    vertical-align: middle;
+}
+.banner p{
+    margin: 30px 0;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.bg1{
+    position: relative;
+    padding-top: 30%;
+    background-color: #fff;
+}
+.workstation{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -600px;
+    padding: 2% 0;
+    width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 62px rgba(153, 153, 153, .15);
+    z-index: 3;
+}
+.workstation .top .h6{
+    color: #747474;
+}
+.workstation-left{
+    width: 40%;
+    margin: 0 6% 0 12%;
+}
+.workstation-right{
+    display: inline-block;
+    padding-top: 10%;
+    text-align: center;
+}
+.workstation-right p{
+    font-size: 18px;
+    color: #666;
+}
+.workstation-right h1{
+    font-size: 54px;
+    color: #0174ed;
+}
+.bg2{
+    margin-top: -30%;
+    padding-top: 60%;
+    background-color: #0174ed;
+    z-index: 1;
+}
+.research{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-size: 0;
+}
+.research .top{
+    color: #fff;
+}
+.card{
+    display: inline-block;
+    width: 46%;
+    margin: 5% 2% -6%;
+    background-color: #fff;
+    box-shadow: 0 0 32px rgba(153, 153, 153, .4);
+}
+.card-left{
+    width: 50%;
+    vertical-align: top;
+}
+.card-right{
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+}
+.card-right h2{
+    margin-top: 20%;
+    font-size: 18px;
+    line-height: 2;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #0174ed;
+}
+.card-right h5{
+    margin: 40% 0 10%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0174ed;
+}
+.card-right p{
+    font-size: 14px;
+    color: #666;
+}
+.create{
+    margin-top: -10%;
+    padding-top: 20%;
+    font-size: 0;
+}
+.create .top h6{
+    color: #747474;
+}
+.create ul{
+    margin: 6% 0 0;
+    font-size: 0;
+    background-color: #004fb2;
+}
+.create ul img{
+    width: 25%;
+}
+.create li{
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.create li h3{
+    line-height: 2.4;
+    font-weight: 600;
+    font-size: 24px;
+}
+.circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.project{
+    padding: 5% 0;
+}
+.project .top h6{
+    color: #747474;
+}
+.project ul{
+    margin: 5% auto 0;
+    max-width: 1200px;
+    color: #fff;
+    font-size: 0;
+}
+.project li{
+    display: inline-block;
+    padding-top: 5%;
+    width: 33.33%;
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 24px;
+}
+.project li:nth-child(odd){
+    background-color: #0174ed
+}
+.project li:nth-child(even){
+    background-color: #004fb2
+}
+.project li i{
+    margin-right: 5%;
+    font-size: 60px;
+}
+.project li span{
+    display: inline-block;
+    vertical-align: 15px;
+}
+.project li:nth-child(4) span{
+    vertical-align: -5px;
+}
+.partner{
+    padding: 3% 5% 5%;
+    background-color: #fff;
+}
+.partner .top h6{
+    color: #747474;
+}
+.partner ul{
+    margin-top: 3%;
+    font-size: 0;
+}
+.partner li{
+    display: inline-block;
+    width: 20%;
+    padding: 0 1%;
+    margin-top: 3%;
+    text-align: center;
+}
