@@ -1,7 +1,9 @@
-
+.banner{
+    position: relative;
+}
 .banner .text{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
     color: #fff;
 }
