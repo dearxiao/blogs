@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>关于协会</title>
+	<title>申请入会</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header_footer.css">
-	<link rel="stylesheet" href="css/industry.css">
+	<link rel="stylesheet" href="css/apply.css">
 	<link rel="stylesheet" href="css/specialist.css">
 </head>
 
@@ -32,72 +32,63 @@
 					<li><a href="index.html">首页</a></li>
 					<li><a href="about.html">关于协会</a></li>
 					<li><a href="item.html">项目集锦</a></li>
-					<li><a class="nav-this" href="industry.html">行业智库</a></li>
+					<li><a href="industry.html">行业智库</a></li>
 					<li><a href="association.html">协会动态</a></li>
-					<li><a href="apply.html">申请入会</a></li>
+					<li><a class="nav-this" href="apply.html">申请入会</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div class="banner">
-		<img src="images/banner4.jpg">
+		<img src="images/banner6.jpg">
 		<div class="text">
-			<h1>聚焦市场动向，洞见行业趋势</h1>
-			<p>Focus on market trends and insight into industry trends <br> 2015/2016</p>
-			<ul>
-				<li>
-					<span>01</span>
-					<div class="li-right">
-						<h6>政策解读</h6>
-						<p>Policy interpretation</p>
-					</div>
-				</li>
-				<li>
-					<span>02</span>
-					<div class="li-right">
-						<h6>行业资讯</h6>
-						<p>Industry informationn</p>
-					</div>
-				</li>
-				<li>
-					<span>03</span>
-					<div class="li-right">
-						<h6>业界洞察</h6>
-						<p>Industry insight</p>
-					</div>
-				</li>
-			</ul>
+			<h1>申请入会</h1>
+			<p>China Association of Rehabilitation Technology  <br> ransformation & Promotion</p>
 		</div>
 	</div>
-	<ul class="industry">
-		<li>
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-			<img src="images/industry1.png">
-		</li>
-		<li class="bgc1">
-			<img src="images/industry2.png">
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-		</li>
-		<li>
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-			<img src="images/industry3.png">
-		</li>
-	</ul>
+	<div class="apply">
+		<div class="title">
+			<span class="select">个人会员</span>
+			<span>企业会员</span>
+		</div>
+		<form action="" method="post">
+			<input type="text" placeholder="单位名称">
+			<input type="text" placeholder="单位性质">
+			<input type="text" placeholder="所属行业">
+			<input type="text" placeholder="工作单位">
+			<input type="text" placeholder="手机">
+			<input type="text" placeholder="座机">
+			<input type="text" placeholder="电子邮箱">
+			<input type="text" placeholder="验证码">
+			<input type="submit" value="确认提交">
+		</form>
+	</div>
+	<div class="contact">
+		<h1>联系我们</h1>
+		<p>电话：010-84376368</p>
+		<p>传真：010-84370658</p>
+		<p>邮箱：info@carttp.org</p>
+		<p>地址：北京市朝阳区北辰西路8号北辰世纪中心A座302室</p>
+	</div>
+	<div class="partner">
+		<div class="top">
+			<h1>合作伙伴</h1>
+			<h6>Lorem ipsum is a dummy text it will use for subtitle here</h6>
+			<img src="images/line1.png">
+		</div>
+		<ul>
+			<li><img src="images/partner1.png"></li>
+			<li><img src="images/partner2.png"></li>
+			<li><img src="images/partner3.png"></li>
+			<li><img src="images/partner4.png"></li>
+			<li><img src="images/partner5.png"></li>
+			<li><img src="images/partner6.png"></li>
+			<li><img src="images/partner7.png"></li>
+			<li><img src="images/partner8.png"></li>
+			<li><img src="images/partner9.png"></li>
+			<li><img src="images/partner10.png"></li>
+		</ul>
+	</div>
 	<footer>
 		<ul>
 			<li><h6>关于协会</h6><p>组织和章程</p></li>
@@ -132,7 +123,13 @@
 
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.title').on('click', 'span', function () {
+			$('.title span').removeClass('select')
+			$(this).addClass('select')
+		})
+	</script>
 </body>
 
 </html>

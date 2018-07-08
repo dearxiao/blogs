@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header_footer.css">
-	<link rel="stylesheet" href="css/industry.css">
+	<link rel="stylesheet" href="css/industry_list.css">
 	<link rel="stylesheet" href="css/specialist.css">
 </head>
 
@@ -40,64 +40,42 @@
 		</div>
 	</nav>
 	<div class="banner">
-		<img src="images/banner4.jpg">
+		<img src="images/bg5.png">
 		<div class="text">
-			<h1>聚焦市场动向，洞见行业趋势</h1>
-			<p>Focus on market trends and insight into industry trends <br> 2015/2016</p>
-			<ul>
-				<li>
-					<span>01</span>
-					<div class="li-right">
-						<h6>政策解读</h6>
-						<p>Policy interpretation</p>
-					</div>
-				</li>
-				<li>
-					<span>02</span>
-					<div class="li-right">
-						<h6>行业资讯</h6>
-						<p>Industry informationn</p>
-					</div>
-				</li>
-				<li>
-					<span>03</span>
-					<div class="li-right">
-						<h6>业界洞察</h6>
-						<p>Industry insight</p>
-					</div>
-				</li>
-			</ul>
+			<p>聚焦市场动向，洞见行业趋势</p>
+			<div class="line"></div>
+			<h1>最新动态</h1>
 		</div>
 	</div>
-	<ul class="industry">
-		<li>
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-			<img src="images/industry1.png">
-		</li>
-		<li class="bgc1">
-			<img src="images/industry2.png">
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-		</li>
-		<li>
-			<div class="li-sub">
-				<h2>政策解读</h2>
-				<p>健康产业新风向</p>
-				<p>24个医疗项目获国家重点支持</p>
-				<a href="industry_list.html">查看更多</a>
-			</div>
-			<img src="images/industry3.png">
-		</li>
-	</ul>
+	<div class="article">
+		<div class="title">
+			<span class="select">政策解读</span>
+			<span>行业资讯</span>
+			<span>业界洞察</span>
+		</div>
+		<ul>
+			<li>
+				<img class="li-left" src="images/article1.png">
+				<div class="li-right">
+					<h3>健康产业新风向24个医疗项目获国家重点支持</h3>
+					<p>5月3日到5月4日，受成都市副市长刘烈东邀请，天鸿集团董事长柴志坤、副总经理张吉法等一行赴成都市就大健康产业发展情况进行了考察交流。中国康复技术转化及发展促进会作为天鸿集团战略合作伙伴，派出战略发展部部长杨涵、副部长王溪一同参加了考察。</p>
+					<span>2018-07-08 10:00</span>
+					<span>来源： <b>中康促</b> </span>
+					<a href="industry_detail.html">查看详情</a>
+				</div>
+			</li>
+			<li>
+				<img class="li-left" src="images/article1.png">
+				<div class="li-right">
+					<h3>健康产业新风向24个医疗项目获国家重点支持</h3>
+					<p>5月3日到5月4日，受成都市副市长刘烈东邀请，天鸿集团董事长柴志坤、副总经理张吉法等一行赴成都市就大健康产业发展情况进行了考察交流。中国康复技术转化及发展促进会作为天鸿集团战略合作伙伴，派出战略发展部部长杨涵、副部长王溪一同参加了考察。</p>
+					<span>2018-07-08 10:00</span>
+					<span>来源： <b>中康促</b> </span>
+					<a href="industry_detail.html">查看详情</a>
+				</div>
+			</li>
+		</ul>
+	</div>
 	<footer>
 		<ul>
 			<li><h6>关于协会</h6><p>组织和章程</p></li>
@@ -132,7 +110,13 @@
 
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.title').on('click', 'span', function () {
+			$('.title span').removeClass('select')
+			$(this).addClass('select')
+		})
+	</script>
 </body>
 
 </html>
