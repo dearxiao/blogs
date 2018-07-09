@@ -1,7 +1,6 @@
 
 .specialist{
-    margin: 5%;
-    padding: 1% 1%;
+    padding: 5% 1%;
 }
 .specialist .swiper-slide{
     box-shadow: 0 0 30px rgba(189, 189, 189, .5);
@@ -32,4 +31,14 @@
 .swiper-button-next{
     right: 0;
     height: 30px;
+}
+@media screen and (max-width: 1200px) {
+    .specialist0{
+        padding: 0 2%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .specialist0{
+        padding: 0 5%;
+    }
 }

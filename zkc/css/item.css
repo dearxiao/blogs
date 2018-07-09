@@ -1,7 +1,7 @@
 
 .banner .text{
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 10%;
     color: #fff;
 }
@@ -42,7 +42,7 @@
 .items{
     padding: 5% 0 0;
     background: url(../images/bg3.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 }
 .items .top{
     margin-bottom: 5%; 

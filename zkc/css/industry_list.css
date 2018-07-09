@@ -152,3 +152,79 @@
     margin-left: 5%;
     color: #999;
 }
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 15%;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .banner h1{
+        font-size: 28px;
+    }
+    .article{
+        padding: 3% 5%;
+    }
+    .detail{
+        width: 90%;
+        margin: 5%;
+    }
+    .hot{
+        margin: 5%
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner img{
+        height: 150px;
+    }
+    .banner .text{
+        top: 15%;
+    }
+    .banner p{
+        font-size: 18px;
+    }
+    .banner h1{
+        font-size: 22px;
+    }
+    .title{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .title span{
+        padding: 0 5%;
+    }
+    .article .li-left{
+        height: 65px;
+    }
+    .article li h3{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    .article li p, .article li span{
+        display: none;
+    }
+    .article li a{
+        padding: 2px 10px;
+    }
+    /* 详情 */
+    .next{
+        float: none;
+        margin-top: 10px;
+    }
+    .detail h1{
+        font-size: 18px;
+    }
+    .detail h6{
+        display: none;
+    }
+    .hot{
+        width: 100%;
+        padding: 0 3%;
+    }
+    .hot h3{
+        font-size: 16px;
+    }
+    .hot li{
+        font-size: 12px;
+    }
+}

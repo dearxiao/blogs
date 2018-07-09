@@ -1,0 +1,76 @@
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 15%;
+        left: 5%;
+    }
+    .banner h1{
+        font-size: 24px;
+    }
+    .banner p{
+        margin: 4% 0;
+        font-size: 14px;
+    }
+    .swiper1{
+        margin: 0 3%;
+        padding-bottom: 5%;
+    }
+    .swiper1 img{
+        margin-top: 10%;
+    }
+    .swiper1 .intro{
+        padding: 5% 2% 0;
+    }
+    .swiper1 .intro h5{
+        font-size: 16px;
+    }
+    .swiper1 .intro h2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner .text{
+        top: 10%;
+        left: 5%;
+    }
+    .banner p, .banner ul{
+        display: none;
+    }
+    .swiper1{
+        margin: 0 3%;
+        padding-bottom: 10%;
+    }
+    .swiper1 .intro p{
+        margin: 10px 0;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets{
+        bottom: 0;
+    }
+    .talent h1{
+        font-size: 24px;
+        margin: 10px;
+    }
+    .talent h4{
+        font-size: 18px;
+    }
+    .talent a{
+        margin-top: 20px;
+    }
+    .activity{
+        margin: 0;
+        padding: 5%;
+    }
+    .activity .intro h2{
+        font-size: 24px;
+        margin: 10px;
+    }
+    .activity .intro img{
+        margin: 5% 0;
+        width: 20px;
+    }
+    .activity .intro p{
+        font-size: 14px;
+    }
+    .activity .intro a{
+        margin-top: 3%;
+    }
+}

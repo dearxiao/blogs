@@ -1,0 +1,58 @@
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 13%;
+        left: 5%;
+    }
+    .banner h1{
+        font-size: 24px;
+    }
+    .banner p{
+        margin: 4% 0;
+        font-size: 14px;
+    }
+    .items li{
+        width: 44%;
+        margin: 3% 3% 10%;
+    }
+    .w5{
+        width: 0;
+    }
+    .industry li{
+        height: 300px;
+    }
+    .li-sub{
+        padding: 5% 0 5% 8%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner .text{
+        top: 13%;
+        left: 5%;
+    }
+    .banner p, .banner ul{
+        display: none;
+    }
+    .items li{
+        width: 80%;
+        margin: 3% 10% 10%;
+    }
+    .items li h3{
+        margin: 12% 0 5%;
+    }
+    .industry li {
+        height: 200px;
+    }
+    .li-sub h2{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .li-sub p{
+        font-size: 14px;
+    }
+    .li-sub {
+        padding: 2% 2% 2% 5%;
+    }
+    .li-sub a{
+        margin-top: 10px;
+    }
+}

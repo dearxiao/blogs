@@ -1,0 +1,40 @@
+
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 15%;
+    }
+    .apply{
+        width: 100%;
+    }
+    .contact{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner .text{
+        top: 10%;
+    }
+    .banner h1{
+        font-size: 24px;
+    }
+    .banner p{
+        margin: 4% 0;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .apply{
+        padding: 0 5%;
+    }
+    .contact{
+        margin: 5%;
+    }
+    .contact p:nth-child(5){
+        white-space: normal;
+    }
+    .partner li{
+        width: 50%;
+        padding: 0 3%;
+    }
+}

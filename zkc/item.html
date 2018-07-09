@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/header_footer.css">
 	<link rel="stylesheet" href="css/item.css">
 	<link rel="stylesheet" href="css/specialist.css">
+	<link rel="stylesheet" href="css/item_media.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="images/logo.png">中国康复技术转化及发展促进协会</a>
+				<a class="navbar-brand" href="#"><img src="images/logo.png"><span>中国康复技术转化及发展促进协会</span></a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
@@ -119,12 +120,12 @@
 		</ul>
 	</div>
 	<div class="specialist0">
+		<div class="top">
+			<h1>合作专家</h1>
+			<h6>Cooperation Expert</h6>
+			<img src="images/line1.png">
+		</div>
 		<div class="swiper-container specialist">
-			<div class="top">
-				<h1>合作专家</h1>
-				<h6>Cooperation Expert</h6>
-				<img src="images/line1.png">
-			</div>
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
 					<img src="images/specialist1.jpg">
@@ -212,6 +213,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/specialist.js"></script>
 	<script>
 		var carousel = new Swiper ('.carousel', {
 			loop: true,
@@ -221,23 +223,6 @@
 			pagination: {
 				el: '.swiper-pagination',
 			}
-		})
-		var specialist = new Swiper ('.specialist', {
-			loop: true,
-			slidesPerView: 5,
-			spaceBetween: 40,
-			// autoplay: true,
-			
-			// 如果需要分页器
-			pagination: {
-				el: '.swiper-pagination',
-			},
-			
-			// 如果需要前进后退按钮
-			navigation: {
-			  nextEl: '.swiper-button-next',
-			  prevEl: '.swiper-button-prev',
-			},
 		})
 		$('.project button').click(function () {
 			var n = $(this).index()

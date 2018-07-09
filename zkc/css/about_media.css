@@ -1,0 +1,66 @@
+
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 20%;
+        left: 5%;
+    }
+    .introduce ul{
+        padding: 0 2%;
+        text-align: center;
+    }
+    .introduce ul li{
+        padding: 5% 0 0 3%;
+        text-align: left;
+    }
+    .introduce ul li:nth-child(5){
+        margin-left: 1%;
+    }
+    .w28{
+        width: 38%
+    }
+    .w14{
+        width: 20%
+    }
+    .branch li{
+        width: 50%;
+        padding: 0 5%;
+    }
+    .w12{
+        width: 0;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner .text{
+        top: 10%;
+        left: 5%;
+    }
+    .banner h1{
+        font-size: 24px;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .banner span{
+        font-size: 18px;
+    }
+    .top{
+        padding: 10% 0;
+    }
+    .introduce ul{
+        padding: 5% 0 10%;
+    }
+    .introduce ul li{
+        padding: 10% 10% 0 10%;
+        margin-bottom: 2%;
+    }
+    .w28{
+        width: 80%
+    }
+    .w14{
+        width: 80%
+    }
+    .branch li{
+        width: 100%;
+        padding: 0 10%;
+    }
+}

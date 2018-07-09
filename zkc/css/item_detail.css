@@ -199,3 +199,80 @@
     margin-top: 3%;
     text-align: center;
 }
+@media screen and (max-width: 1200px) {
+    .banner .text{
+        top: 15%;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .banner h1{
+        font-size: 28px;
+    }
+    .bg2{
+        padding-top: 70%;
+    }
+    .workstation{
+        width: 90%;
+        left: 5%;
+        margin: 0;
+    }
+    .card-left{
+        width: 40%;
+    }
+    .card-right{
+        width: 50%;
+        margin: 0 5%;
+    }
+    .card-right h2{
+        margin-top: 5%;
+    }
+    .card-right h5{
+        margin-top: 10%;
+    }
+    .create li h3{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 760px) {
+    .banner p{
+        display: none;
+    }
+    .bg1, .bg2{
+        padding-top: 100%;
+    }
+    .workstation-left{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .workstation-right{
+        display: block;
+        padding-top: 3%;
+    }
+    .workstation-right h1{
+        font-size: 30px;
+    }
+    .card{
+        width: 90%;
+        margin: 10% 5% -6%;
+    }
+    .create ul img, .create li{
+        width: 50%;
+    }
+    .project li{
+        width: 80%;
+        height: 100px;
+        padding: 5% 0 0 20%;
+        margin: 0 10%;
+        text-align: left;
+        font-size: 16px;
+    }
+    .project li i{
+        margin-right: 10%;
+        font-size: 42px;
+    }
+    .partner li{
+        width: 50%;
+        padding: 0 3%;
+    }
+}
