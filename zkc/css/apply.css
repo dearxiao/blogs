@@ -1,7 +1,7 @@
 
 .banner .text{
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
     color: #fff;
 }
@@ -110,4 +110,7 @@ input[type=submit]{
     padding: 0 1%;
     margin-top: 3%;
     text-align: center;
+}
+.partner li:hover{
+    transform: scale(1.05);
 }

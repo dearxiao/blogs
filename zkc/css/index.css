@@ -67,6 +67,7 @@
     background-color: #083f85;
 }
 .project-left{
+    position: relative;
     display: inline-block;
     width: 50%;
     margin-bottom: 5%;
@@ -79,6 +80,7 @@
     color: #222;
     border-radius: 10px;
     background-color: #fff;
+    opacity: 0;
 }
 .project-left .detail p{
     margin: 0;
@@ -87,9 +89,18 @@
     border-radius: 10px 10px 0 0;
     background-color: #ffcc45;
 }
-.project-left img{
+.project-left .china-map{
     width: 60%;
     margin-left: 10%;
+}
+.project-left .area{
+    position: absolute;
+    right: 19%;
+    top: 22%;
+    width: 25%;
+}
+.project-left .area:hover + .detail{
+    opacity: 1;
 }
 .project-right{
     display: inline-block;
@@ -115,6 +126,11 @@
     color: #fff;
     background-color: #005aa8;
     border: 0;
+}
+.world-map{
+    display: none;
+    width: 50%;
+    margin: 0 25%;
 }
 .project .select{
     background-color: #0174ed;
@@ -145,6 +161,9 @@
 .data h1{
     font-size: 60px;
 }
+.data h1:hover{
+    transform: scale(1.08);
+}
 .data span{
     font-size: 14px;
 }
@@ -156,10 +175,14 @@
 .contact li{
     float: left;
     width: 25%;
+    padding-top: 6px;
     text-align: center;
 }
 .contact li img{
     width: 15%;
+}
+.contact li img:hover{
+    transform: translateY(-6px);
 }
 .contact li h2{
     color: #222;
@@ -194,4 +217,8 @@
     font-size: 14px;
     border-radius: 30px;
     border: 1px solid #fff;
+}
+.apply-right:hover{
+    color: #0174ed;
+    background-color: #fff;
 }

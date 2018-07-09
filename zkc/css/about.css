@@ -110,6 +110,10 @@
     border-radius: 30px;
     border: 1px solid #fff;
 }
+.constitution a:hover{
+    color: #0174ed;
+    background-color: #fff;
+}
 .branch ul{
     max-width: 1200px;
     margin: 0 auto;

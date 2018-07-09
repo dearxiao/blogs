@@ -19,6 +19,10 @@
         margin: 0;
         margin-top: 5%;
     }
+    .world-map{
+        width: 100%;
+        margin: 0;
+    }
     .data{
         padding: 2% 0 5%;
     }
@@ -29,6 +33,19 @@
 @media screen and (max-width: 760px) {
 	.carousel {
         margin-top: 50px;
+    }
+    .slogan{
+        top: 15%;
+        left: 10%;
+    }
+    .slogan h4{
+        font-size: 18px;
+    }
+    .slogan h5{
+        font-size: 24px;
+    }
+    .slogan button{
+        margin-top: 10px;
     }
     .introduce li{
         width: 100%;

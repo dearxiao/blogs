@@ -6,6 +6,7 @@
     color: #fff;
 }
 .banner h1{
+    margin-bottom: 5%;
     font-size: 36px;
     line-height: 1.2;
     font-weight: 600;
@@ -68,6 +69,9 @@
 .items li img{
     width: 30%;
 }
+.items li img:hover{
+    transform: scale(1.05);
+}
 .items li h3{
     margin: 25% 0 5%;
     font-size: 30px;
@@ -88,5 +92,10 @@
     padding: 10px 20%;
     font-size: 14px;
     color: #fff;
+    border: 1px solid #476eb2;
     background-color: #476eb2;
+}
+.items li a:hover{
+    color: #476eb2;
+    background-color: #fff;
 }

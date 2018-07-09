@@ -199,6 +199,9 @@
     margin-top: 3%;
     text-align: center;
 }
+.partner li:hover{
+    transform: scale(1.05);
+}
 @media screen and (max-width: 1200px) {
     .banner .text{
         top: 15%;

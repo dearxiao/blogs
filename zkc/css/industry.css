@@ -6,6 +6,7 @@
     color: #fff;
 }
 .banner h1{
+    margin-bottom: 5%;
     font-size: 36px;
     line-height: 1.2;
     font-weight: 600;
@@ -71,10 +72,17 @@
     border-radius: 30px;
     border: 1px solid #fff;
 }
+.li-sub a:hover{
+    color: #0174ed;
+    background-color: #fff;
+}
 .industry img{
     width: 50%;
     height: 100%;
     vertical-align: top;
+}
+.industry img:hover{
+    transform: scale(1.01)
 }
 .bgc1{
     background-color: #0181e6;

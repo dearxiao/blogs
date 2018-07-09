@@ -74,15 +74,16 @@
 	<div class="project">
 		<div class="top">
 			<h1>项目促进</h1>
-			<h6>project</h6>
+			<!-- <h6>Project</h6> -->
 			<img src="images/line1.png">
 		</div>
 		<div class="project-left">
+			<img class="area" src="images/area.png">
 			<div class="detail">
 				<p>中日养老联合研发项目</p>
 				<span>北京 2018.6.6</span>
 			</div><br>
-			<img src="images/china-map.png">
+			<img class="china-map" src="images/china-map.png">
 		</div>
 		<ul class="project-right">
 			<h3>最新项目促进列表</h3>
@@ -92,13 +93,14 @@
 			<li>协会赴成都考察，推进“医美之都”建设步伐</li>
 			<li>【2017年3月】养老康护职业技能培训</li>
 		</ul>
+		<img class="world-map" src="images/world-map.png">
 		<button class="select">中国地区项目</button>
 		<button>国际地区项目</button>
 	</div>
 	<div class="specialist0">
 		<div class="top">
 			<h1>合作专家</h1>
-			<h6>Cooperation Expert</h6>
+			<!-- <h6>Cooperation Expert</h6> -->
 			<img src="images/line1.png">
 		</div>
 		<div class="swiper-container specialist">
@@ -173,7 +175,7 @@
 	<div class="contact">
 		<div class="top">
 			<h1>联系我们</h1>
-			<h6>Contact Us</h6>
+			<!-- <h6>Contact Us</h6> -->
 			<img src="images/line1.png">
 		</div>
 		<ul>
@@ -250,6 +252,7 @@
 			// 如果需要分页器
 			pagination: {
 				el: '.swiper-pagination',
+				clickable: true,
 			}
 		})
 		$('.project button').click(function () {
@@ -257,12 +260,12 @@
 			console.log(n)
 			$('.project button').removeClass('select')
 			$(this).addClass('select')
-			if (n == 3) {
-				$('.project-left img').attr('src', 'images/china-map.png')
-				$('.detail').css('opacity', 1)
+			if (n == 4) {
+				$('.project-left, .project-right').show()
+				$('.world-map').hide()
 			} else {
-				$('.project-left img').attr('src', 'images/world-map.png')
-				$('.detail').css('opacity', 0)
+				$('.project-left, .project-right').hide()
+				$('.world-map').show()
 			}
 		})
 	</script>
