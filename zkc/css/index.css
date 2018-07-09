@@ -99,6 +99,9 @@
     top: 22%;
     width: 25%;
 }
+.project-left .area:hover{
+    transform: scale(1.05);
+}
 .project-left .area:hover + .detail{
     opacity: 1;
 }
