@@ -98,10 +98,11 @@
     right: 19%;
     top: 22%;
     width: 25%;
+    animation: breathing 1.2s 0s infinite linear both;
 }
-.project-left .area:hover{
+/*.project-left .area:hover{
     transform: scale(1.05);
-}
+}*/
 .project-left .area:hover + .detail{
     opacity: 1;
 }
@@ -224,4 +225,37 @@
 .apply-right:hover{
     color: #0174ed;
     background-color: #fff;
+}
+
+@-webkit-keyframes breathing {
+  50%{
+    transform: scale(1.1,1.1)
+  }
+  0%{
+    transform: scale(1,1);
+  }
+}
+@-moz-keyframes breathing {
+  50%{
+    transform: scale(1.1,1.1)
+  }
+  0%{
+    transform: scale(1,1);
+  }
+}
+@-o-keyframes breathing {
+  50%{
+    transform: scale(1.1,1.1)
+  }
+  0%{
+    transform: scale(1,1);
+  }
+}
+@keyframes breathing {
+  50%{
+    transform: scale(1.05,1.05)
+  }
+  0%{
+    transform: scale(1,1);
+  }
 }
