@@ -2,7 +2,7 @@
 var width = document.body.clientWidth,
     num = 5
 if (width < 1200) {
-    num = 3
+    num = 4
 }
 if (width < 760) {
     num = 1
