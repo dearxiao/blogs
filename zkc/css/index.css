@@ -73,6 +73,41 @@
     margin-bottom: 5%;
     text-align: center;
 }
+.project-left .pro-box{
+	position: absolute;
+}
+.project-left .pro-box .dot{
+	width: 8px;
+	height: 8px; 
+	background:radial-gradient(#ffcc45 30%,cyan);
+  	border-radius:50%;
+  	cursor: pointer;
+ 	box-shadow:0 0 5px cyan;	
+}
+.project-left .pro-box.num1{left: 70%;top: 37%;z-index: 130;}
+.project-left .pro-box.num1 .dot{animation: breath  2s  infinite  linear;}
+.project-left .pro-box.num1:hover .detail{display: block;}
+.project-left .pro-box.num2{left: 78%;top: 23%;z-index: 120;}
+.project-left .pro-box.num2 .dot{animation: breath  2s 1s infinite  linear;}
+.project-left .pro-box.num2:hover .detail{display: block;}
+.project-left .pro-box.num3{left: 60%;top: 67%;z-index: 110;}
+.project-left .pro-box.num3 .dot{animation: breath  2s .5s infinite  linear;}
+.project-left .pro-box.num3:hover .detail{display: block;}
+.project-left .pro-box.num4{left: 65%;top: 47%;z-index: 100;}
+.project-left .pro-box.num4 .dot{animation: breath  2s .2s infinite  linear;}
+.project-left .pro-box.num4:hover .detail{display: block;}
+.project-left .pro-box.num5{left: 72%;top: 67%;z-index: 90;}
+.project-left .pro-box.num5 .dot{animation: breath  2s .5s infinite  linear;}
+.project-left .pro-box.num5:hover .detail{display: block;}
+.project-left .pro-box.num6{left: 67%;top: 61%;z-index: 92;}
+.project-left .pro-box.num6 .dot{animation: breath  2s 1s infinite  linear;}
+.project-left .pro-box.num6:hover .detail{display: block;}
+.project-left .pro-box.num7{left: 72%;top: 81%;z-index: 70;}
+.project-left .pro-box.num7 .dot{animation: breath  2s 1s infinite  linear;}
+.project-left .pro-box.num7:hover .detail{display: block;z-index: 60;}
+.project-left .pro-box.num8{left: 70%;top: 86%;z-index: 50;}
+.project-left .pro-box.num8 .dot{animation: breath  2s .5s infinite  linear;}
+.project-left .pro-box.num8:hover .detail{display: block;}
 .project-left .detail{
     display: inline-block;
     font-size: 18px;
@@ -80,7 +115,7 @@
     color: #222;
     border-radius: 10px;
     background-color: #fff;
-    opacity: 0;
+    display: none;
 }
 .project-left .detail p{
     margin: 0;
@@ -227,35 +262,30 @@
     background-color: #fff;
 }
 
-@-webkit-keyframes breathing {
-  50%{
-    transform: scale(1.1,1.1)
-  }
+@keyframes breath{
   0%{
-    transform: scale(1,1);
+     transform:scale(0.6);
+     box-shadow:0 0 4px cyan,0 0 0px 1px yellow;
+    opacity:1;
+    transform-timing-function:linear;
   }
-}
-@-moz-keyframes breathing {
+  25%{
+     transform:scale(0.8);
+     box-shadow:0 0 5px cyan, 0 0 2px 4px orange;
+    opacity:0.75;
+    transform-timing-function:linear;
+  }
   50%{
-    transform: scale(1.1,1.1)
+     transform:scale(1);
+     box-shadow:0 0 6px cyan, 0 0 3px 6px blue;
+    opacity:0.25;
+    transform-timing-function:linear;
   }
-  0%{
-    transform: scale(1,1);
+  100%{
+     transform:scale(1.2);
+     box-shadow:0 0 7px cyan, 0 0 4px 8px cyan;
+    opacity:0;
+    transform-timing-function:ease-out;
   }
-}
-@-o-keyframes breathing {
-  50%{
-    transform: scale(1.1,1.1)
-  }
-  0%{
-    transform: scale(1,1);
-  }
-}
-@keyframes breathing {
-  50%{
-    transform: scale(1.05,1.05)
-  }
-  0%{
-    transform: scale(1,1);
-  }
+  
 }
