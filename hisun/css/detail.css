@@ -1,0 +1,152 @@
+
+/*pmm定义的通用样式*/
+.job-d h3{font-size: 32px;font-weight: bold;}
+.job-d h3{font-size: 32px;font-weight: bold;}
+.job-d h2{font-size: 32px;font-weight: bold;color: #3c3c3c;}
+.job-d p{text-align: justify;font-size: 16px;line-height: 26px;}
+.job-d a{font-size: 16px;}
+/*职业发展的在这占个位*/
+.job-box{position:relative;margin-top: 6%; text-align: center;}
+.job-box .job-tit{position:absolute;top:15%;left:50%;margin-left:-68px;text-align: center;}
+.job-box .job-tit h1{color: #fff;margin-bottom: 18%;}
+.job-box .job-tit a{display: block;padding: 10px 26px;background: #034995;font-size: 14px;color: #fff;border-radius: 5px;}
+.job-box .job-tit a:hover{background: #fff;color: #034995;}
+/*职业发详情页*/
+.job-d{padding-top:8%;}
+.job-l{width: 70%;float: left;height: auto;overflow: hidden;}
+.job-l h3{text-align: left!important;color: #034995;margin-bottom: 3%;}
+.job-l .job-tit h1{margin: 20px 0; text-align: left; font-size: 26px; color: #034995;}
+.job-l .job-tit .text-box{background: #f8f8f8;padding: 2% 2%;}
+.job-l .job-tit .text-box p{padding: 1% 0;color: #034995;}
+.job-l .job-tit .text-box p span{color: #707070;}
+.job-l .job-tit .text-box p:nth-child(1){float: left;width: 30%;margin-right: 10%;}
+.job-l .job-tit .text-box p:nth-child(3){float: left;width: 30%;margin-right: 10%;}
+.job-l .job-cen{padding-top: 4%;}
+.job-l .job-cen h2{padding-bottom: 2%;margin-bottom: 3%;background: url(../images/job-cen-bg.png) left bottom no-repeat;}
+.job-l .job-bot h5{margin: 5% 0 2%; color: #034995;font-size: 16px;}
+.job-l .job-bot p{width: 55%; border-radius: 5px; color: #fff;font-size: 14px;line-height: 2; background-color: #13549a;}
+.job-l .job-bot p span{margin: 0 5%;}
+.job-d .job-r{float: right;width: 25%;height: auto;overflow: hidden;background: #f8f8f8;margin-top: 6%;padding: 2%;}
+.job-d .job-r h3{color: #034995;margin-bottom: 5%;}
+.job-d .job-r ul li a{display: block;padding: 7% 0 3%;border-bottom: 1px solid #676767;position: relative;}
+.job-d .job-r ul li a span{display: block;float:left;margin-top:3.5%;margin-right:3%;width:8px;height: 8px;border-radius: 4px;background: #676767;}
+/* 文章详情 */
+.detail{
+    display: inline-block;
+    width: 40%;
+    margin: 5% 5% 10% 10%;
+}
+.prev{
+    display: inline-block;
+    line-height: 35px;
+    font-size: 14px;
+    color: #333
+}
+.prev span, .next span{
+    color: #999;
+}
+.next{
+    float: right;
+    line-height: 35px;
+    font-size: 14px;
+    color: #333
+}
+.detail h1{
+    padding: 5% 0 2%;
+    color: #f39800;
+    font-weight: 600;
+    border-top: 3px solid #195db2;
+}
+.detail h6 a{
+    margin: 0 2%;
+}
+.detail h6 span{
+    margin-right: 2%;
+    color: #999;
+    font-size: 12px;
+}
+.content{
+    padding-top: 3%;
+    text-align: justify;
+    border-top: 1px dashed #e6e6e6;
+}
+.hot{
+    display: inline-block;
+    width: 400px;
+    margin-top: 5%;
+    vertical-align: top;
+}
+.hot h3{
+    margin: 0;
+    line-height: 35px;
+    font-weight: 600;
+    border-bottom: 3px solid #195db2;
+}
+.hot li{
+    padding-left: 4%;
+    white-space: nowrap;
+    color: #333;
+    font-size: 14px;
+    line-height: 40px;
+    border-bottom: 1px solid #e6e6e6;
+    background: url(../images/circle.png) no-repeat left;
+    background-size: 2%;
+}
+.hot li span{
+    float: right;
+    margin-left: 5%;
+    color: #999;
+}
+@media screen and (max-width: 1200px) {
+	.job-l .job-bot p{
+        width: auto;
+    }
+    .article{
+        padding: 3% 5%;
+    }
+    .detail{
+        width: 90%;
+        margin: 5%;
+    }
+    .hot{
+        margin: 5%
+    }
+}
+@media screen and (max-width: 760px) {
+    .job-d .job-l{
+        width: 100%;
+    }
+    .job-l .job-tit .text-box p{
+        width: 100% !important;
+    }
+    .job-l .job-cen h2{
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+	.job-d .job-r{
+        display: none;
+    }
+    .job-l .job-bot p span{
+        display: block;
+    }
+    .next{
+        float: none;
+        margin-top: 10px;
+    }
+    .detail h1{
+        font-size: 18px;
+    }
+    .detail h6{
+        display: none;
+    }
+    .hot{
+        width: 90%;
+        padding: 0 3%;
+    }
+    .hot h3{
+        font-size: 16px;
+    }
+    .hot li{
+        font-size: 12px;
+    }
+}

@@ -27,9 +27,9 @@ onload = function () {
 	});
     layui.use(['element', 'carousel'], function(){
         var element = layui.element, carousel = layui.carousel
-		var height = '480px', height2 = '400px'
+		var height = '450px', height2 = '400px'
 		if (width < 1200) {
-			height = '420px'
+			height = '400px'
 			height2 = '300px'
 		}
 		if (width < 760) {

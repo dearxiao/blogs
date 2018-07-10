@@ -34,7 +34,6 @@
 }
 .box h3{
     margin: 20px 0 10px;
-    overflow: hidden;
     font-size: 18px;
     line-height: 30px;
     color: #f39800;
@@ -43,7 +42,10 @@
 }
 .box p{
     height: 60px;
-    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
     text-align: justify;
     color: #a4a4a4;
     font-size: 14px;
