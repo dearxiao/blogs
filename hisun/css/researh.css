@@ -12,6 +12,7 @@
     width: 120px;
     margin: 0 auto;
     font-size: 30px;
+    font-family: NotoSansHans Regular;
     line-height: 50px;
     border-bottom: 5px solid #f39800;
 }
@@ -19,7 +20,7 @@
     margin: 10px 0 30px;
     text-align: center;
     font-size: 18px;
-    font-weight: 600;
+    font-family: NotoSansHans Regular;
     color: #f39800;
     letter-spacing: 3px;
 }
@@ -32,9 +33,10 @@
     width: 30%;
     height: 480px;
     transition: all .2s linear;
+    box-shadow: 0 0 30px rgba(208, 208, 208, .5);
 }
 .reasearch li:hover{
-    box-shadow: 0 0 30px rgba(208, 208, 208, .5);
+    transform: translateY(-6px);
 }
 .reasearch li:nth-child(2){
     margin: 0 5%;
@@ -57,11 +59,13 @@
     box-shadow: 0 0 30px rgba(208, 208, 208, .5);
 }
 .consociation{
+    padding: 0 10%;
     text-align: center;
 }
 .consociation img{
+    width: 8%;
     margin: 50px 20px 0;
-    vertical-align: top;
+    vertical-align: middle;
 }
 img.qr-code{
     position: absolute;

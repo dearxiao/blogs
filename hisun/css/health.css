@@ -11,6 +11,7 @@
     margin-top: 80px;
     font-size: 30px;
     text-align: center;
+    color: #555;
 }
 .wrap .layui-carousel{
     margin-top: 20px;
@@ -37,6 +38,8 @@
     font-size: 18px;
     line-height: 30px;
     color: #f39800;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .box p{
     height: 60px;

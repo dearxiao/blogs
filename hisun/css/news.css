@@ -42,7 +42,10 @@ a{transition: all .2s linear;}
     line-height: 20px;
 }
 .li-right p{
-    height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
     overflow: hidden;
     text-align: justify;
     color: #a4a4a4;
