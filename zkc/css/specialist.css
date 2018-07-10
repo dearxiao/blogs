@@ -1,4 +1,6 @@
-
+.specialist0{
+    padding: 0 2%;
+}
 .specialist{
     padding: 5% 1%;
 }
@@ -33,12 +35,12 @@
     height: 30px;
 }
 @media screen and (max-width: 1200px) {
-    .specialist0{
-        padding: 0 2%;
+    .specialist{
+        padding: 5% 3%;
     }
 }
 @media screen and (max-width: 760px) {
-    .specialist0{
-        padding: 0 5%;
+    .specialist{
+        padding: 5% 5%;
     }
 }
