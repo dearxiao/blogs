@@ -43,9 +43,9 @@
         padding: 5px 0 100px;
     }
     .product div p{
-        height: 100px;
+        height: 40px;
         overflow: hidden;
-        text-align: justify;
+        text-align: center;
     }
     .intro-left{
         width: 100%;
@@ -73,7 +73,7 @@
         float: left;
     }
     .news li::before{
-        height: 62%;
+        height: 65%;
     }
     .product-list a{
         width: 46%;

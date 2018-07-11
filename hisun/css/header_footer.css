@@ -22,7 +22,7 @@ header .logo{
 	z-index: 999;
 }
 header img.logo0{
-	display: none;
+	_display: none;
 }
 .layui-nav{
 	position: fixed;
@@ -126,6 +126,7 @@ header img.logo0{
 	line-height: 80px;
 	letter-spacing: 5px;
 	background-color: #034995;
+	font-family:'黑体';
 }
 .wrap{
 	background: url(../images/news-bg.png) no-repeat bottom;

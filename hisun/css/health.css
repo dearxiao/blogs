@@ -39,6 +39,7 @@
     color: #f39800;
     white-space: nowrap;
     text-overflow: ellipsis;
+	overflow: hidden;
 }
 .box p{
     height: 60px;

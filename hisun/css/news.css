@@ -9,6 +9,7 @@ a{transition: all .2s linear;}
     font-size: 30px;
     border-bottom: 5px solid #f39800;
 }
+.w1200{width:1200px;margin:0 auto;}
 .news{
     width: 1200px;
     margin: 30px auto;

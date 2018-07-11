@@ -2,6 +2,7 @@
 
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
   margin: 0;
+  font-family:'黑体';
 }
 ul,ol{
   padding-left: 0;
@@ -18,4 +19,13 @@ input,button {
 }
 *{
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'NotoSansHans-Black';  
+  src: url('../font/NotoSansHans-Black.eot');
+  src: url('../font/NotoSansHans-Black.eot?#iefix') format('embedded-opentype'),
+  url('../font/NotoSansHans-Black.woff') format('woff'),
+  url('../font/NotoSansHans-Black.ttf') format('truetype'),
+  url('../font/NotoSansHans-Black.svg#NotoSansHans-Black') format('svg');
 }
