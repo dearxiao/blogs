@@ -22,7 +22,7 @@ header .logo{
 	z-index: 999;
 }
 header img.logo0{
-	_display: none;
+	display: none;
 }
 .layui-nav{
 	position: fixed;
