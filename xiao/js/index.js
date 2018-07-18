@@ -8,7 +8,7 @@ var S = {
             S.UI.simulate(decodeURI(action).substring(i + 3));
         } else {
             // S.UI.simulate('Shape|Shifter|Type|to start|#rectangle|#countdown 3||');
-            S.UI.simulate('看我|嘿嘿|嘻嘻|哈哈|你是最棒的')
+            S.UI.simulate('3|2|1|Dear|You are best|I love you')
         }
         S.Drawing.loop(function () {
             S.Shape.render();
