@@ -1,0 +1,91 @@
+
+body{
+    padding: 1.2rem 0;
+    background: url('../images/index-bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.msg{
+    padding: .8rem .5rem;
+    font-size: .32rem;
+    border: 1px solid #04658b;
+}
+.headimg{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+.nickname{
+    display: inline-block;
+    vertical-align: top;
+    line-height: .5rem;
+    color: #aeafaf
+}
+.msg span{
+    display: inline-block;
+    padding: 0 .2rem;
+    margin: .2rem;
+    vertical-align: top;
+    line-height: .6rem;
+    color: #0b8c37;
+    border-radius: .15rem;
+    border: 1px solid #0b8c37;
+}
+.setting{
+    float: right;
+    width: .5rem;
+    margin: .2rem 0;
+}
+.remaining-sum{
+    width: 7rem;
+    height: 4rem;
+    padding: .5rem 0;
+    margin: .5rem 1.5rem;
+    text-align: center;
+    background: url('../images/yue-bg.png') no-repeat;
+    background-size: 100% 100%;
+}
+.remaining-sum h6{
+    font-size: .48rem;
+    color: #ebebeb;
+}
+.remaining-sum p{
+    font-size: .8rem;
+    line-height: 2;
+    color: #00ffff;
+}
+.sum-bottom{
+    font-size: .32rem;
+    color: #dbdbdb;
+}
+.sum-bottom span{
+    
+    vertical-align: middle;
+}
+.sum-bottom img:nth-child(1){
+    width: .5rem;
+    vertical-align: middle;
+}
+.sum-bottom img:nth-child(3){
+    width: .4rem;
+    margin-left: .3rem;
+    vertical-align: middle;
+}
+.option{
+    margin: 1rem .6rem;
+    text-align: center;
+    font-size: 0;
+}
+.option a{
+    display: inline-block;
+    margin: .5rem 0;
+    width: 33.33%;
+}
+.option a img{
+    width: 60%;
+}
+.option a p{
+    font-size: .32rem;
+    font-weight: 600;
+    line-height: 2;
+    color: #c0c0c0;
+}

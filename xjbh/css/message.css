@@ -1,0 +1,100 @@
+body{
+    height: 100vh;
+    padding: 1.2rem 0 0;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.message{
+    height: 100%;
+    overflow-y: scroll;
+}
+.msg{
+    padding: .5rem;
+    margin: .3rem 0;
+    overflow: hidden;
+    font-size: .32rem;
+    border-top: 1px solid #00e3e3;
+    border-bottom: 1px solid #00e3e3;
+}
+.msg-left{
+    display: inline-block;
+    width: 35%;
+    color: #dbdbdb;
+    line-height: 2;
+}
+.msg-left span{
+    display: inline-block;
+    width: 2rem;
+    color: #029fa1;
+}
+button{
+    float: left;
+    width: 40%;
+    margin: .5rem;
+    line-height: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #03a7aa;
+}
+.msg-right{
+    float: right;
+    font-size: .32rem;
+    color: #8cfdff;
+}
+.msg-right input{
+    background: none;
+    border: 0;
+    color: #8cfdff;
+}
+.msg-right span{
+    display: inline-block;
+    padding: .1rem .3rem;
+    margin: .2rem .2rem 0 0;
+    color: #fff;
+    border-radius: .15rem;
+    background-color: #157882;
+}
+h6{
+    padding: 0 .5rem;
+    font-size: .4rem;
+    color: #029fa1;
+    line-height: 2;
+    border-top: 1px solid #00e3e3;
+    border-bottom: 1px solid #00e3e3;
+}
+h6 span{
+    float: right;
+    color: #dbdbdb;
+}
+form{
+    position: relative;
+    padding-top: .5rem;
+    text-align: center;
+}
+.upload{
+    width: 6rem;
+    height: 9rem;
+}
+input[type=file]{
+    position: absolute;
+    left: 2rem;
+    width: 6rem;
+    height: 9rem;
+    opacity: 0;
+}
+input[type=submit], .pingzheng button{
+    width: 80%;
+    margin: .5rem 1rem;
+    line-height: 1rem;
+    font-size: .4rem;
+    color: #fff;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #03a7aa;
+    -webkit-appearance: none;
+}
+.pingzheng{
+    padding-top: .5rem;
+    text-align: center;
+}

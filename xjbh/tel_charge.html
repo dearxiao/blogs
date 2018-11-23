@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/leave.css">
+    <title>话费充值</title>
+</head>
+<body>
+    <div class="leave tel">
+        <header>
+            <a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+            <h3>话费充值</h3>
+        </header>
+        <form action="" method="post">
+            <input class="phone" type="text" placeholder="请输入手机号码">
+            <p>请选择充值金额</p>
+            <div class="box select">
+                <h6>50元</h6>
+                <span>49.9陨石</span>
+            </div>
+            <div class="box">
+                <h6>100元</h6>
+                <span>99.9陨石</span>
+            </div>
+            <p>请输入交易密码</p>
+            <input class="pwd" type="text" placeholder="请输入交易密码">
+            <input type="submit">
+        </form>
+        <h2>充值记录</h2>
+        <ul>
+            <h4>
+                <span>号码</span>
+                <span>金额</span>
+                <span>时间</span>
+                <span>状态</span>
+            </h4>
+            <li>
+                <span>18565456328</span>
+                <span>50</span>
+                <span>2018-06-22</span>
+                <span>完成</span>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $('.box').click(function () {
+                $('.box').removeClass('select')
+                $(this).addClass('select')
+            })
+        })
+    </script>
+</body>
+</html>

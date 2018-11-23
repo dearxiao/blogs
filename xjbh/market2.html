@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/market.css">
+    <title>市场</title>
+</head>
+<body>
+    <div class="market">
+        <header>
+            <a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+            <h3>市场</h3>
+        </header>
+        <div class="data">
+            <h2>11.26</h2>
+            <div class="data-right">
+                <span>高：2</span>
+                <span>幅：2%</span><br>
+                <span>低：1</span>
+                <span>量：10</span>
+            </div>
+        </div>
+        <div id="chart"></div>
+        <div class="title">
+			<a href="market.html">点对点</a>
+			<a href="market1.html">求购区</a>
+			<a class="select">消息</a>
+        </div>
+        <ul class="list2">
+            <li class="box" onclick="location.href='message.html'">
+                <h5>2018-06-21</h5>
+                <h6>公告标题</h6>
+                <p>内容</p>
+                <img src="images/arrow.png">
+            </li>
+            <li class="box">
+                <h5>2018-06-21</h5>
+                <h6>ID：****456 <span>数量：26HXZ</span></h6>
+                <p>订单状态：已匹配，请尽快付款</p>
+                <img src="images/arrow.png">
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echart.js"></script>
+    <script>
+        $(function () {
+            //选项卡切换
+            $('.title span').on('click', function(){
+                var i = $(this).index()
+                $('.title span').removeClass('select')
+                $(this).addClass('select')
+                $('form, .list2').hide()
+                $('.list'+i+'').show()
+            })
+        })
+    </script>
+</body>
+</html>

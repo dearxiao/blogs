@@ -1,0 +1,865 @@
+.index{
+    height: 100vh;
+    padding: 0 3%;
+    background: url(../images/index-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.msg{
+    width: 100%;
+    height: 2.8rem;
+    padding: .9rem .7rem 0;
+    margin-bottom: .5rem;
+    font-size: 14px;
+    background: url(../images/msg-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.msg-left{
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: top;
+    border-radius: 50%;
+}
+.msg-center{
+    display: inline-block;
+    vertical-align: top;
+    line-height: .5rem;
+    text-shadow: 0 0 3px #999;
+}
+.msg-center p{
+    color: #fee6ab;
+}
+.msg-center span{
+    margin-left: .3rem;
+    color: #41200f;
+}
+.msg-right{
+    float: right;
+    width: 1.4rem;
+}
+.leftsidebar{
+    float: left;
+    width: 1.2rem;
+}
+.option img{
+    width: 100%;
+    margin-bottom: .4rem;
+}
+.rightsidebar{
+    float: right;
+    width: 1.2rem;
+}
+.miners{
+    position: relative;
+    top: 6.5rem;
+    height: 6rem;
+    width: 74%;
+    margin: 0 13%;
+    background: url(../images/mine.png) no-repeat;
+    background-size: 100%;
+}
+.miners img{
+    position: absolute;
+    width: 2.8rem;
+}
+.miners img:nth-child(1){
+    left: 2%;
+    top: -1.6rem;
+}
+.miners img:nth-child(2){
+    right: -1%;
+    top: -1.5rem;
+}
+.miners img:nth-child(3){
+    left: -6%;
+    top: .5rem;
+}
+.miners img:nth-child(4){
+    right: -12%;
+    top: .3rem;
+}
+.miners img:nth-child(5){
+    left: 0;
+    top: 2.5rem;
+}
+.miners img:nth-child(6){
+    right: -1%;
+    top: 2.3rem;
+}
+/* 活动 */
+.activity .act{
+    width: 80%;
+    margin: 25% 10% 15%;
+}
+.activity .pop-up{
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+    line-height: .8rem;
+    font-size: 12px;
+    color: #441d0a;
+    background: url(../images/btn-bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+/* 正在开发 */
+.develop .dev{
+    width: 80%;
+    margin: 10% 10% 0;
+}
+.develop p{
+    text-align: center;
+    line-height: .8rem;
+    font-size: 24px;
+    color: #441d0a;
+}
+/* 设置 */
+.set-top{
+    padding-bottom: .2rem;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.set-top .headimg{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: top;
+    border-radius: 50%;
+}
+.set-top div{
+    display: inline-block;
+    font-size: 12px;
+    color: #723415;
+    line-height: .5rem;
+}
+.set-top .arrow{
+    float: right;
+    height: .7rem;
+    margin: .15rem .3rem;
+}
+.setting li, .setting ul a{
+    display: block;
+    padding: .1rem 0;
+    font-size: 12px;
+    line-height: .5rem;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.setting li img:nth-child(1){
+    width: .5rem;
+    vertical-align: top;
+}
+.setting li b{
+    display: inline-block;
+}
+.setting li span{
+    float: right;
+    color: #a7552c;
+}
+.setting li img:nth-child(3){
+    float: right;
+    width: .3rem;
+    margin-top: .15rem;
+}
+.setting .quit{
+    width: 90%;
+    margin: .5rem 5% 0;
+}
+/* 修改个人信息 */
+form{
+    padding: 0 .5rem;
+}
+.line{
+	margin-top: .2rem;
+    font-size: 0;
+	background: url(../images/input-bg2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.line label{
+	display: inline-block;
+	width: 50%;
+	color: #441d0a;
+	text-align: center;
+	font-size: 15px;
+}
+.line input{
+	width: 50%;
+	height: .9rem;
+	line-height: .9rem;
+	font-size: 16px;
+	color: #441d0a;
+	font-family: 'fz';
+	border: 0;
+	background: none;
+}
+.code .line{
+	display: inline-block;
+	width: 75%;
+	background: url(../images/input-bg2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.code span{
+	float: right;
+	width: 25%;
+    margin-top: .2rem;
+	text-align: center;
+	font-size: 15px;
+	line-height: .9rem;
+}
+input[type=submit]{
+	width: 100%;
+    margin-top: .2rem;
+	font-size: 15px;
+	line-height: 1rem;
+	font-family: 'fz';
+	text-shadow: 0 0 5px #666;
+	border: 0;
+	background: url(../images/btn-bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+/* 修改密码 */
+.password form{
+    padding-top: .6rem;
+}
+/* 排行榜 */
+.title{
+    padding: .1rem .2rem .2rem;
+    font-size: 0;
+    background: url(../images/nav-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.title span{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    font-size: 15px;
+    color: #723415;
+    line-height: .7rem;
+}
+.title .select{
+    background-color: #d86500;
+    border-radius: 5px;
+}
+.list1, .list2, .list3{
+    display: none;
+}
+.rank ul{
+    height: 5.8rem;
+    overflow-y: scroll;
+}
+.rank li{
+    padding: .2rem;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.li-left{
+    width: 1rem;
+    height: 1rem;
+    vertical-align: top;
+    border-radius: 50%;
+}
+.li-center{
+    display: inline-block;
+    width: 2.5rem;
+    font-size: 14px;
+    line-height: .5rem;
+}
+.li-center p{
+    color: #441d0a;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.li-center span{
+    color: #723415;
+}
+.li-right{
+    float: right;
+    width: 1.5rem;
+    text-align: center;
+    line-height: .8rem;
+    margin-top: .1rem;
+    color: #441d0a;
+    font-size: 12px;
+    background: url(../images/rank.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 报表 */
+.report .title span{
+    width: 25%;
+}
+.report ul{
+    height: 5.8rem;
+    overflow-y: scroll;
+}
+.report li{
+    padding: .1rem;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.report .li-center p{
+    color: #723415;
+}
+.report .li-center span{
+    color: #984c26;
+}
+.report .li-right{
+    background: url(../images/report.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 公告 */
+.notice ul{
+    height: 7rem;
+    overflow-y: scroll;
+}
+.notice ul li{
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.notice ul img{
+    height: .6rem;
+}
+.notice ul .arrow{
+    float: right;
+    margin-top: .2rem;
+}
+.notice ul div{
+    display: inline-block;
+    width: 60%;
+    font-size: 12px;
+    line-height: .5rem;
+}
+.notice ul div h5{
+    color: #441d0a;
+}
+.notice ul div p{
+    color: #723415;
+}
+/* 公告详情 */
+.detail h3{
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+    color: #441d0a;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.detail p{
+    height: 6rem;
+    padding: .2rem 0;
+    overflow-y: scroll;
+    text-align: justify;
+    text-indent: 24px;
+    font-size: 12px;
+    color: #723415;
+}
+/* 客服 */
+textarea{
+    width: 100%;
+    height: 1.7rem;
+    padding: .2rem;
+    font-size: 12px;
+    font-family: 'fz';
+    color: #441d0a;
+    line-height: .5rem;
+    border: 0;
+    background: url(../images/textarea.png) no-repeat;
+    background-size: 100% 100%;
+}
+.service ul{
+    height: 3.7rem;
+}
+.service ul h4{
+    font-size: 0;
+}
+.service ul span{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+}
+.service h4 span{
+    color: #fff;
+}
+.service ul li{
+    font-size: 0;
+}
+.service ul span b{
+    display: inline-block;
+    padding: 0 .2rem;
+    background: url(../images/report.png) no-repeat;
+    background-size: 100% 100%;
+}
+.service .wx{
+    height: 2.6rem;
+    padding: 1.6rem .3rem 0;
+    background: url(../images/service-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.service .wx img{
+    width: 1rem;
+    margin-top: -.1rem;
+}
+.service .wx span{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #fff;
+}
+.wx-right{
+    float: right;
+    font-size: 12px;
+    color: #723415;
+}
+/* 激活 */
+.activate form{
+    padding: .5rem;
+}
+.activate .line{
+    margin-bottom: .5rem;
+}
+.activate p, .issue-sale p{
+    margin-top: .5rem;
+    font-size: 14px;
+    color: #ce140a;
+}
+/* 商城 */
+.mall .title span, .miner .title span{
+    width: 50%;
+}
+.mall ul{
+    height: 5.8rem;
+    overflow-y: scroll;
+    font-size: 0;
+}
+.mall .list0 li{
+    display: inline-block;
+    width: 48%;
+    margin: 1%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #bf8e63;
+    box-shadow: 1px 1px 5px #723415;
+}
+.mall ul h3{
+    color: #69391a;
+    line-height: 1.8;
+    border-radius: 3px 3px 0 0;
+    background-color: #f3e7c6;
+}
+.mall .list0 img{
+    width: 50%;
+    margin: .1rem 0;
+}
+.mall .list0 p{
+    color: #b1110a;
+}
+.mall button{
+    width: 1.6rem;
+    margin: .1rem 0;
+    color: #441d0a;
+    font-weight: 600;
+    line-height: .6rem;
+    border: 0;
+    font-family: 'fz';
+    background: url(../images/btn-bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.mall .list1 li{
+    margin-bottom: .2rem;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #bf8e63;
+    box-shadow: 1px 1px 5px #723415;
+}
+.mall .list1 h3{
+    text-indent: .3rem;
+}
+.mall .list1 li div span{
+    padding-left: .3rem;
+    line-height: .8rem;
+}
+.mall .list1 button{
+    float: right;
+    margin-right: .3rem;
+}
+/* 兑换 */
+.exchange{
+    text-align: center;
+}
+.exchange .query{
+    width: 50%;
+    margin: 20% 0 10%;
+}
+.exchange p{
+    font-size: 14px;
+    color: #fff;
+}
+.exchange button{
+    width: 2rem;
+    margin: .3rem 0;
+    color: #441d0a;
+    line-height: .8rem;
+    font-weight: 600;
+    border: 0;
+    font-family: 'fz';
+    background: url(../images/btn-bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 完善信息 */
+.info1 .line2 label{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    margin-top: .2rem;
+    text-align: center;
+    font-size: 12px;
+    color: #441d0a;
+    line-height: .9rem;
+    background: url(../images/btn-bg2.png) no-repeat;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+.info1 .line2 textarea{
+    padding-top: .3rem;
+    margin-top: -.3rem;
+    z-index: 1;
+}
+.info2 form{
+    padding-top: 1.6rem;
+}
+/* 矿工 */
+.miner ul{
+    height: 5.8rem;
+    overflow-y: scroll;
+}
+.miner .list1 button{
+    color: #b56c1d;
+    background: url(../images/btn-bg3.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 矿工详情 */
+.miner-detail div{
+    padding-left: 10%;
+    font-size: 12px;
+    color: #723415;
+    line-height: 1.8;
+}
+.miner-detail div img{
+    width: 80%;
+}
+.miner-detail div h3{
+    margin-top: .3rem;
+    color: #441d0a;
+}
+/* 商店 */
+.store ul{
+    height: 6.8rem;
+    overflow-y: scroll;
+}
+.store li, .miner li{
+    padding: .2rem 0 0;
+    font-size: 12px;
+    line-height: .5rem;
+    color: #441d0a;
+    border-bottom: 1px dashed #cebdb0;
+}
+.store li div, .miner li div{
+    float: right;
+    width: 70%;
+}
+.store li img, .miner li img{
+    height: 1.5rem;
+}
+.store li span, .miner li span{
+    color: #723415;
+}
+.store li button, .miner li button{
+    float: right;
+    width: 2rem;
+    margin-top: -.4rem;
+    color: #441d0a;
+    line-height: .8rem;
+    font-weight: 600;
+    border: 0;
+    font-family: 'fz';
+    background: url(../images/btn-bg2.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 市场 */
+.market2{
+    height: 6.8rem;
+    overflow-y: scroll;
+}
+.market2 .data{
+    padding: .2rem 0;
+    font-size: 0;
+    color: #fff;
+    line-height: 1.6;
+    border-top: 1px dashed #d3d3d3;
+    border-bottom: 1px dashed #d3d3d3;
+    box-shadow: 0 1px 0 #723415,  0 -1px 0 #723415;
+}
+.market2 .data p{
+    display: inline-block;
+    width: 48%;
+    font-size: 12px;
+}
+.market2 .data span{
+    display: inline-block;
+    width: 25%;
+    font-size: 12px;
+}
+#chart{
+    width: 5.8rem;
+    height: 4.8rem;
+}
+.market2 form{
+    padding: 0;
+}
+.market2 form p{
+    text-align: center;
+    font-size: 12px;
+}
+.market2 input[type=submit]{
+    width: 46%;
+    margin: .2rem 2%;
+}
+.market2 .sale{
+    float: right;
+}
+.search{
+    height: .8rem;
+    font-size: 0;
+    background: url(../images/search-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.search input{
+    height: .8rem;
+    width: 83%;
+    padding-left: .2rem;
+    vertical-align: top;
+    font-size: 14px;
+    font-family: 'fz';
+    color: #eea509;
+    background: none;
+    border: 0;
+}
+.search input::-webkit-input-placeholder{
+    color: #eea509;
+}
+.search img{
+    width: 13%;
+    margin: .1rem 2%;
+}
+.market2 .title{
+    margin: .2rem 0;
+}
+.market2 li{
+    padding: .2rem 0;
+    border-top: 1px dashed #d3d3d3;
+    box-shadow: 0 -1px 0 #723415;
+}
+.market2 .li-center{
+    width: 4rem;
+}
+.market2 .list2 .title2{
+    font-size: 0;
+}
+.market2 .list2 .title2 span{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    font-size: 12px;
+    line-height: .5rem;
+    color: #fff;
+}
+.market2 .list2 .title2 .select2{
+    color: #723415;
+}
+.market2 .list2 li{
+    padding: .2rem 0;
+    font-size: 12px;
+    line-height: .5rem;
+    color: #723415;
+    border-top: 1px dashed #c9a489;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d, 0 -1px 0 #a3683d;
+}
+.market2 .list2 li span{
+    display: inline-block;
+    width: 30%;
+}
+.market2 .list2 ul b{
+    padding: .2rem .5rem;
+    font-size: 12px;
+    background: url(../images/rank.png) no-repeat;
+    background-size: 100% 100%;
+}
+.order1, .order2, .order3{
+    display: none;
+}
+.market2 .order2 p input{
+    width: 38%;
+    font-family: 'fz';
+    color: #723415;
+    border: 0;
+    background: none;
+}
+.market2 .order2 button{
+    margin: .1rem 0;
+    padding: 0 .2rem;
+    font-family: 'fz';
+    color: #723415;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    background-color: #bc7620;
+}
+.market2 .order2 form h6{
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+}
+.market2 .order2 form .upload{
+    width: 100%;
+    height: 6rem;
+    margin-bottom: -6.2rem;
+}
+.market2 .order2 form input[type=file]{
+    width: 100%;
+    height: 6rem;
+    opacity: 0;
+}
+.market2 .list2 .order2 form b{
+    float: left;
+    width: 46%;
+    margin: .2rem 2%;
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1rem;
+    font-family: 'fz';
+    text-shadow: 0 0 5px #666;
+    border: 0;
+    background: url(../images/btn-bg1.png) no-repeat;
+    background-size: 100% 100%;
+}
+.market2 .order3 .category{
+    display: inline-block;
+    vertical-align: top;
+    font-size: .7rem;
+    line-height: .8rem;
+    color: #fff;
+}
+.market2 .order3 .time{
+    display: inline-block;
+    color: #723415;
+    font-size: 12px;
+    line-height: .4rem;
+}
+.market2 .order3 .num{
+    float: right;
+    margin-right: .2rem;
+    color: #441d0a;
+    font-size: 12px;
+    line-height: .4rem;
+}
+/* 推广 */
+.recommend div{
+    margin: .3rem -.1rem 0 -.2rem;
+    height: 5.5rem;
+    text-align: center;
+    background: url(../images/recommend-bg.png) no-repeat;
+    background-size: auto 100%;
+}
+.recommend div img{
+    width: 50%;
+    margin: .5rem 0 1rem;
+}
+.recommend div input{
+    width: 80%;
+    padding: .15rem 23% 0 .2rem;
+    height: .8rem;
+    font-size: 12px;
+    font-family: 'fz';
+    color: #808080;
+    border: 0;
+    background: url(../images/site-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+/* 团队 */
+.team2{
+    height: 6.8rem;
+    overflow-y: scroll;
+}
+.team-num{
+    text-align: center;
+}
+.team-num img{
+    width: 1.2rem;
+}
+.team-num h6{
+    font-size: 12px;
+    color: #723415;
+}
+.team-num .num{
+    width: 80%;
+    margin: 0 10%;
+    padding: .2rem 0;
+    font-size: 0;
+    border: 1px solid #7b4822;
+    background-color: #e7cbb7;
+    box-shadow: 0 2px 5px #a3683d inset;
+}
+.team-num .num div{
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+}
+.team-num .num div:nth-child(1){
+    border-right: 1px dashed #c9a489;
+    box-shadow: 1px 0 0 #a3683d;
+}
+.team-num .num p{
+    color: #441d0a;
+}
+.team-num .num span{
+    color: #723415;
+}
+.team-msg{
+    position: relative;
+    margin: .2rem 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #723415;
+    border-top: 1px dashed #c9a489;
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d, 0 -1px 0 #a3683d;
+}
+.team-msg .edit{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    width: .5rem;
+}
+.team-msg span{
+    display: inline-block;
+    width: 2rem;
+    margin-left: 15%;
+}
+.team-msg .manifesto{
+    text-align: center;
+}
+.team li{
+    border-bottom: 1px dashed #c9a489;
+    box-shadow: 0 1px 0 #a3683d;
+}
+.team .li-center{
+    width: 4rem;
+}
+.team .li-center p{
+    font-size: 12px;
+    color: #723415;
+}
+.team .li-center p span{
+    margin-right: .3rem;
+    color: #441d0a;
+}

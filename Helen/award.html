@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/award.css">
+</head>
+<body>
+	<div class="index">
+		<div class="msg">
+			<img class="msg-left pop-up" next-win="personal" src="images/headimg.png">
+			<div class="msg-center">
+				<p>昵称：海伦堡</p>
+				<p>ID：66</p>
+				<p>FHI：45.66 <span>奖励：45.66</span></p>
+			</div>
+			<img class="msg-right pop-up" next-win="setting" src="images/setting.png" alt="">
+		</div>
+		<div class="option leftsidebar">
+			<img class="pop-up" next-win="rank" src="images/icon1.png" alt="">
+			<img class="pop-up" next-win="report" src="images/icon2.png" alt="">
+			<img class="pop-up" next-win="notice" src="images/icon3.png" alt="">
+			<img class="pop-up" next-win="service" src="images/icon4.png" alt="">
+			<img class="pop-up" next-win="activate" src="images/icon5.png" alt="">
+			<img class="pop-up" next-win="mall" src="images/icon6.png" alt="">
+		</div>
+		<div class="option rightsidebar">
+			<img class="pop-up" next-win="develop" src="images/icon7.png" alt="">
+			<img class="pop-up" next-win="develop" src="images/icon8.png" alt="">
+			<img class="pop-up" next-win="develop" src="images/icon9.png" alt="">
+			<a href="award.html"><img src="images/icon10.png" alt=""></a>
+		</div>
+		<footer>
+			<div class="column pop-up" next-win="miner">
+				<img src="images/footer1.png">
+			</div>
+			<div class="column pop-up" next-win="store">
+				<img src="images/footer2.png">
+			</div>
+			<div class="column pop-up" next-win="market">
+				<img src="images/footer3.png">
+			</div>
+			<div class="column pop-up" next-win="recommend">
+				<img src="images/footer4.png">
+			</div>
+			<div class="column pop-up" next-win="team">
+				<img src="images/footer5.png">
+			</div>
+		</footer>
+	</div>
+	<div class="shade" style="display: block;"></div>
+	<!-- 抽奖 -->
+	<div class="window" style="display: block;">
+		<h1>抽奖</h1>
+		<a href="javascript:history.back(-1)"><img class="close" src="images/close.png" alt=""></a>
+		<div class="turnplate">
+			<canvas class="item" id="wheelcanvas" width="220px" height="220px"></canvas>
+			<img class="pointer" src="images/turnplate-pointer.png" />
+		</div>
+		<img class="pointer2" src="images/award.png" alt="">
+	</div>
+	<!-- 提示框 -->
+	<div class="window hint">
+		<img class="close" src="images/close.png" alt="">
+		<img class="lose" src="images/lose.png" alt="">
+		<p>提示信息</p>
+	</div>
+	<script src="js/jquery1.12.4.js"></script>
+	<script src="js/awardRotate.js"></script>
+	<script src="js/award.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

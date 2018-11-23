@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/award.css">
+</head>
+<body>
+	<div class="index">
+		<div class="msg">
+			<img class="msg-left pop-up" next-win="personal" src="images/headimg.png">
+			<div class="msg-center">
+				<p>昵称：海伦堡</p>
+				<p>ID：66</p>
+				<p>FHI：45.66 <span>奖励：45.66</span></p>
+			</div>
+			<img class="msg-right pop-up" next-win="setting" src="images/setting.png" alt="">
+		</div>
+		<div class="option leftsidebar">
+			<img class="pop-up" next-win="rank" src="images/icon1.png" alt="">
+			<img class="pop-up" next-win="report" src="images/icon2.png" alt="">
+			<img class="pop-up" next-win="notice" src="images/icon3.png" alt="">
+			<img class="pop-up" next-win="service" src="images/icon4.png" alt="">
+			<img class="pop-up" next-win="activate" src="images/icon5.png" alt="">
+			<img class="pop-up" next-win="mall" src="images/icon6.png" alt="">
+		</div>
+		<div class="option rightsidebar">
+			<img class="pop-up" next-win="develop" src="images/icon7.png" alt="">
+			<img class="pop-up" next-win="develop" src="images/icon8.png" alt="">
+			<img class="pop-up" next-win="develop" src="images/icon9.png" alt="">
+			<a href="award.html"><img src="images/icon10.png" alt=""></a>
+		</div>
+		<footer>
+			<div class="column pop-up" next-win="miner">
+				<img src="images/footer1.png">
+			</div>
+			<div class="column pop-up" next-win="store">
+				<img src="images/footer2.png">
+			</div>
+			<div class="column pop-up" next-win="market">
+				<img src="images/footer3.png">
+			</div>
+			<div class="column pop-up" next-win="recommend">
+				<img src="images/footer4.png">
+			</div>
+			<div class="column pop-up" next-win="team">
+				<img src="images/footer5.png">
+			</div>
+		</footer>
+	</div>
+	<div class="shade" style="display: block;"></div>
+	<!-- 市场 -->
+	<div class="window market" style="display: block;">
+		<h1>市场</h1>
+		<a href="javascript:history.back(-1)"><img class="close" src="images/close.png" alt=""></a>
+		<div class="market2">
+			<div class="data">
+				<p>当前价格：16.66CNY</p>
+				<span>高：6.66</span>
+				<span>低：6.66</span><br>
+				<p>当日求购量：33</p>
+				<span>量：6.66</span>
+				<span>求：6.66</span>
+			</div>
+			<div id="chart"></div>
+			<form action="" method="post">
+				<div class="line">
+					<label>数量</label>
+					<input type="text">
+				</div>
+				<p>可用FHI66.66</p>
+				<div class="line">
+					<label>单价</label>
+					<input type="text">
+				</div>
+				<p>可用FHI66.66</p>
+				<div class="line">
+					<label>交易密码</label>
+					<input type="text">
+				</div>
+				<input class="buy" type="submit" value="发布购买">
+				<input class="sale pop-up" type="submit" value="发布卖出">
+			</form>
+			<div class="search">
+				<input type="text" value="" placeholder="输入ID过滤信息">
+				<img src="images/search.png" alt="">
+			</div>
+			<div class="title">
+				<span class="select">买入</span>
+				<span>卖出</span>
+				<span>订单管理</span>
+			</div>
+			<ul class="list0">
+				<li>
+					<!-- <img class="li-left" src="images/headimg.png"> -->
+					<div class="li-center">
+						<p>昵称：海伦堡 数量：10</p>
+						<span>单：2.6$</span>&nbsp;<span>总：26$</span>
+					</div>
+					<span class="li-right pop-up" next-win="matching-buy">卖TA</span>
+				</li>
+			</ul>
+			<ul class="list1">
+				<li>
+					<!-- <img class="li-left" src="images/headimg.png"> -->
+					<div class="li-center">
+						<p>昵称：海伦堡 数量：10</p>
+						<span>单：2.6$</span>&nbsp;<span>总：26$</span>
+					</div>
+					<span class="li-right">买入</span>
+				</li>
+			</ul>
+			<ul class="list2">
+				<div class="title2">
+					<span class="select2">购买单</span>
+					<span>出售单</span>
+					<span>进行中</span>
+					<span>已完成</span>
+				</div>
+				<ul class="order0">
+					<li>
+						<p><span>订单号：</span>16496</p>
+						<p><span>数量：</span>100</p>
+						<p><span>约定总价：</span>$1.55</p>
+						<p><span>状态：</span>等待中</p>
+					</li>
+					<b>取消</b>
+				</ul>
+				<ul class="order1">
+					<li>
+						<p><span>订单号：</span>16496</p>
+						<p><span>数量：</span>100</p>
+						<p><span>约定总价：</span>$1.55</p>
+						<p><span>状态：</span>等待中</p>
+					</li>
+					<b>取消</b>
+				</ul>
+				<ul class="order2">
+					<li>
+						<p><span>订单号：</span>16496</p>
+						<p><span>数量：</span>100</p>
+						<p><span>约定总价：</span>$1.55</p>
+						<p><span>对方姓名：</span>小安</p>
+						<p><span>微信：</span><input type="text" value="15512345678"><button>复制</button></p>
+						<p><span>支付宝：</span><input type="text" value="15512345678"><button>复制</button></p>
+						<p><span>手机号：</span><input type="text" value="15512345678"><button>复制</button></p>
+					</li>
+					<form action="" method="post">
+						<h6>上传/查看 转账凭证</h6>
+						<img class="upload" src="images/upload1.png">
+						<input type="file" name="" onchange="upload(this)" accept="image/*">
+						<b>投诉</b>
+						<input type="submit" value="提交">
+					</form>
+				</ul>
+				<ul class="order3">
+					<li>
+						<span class="category">买入</span>
+						<div class="time">
+							<p>单号：41654</p>
+							<p>2018-08-15</p>
+						</div>
+						<div class="num">
+							<p>10个</p>
+							<p>20$</p>
+						</div>
+					</li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+	<!-- 提示框 -->
+	<div class="window hint">
+		<img class="close" src="images/close.png" alt="">
+		<img class="lose" src="images/lose.png" alt="">
+		<p>提示信息</p>
+	</div>
+	<script src="js/jquery1.12.4.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/echart.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

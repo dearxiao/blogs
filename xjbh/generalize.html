@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/msg.css">
+	<title>推广分享</title>
+</head>
+<body>
+	<div class="generalize">
+		<header>
+			<a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+			<h3>推广分享</h3>
+		</header>
+		<img class="logo" src="images/logo2.png">
+		<div class="code">
+            <div class="line">
+                <label>推广链接</label>
+				<input id="url" type="text" name="" value="http://" readonly>
+            </div>
+            <span class="copy" data-clipboard-action="copy" data-clipboard-target="#url">复制链接</span>
+        </div>
+		<div class="code">
+            <div class="line">
+                <label>下载链接</label>
+				<input id="url2" type="text" name="" value="http://" readonly>
+            </div>
+            <span class="copy2" data-clipboard-action="copy" data-clipboard-target="#url2">复制链接</span>
+		</div>
+		<h6>温馨提示：邀请好友可获得更多的算力哦</h6>
+	</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script>
+		$(function(){
+			var clipboard = new Clipboard('.copy')
+			clipboard.on('success', function(e) {
+				alert('复制成功')
+			})
+			var clipboard2 = new Clipboard('.copy2')
+			clipboard2.on('success', function(e) {
+				alert('复制成功')
+			})
+        })
+    </script>
+</body>
+</html>

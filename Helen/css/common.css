@@ -1,0 +1,83 @@
+@font-face{
+	 font-family: 'fz'; 
+	 src: url('../fonts/sfont.eot');
+	 src:url('../fonts/sfont.woff') format('woff'),
+		 url('../fonts/sfont.ttf') format('truetype'),
+		 url('../fonts/sfont.svg') format('svg');
+}
+body{
+	font-family: 'fz';
+	font-weight: 600;
+	color: #723415;
+}
+h1{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 900;
+	line-height: 1.2rem;
+	color: #fff;
+	/* -webkit-text-fill-color: white;
+	-webkit-text-stroke: .1px #723415; */
+}
+.shade{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #050505;
+	opacity: .4;
+}
+.window{
+    display: none;
+    position: absolute;
+    padding: 5.2rem 1.8rem 0;
+    top: 0;
+    left: 3%;
+    width: 94%;
+    height: 15.6rem;
+    background: url(../images/win-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.hint{
+    text-align: center;
+}
+.hint .lose{
+    margin: 20%;
+    width: 50%;
+}
+.hint p{
+    font-size: 20px;
+    line-height: 2;
+}
+img.back{
+	position: absolute;
+	left: .2rem;
+	top: 5.4rem;
+	width: .7rem;
+}
+img.close{
+	position: absolute;
+	right: .5rem;
+	top: 5.4rem;
+	width: .7rem;
+}
+footer{
+    position: absolute;
+    bottom: .3rem;
+    width: 94%;
+    font-size: 0;
+}
+footer .column{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+	line-height: 10px;
+    color: #fff;
+}
+footer img{
+    width: 70%;
+    vertical-align: baseline;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/market.css">
+    <title>市场</title>
+</head>
+<body>
+    <div class="market">
+        <header>
+            <a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+            <h3>市场</h3>
+        </header>
+        <div class="data">
+            <h2>11.26</h2>
+            <div class="data-right">
+                <span>高：2</span>
+                <span>幅：2%</span><br>
+                <span>低：1</span>
+                <span>量：10</span>
+            </div>
+        </div>
+        <div id="chart"></div>
+        <div class="title">
+			<a class="select">点对点</a>
+			<a href="market1.html">求购区</a>
+			<a href="market2.html">消息</a>
+        </div>
+        <form class="list0" action="" method="post">
+            <div class="line">
+                <label>ID</label>
+                <input type="text" name="" placeholder="请输入买家ID">
+            </div>
+            <div class="line">
+                <label>数量</label>
+                <input type="text" name="" placeholder="请输入出售数量">
+            </div>
+            <div class="line">
+                <label>约定价</label>
+                <input type="text" name="" placeholder="请输入约定价格">
+            </div>
+            <input type="submit">
+        </form>>
+        </ul>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echart.js"></script>
+</body>
+</html>

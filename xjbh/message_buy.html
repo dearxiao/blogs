@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/message.css">
+    <title>消息</title>
+</head>
+<body>
+    <div class="message">
+        <header>
+            <a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+            <h3>消息</h3>
+        </header>
+        <div class="msg">
+            <div class="msg-left">
+                <p><span>卖家ID：</span> 77777</p>
+                <p><span>交易数量：</span> 80</p>
+                <p><span>约定价：</span> 66</p>
+            </div>
+            <div class="msg-right">
+                <p>姓名：张三</p>
+                <p>手机号：15698532451</p>
+                <p>银行卡：<input id="url" type="text" value="6228484567984654" readonly></p>
+                <p>支付宝：<input id="url2" type="text" value="15698532451" readonly></p>
+                <span class="copy" data-clipboard-action="copy" data-clipboard-target="#url">复制银行卡</span>
+                <span class="copy2" data-clipboard-action="copy" data-clipboard-target="#url2">复制支付宝</span>
+            </div>
+        </div>
+        <h6>交易已创建，等待卖家确认<span>2018-06-22</span></h6>
+        <form action="" method="post">
+			<img class="upload" src="images/upload.png">
+			<input type="file" onchange="upload(this)" accept="image/*">
+            <input type="submit">
+        </form>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script>
+		$(function(){
+			var clipboard = new Clipboard('.copy')
+			clipboard.on('success', function(e) {
+				alert('复制成功')
+			})
+			var clipboard2 = new Clipboard('.copy2')
+			clipboard2.on('success', function(e) {
+				alert('复制成功')
+			})
+        })
+        function upload(e){
+			var file = e.files[0]
+			if(e.files){
+				var reader = new FileReader()
+				reader.readAsDataURL(e.files[0]);//发起异步请求
+				reader.onload = function(e){
+					//console.log(e)
+					var src = this.result
+					$('.pingzheng').attr('src', src)
+				}
+			}
+		}
+    </script>
+</body>
+</html>

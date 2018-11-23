@@ -1,0 +1,139 @@
+body{
+    height: 100vh;
+    padding: 1.2rem 0 0;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+h2{
+    text-indent: .3rem;
+    font-size: .42rem;
+    line-height: 2;
+    color: #00ffff;
+}
+textarea{
+    width: 100%;
+    height: 3rem;
+    padding: .3rem;
+    font-size: .32rem;
+    color: #777;
+    background-color: #082535;
+    border: 0;
+    border-top: 1px solid #00e3e3;
+    border-bottom: 1px solid #00e3e3;
+}
+input[type=submit]{
+    width: 80%;
+    margin: .5rem 1rem;
+    line-height: 1rem;
+    font-size: .4rem;
+    color: #fff;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #03a7aa;
+    -webkit-appearance: none;
+}
+ul{
+    height: 5rem;
+    overflow-y: scroll;
+    border-top: 1px solid #01707a;
+}
+ul h4{
+    font-size: .4rem;
+    line-height: 2;
+    color: #fff;
+    background-color: #0a273b;
+}
+ul li{
+    font-size: .32rem;
+    line-height: 2.4;
+    color: #868686;
+    border-bottom: 1px solid #01707a;
+}
+ul span{
+    display: inline-block;
+    width: 2.5rem;
+    text-align: center;
+}
+ul span:nth-child(2){
+    float: right;
+    width: 7.5rem;
+}
+.qq{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: .32rem;
+    line-height: .6rem;
+    color: #00ffff;
+}
+.qq img{
+    width: .6rem;
+    vertical-align: middle;
+}
+.qq div{
+    padding: .3rem 1rem;
+    margin: 0 2rem;
+    border-bottom: 1px solid #03575e;
+}
+/* 话费充值 */
+.tel .phone{
+    width: 100%;
+    padding-left: .5rem;
+    font-size: .64rem;
+    line-height: 2.4;
+    color: #1eb3b3;
+    border: 0;
+    border-bottom: 1px solid #027073;
+    background-color: #023136;
+}
+.tel .phone::-webkit-input-placeholder{
+    color: #1eb3b3;
+}
+.tel form p{
+    padding-left: .5rem;
+    font-size: .32rem;
+    line-height: 2.4;
+    color: #fff;
+}
+.box{
+    display: inline-block;
+    margin-left: .5rem;
+    padding: .2rem .8rem;
+    border-radius: .15rem;
+    border: 1px solid #024345;
+}
+.box h6{
+    font-size: .48rem;
+    line-height: 1;
+    color: #00babc;
+}
+.box span{
+    font-size: .32rem;
+    color: #e3e3e3;
+}
+.select{
+    border: 1px solid #00ffff;
+    background-color: #022e32;
+}
+.tel .pwd{
+    width: 9rem;
+    margin: 0 .5rem;
+    padding-left: .3rem;
+    font-size: .32rem;
+    line-height: 2.4;
+    color: #a3a7ac;
+    border: 0;
+    border-radius: .15rem;
+    border: 1px solid #00ffff;
+    background-color: #034052;
+}
+.tel .pwd::-webkit-input-placeholder{
+    color: #a3a7ac;
+}
+.tel ul span{
+    float: left;
+}
+.tel ul span:nth-child(2){
+    float: none;
+    width: 2.5rem;
+}

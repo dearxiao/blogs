@@ -1,0 +1,127 @@
+
+body{
+    height: 100vh;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.mall{
+    height: 100%;
+    padding-top: 1.2rem;
+    overflow: scroll;
+}
+.mall li{
+    margin-bottom: .2rem;
+    padding: .5rem .3rem;
+    font-size: .32rem;
+    background-color: rgba(13, 44, 65, .45);
+    border: 1px solid #027b83;
+}
+.mall li img{
+    width: 3.2rem;
+    vertical-align: top;
+}
+.mall .li-center{
+    display: inline-block;
+    vertical-align: top;
+    color: #d0d0d0;
+    line-height: .6rem;
+}
+.mall .li-center h4{
+    font-size: .4rem;
+    color: #00ffff;
+}
+.mall li a{
+    float: right;
+    margin-top: 1.5rem;
+    padding: .1rem .3rem;
+    color: #fff;
+    border: 0;
+    border-radius: 1rem;
+    background-color: #057792;
+}
+.mall li a img{
+    width: .4rem;
+    vertical-align: middle;
+}
+/* 我的宝盒 */
+.my-box{
+    padding-top: 1.2rem;
+}
+.output{
+    overflow: hidden;
+}
+.output div:nth-child(1){
+    border-right: 1px solid #066980;
+}
+.output div{
+    float: left;
+    width: 50%;
+    margin: .5rem 0 1rem;
+    line-height: 2;
+    text-align: center;
+}
+.output h5{
+    color: #dedede;
+    font-size: .4rem;
+}
+.output span{
+    color: #00ffff;
+    font-size: .6rem;
+}
+.title{
+    overflow: hidden;
+    color: #048089;
+    border: 1px solid #027b83;
+}
+.title span{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 2;
+    font-size: .4rem;
+}
+.title .select{
+    color: #fff;
+    background-color: #047680;
+}
+.list1{
+    display: none;
+}
+/* 我的宝盒详情 */
+.my-box-detail h2{
+    text-indent: .5rem;
+    color: #00ffff;
+    font-size: .4rem;
+    line-height: 2.4;
+    border-bottom: 1px solid #025e70;
+}
+.my-box-detail .mill{
+    width: 5rem;
+    margin: 1rem 2.5rem;
+}
+.my-box-detail .msg{
+    padding: .5rem;
+}
+.my-box-detail .msg span{
+    vertical-align: middle;
+    font-size: .8rem;
+    color: #00ffff;
+}
+.my-box-detail .msg button{
+    padding: .1rem .5rem;
+    margin-left: .3rem;
+    font-size: .32rem;
+    color: #f7f7f7;
+    border: 0;
+    border-radius: .2rem;
+    background-color: #6bb6cb;
+}
+.my-box-detail .msg h6{
+    margin-bottom: .5rem;
+    font-size: .4rem;
+    color: rgba(1, 222, 223, .3)
+}
+.my-box-detail .msg p{
+    color: #adadad;
+    font-size: .32rem;
+}

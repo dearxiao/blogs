@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mall.css">
+    <title>我的宝盒</title>
+</head>
+<body>
+    <div class="my-box mall">
+        <header>
+            <a href="javascript:history.back(-1)"><img src="images/back.png"></a>
+            <h3>我的宝盒</h3>
+        </header>
+        <div class="output">
+            <div>
+                <h5>个人算力</h5>
+                <span>0</span>
+            </div>
+            <div>
+                <h5>个人产量(HXZ)</h5>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="title">
+			<span class="select">运行中</span>
+			<span>已停止</span>
+        </div>
+        <ul class="list0">
+            <li>
+                <img src="images/box1.png">
+                <div class="li-center">
+                    <h4>Ⅰ型星际宝盒</h4>
+                    <p>总产量：200HXZ</p>
+                    <p>已产：5.5HXZ</p>
+                    <p>剩余时间：2天</p>
+                </div>
+                <a href="my_box_detail.html">查看</a>
+            </li>
+            <li>
+                <img src="images/box1.png">
+                <div class="li-center">
+                    <h4>Ⅰ型星际宝盒</h4>
+                    <p>总产量：200HXZ</p>
+                    <p>已产：5.5HXZ</p>
+                    <p>剩余时间：2天</p>
+                </div>
+                <a href="my_box_detail.html">查看</a>
+            </li>
+        </ul>
+        <ul class="list1">
+            <li>
+                <img src="images/box1.png">
+                <div class="li-center">
+                    <h4>Ⅰ型星际宝盒</h4>
+                    <p>总产量：200HXZ</p>
+                    <p>已产：5.5HXZ</p>
+                    <p>矿机状态：已到期</p>
+                </div>
+                <a href="my_box_detail.html">查看</a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //选项卡切换
+            $('.title span').on('click', function(){
+                var i = $(this).index()
+                $('.title span').removeClass('select')
+                $(this).addClass('select')
+                $('ul').hide()
+                $('.list'+i+'').show()
+            })
+        })
+    </script>
+</body>
+</html>

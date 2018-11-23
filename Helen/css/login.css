@@ -1,0 +1,147 @@
+
+.login{
+	height: 100vh;
+	overflow-y: scroll;
+	font-size: 0;
+	color: #441d0a;
+	background: url(../images/login-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.logo{
+	width: 80%;
+	margin: 0 8% 0 12%;
+}
+form, .notice{
+	position: relative;
+	width: 70%;
+	height: 6rem;
+	padding: .1rem 10% 0;
+	margin: 1rem 15%;
+	/* background: url(../images/login.png) no-repeat;
+	background-size: 100% 100%; */
+}
+.line{
+	margin-top: .4rem;
+	background: url(../images/input-bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.line label{
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	font-size: 15px;
+}
+.line input{
+	width: 60%;
+	height: .9rem;
+	padding-left: .3rem;
+	line-height: .9rem;
+	font-size: 16px;
+	color: #441d0a;
+	font-family: 'fz';
+	border: 0;
+	background: none;
+}
+.code .line{
+	display: inline-block;
+	width: 75%;
+	background: url(../images/input-bg2.png) no-repeat;
+	background-size: 100% 100%;
+}
+.code span{
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	font-size: 15px;
+	line-height: .9rem;
+}
+.remember{
+	padding: .3rem;
+	font-size: 12px;
+	line-height: 19px;
+}
+.remember label{
+	vertical-align: top;
+}
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(../images/chekbox.png) left top no-repeat;
+	background-size: 100% 100%;
+    cursor:pointer;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../images/chekbox2.png) left top no-repeat;
+	background-size: 100% 100%;
+}
+a.forget{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	line-height: 2;
+	color: #333;
+}
+input[type=submit]{
+	width: 100%;
+	font-size: 15px;
+	line-height: 1rem;
+	font-family: 'fz';
+	text-shadow: 0 0 5px #666;
+	border: 0;
+	background: url(../images/btn-bg1.png) no-repeat;
+	background-size: 100% 100%;
+}
+.plank{
+	position: absolute;
+	left: -1rem;
+	bottom: -1.3rem;
+}
+.plank a{
+	display: inline-block;
+	padding: .3rem;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 0 0 5px #666;
+}
+/* 注册 */
+.register{
+	background: url(../images/register-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.register form{
+	padding-top: .1rem;
+}
+.register .line{
+	margin-top: .1rem;
+}
+/* 忘记密码 */
+.password .line{
+	margin-top: .25rem;
+}
+/* 公告 */
+.notice p{
+	height: 6rem;
+	padding: .3rem 0;
+	overflow-y: scroll;
+	font-size: 15px;
+	line-height: 1.4;
+	text-indent: 30px;
+}
+.confirm{
+	display: inline-block;
+	width: 50%;
+	margin: .7rem 25% 0;
+	padding-left: .2rem;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+	letter-spacing: .2rem;
+	text-shadow: 0 0 5px #666;
+}

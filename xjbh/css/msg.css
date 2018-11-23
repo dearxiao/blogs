@@ -1,0 +1,175 @@
+body{
+    height: 100vh;
+    padding: 1.2rem 0;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.logo{
+    display: block;
+    width: 3rem;
+    margin: 1rem auto;
+}
+.account{
+    overflow: hidden;
+}
+.account div{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: .32rem;
+    line-height: 2;
+}
+.account h6{
+    color: #00ffff;
+}
+.account span{
+    color: #d3d3d3;
+}
+.line{
+    display: block;
+    margin: 0 .6rem;
+    padding: .4rem .3rem;
+    font-size: .32rem;
+    color: #00ffff;
+    border-bottom: 1px solid #00ffff;
+}
+.line img{
+    float: right;
+    width: .25rem;
+}
+/* 新手帮助 */
+.box{
+    display: block;
+    margin: .3rem;
+    padding: .3rem;
+    font-size: .32rem;
+    color: #fefefe;
+    line-height: 2;
+    border: 1px solid #00e4e5;
+}
+.box h5{
+    text-align: center;
+    color: #fefefe;
+    line-height: 1;
+}
+.box h6{
+    color: #00ffff;
+}
+.box img{
+    float: right;
+    width: .3rem;
+    margin-top: -.86rem;
+}
+/* 我的团队 */
+.team li{
+    padding: .3rem .5rem;
+    font-size: 0;
+    line-height: 1.6;
+    border: 1px solid #5a616b;
+}
+.team li h4{
+    font-size: .4rem;
+    color: #3ac3d5;
+}
+.team li span{
+    display: inline-block;
+    width: 3rem;
+    font-size: .32rem;
+    color: #fff;
+}
+/* 账单明细 */
+.bill .title{
+    overflow: hidden;
+    color: #d0d0d0;
+}
+.bill .title span{
+    float: left;
+    width: 15%;
+    margin: 0 5%;
+    text-align: center;
+    line-height: 2.4;
+    font-size: .4rem;
+}
+.bill .title .select{
+    color: #00ffff;
+    border-bottom: 1px solid #00ffff;
+}
+.bill li{
+    padding: .5rem;
+    text-align: center;
+}
+.bill li h6{
+    font-size: .8rem;
+    color: #00ffff;
+}
+.bill li p{
+    font-size: .32rem;
+    color: #0f97a0;
+}
+.list1, .list2, .list3{
+    display: none;
+}
+.list2 li:nth-child(1){
+    margin: 0 1.6rem;
+    border-bottom: 1px solid #00ffff;
+}
+/* 设置 */
+.line p{
+    float: right;
+    font-size: .32rem;
+    color: #b3b3b3;
+}
+.setting button{
+    width: 88%;
+    margin: 1rem .6rem;
+    padding: 0;
+    line-height: 1.06rem;
+    color: #fff;
+    border-radius: 1rem;
+    border: 0;
+    background-color: #03a7aa;
+}
+/* 推广分享 */
+.generalize .line{
+    display: inline-block;
+    width: 6rem;
+    margin: .4rem .1rem 0 1rem;
+    padding: .2rem 0;
+    font-size: 0;
+    border-radius: .15rem;
+    background-color: #05465c;
+    border: 1px solid #00ffff;
+}
+.generalize label{
+    display: inline-block;
+    width: 1.8rem;
+    text-align: center;
+    font-size: .32rem;
+    color: #ddd;
+    border-right: 1px solid #00ffff;
+}
+.generalize input{
+    width: 3.8rem;
+    padding-left: .3rem;
+    font-size: .32rem;
+    border: 0;
+    color: #ddd;
+    background: none;
+}
+.generalize .code span{
+    display: inline-block;
+    margin-top: .4rem;
+    width: 1.8rem;
+    text-align: center;
+    line-height: .9rem;
+    font-size: .32rem;
+    color: #fff;
+    border-radius: .1rem;
+    background-color: #03a7aa;
+}
+.generalize h6{
+    text-align: center;
+    line-height: 3;
+    font-size: .32rem;
+    color: #097e83;
+}
