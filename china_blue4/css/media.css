@@ -383,21 +383,10 @@
 	.footerpart_two {
 		margin: 200px 0px 0px 40px;
 	}
-
-
 }
 
 @media (max-width: 1200px) {
 
-
-
-	.navbar-collapse.collapse {
-		display: none !important;
-	}
-
-	.navbar-collapse.collapse.in {
-		display: block !important;
-	}
 
 	.head {
 		height: auto;
@@ -406,7 +395,7 @@
 
 	.nav>li>.nav_case {
 
-		border-bottom: 1px solid #f1f1f124;
+		border-bottom: 1px solid #4871ae;
 	}
 
 	.navbar-fixed-top .navbar-collapse,
@@ -451,7 +440,6 @@
 
 	.navbar-collapse {
 		margin-top: 10px;
-		display: none !important;
 		overflow-x: visible;
 		-webkit-overflow-scrolling: touch;
 		border: 0px;
@@ -460,6 +448,7 @@
 	}
 
 	.navbar-toggle {
+		position: relative;
 		display: block;
 		margin: 20px 10px;
 		width: 60px;
@@ -469,6 +458,33 @@
 		background: none;
 	}
 
+	.navbar-toggle img{
+		display: none;
+		position: absolute;
+		top: 3px;
+		left: 8px;
+	}
+	.small_ul{
+		padding: 10px 80px;
+	}
+	.hid_menu h4{
+		padding: 20px 40px;
+		border-bottom: 1px solid #fff;
+	}
+	.xl{
+		background: url(../images/top2.png) no-repeat 95%;
+		background-size: 6%;
+	}
+	.xl::before{
+		display: inline-block;
+		content: '';
+		width: 10px;
+		height: 10px;
+		margin: 0 10px 0 -20px;
+		vertical-align: 3px;
+		border-radius: 50%;
+		background-color: #102d59;
+	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #fff;
 	}
@@ -511,8 +527,6 @@
 		display: none;
 	}
 
-
-
 	.rgzn {
 		height: 1800px;
 	}
@@ -529,12 +543,6 @@
 	.field {
 		display: none;
 	}
-
-
-
-
-
-
 
 	.jdly {
 		display: block;
@@ -644,9 +652,6 @@
 		font-family: 'webfont_1';
 	}
 
-
-
-
 	.news_div {
 		display: none;
 	}
@@ -725,32 +730,36 @@
 	}
 
 	.bar_box {
+		display: inline-block;
+		margin-top: 20px;
 		overflow: hidden;
 		position: relative;
 		z-index: 99;
 		bottom: 0px;
+		box-shadow: -3px 0 10px rgba(0, 0, 0, 0.13);
 	}
 
 	.new_bar {
 		float: left;
-		padding: 30px 50px;
+		padding: 20px 50px;
 		font: 30px/40px 'webfont';
 		text-align: center;
 		background: rgba(231, 231, 231, 0.3);
 		border-bottom: 0px;
 		cursor: pointer;
 		color: #020F2A;
-		box-shadow: 0px 30px 10px 0px rgba(0, 0, 0, 0.13);
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.13);
 	}
 
 	.new_bar.acitve {
 		background: #fff;
-		box-shadow: 0px 30px 10px 0px rgba(0, 0, 0, 0.13);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 	}
 
 	.most_show {
-		box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.13);
-		padding: 30px 50px 150px 50px;
+		margin-bottom: 30px;
+		box-shadow: 0 2px 34px rgba(0, 0, 0, 0.13);
+		padding: 30px 20px 150px;
 	}
 
 	.data_ul {
@@ -787,7 +796,9 @@
 		font-size: 45px;
 		line-height: 63px;
 	}
-
+	.partner p{
+		padding: 0 20px;
+	}
 	.gywm {
 		display: none;
 	}
@@ -817,9 +828,6 @@
 		background: #102d59;
 	}
 
-	/*.nav li {
-		margin-right: 10px;
-	}*/
 	.navbar-header {
 		width: 100%;
 		float: none;
@@ -831,7 +839,6 @@
 
 	.navbar-collapse {
 		margin-top: 10px;
-		display: none !important;
 		overflow-x: visible;
 		-webkit-overflow-scrolling: touch;
 		border: 0px;
@@ -840,6 +847,7 @@
 	}
 
 	.navbar-toggle {
+		position: relative;
 		display: block;
 		border: none;
 		background: none;
@@ -895,9 +903,6 @@
 		width: 100%;
 	}
 
-	/*.nav li a {
-		padding-left: 20px;
-	}*/
 	.rgzn_li {
 		border: 0px;
 		margin: 10px 10% 0px 10%;
@@ -930,8 +935,6 @@
 	.referral_content_btn {
 		float: right;
 	}
-
-
 }
 
 @media (max-width: 768px) {
@@ -939,22 +942,12 @@
 		margin-left: 15px !important;
 	}
 
-	.navbar-collapse.collapse {
-		display: none !important;
-	}
-
-	.navbar-collapse.collapse.in {
-		display: block !important;
-		padding: 0px;
-	}
-
 	.nav li {
 		width: 100%;
 	}
 
 	.nav>li>.nav_case {
-		width: calc(100% - 40px);
-		margin-left: 40px;
+		width: 100%;
 		overflow: hidden;
 		position: relative;
 	}
@@ -962,7 +955,7 @@
 	.hid_menu {
 		display: none;
 		width: 100%;
-		background: #F1F1F1;
+		background-color: #e0e0e0;
 	}
 
 
@@ -1024,17 +1017,20 @@
 	}
 
 	.rgzn_li {
+		margin: 0 5% 40px;
+		padding: 0;
+		width: 90%;
 		border: 0px;
-		margin: 10px 10% 0px 16%;
 	}
 
 	.rgzn {
-		height: 1500px;
+		height: 1300px;
+		background: #f3f3f3 url(../images/mobile/referral.png) no-repeat center top;
+    	background-size: 100% 100%;
 	}
 
 	.rgzn h3 {
-		padding-top: 20px;
-		margin-bottom: 20px;
+		padding: 30px 0;
 		font: 45px/63px 'webfont_1';
 	}
 
@@ -1053,34 +1049,37 @@
 		margin: 0px;
 		text-align: left;
 	}
-
+	.rgzn_txt{
+		font-size: 20px;
+		line-height: 28px;
+	}
 	.referral_content_btn {
 		float: right;
 	}
 
+	.footer{
+		background: url(../images/mobile/footer.png) no-repeat;
+    	background-size: 100% 100%;
+	}
 	.foot_logo {
-		width: 48px;
-		height: 48px;
+		margin: 5% 0;
 	}
 
 	.footerpart_two {
-		margin: 100px 0px 0px 50px;
-		margin-right: calc(100% - 200px);
+		width: 100%;
+		margin: 20px 0;
 	}
 
 	.footerpart_three,
 	.footerpart_four,
 	.footerpart_five {
-		margin: 40px 0px 0px 50px;
+		width: 33.33%;
+		margin: 0;
 	}
-
-	.partner h3 {
-		padding-top: 20px;
-		margin-bottom: 20px;
-		font-size: 45px;
-		line-height: 63px;
+	.footerpart_four{
+		padding-left: 5%;
 	}
-
-
-
+	.footerpart_five{
+		padding-left: 10%;
+	}
 }
