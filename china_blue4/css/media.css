@@ -413,6 +413,10 @@
 		height: auto !important;
 	}
 
+	.small_ul li span {
+		font: 24px/24px 'webfont_1';
+		color: #9b9b9b;
+	}
 	.small_ul li a {
 		font: 24px/24px 'webfont_1'
 	}
@@ -938,6 +942,9 @@
 }
 
 @media (max-width: 768px) {
+	.head, .flexslider{
+		height: 100vh;
+	}
 	.navbar-brand {
 		margin-left: 15px !important;
 	}
@@ -946,6 +953,9 @@
 		width: 100%;
 	}
 
+	.nav li {
+		width: 100%;
+	}
 	.nav>li>.nav_case {
 		width: 100%;
 		overflow: hidden;
@@ -984,6 +994,8 @@
 
 	.banner_btn {
 		top: calc(50% + 280px);
+		margin-left: -90px;
+		left: 50%;
 	}
 
 	.banner_txt {
@@ -991,15 +1003,17 @@
 	}
 
 	.mouse_img {
-		display: none;
+		bottom: 9%;
 	}
 
 	.flexslider .flex-control-nav {
 		bottom: 60px;
 		left: 50%;
-		margin-left: -50px;
+		margin-left: -55px;
 	}
-
+	.flex-control-nav li{
+		float: none;
+	}
 	.banner_txt1 span {
 		font-size: 50px;
 	}
@@ -1024,7 +1038,7 @@
 	}
 
 	.rgzn {
-		height: 1300px;
+		height: 1350px;
 		background: #f3f3f3 url(../images/mobile/referral.png) no-repeat center top;
     	background-size: 100% 100%;
 	}
@@ -1048,8 +1062,11 @@
 	.rgzn_tit {
 		margin: 0px;
 		text-align: left;
+		font-size: 28px;
+		font-weight: medium;
 	}
 	.rgzn_txt{
+		margin-top: 30px;
 		font-size: 20px;
 		line-height: 28px;
 	}

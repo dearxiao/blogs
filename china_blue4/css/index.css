@@ -58,7 +58,6 @@ body {
 
 
 .head {
-	overflow: hidden;
 	height: 900px;
 }
 
@@ -357,7 +356,7 @@ body {
 
 .cpfa_ul {
 	float: left;
-	width: 9%;
+	width: 12%;
 	margin: 0px 1%;
 	padding-top:26px;
 	overflow: hidden;
@@ -377,6 +376,15 @@ body {
 	color: #041A49;
 	height: 38px;
 }
+.cpfa_ul3 li a{
+	margin-left: 20px;
+}
+.cpfa_ul li span {
+	font: 16px 'webfont_1';
+	color: #9b9b9b;
+	height: 38px;
+}
+
 
 .cpfa_ul li a:hover{
 	color: #CF8100;
