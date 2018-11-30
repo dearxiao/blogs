@@ -1009,18 +1009,32 @@ body {
 
 .jdly_imgshow ul li {
 	float: left;
-	width: 50%;
-	height: 200px;
-	line-height: 200px;
+	width: 33.33%;
+	height: 150px;
+	line-height: 150px;
 	font-size: 22px;
 	text-align: center;
 	border: 1px solid #fff;
 	background-color: rgba(0, 0, 0, .5);
 }
-
+.jdly_imgshow ul li:last-child{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
 .jdly_imgshow ul li a {
 	text-align: center;
 	color: #fff;
+}
+.jdly_imgshow ul li a::before{
+	display: inline-block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	margin: 0 10px;
+	vertical-align: 3px;
+	border-radius: 50%;
+	background-color: #fff;
 }
 
 
