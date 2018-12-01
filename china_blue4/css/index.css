@@ -403,14 +403,12 @@ body {
 	color:#041A49;
 }
 
-
 .flexslider {
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	overflow: hidden;
-	z-index: -1;
 }
 
 .slides {
@@ -568,7 +566,7 @@ body {
 .banner_btn {
 	position: absolute;
 	top: calc(34% + 280px);
-	left: 52%;
+	left: 50%;
 	margin-left: -150px;
 	margin-top: 40px;
 }
@@ -782,7 +780,7 @@ body {
 
 .field_content {
 	width: 100%;
-	height: 80%;
+	/* height: 80%; */
 	position: relative;
 	z-index: 80;
 }
@@ -1004,7 +1002,6 @@ body {
 	width: calc( 100% - 628px);
 	height: 396px;
 	background-image: linear-gradient(-90deg, #E2E2E2 2%, #D0D5DB 100%);
-	
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -1012,59 +1009,65 @@ body {
 	z-index: 90;
 }
 .wifi{
+	display: none;
 	position: relative;
-	height: 100vh;
+	height: calc(100vw/1.78);
+	font-size: 24px;
+	color: #fff;
+	font-family: "webfont_1";
 	background: #fff url(../images/wifi.jpg) no-repeat;
 	background-size: 100%;
 }
-.wifi span{
+.wifi span::before{
+	content: '';
 	display: inline-block;
 	width: 15px;
 	height: 15px;
+	vertical-align: -6px;
 	border-radius: 50%;
 	background-color: #fff;
-	/* animation: ks 2000ms infinite; */
+	animation: ks 2000ms infinite;
     transform: translate(-50%,-50%);
 }
 .wifi .span1{
 	position: absolute;
 	left: 51.2%;
-	top: 16.4%;
+	top: 22.4%;
 }
 .wifi .span2{
 	position: absolute;
 	left: 33.35%;
-	top: 27.95%;
+	top: 40.95%;
 }
 .wifi .span3{
 	position: absolute;
 	left: 17.1%;
-	top: 36.3%;
+	top: 52.3%;
 }
 .wifi .span4{
 	position: absolute;
 	left: 67.4%;
-	top: 36.1%;
+	top: 52.1%;
 }
 .wifi .span5{
 	position: absolute;
 	left: 37.85%;
-	top: 48.95%;
+	top: 70.95%;
 }
 .wifi .span6{
 	position: absolute;
 	left: 60.65%;
-	top: 49.25%;
+	top: 70.25%;
 }
 .wifi .span7{
 	position: absolute;
 	left: 20.25%;
-	top: 62.15%;
+	top: 86.15%;
 }
 .wifi .span8{
 	position: absolute;
 	left: 76.3%;
-	top: 62.15%;
+	top: 86.15%;
 }
 @keyframes ks{
     from {
@@ -1229,10 +1232,11 @@ body {
 .lf_img {
 	width: 100%;
 	height: 470px;
+	overflow: hidden;
 }
 
 .lf_img img {
-	width: 100%;
+	/* width: 100%; */
 	height: 100%;
 }
 .shadow{
