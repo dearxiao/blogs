@@ -85,8 +85,8 @@
 		top: 475px;
 		left: 512px;
 		transform: translate(-50%, -50%);
-		width: 350px;
-		height: 350px;
+		width: 320px;
+		height: 320px;
 		border-radius: 50%;
 		background-image: radial-gradient(34% 12%, #FFFFFF 26%, #F8F8F8 99%);
 		box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.50);
@@ -986,6 +986,10 @@
 	.flex-control-nav li{
 		float: none;
 	}
+	.flexslider .slides_li video{
+		height: 100%;
+		width: auto;
+	}
 	.banner_txt1 span {
 		font-size: 50px;
 	}
@@ -1043,6 +1047,7 @@
 	}
 	.rgzn_txt{
 		margin-top: 30px;
+		padding: 0;
 		font-size: 20px;
 		line-height: 28px;
 	}

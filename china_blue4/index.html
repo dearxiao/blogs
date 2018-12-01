@@ -219,7 +219,6 @@
 					</div>
 				</div>
 				<!--关于我们结束-->
-
 				<!--产品方案-->
 				<div class="cpfa">
 					<div class="cpfa_top">
@@ -327,10 +326,10 @@
 				<ul class="slides">
 					<li class="slides_li">
 						<video muted src="mp4/bg2.mp4" autoplay="autoplay" loop="loop"></video>
-						<a href="#zgsl">
+						<a href="javascript:;">
 							<div class="banner_btn">探索深兰</div>
 						</a>
-						<a class="mouse_img" href="#zgsl">
+						<a class="mouse_img" href="javascript:;">
 							<img src="images/mouse.png " />
 						</a>
 					</li>
@@ -348,13 +347,19 @@
 						</div>
 						<div class="banner_border_bottom "></div>
 						<p class="banner_txt">致力于人工智能基础研究和应用开发</p>
+						<a href="#zgsl">
+							<div class="banner_btn">探索深兰</div>
+						</a>
+						<a class="mouse_img" href="javascript:;">
+							<img src="images/mouse.png " />
+						</a>
 					</li>
 					<li class="slides_li">
 						<img class="banner2" src="images/banner2.png " />
 						<p class="banner_txt1"><span>/</span>人工智能国家队<span>&nbsp;/</span></p>
 						<p class="banner_txt2">科技报国 服务民生</p>
-						<div class="banner_btn ">探索深兰</div>
-						<a class="mouse_img " href="#zgsl ">
+						<div class="banner_btn">探索深兰</div>
+						<a class="mouse_img " href="javascript:;">
 							<img src="images/mouse.png " />
 						</a>
 					</li>
@@ -362,15 +367,13 @@
 						<img class="banner3" src="images/banner3.png " />
 						<p class="banner_txt3 ">刘鹤一行到访深兰科技</p>
 						<div class="banner_btn1 ">阅读全文</div>
-						<a class="mouse_img " href="#zgsl ">
+						<a class="mouse_img" href="javascript:;">
 							<img src="images/mouse.png " />
 						</a>
 					</li>
 				</ul>
 
 			</div>
-
-			<!--<img src=" " alt=" " />-->
 		</div>
 		<!--头部结束-->
 
@@ -1348,7 +1351,7 @@
 					<div class="footerpart_four">
 						<a class="footer_tit" href=" "></a>
 
-						<ul class="footer_children">
+						<ul class="footer_children" style="border: none;">
 							<li>
 								<a href=" ">苹果闸机</a>
 								<a href=" ">金箍棒</a>
@@ -1379,7 +1382,6 @@
 					&copy;2014-2018 深兰科技（上海）有限公司 版权所有 | 沪ICP备18035549号-1
 				</p>
 			</div>
-
 		</div>
 		<!--尾部结束-->
 	</div>
@@ -1391,10 +1393,9 @@
 	<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function () {
-
 			//头部轮播切换
 			$(".flexslider ").flexslider({
-				slideshowSpeed: 1000000, //展示时间间隔ms
+				slideshowSpeed: 60000, //展示时间间隔ms
 				animationSpeed: 400, //滚动时间ms
 				touch: true, //是否支持触屏滑动
 				directionNav: false,
@@ -1404,101 +1405,50 @@
 			var width = $(window).width();
 
 			if (width > 1200) {
-
 				//关于我们
-
 				$('.gywm_li').stop().mouseenter(function () {
-					$('.gywm').animate({
-						height: "419px"
-					}, 300)
+					$('.gywm').stop().slideDown()
 				}).mouseleave(function () {
-					$('.gywm').animate({
-						height: "0px"
-					}, 300)
+					$('.gywm').stop().slideUp()
 				})
-
 				$('.gywm').stop().mouseenter(function () {
-
 					$('.nav li').removeClass('acitve');
-
 					$('.gywm_li').addClass('acitve');
-
-					$('.gywm').stop().animate({
-						height: "419px"
-					}, 300)
-
+					$('.gywm').stop().slideDown()
 				}).mouseleave(function () {
-
 					$('.nav li').removeClass('acitve');
-
-					$('.gywm').stop().animate({
-						height: "0px"
-					}, 300)
+					$('.gywm').stop().slideUp()
 				});
 
 				//产品方案
-
 				$('.cpfa_li').stop().mouseenter(function () {
-
-					$('.cpfa').stop().animate({
-						height: "628px"
-					}, 300)
-
+					$('.cpfa').stop().slideDown()
 				}).mouseleave(function () {
-					$('.cpfa').stop().animate({
-						height: "0px"
-					}, 300)
+					$('.cpfa').stop().slideUp()
 				});
-
 				$('.cpfa').stop().mouseenter(function () {
-
 					$('.nav li').removeClass('acitve');
-
 					$('.cpfa_li').addClass('acitve');
-
-					$('.cpfa').stop().animate({
-						height: "628px"
-					}, 300)
+					$('.cpfa').stop().slideDown()
 
 				}).mouseleave(function () {
-
 					$('.nav li').removeClass('acitve');
-
-					$('.cpfa').stop().animate({
-						height: "0px"
-					}, 300)
+					$('.cpfa').stop().slideUp()
 				})
-
 
 				//联系我们
-
 				$('.lxwm_li').stop().mouseenter(function () {
-					$('.lxwm').animate({
-						height: "419px"
-					}, 300)
+					$('.lxwm').stop().slideDown()
 				}).mouseleave(function () {
-					$('.lxwm').animate({
-						height: "0px"
-					}, 300)
+					$('.lxwm').stop().slideUp()
 				})
-
 				$('.lxwm').stop().mouseenter(function () {
-
 					$('.nav li').removeClass('acitve');
-
 					$('.lxwm_li').addClass('acitve');
-
-					$('.lxwm').stop().animate({
-						height: "419px"
-					}, 300)
-
+					$('.lxwm').stop().slideDown()
 				}).mouseleave(function () {
-
 					$('.nav li').removeClass('acitve');
-
-					$('.lxwm').stop().animate({
-						height: "0px"
-					}, 300)
+					$('.lxwm').stop().slideUp()
 				});
 				$('.hid_menu').css({
 					display: 'none'
@@ -1733,10 +1683,12 @@
 
 		})
 
-
 		//九大领域PC 点击弹出
 		$('.field_bg .field_btn').click(function () {
 			$('.wifi').toggle()
+			$('html, body').animate({  
+				scrollTop: $(".wifi").offset().top  
+			}, 500);  
 		});
 
 		//九大领域手机 点击
@@ -1773,6 +1725,12 @@
 
 		})
 
+		// 探索
+		$('.banner_btn, .mouse_img').click(function () {
+			$('html, body').animate({  
+				scrollTop: $(".rgzn").offset().top  
+			}, 800); 
+		})
 		//返回顶部
 		$(".go_back ").click(function () {
 			$('body,html').animate({
