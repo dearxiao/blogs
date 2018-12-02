@@ -20,4 +20,3 @@ if (RegExp("MicroMessenger").test(navigator.userAgent)) {
         WeixinJSBridge.call('hideToolbar');
     });
 }
-//rem换算

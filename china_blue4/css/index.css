@@ -1029,7 +1029,7 @@ body {
 	margin-right: 22px;
 	vertical-align: -6px;
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: #041A49;
     transform: translate(-50%,-50%);
 }
 .span1::before, .span7::before{animation: ks 2000ms infinite;}
