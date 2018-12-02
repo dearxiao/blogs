@@ -1015,11 +1015,13 @@ body {
 	display: none;
 	position: relative;
 	height: calc(100vw/1.78);
+	background: #fff url(../images/wifi.jpg) no-repeat;
+	background-size: 100%;
+}
+.wifi span a{
 	font-size: 24px;
 	color: #fff;
 	font-family: "webfont_1";
-	background: #fff url(../images/wifi.jpg) no-repeat;
-	background-size: 100%;
 }
 .wifi span::before{
 	content: '';

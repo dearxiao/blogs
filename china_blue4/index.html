@@ -21,10 +21,10 @@
 	<![endif]-->
 	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
 	<script>
-		var width = $(window).width();
-		if (width > 1200) {
-			document.write("<script src=\"js/home.js\"><\/script>"); 
-		}
+		// var width = $(window).width();
+		// if (width > 1200) {
+		// 	document.write(""); 
+		// }
 	</script>
 </head>
 
@@ -331,7 +331,7 @@
 
 			<div class="flexslider">
 				<ul class="slides">
-					<li class="slides_li">
+					<li id="video" class="slides_li">
 						<video muted src="mp4/bg2.mp4" autoplay="autoplay" loop="loop"></video>
 						<a href="javascript:;">
 							<div class="banner_btn">探索深兰</div>
@@ -711,14 +711,14 @@
 			</ul>
 		</div>
 		<div class="wifi">
-			<span class="span1">AI CITY</span>
-			<span class="span2">生物智能</span>
-			<span class="span3">生命科学</span>
-			<span class="span4">生态业务</span>
-			<span class="span5">AI 芯片</span>
-			<span class="span6">零售升级</span>
-			<span class="span7">自动车</span>
-			<span class="span8">机器人</span>
+			<span class="span1"><a href="">AI CITY</a></span>
+			<span class="span2"><a href="">生物智能</a></span>
+			<span class="span3"><a href="">生命科学</a></span>
+			<span class="span4"><a href="">生态业务</a></span>
+			<span class="span5"><a href="">AI 芯片</a></span>
+			<span class="span6"><a href="">零售升级</a></span>
+			<span class="span7"><a href="">自动车</a></span>
+			<span class="span8"><a href="">机器人</a></span>
 		</div>
 
 		<!--九大领域手机版-->
@@ -1396,19 +1396,36 @@
 	<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.rotate.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.color.min.js" type="text/javascript" charset="utf-8"></script>
-	
+	<script src="js/home.js"></script>
 	<script type="text/javascript">
 		$(function () {
-			//头部轮播切换
-			$(".flexslider ").flexslider({
-				slideshowSpeed: 60000, //展示时间间隔ms
-				animationSpeed: 400, //滚动时间ms
-				touch: true, //是否支持触屏滑动
-				directionNav: false,
-				controlNav: true
-			});
-
 			var width = $(window).width();
+			//头部轮播切换
+			function bannerChange() {
+				if (width < 768) {
+					$('#video').remove();
+					$('.banner1').attr('src', 'images/mobile/banner1.png')
+					$('.banner2').attr('src', 'images/mobile/banner2.png')
+					$('.banner3').attr('src', 'images/mobile/banner3.png')
+				}
+				if (width > 768) {
+					$('.banner1').attr('src', 'images/banner1.jpg')
+					$('.banner2').attr('src', 'images/banner2.png')
+					$('.banner3').attr('src', 'images/banner3.png')
+				}
+				slider()
+			}
+			bannerChange()
+			function slider() {
+				$(".flexslider ").flexslider({
+					slideshowSpeed: 60000, //展示时间间隔ms
+					animationSpeed: 400, //滚动时间ms
+					touch: true, //是否支持触屏滑动
+					directionNav: false,
+					controlNav: true
+				});
+			}
+
 
 			if (width > 1200) {
 				//关于我们
@@ -1461,19 +1478,6 @@
 				})
 			}
 
-			function bannerChange() {
-				if (width < 768) {
-					$('.banner1').attr('src', 'images/mobile/banner1.png')
-					$('.banner2').attr('src', 'images/mobile/banner2.png')
-					$('.banner3').attr('src', 'images/mobile/banner3.png')
-				}
-				if (width > 768) {
-					$('.banner1').attr('src', 'images/banner1.jpg')
-					$('.banner2').attr('src', 'images/banner2.png')
-					$('.banner3').attr('src', 'images/banner3.png')
-				}
-			}
-			bannerChange()
 			window.onresize = function () {
 
 				var width = $(window).width();

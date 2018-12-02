@@ -9587,7 +9587,6 @@
 
  })
 
-console.log(1)
  window.onresize = function () {
 
  	var width = $(window).width();
