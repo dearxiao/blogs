@@ -1023,21 +1023,33 @@ body {
 	color: #fff;
 	font-family: "webfont_1";
 }
-.wifi span::before{
+.wifi span b{
+	position: relative;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 22px;
+    border-radius: 50%;
+    background-color: #18437e;
+}
+.wifi span b::before{
+	position: absolute;
+    top: 50%;
+    left: 50%;
 	content: '';
 	display: inline-block;
-	width: 15px;
-	height: 15px;
-	margin-right: 22px;
+	width: 14px;
+	height: 14px;
 	vertical-align: -6px;
 	border-radius: 50%;
-	background-color: #041A49;
+	/* background-color: rgba(24,67,126,.5); */
+	background-color: #fff;
     transform: translate(-50%,-50%);
 }
-.span1::before, .span7::before{animation: ks 2000ms infinite;}
-.span3::before, .span6::before{animation: ks 2000ms infinite 500ms;}
-.span5::before, .span4::before{animation: ks 2000ms infinite 1000ms;}
-.span2::before, .span8::before{animation: ks 2000ms infinite 1500ms;}
+.span1 b::before, .span7 b::before{animation: ks 3000ms infinite;}
+.span3 b::before, .span6 b::before{animation: ks 3000ms infinite 500ms;}
+.span5 b::before, .span4 b::before{animation: ks 3000ms infinite 1000ms;}
+.span2 b::before, .span8 b::before{animation: ks 3000ms infinite 1500ms;}
 .wifi .span1{
 	position: absolute;
 	left: 51.2%;
