@@ -304,6 +304,7 @@ body {
 }
 .gywm_ul li {
 	padding-left: 20px;
+	height: 38px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -322,7 +323,7 @@ body {
 .gywm_ul li.acitve {
 	font-weight: bold;
 	font-size: 18px;
-	background: url(../images/dian.png) no-repeat left center;
+	background: url(../images/dian.png) no-repeat left 7px;
 }
 
 .gywm_right {
@@ -393,12 +394,11 @@ body {
 	color: #CF8100;
 }
 
-
 .cpfa_ul li.acitve {
 	font-weight: bold;
 	color: #041A49;
 	font-size: 18px;
-	background: url(../images/dian.png) no-repeat left 5px;
+	background: url(../images/dian.png) no-repeat left 7px;
 }
 
 .cpfa_ul li.acitve:hover a{
@@ -841,7 +841,7 @@ body {
 .field_hader_txt {
 	position: absolute;
 	left: 420px !important;
-	top: -150px !important;
+	top: -200px !important;
 	width: auto !important;
 	font-size: 18px !important;
 	color: #041A49 !important;
@@ -1294,7 +1294,7 @@ body {
 .right {
 	float: right;
 	margin-left: 5%;
-	width: 40%;
+	width: 45%;
 }
 
 .r_tit {
@@ -1446,7 +1446,7 @@ body {
 
 .partner {
 	position: relative;
-	padding: 30px 0;
+	padding: 60px 0;
 	background-image: linear-gradient(-27deg, #E2E2E2 0%, #F9F9F9 86%);
 }
 
@@ -1555,8 +1555,8 @@ body {
 
 .footerpart_one .adress_ul li span {
 	float: left;
-	font-family: webfont;
-	font-size: 18px;
+	font-family: 'webfont';
+	font-size: 16px;
 	color: #FFFFFF;
 	letter-spacing: 0;
 	line-height: 28px;
@@ -1634,7 +1634,6 @@ body {
 }
 
 .footerpart_two a {
-	margin-top: 10px;
 	display: block;
 	font-family: webfont;
 	font-size: 18px;
