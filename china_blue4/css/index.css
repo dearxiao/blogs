@@ -1411,7 +1411,8 @@ body {
 	background: #041A49;
 	border-radius: 18px 1px 1px 18px;
 	width: 70px;
-	height: 200px;
+	/* height: 160px; */
+	text-align: center;
 }
 
 .share {
@@ -1419,13 +1420,13 @@ body {
 }
 
 .share img {
-	display: block;
-	margin: 30px auto;
+	width: 50%;
+	margin: 20px 0;
 }
 
 .go_back img {
-	display: block;
-	margin: 30px auto;
+	width: 50%;
+	margin: 24px 0;
 }
 
 .share,
@@ -1467,7 +1468,7 @@ body {
 }
 
 .partner_img {
-	width: 94%;
+	width: 80%;
 	margin: 0 auto;
 	padding: 20px 0px;
 	overflow: hidden;
