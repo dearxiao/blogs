@@ -703,9 +703,9 @@ body {
 .rgzn_tit p{
 	font: 28px 'webfont';
 	color: #fff;
-	line-height: 42px;
+	/* line-height: 42px;
 	letter-spacing: 2px;
-	white-space: nowrap;
+	white-space: nowrap; */
 	border-bottom: 1px solid #c7d0df;
 }
 .rgzn_tit span{

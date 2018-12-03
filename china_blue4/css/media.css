@@ -365,9 +365,6 @@
 		margin: 80px 0 0;
 		width: 100px;
 	}
-	.qr-code p{
-		font-size: 14px;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -521,6 +518,7 @@
 	.rgzn_ul>li.col-lg-4>.rgzn_li {
 		float: none;
 		height: auto;
+		overflow: hidden;
 		margin: 30px auto;
 	}
 
@@ -808,11 +806,7 @@
 		font-size: 16px;
 	}
 	.qr-code{
-		margin: 80px 0 0;
-		width: 100px;
-	}
-	.qr-code p{
-		font-size: 14px;
+		display: none;
 	}
 }
 
