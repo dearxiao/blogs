@@ -113,7 +113,7 @@
 
 	.field_hader_txt {
 		position: absolute;
-		left: 400px !important;
+		left: 340px !important;
 		top: -152px !important;
 		margin-right: 20px;
 		width: auto !important;
@@ -185,7 +185,7 @@
 		border-radius: 8px;
 		position: absolute;
 		cursor: pointer;
-		left: auto;
+		left: 520px;
 		right: 20px;
 		bottom: -100px;
 		font-size: 29px;
