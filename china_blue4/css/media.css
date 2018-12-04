@@ -274,7 +274,16 @@
 		transform: translateY(-50%);
 		z-index: 91;
 	}
-
+	.footerpart_one{
+		width: 460px;
+	}
+	.footericon_ul li {
+		float: left;
+		width: 48px;
+		height: 48px;
+		margin: 30px 16px 0px 0px;
+		background-size: 42px !important;
+	}
 
 	.field_bg {
 		width: calc(100% - 480px);
@@ -291,7 +300,7 @@
 		width: 94%;
 	}
 	.footerpart_two, .qr-code{
-		margin: 200px 0 0 0;
+		margin: 200px 0 0 20px;
 	}
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 200px 0 0 3%;
@@ -355,7 +364,7 @@
 		height: 60px;
 	}
 	.footerpart_two{
-		margin: 150px 0 0 -40px;
+		margin: 150px 0 0 0;
 	}
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 150px 0 0 2%;

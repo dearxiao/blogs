@@ -1568,55 +1568,42 @@ body {
 
 .footericon_ul li {
 	float: left;
+	width: 59px;
+	height: 59px;
 	margin: 30px 16px 0px 0px;
-	/*	cursor: pointer;*/
 }
 
 .footericon_ul li.footer_icon1 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/wx.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon2 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/wb.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon3 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/tt.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon4 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/fb.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon5 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/fg.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon6 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/camera.png) no-repeat center center;
 	background-size: 48px;
 }
 
 .footericon_ul li.footer_icon7 {
-	width: 59px;
-	height: 59px;
 	background: url(../images/play.png) no-repeat center center;
 	background-size: 48px;
 }
