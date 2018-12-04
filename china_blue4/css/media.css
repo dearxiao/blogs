@@ -51,12 +51,10 @@
 		margin-left: 0px;
 	}
 
-
-
 	.field {
 		position: relative;
 		width: 100%;
-		height: 1080px;
+		height: 880px;
 		background-color: #f3f3f3;
 		padding-left: 115px;
 		padding-top: 120px;
@@ -83,7 +81,7 @@
 	.field_zx {
 		position: absolute;
 		top: 475px;
-		left: 512px;
+		left: 505px;
 		transform: translate(-50%, -50%);
 		width: 320px;
 		height: 320px;
@@ -107,7 +105,7 @@
 	}
 
 	.field_li p {
-		font: 33px/46px 'webfont_1';
+		font: 24px/46px 'webfont_1';
 		color: #041A49;
 	}
 
@@ -132,7 +130,7 @@
 		color: #041A49 !important;
 		line-height: 24px !important;
 		position: absolute;
-		left: 520px !important;
+		left: 450px !important;
 		top: 50% !important;
 		margin-right: 20px;
 		transform: translateY(-50%) !important;
@@ -178,19 +176,19 @@
 	}
 
 	.field_btn {
-		width: 353px;
-		height: 62px;
+		width: 280px;
+		height: 50px;
 		background: #FFFFFF;
 		border: 1px solid #102D59;
 		border-radius: 8px;
 		position: absolute;
 		cursor: pointer;
-		left: 520px;
+		left: 450px;
 		right: 20px;
 		bottom: -100px;
-		font-size: 29px;
+		font-size: 22px;
 		color: #102D59;
-		line-height: 62px;
+		line-height: 50px;
 		text-align: center;
 		font-family: 'webfont_1';
 	}
@@ -252,7 +250,7 @@
 		left: 708px;
 		top: -33px;
 		font-family: "webfont_thick";
-		font-size: 50px;
+		font-size: 42px;
 		color: #102D59;
 		letter-spacing: 2.14px;
 	}
@@ -285,7 +283,7 @@
 		border: 1px solid #FFFFFF;
 		position: absolute;
 		right: 0;
-		top: 44%;
+		top: 54%;
 		transform: translateY(-50%);
 		z-index: 90;
 	}
