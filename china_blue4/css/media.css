@@ -135,7 +135,7 @@
 		margin-right: 20px;
 		transform: translateY(-50%) !important;
 		width: auto !important;
-		max-width: 500px;
+		max-width: 450px;
 		text-align: left !important;
 		font-family: 'HYWenHei-EEW';
 	}
@@ -176,8 +176,8 @@
 	}
 
 	.field_btn {
-		width: 280px;
-		height: 50px;
+		width: 240px;
+		height: 42px;
 		background: #FFFFFF;
 		border: 1px solid #102D59;
 		border-radius: 8px;
@@ -186,9 +186,9 @@
 		left: 450px;
 		right: 20px;
 		bottom: -100px;
-		font-size: 22px;
+		font-size: 18px;
 		color: #102D59;
-		line-height: 50px;
+		line-height: 42px;
 		text-align: center;
 		font-family: 'webfont_1';
 	}
