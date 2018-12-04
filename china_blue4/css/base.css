@@ -6,3 +6,8 @@ a:link{color:#20407d;}
 a:visited{color:#20407d;}
 a:hover,a:active,a:focus{color:initial;text-decoration: none;}
 a:active,a:focus{outline:none;}
+
+.head-iframe{
+    position: fixed;
+    top: 0;
+}

@@ -56,11 +56,12 @@ body {
 	margin: 0px;
 }
 
-
+iframe{
+	height: 100px;
+}
 .head, .flexslider{
 	height: 100vh;
 }
-
 .top {
 	position: absolute;
 	top: 0px;
@@ -86,7 +87,6 @@ body {
 	border: 0px;
 }
 
-
 .navbar-brand{
 	margin-left: 0px !important;
 }
@@ -105,7 +105,6 @@ body {
 .nav>li>.nav_case {
 	width: 100%;
 	overflow: hidden;
-
 }
 
 .nav>li>.nav_case a {
@@ -115,7 +114,6 @@ body {
 	color: #fff !important;
 	background: none !important;
 	padding: 0px 20px;
-	
 }
 
 .nav>li>a {
