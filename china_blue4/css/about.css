@@ -1,0 +1,544 @@
+
+body{
+    font-family: 'webfont_1';
+}
+.img{
+    width: 100%;
+}
+section{
+    width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+section>h2{
+    font-size: 48px;
+    line-height: 76px;
+    color: #102D59;
+}
+.tower{
+    float: left;
+    width: 28%;
+    margin-right: 2%;
+}
+.about-right{
+    display: inline-block;
+    width: 70%;
+}
+.about-right p:nth-child(1){
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.about-right p{
+    margin-bottom: 10px;
+    text-indent: 24px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+.team, .layout{
+    background-color: #F7F7F7;
+}
+.team-left{
+    display: inline-block;
+    width: 65%;
+}
+.team-left>p{
+    margin-bottom: 10px;
+    text-indent: 24px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+.box{
+    display: inline-block;
+    width: 48%;
+    height: 540px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(100, 100, 100, .5);
+}
+.box h3{
+    margin: 0 10px;
+    text-align: center;
+    color: #102D59;
+    font-size: 18px;
+    line-height: 32px;
+    text-shadow: 5px 5px 2px rgba(100, 100, 100, .2);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    border-bottom: 1px solid #102d59;
+}
+.strength{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+}
+.strength .s-left{
+    float: left;
+    height: 84px;
+    width: 24px;
+    writing-mode:vertical-lr;
+    border-right: 1px solid #979797;
+}
+.strength .s-right{
+    padding-left: 30px;
+    line-height: 21px;
+}
+.box>p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.box>span, .box ul>span{
+    font-size: 12px;
+    color: #4A4A4A;
+}
+.chart{
+    width: 180px;
+    height: 180px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 48px;
+    line-height: 180px;
+    background: url(../images/about/Group\ 19.png) no-repeat;
+    background-size: 100%;
+}
+.box li{
+    padding: 3px 0;
+    font-size: 12px;
+}
+.box li span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    vertical-align: -.5px;
+    border-radius: 50%;
+    background-color: #102D59;
+}
+.box li:nth-child(2) span{
+    background-color: #476294;
+}
+.box li:nth-child(3) span{
+    background-color: #ABC2FE;
+}
+.box2{
+    float: right;
+}
+.box2 ul{
+    padding: 30px 0;
+}
+.box .ul-right{
+    float: right;
+    width: 150px;
+    margin-top: -65px;
+}
+.histogram{
+    width: 100%;
+}
+.box3{
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(100, 100, 100, .5);
+}
+.box3 .title {
+    font-size: 0;
+}
+.box3 .title span{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    color: #102D59;
+    font-size: 18px;
+    line-height: 32px;
+}
+.box3 .title hr{
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    vertical-align: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+}
+.box3 ul{
+    display: inline-block;
+    width: 33.33%;
+    margin: 20px 0;
+    font-size: 0;
+}
+.box3 li::before, .team-right li::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 10px 0 5px;
+    vertical-align: 3px;
+    border-radius: 50%;
+    background-color: #102D59;
+}
+.box3 li{
+    font-size: 16px;
+    line-height: 30px;
+}
+.box3 .title2{
+    margin-top: 30px;
+}
+.pl4{
+    padding-left: 40px;
+}
+.pl5{
+    padding-left: 50px;
+}
+.team-right{
+    float: right;
+    width: 30%;
+}
+.team-right ul{
+    font-size: 16px;
+    line-height: 28px;
+    color: #102D59;
+}
+.team-right ul span{
+    margin-left: 15px;
+}
+.mt5{
+    margin-top: 50px;
+}
+.skill>p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.skill ul{
+    margin: 100px -2.5% 30px;
+    font-size: 0;
+}
+.skill ul li{
+    display: inline-block;
+    width: 36%;
+    margin: 0 -.5%;
+    height: 500px;
+    padding: 5%;
+    vertical-align: top;
+    text-align: center;
+    background: url(../images/about/Oval\ 10\ Copy.png) no-repeat;
+    background-size: 100%;
+}
+.skill li:nth-child(2){
+    margin: 0 -3%;
+}
+.skill ul h6{
+    margin: 40px 0 30px;
+    font-size: 16px;
+    color: #102D59;
+}
+.skill ul p{
+    font-size: 16px;
+    text-align: justify;
+}
+.layout button{
+    margin: 10px 20px 30px 0;
+    padding: 8px 20px;
+    color: #102D59;
+    border: 1px solid #102D59;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.layout .act{
+    color: #fff;
+    background: #576b87;
+}
+.layout1{
+    position: relative;
+    height: 64.6vw;
+    background: url(../images/about/ball.png) no-repeat;
+    background-size: 100%;
+}
+.layout1>div{
+    width: 4%;
+}
+.layout1>div>img{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.layout1 .a{
+    position: absolute;
+    top: 24%;
+    left: 11%;
+}
+.layout1 .b{
+    position: absolute;
+    top: 11%;
+    left: 20%;
+}
+.layout1 ul{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 10px 10px 50%;
+    border-radius: 5px;
+    border: 2px solid #96c2f5;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.24);
+    z-index: 1;
+}
+.layout1 ul h6{
+    font-size: 20px;
+    color: #102D59;
+}
+.lay ul li{
+    font-size: 18px;
+    color: #102D59;
+    line-height: 30px;
+    white-space: nowrap;
+}
+.lay ul li::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 10px 0 5px;
+    vertical-align: 3px;
+    border-radius: 50%;
+    background-color: #4A90E2;
+}
+.layout1 .c{
+    position: absolute;
+    top: 11%;
+    left: 44%;
+}
+.layout1 .d{
+    position: absolute;
+    top: 26%;
+    left: 67%;
+}
+.layout1 .e{
+    position: absolute;
+    top: 13%;
+    left: 72%;
+}
+.layout1 .f{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+.layout1 .g{
+    position: absolute;
+    top: 54%;
+    left: 69%;
+}
+.layout1 .h{
+    position: absolute;
+    top: 46%;
+    left: 81%;
+}
+.layout1 .i{
+    position: absolute;
+    top: 69%;
+    left: 72%;
+}
+.layout1 .j{
+    position: absolute;
+    top: 83%;
+    left: 79%;
+}
+.layout2, .layout3{
+    display: none;
+}
+.layout2{
+    position: relative;
+    height: 64.6vw;
+    background: url(../images/about/map.png) no-repeat left;
+    background-size: 64%;
+}
+.layout2>div{
+    position: absolute;
+    left: 63.5%;
+    width: 430px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #96c2f5;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.24);
+}
+.layout2 .a{
+    top: 9%;
+}
+.layout2 .b{
+    top: 20%;
+}
+.layout2 .c{
+    top: 29%;
+}
+.layout2 .d{
+    top: 38%;
+}
+.layout2 .e{
+    top: 63.5%;
+}
+.layout2 .f{
+    top: 71%;
+}
+.layout2 .g{
+    top: 78%;
+}
+.layout2 .h{
+    top: 85%;
+}
+.layout2 h5{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #102d59;
+    font-size: 20px;
+}
+.layout2 ul{
+    display: inline-block;
+    width: 200px;
+    vertical-align: middle;
+}
+.layout2 li{
+    color: #102d59;
+    font-size: 18px;
+}
+.layout3{
+    width: 1200px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.layout3 .module{
+    display: inline-block;
+    width: 48%;
+    margin: 2% 1%;
+}
+.layout3 .module img{
+    width: 100%;
+}
+.layout3 .module p{
+    padding-left: 20px;
+    margin-top: -60px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #102D59;
+}
+@media (max-width: 1200px) {
+    .tower{
+        display: none;
+    }
+    section{
+        width: 100%;
+        padding: 30px;
+    }
+    section>h2{
+        text-align: center;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-right p{
+        font-size: 22px;
+    }
+    .team-left{
+        width: 100%;
+    }
+    .team-left>p{
+        font-size: 22px;
+    }
+    .box{
+        width: 100%;
+        height: 760px;
+        padding: 30px;
+        margin: 30px 0 0;
+    }
+    .box h3{
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .strength{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .strength .s-left{
+        height: 120px;
+        width: 32px;
+        letter-spacing: 2px;
+    }
+    .strength .s-right{
+        padding-left: 40px;
+        line-height: 30px;
+    }
+    .box>p{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .box>span, .box ul>span{
+        font-size: 18px;
+    }
+    .chart{
+        width: 240px;
+        height: 240px;
+        line-height: 240px;
+    }
+    .box li{
+        font-size: 18px;
+    }
+    .box2{
+        float: none;
+    }
+    .box3 .title hr{
+        width: 20%;
+    }
+    .box3 .title span{
+        width: 60%;
+        font-size: 22px;
+        line-height: 46px;
+    }
+    .box3 ul{
+        width: 50%;
+        margin: 0;
+    }
+    .box3 li{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    ul.pl4{
+        padding: 0;
+    }
+    ul.pl5{
+        width: 100%;
+        padding: 0;
+    }
+    ul.pl5 li{
+        display: inline-block;
+        width: 50%;
+    }
+    .team-right{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .team-right ul{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .skill>p{
+        font-size: 22px;
+        line-height: 38px;
+    }
+    .skill ul li{
+        width: 90%;
+        margin: 0 5%;
+        padding: 10% 2% 0;
+        background: url(../images/about/Oval\ 10\ Copy.png) no-repeat center center;
+        background-size: 90%;
+    }
+    .skill li:nth-child(2){
+        margin: 0 5%;
+    }
+    .skill ul p{
+        font-size: 20px;
+    }
+}

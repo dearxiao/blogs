@@ -11,3 +11,41 @@ a:active,a:focus{outline:none;}
     position: fixed;
     top: 0;
 }
+@font-face {
+	font-family: 'webfont';
+	src: url('../font/bold/webfont.eot');
+	/* IE9*/
+	src: url('../font/bold/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/bold/webfont.woff') format('woff'), /* chrome、firefox */
+	url('../font/bold/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../font/bold/webfont.svg#webfont') format('svg');
+	/* iOS 4.1- */
+}
+
+@font-face {
+	font-family: 'webfont_1';
+	src: url('../font/light/webfont.eot');
+	/* IE9*/
+	src: url('../font/light/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/light/webfont.woff') format('woff'), /* chrome、firefox */
+	url('../font/light/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../font/light/webfont.svg#webfont') format('svg');
+	/* iOS 4.1- */
+}
+
+
+@font-face {
+	font-family: 'webfont_2';
+	src: url('../font/most_light/webfont.eot');
+	/* IE9*/
+	src: url('../font/most_light/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../font/most_light/webfont.woff') format('woff'), /* chrome、firefox */
+	url('../font/most_light/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url('../font/most_light/webfont.svg#webfont') format('svg');
+	/* iOS 4.1- */
+}
+/* header{
+	position: fixed;
+	width: 100%;
+	overflow-y: scroll;
+} */
