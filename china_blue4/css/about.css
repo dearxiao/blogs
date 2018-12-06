@@ -270,7 +270,7 @@ section>h2{
 }
 .layout1 .b{
     position: absolute;
-    top: 11%;
+    top: 12%;
     left: 20%;
 }
 .layout1 ul{
@@ -344,7 +344,40 @@ section>h2{
     top: 83%;
     left: 79%;
 }
-.layout2, .layout3{
+.annotation{
+    position: absolute;
+    left: 12%;
+    bottom: 5%;
+}
+.annotation h4{
+    line-height: 2;
+    font-size: 24px;
+    color: #102D59;
+}
+.annotation p{
+    font-size: 18px;
+    white-space: nowrap;
+}
+.annotation p::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 5px;
+    vertical-align: 2px;
+    border-radius: 50%;
+    background-color: #FF9C02;
+}
+.annotation p:nth-child(3)::before{
+    background-color: #033977;
+}
+.annotation p:nth-child(4)::before{
+    background-color: #D7142A;
+}
+.annotation p:nth-child(5)::before{
+    background-color: #4A90E2;
+}
+.layout2, .layout3, .layout1-m, .layout2-m{
     display: none;
 }
 .layout2{
@@ -524,6 +557,9 @@ section>h2{
         font-size: 20px;
         line-height: 40px;
     }
+    .skill ul h6{
+        font-size: 20px;
+    }
     .skill>p{
         font-size: 22px;
         line-height: 38px;
@@ -540,5 +576,160 @@ section>h2{
     }
     .skill ul p{
         font-size: 20px;
+        line-height: 1.6;
+    }
+    .layout button{
+        margin: 10px 10px 30px 0;
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+    .layout1-pc{
+        display: none;
+    }
+    .layout1-m{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .annotation{
+        left: 2%;
+        top: 5%;
+    }
+    .layout1-m div{
+        white-space: nowrap;
+    }
+    .layout1-m span{
+        font-size: 16px;
+        color: #102D59;
+    }
+    .layout1-m .a{
+        top: 46%;
+        left: 13%;
+    }
+    .layout1-m .b{
+        top: 53%;
+        left: 20%;
+    }
+    .layout1-m .c{
+        top: 42%;
+        left: 47%;
+    }
+    .layout1-m .d{
+        top: 35%;
+        left: 61%;
+    }
+    .layout1-m .e{
+        top: 55%;
+        left: 68%;
+    }
+    .layout1-m .f{
+        top: 66%;
+        left: 50%;
+    }
+    .layout1-m .g{
+        top: 64%;
+        left: 70%;
+    }
+    .layout1-m .h{
+        top: 53%;
+        left: 81%;
+    }
+    .layout1-m .i{
+        top: 75%;
+        left: 64%;
+    }
+    .layout1-m .j{
+        top: 88%;
+        left: 79%;
+    }
+    .layout1-m>h2{
+        padding: 10px 30px;
+        font-size: 24px;
+        color: #102D59;
+    }
+    .layout1-m ul{
+        margin: 10px 30px 50px;
+        padding-left: 90px;
+    }
+    .layout1-m .list1{
+        background: url(../images/about/5.png) no-repeat;
+        background-size: 60px;
+    }
+    .layout1-m .list2{
+        background: url(../images/about/6.png) no-repeat;
+        background-size: 60px;
+    }
+    .layout1-m .list3{
+        background: url(../images/about/7.png) no-repeat;
+        background-size: 60px;
+    }
+    .layout1-m .list4{
+        margin-bottom: 0;
+        background: url(../images/about/8.png) no-repeat;
+        background-size: 60px;
+    }
+    .layout1-m ul h6{
+        font-size: 22px;
+        font-weight: 600;
+        color: #102D59;
+    }
+    .layout1-m ul li{
+        font-size: 20px;
+        color: #102D59;
+        line-height: 36px;
+        white-space: nowrap;
+    }
+    .layout1-m ul li::before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px 0 10px;
+        vertical-align: 3px;
+        border-radius: 50%;
+        background-color: #4A90E2;
+    }
+    .layout2-m{
+        padding-bottom: 1px;
+    }
+    .layout2-m>img{
+        width: 100%;
+        margin-bottom: -140px;
+    }
+    .layout2-m>div{
+        margin-bottom: 50px;
+    }
+    .layout2-m h5{
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        color: #102d59;
+        font-size: 24px;
+    }
+    .layout2-m ul{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .layout2-m li{
+        color: #102d59;
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .layout2-m ul li::before{
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px 0 10px;
+        vertical-align: 3px;
+        border-radius: 50%;
+        background-color: #102d59;
+    }
+    .layout3-m{
+        width: 100%;
+    }
+    .layout3-m .module{
+        width: 94%;
+        margin: 0 3%;
+        padding-bottom: 0;
     }
 }
