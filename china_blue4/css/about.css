@@ -36,6 +36,7 @@ section>h2{
     line-height: 30px;
 }
 .team, .layout{
+    position: relative;
     background-color: #F7F7F7;
 }
 .team-left{
@@ -473,12 +474,14 @@ section>h2{
     }
     .about-right p{
         font-size: 22px;
+        line-height: 34px;
     }
     .team-left{
         width: 100%;
     }
     .team-left>p{
         font-size: 22px;
+        line-height: 34px;
     }
     .box{
         width: 100%;

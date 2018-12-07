@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 <link rel="stylesheet" type="text/css" href="css/media.css" />
 <link rel="stylesheet" type="text/css" href="font/iconfont.css" />
@@ -279,7 +278,6 @@
     </div>
     <!--联系我们结束-->
 </nav>
-<!-- <script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script> -->
 <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
     //菜单切换
@@ -358,4 +356,62 @@
             xl = true;
         }
     })
+    var width = $(window).width();
+    if (width > 1200) {
+        //关于我们
+        $('.gywm_li').stop().mouseenter(function () {
+            $('.gywm').stop().slideDown()
+        }).mouseleave(function () {
+            $('.gywm').stop().slideUp()
+        })
+        $('.gywm').stop().mouseenter(function () {
+            $('.nav li').removeClass('acitve');
+            $('.gywm_li').addClass('acitve');
+            $('.gywm').stop().slideDown()
+        }).mouseleave(function () {
+            $('.nav li').removeClass('acitve');
+            $('.gywm').stop().slideUp()
+        });
+
+        //产品方案
+        $('.cpfa_li').stop().mouseenter(function () {
+            $('.cpfa').stop().slideDown()
+        }).mouseleave(function () {
+            $('.cpfa').stop().slideUp()
+        });
+        $('.cpfa').stop().mouseenter(function () {
+            $('.nav li').removeClass('acitve');
+            $('.cpfa_li').addClass('acitve');
+            $('.cpfa').stop().slideDown()
+
+        }).mouseleave(function () {
+            $('.nav li').removeClass('acitve');
+            $('.cpfa').stop().slideUp()
+        })
+
+        //联系我们
+        $('.lxwm_li').stop().mouseenter(function () {
+            $('.lxwm').stop().slideDown()
+        }).mouseleave(function () {
+            $('.lxwm').stop().slideUp()
+        })
+        $('.lxwm').stop().mouseenter(function () {
+            $('.nav li').removeClass('acitve');
+            $('.lxwm_li').addClass('acitve');
+            $('.lxwm').stop().slideDown()
+        }).mouseleave(function () {
+            $('.nav li').removeClass('acitve');
+            $('.lxwm').stop().slideUp()
+        });
+        $('.hid_menu').css({
+            display: 'none'
+        })
+		//返回顶部
+		$(".go_back").click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 1000);
+			return false;
+		});
+    }
 </script>
