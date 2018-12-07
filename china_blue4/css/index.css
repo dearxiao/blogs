@@ -200,7 +200,6 @@ iframe{
 	top: 90px;
 	left: 0px;
 	width: 100%;
-	height: 419px;
 	background: #EEEEEE;
 	z-index: 99999;
 	overflow: hidden;
@@ -209,8 +208,7 @@ iframe{
 .gywm_left {
 	float: left;
 	width: 33%;
-	height: 343px;
-	margin: 28px 84px 0px 75px;
+	margin: 28px 84px 40px 75px;
 }
 
 .gywm_left img {
