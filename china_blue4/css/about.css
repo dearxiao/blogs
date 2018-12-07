@@ -241,7 +241,7 @@ section>h2{
 }
 .skill ul h6{
     margin: 40px 0 30px;
-    font-size: 16px;
+    font-size: 18px;
     color: #102D59;
 }
 .skill ul p{
@@ -537,10 +537,10 @@ section>h2{
         float: none;
     }
     .box3 .title hr{
-        width: 20%;
+        width: 25%;
     }
     .box3 .title span{
-        width: 60%;
+        width: 50%;
         font-size: 22px;
         line-height: 46px;
     }
@@ -573,7 +573,7 @@ section>h2{
         line-height: 40px;
     }
     .skill ul h6{
-        font-size: 20px;
+        font-size: 24px;
     }
     .skill>p{
         font-size: 22px;
@@ -742,9 +742,12 @@ section>h2{
     .layout3-m{
         width: 100%;
     }
+    .layout3{
+        padding-bottom: 10px;
+    }
     .layout3-m .module{
         width: 94%;
-        margin: 0 3%;
+        margin: 0 3% 6%;
         padding-bottom: 0;
     }
 }

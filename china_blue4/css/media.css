@@ -810,6 +810,9 @@
 	.pc_imgs {
 		display: none;
 	}
+	.footerpart_one .adress_ul li span{
+		font-size: 18px;
+	}
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 60px 0 0 2%;
 	}
