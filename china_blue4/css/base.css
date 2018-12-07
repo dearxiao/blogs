@@ -6,10 +6,8 @@ a:link{color:#20407d;}
 a:visited{color:#20407d;}
 a:hover,a:active,a:focus{color:initial;text-decoration: none;}
 a:active,a:focus{outline:none;}
-
-.head-iframe{
-    position: fixed;
-    top: 0;
+.img{
+	width: 100%;
 }
 @font-face {
 	font-family: 'webfont';
@@ -44,8 +42,3 @@ a:active,a:focus{outline:none;}
 	url('../font/most_light/webfont.svg#webfont') format('svg');
 	/* iOS 4.1- */
 }
-/* header{
-	position: fixed;
-	width: 100%;
-	overflow-y: scroll;
-} */

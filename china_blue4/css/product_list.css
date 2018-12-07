@@ -1,0 +1,42 @@
+
+.product{
+    width: 1200px;
+    margin: 20px auto;
+    font-size: 0;
+}
+.product h2{
+    margin: 50px 0;
+    font-size: 32px;
+    color: #102D59;
+    font-weight: 600;
+}
+.product li{
+    display: inline-block;
+    width: 29.33%;
+    margin-bottom: 50px;
+    background-color: #F6F6F6;
+}
+.product img{
+    width: 100%;
+}
+.product p{
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 2.4;
+    color: #102D59;
+}
+.mglr{
+    margin: 0 6%;
+}
+@media (max-width: 1200px) {
+    .product{
+        width: 100%;
+    }
+    .product h2{
+        padding: 0 3%;
+    }
+    .product li{
+        width: 44%;
+        margin: 0 3% 50px;
+    }
+}

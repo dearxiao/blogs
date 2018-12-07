@@ -1,0 +1,121 @@
+
+.join{
+    width: 1200px;
+    margin: 20px auto;
+    font-size: 0;
+}
+.join>h2{
+    margin: 50px 0;
+    font-size: 32px;
+    color: #102D59;
+    font-weight: 600;
+}
+.join>p{
+    font-size: 16px;
+    line-height: 1.4;
+}
+.join button{
+    margin: 50px 20px 50px 0;
+    padding: 6px 40px;
+    font-size: 14px;
+    color: #102D59;
+    border: 1px solid #102D59;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.join .act{
+    color: #fff;
+    background: #5c7691;
+}
+.panel-group{
+    border-bottom: 2px solid #D3D3D3;
+}
+.panel1{
+    display: none;
+}
+.panel-default{
+    border: none;
+}
+.panel-default > .panel-heading{
+    padding: 20px 15px;
+    border-top: 2px solid #D3D3D3;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    background-color: #fff;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body{
+    border: 0;
+    background-color: #f6f6f6;
+}
+.panel-group .panel + .panel{
+    margin: 0;
+}
+.panel-title{
+    background: url(../images/product-list/arrow.png) no-repeat right center;
+    background-size: 20px;
+}
+.panel-title a{
+    display: block;
+    font-weight: 600;
+}
+.panel-body h6{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+}
+.panel-body p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+.panel-body h5{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #102D59;
+}
+@media (max-width: 1200px) {
+    .join{
+        width: 94%;
+        margin: 0 3%;
+    }
+    .join>h2{
+        margin: 30px 0;
+        text-align: center;
+        font-size: 32px;
+        color: #102D59;
+        font-weight: 600;
+    }
+    .join>p{
+        text-indent: 30px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .join button{
+        margin: 30px 20px 30px 0;
+        padding: 6px 40px;
+        font-size: 20px;
+    }
+    .panel-title{
+        font-size: 22px;
+    }
+    .panel-body h6{
+        font-size: 20px;
+        color: #102D59;
+    }
+    .panel-body p{
+        font-size: 20px;
+        color: #102D59;
+    }
+    .panel-body h5{
+        text-align: center;
+        font-size: 20px;
+        line-height: 2.4;
+        color: #fff;
+        border: 1px solid #102D59;
+        border-radius: 10px;
+        background-color: #5c7691;
+    }
+}
