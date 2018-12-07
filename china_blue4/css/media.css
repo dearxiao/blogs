@@ -813,9 +813,9 @@
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 60px 0 0 2%;
 	}
-	.footer_children li a{
+	/* .footer_children li a{
 		font-size: 16px;
-	}
+	} */
 	.qr-code{
 		display: none;
 	}
