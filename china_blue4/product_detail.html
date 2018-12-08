@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新闻详情</title>
+	<script src="js/setting.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="swiper/swiper-4.3.3.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/product_list.css" />
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$.ajax({
+			type: "GET",
+			url: "head.html",
+			data: "data",
+			dataType: "html",
+			success: function (res) {
+				$('header').append(res);
+			}
+		});
+	</script>
+</head>
+<body>
+	<header></header>
+    <main>
+        <div class="main-left">
+			<h1>芭提雅</h1>
+			<p>人工智能卷积神经网络对商品进行学习，计算机视觉和深度学习解决行为识别，生物识别手脉识别系统下的支付解决方案，采集精准路况及地图，L3自动驾驶系统，能够实现人财物统一时时比对。</p>
+			<img src="images/banner3.png">
+			<h5>技术亮点</h5>
+			<p class="pl">人工智能卷积神经网络对商品进行学习，计算机视觉和深度学习解决行为识别，生物识别手脉识别系统下的支付解决方案，采集精准路况及地图，L3自动驾驶系统，能够实现人财物统一时时比对。</p>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/banner3.png">
+						<p>图片说明</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner3.png">
+						<p>图片说明</p>
+					</div>
+					<div class="swiper-slide">
+						<img src="images/banner3.png">
+						<p>图片说明</p>
+					</div>
+				</div>
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="main-right">
+			<div>
+				<h6>技术关键词</h6>
+				<p>卷积神经网络，计算机视觉，深度学习，行为识别，生物识别手脉识别系统，采集精准路况，自动驾驶系统</p>
+				<button>购买咨询</button>
+				<button>下载产品介绍PDF</button>
+			</div>
+			<ul>
+				<h4>相关产品</h4>
+				<li>深兰门禁</li>
+				<li>深兰门禁</li>
+				<li>深兰门禁</li>
+				<li>深兰门禁</li>
+			</ul>
+		</div>
+    </main>
+    <footer></footer>
+	<script src="swiper/swiper-4.3.3.min.js"></script>
+	<script>
+		$(function () {  
+			var mySwiper = new Swiper ('.swiper-container', {
+				loop: true, // 循环模式选项
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			})
+			$.ajax({
+				type: "GET",
+				url: "footer.html",
+				data: "data",
+				dataType: "html",
+				success: function (res) {
+					$('footer').append(res);
+				}
+			});
+		})
+	</script>
+</body>
+</html>

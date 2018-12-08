@@ -40,3 +40,152 @@
         margin: 0 3% 50px;
     }
 }
+/* 产品详情 */
+main{
+    width: 1200px;
+    margin: 30px auto;
+}
+.main-left{
+    display: inline-block;
+    width: 70%;
+}
+.main-left h1{
+    font-size: 28px;
+    line-height: 2.4;
+    color: #102D59;
+}
+.main-left>p{
+    margin: 15px 0;
+    text-indent: 24px;
+    text-align: justify;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+}
+.main-left img{
+    width: 100%;
+    margin: 20px 0;
+}
+.main-left h5{
+    margin: 30px 0 -5px;
+    font-size: 20px;
+    color: #102D59;
+}
+.pl{
+    padding-left: 75px;
+}
+.swiper-slide p{
+    position: relative;
+    margin-top: -68px;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 3;
+    background-color: rgba(255, 255, 255, .6);
+    z-index: 2;
+}
+.main-right{
+    float: right;
+    width: 26%;
+}
+.main-right>div{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    box-shadow: 1px 3px 4px rgba(0,0,0,0.22);
+}
+.main-right h6{
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #102D59;
+}
+.main-right p{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 14px;
+    color: #6E6E6E;
+}
+.main-right button{
+    width: 100%;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #102D59;
+    line-height: 2.4;
+    border-radius: 6px;
+    border: 1px solid #102D59;
+    background-color: #fff;
+}
+.main-right button:nth-child(3){
+    color: #fff;
+    background: #5c7691;
+}
+.main-right ul{
+    margin-top: 60px;
+    border: 1px solid #102D59;
+}
+.main-right ul h4{
+    padding: 20px 30px;
+    font-size: 18px;
+    border-top: 1px solid #102D59;
+    border-bottom: 1px solid #102D59;
+}
+.main-right ul li{
+    padding-left: 30px;
+    font-size: 16px;
+    color: #102D59;
+    line-height: 3;
+}
+.main-right ul li::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 10px;
+    vertical-align: 3px;
+    border-radius: 50%;
+    background-color: #102D59;
+}
+@media (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+    .main-left{
+        width: 94%;
+        margin: 0 3%;
+    }
+    .main-left h1{
+        text-align: center;
+    }
+    .main-left>p{
+        font-size: 20px;
+    }
+    .main-left h5{
+        font-size: 24px;
+    }
+    .pl{
+        padding: 0;
+    }
+    .swiper-slide p{
+        margin-top: -80px;
+        font-size: 20px;
+    }
+    .main-right{
+        float: none;
+        width: 94%;
+        margin: 5% 3%;
+    }
+    .main-right h6{
+        font-size: 24px;
+    }
+    .main-right p{
+        font-size: 20px;
+    }
+    .main-right button{
+        font-size: 20px;
+    }
+    .main-right ul h4{
+        font-size: 24px;
+    }
+    .main-right ul li{
+        font-size: 20px;
+    }
+}
