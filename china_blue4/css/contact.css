@@ -2,8 +2,67 @@
 section{
     width: 1200px;
     margin: 30px auto;
+    overflow: hidden;
 }
 section h1{
+    margin-bottom: 30px;
     font-size: 36px;
     color: #102D59;
+}
+.attention{
+    display: inline-block;
+    width: 30%;
+    height: 230px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #173D65;
+    background: linear-gradient(#fdfdfd, #e4e4e4);
+}
+.attention p{
+    font-size: 16px;
+}
+.attention img:not(.bg){
+    width: 50px;
+    margin: 10px 5px;
+    border-radius: 50%;
+    background-color: #102d59;
+}
+.attention .bg{
+    margin-top: 10px;
+}
+section ul{
+    float: right;
+    width: 68%;
+    font-size: 0;
+}
+section li{
+    display: inline-block;
+    width: 48%;
+    height: 180px;
+    margin: 0 0 30px 2%;
+    padding: 30px;
+    vertical-align: top;
+    color: #102D59;
+    line-height: 2.4;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fdfdfd, #f6f6f6);
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.13);
+}
+section li h6{
+    font-size: 20px;
+    line-height: 2.4;
+}
+section li span{
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 16px;
+    background: url(../images/e-mail.png) no-repeat left;
+    background-size: 20px;
+}
+section li p{
+    padding-left: 30px;
+    font-size: 16px;
+    background: url(../images/phone2.png) no-repeat left;
+    background-size: 20px;
 }
