@@ -1420,7 +1420,6 @@
 				});
 			}
 
-
 			if (width > 1200) {
 				//关于我们
 				$('.gywm_li').stop().mouseenter(function () {
@@ -1690,22 +1689,15 @@
 				directionNav: false,
 				controlNav: true
 			});
-
 		})
 
 		//新闻动态
 		$('.new_contral li').click(function () {
-
 			$('.new_contral li').removeClass('acitve');
-
 			$(this).addClass('acitve');
-
 			var ind = $(this).index() + 1;
-
 			$('.news .show_box').hide();
-
 			$('.news .show_box' + ind).show();
-
 		})
 
 		//九大领域PC 点击弹出
@@ -1723,17 +1715,13 @@
 
 		//九大领域  点击切换
 		$('.jdly_ul li').click(function () {
-
 			$('.ldly_ricon').css({
 				background: ' url(images/jdly_icon1.png) no-repeat center center'
 			});
-
 			$('.show_content').not($(this).find('.show_content')).slideUp()
-
 			$(this).find('.ldly_ricon').css({
 				background: ' url(images/jdly_icon.png) no-repeat center center'
 			});
-
 			$(this).find('.show_content').slideDown()
 		})
 
@@ -1741,13 +1729,9 @@
 		$('.new_bar').click(function () {
 			$('.new_bar').removeClass('acitve');
 			$(this).addClass('acitve');
-
 			var ind = $(this).index() + 1;
-
 			$('.most_show .data_ul').removeClass('acitve');
-
 			$('.most_show .data_ul' + ind).addClass('acitve');
-
 		})
 
 		// 探索
