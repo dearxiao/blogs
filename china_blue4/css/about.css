@@ -681,7 +681,7 @@ section>h2{
         left: 79%;
     }
     .layout1-m>h2{
-        padding: 10px 30px;
+        padding: 20px 30px;
         font-size: 24px;
         color: #102D59;
     }
@@ -708,6 +708,7 @@ section>h2{
     }
     .layout1-m ul h6{
         font-size: 22px;
+        line-height: 2.4;
         font-weight: 600;
         color: #102D59;
     }
