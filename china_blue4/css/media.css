@@ -488,10 +488,6 @@
 		margin-bottom: 8px;
 	}
 
-	.navbar-default .navbar-toggle:hover {
-		background: none;
-	}
-
 	.nav li {
 		float: none;
 		width: 100%;
@@ -869,10 +865,6 @@
 		width: 40px;
 		height: 3px;
 		margin-bottom: 8px;
-	}
-
-	.navbar-default .navbar-toggle:hover {
-		background: none;
 	}
 
 	.banner_type_txt {
