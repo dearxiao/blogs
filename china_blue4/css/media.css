@@ -775,12 +775,13 @@
 	.right_time p {
 		font-size: 24px;
 	}
-
+	.footerpart_one{
+		width: auto;
+	}
 	.foot_logo {
 		width: 48px;
 		height: 48px;
 	}
-
 	.partner h3 {
 		padding-top: 20px;
 		margin-bottom: 20px;
@@ -811,14 +812,20 @@
 		display: none;
 	}
 	.footerpart_one .adress_ul li span{
-		font-size: 18px;
+		font-size: 20px;
+	}
+	.footerpart_two a{
+		font-size: 20px;
 	}
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 60px 0 0 2%;
 	}
-	/* .footer_children li a{
-		font-size: 16px;
-	} */
+	.footer_tit{
+		font-size: 20px;
+	}
+	.footer_children li a{
+		font-size: 20px;
+	}
 	.qr-code{
 		display: none;
 	}
