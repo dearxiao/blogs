@@ -539,7 +539,8 @@ section>h2{
     .strength .s-left{
         height: 140px;
         width: 35px;
-        letter-spacing: 3px;
+        line-height: 1.2;
+        writing-mode: inherit;
     }
     .strength .s-right{
         padding-left: 50px;
