@@ -13,7 +13,6 @@ $(function () {
             $('button.navbar-toggle span').hide()
         }
     })
-
     var fg = false;
     $('.gywm_li .hid_btns').click(function () {
         if (fg == false) {
@@ -153,58 +152,6 @@ $(function () {
     }
     window.onresize = function () {
         var width = $(window).width();
-        if (width > 1200) {
-            //关于我们
-            $('.gywm_li').stop(false, true).mouseenter(function () {
-                $('.gywm').stop(false, true).animate({
-                    height: "419px"
-                }, 300)
-            }).mouseleave(function () {
-                $('.gywm').stop(false, true).animate({
-                    height: "0px"
-                })
-            })
-            $('.gywm').stop(false, true).mouseenter(function () {
-                $('.nav li').removeClass('acitve');
-                $('.gywm_li').addClass('acitve');
-                $('.gywm').stop(false, true).animate({
-                    height: "419px"
-                }, 300)
-            }).mouseleave(function () {
-                $('.nav li').removeClass('acitve');
-                $('.gywm').stop(false, true).animate({
-                    height: "0px"
-                }, 300)
-            });
-
-            //产品方案
-
-            $('.cpfa_li').stop(false, true).mouseenter(function () {
-                $('.cpfa').stop(false, true).animate({
-                    height: "628px"
-                }, 300)
-            }).mouseleave(function () {
-                $('.cpfa').stop(false, true).animate({
-                    height: "0px"
-                }, 300)
-            });
-
-            $('.cpfa').stop(false, true).mouseenter(function () {
-                $('.nav li').removeClass('acitve');
-                $('.cpfa_li').addClass('acitve');
-                $('.cpfa').stop(false, true).animate({
-                    height: "628px"
-                }, 300)
-            }).mouseleave(function () {
-                $('.nav li').removeClass('acitve');
-                $('.cpfa').stop(false, true).animate({
-                    height: "0px"
-                }, 300)
-            })
-            $('.hid_menu').css({
-                display: 'none'
-            })
-        }
         if (width < 768) {
             $('.banner1').attr('src', 'images/mobile/banner1.png')
             $('.banner2').attr('src', 'images/mobile/banner2.png')
