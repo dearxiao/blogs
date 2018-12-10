@@ -775,8 +775,8 @@
 		width: auto;
 	}
 	.foot_logo {
-		width: 48px;
-		height: 48px;
+		width: 70px;
+		height: 70px;
 	}
 	.partner h3 {
 		padding-top: 20px;
@@ -812,6 +812,7 @@
 	}
 	.footerpart_two a{
 		font-size: 20px;
+		line-height: 1.8;
 	}
 	.footerpart_three, .footerpart_four, .footerpart_five{
 		margin: 60px 0 0 2%;
@@ -821,6 +822,7 @@
 	}
 	.footer_children li a{
 		font-size: 20px;
+		line-height: 1.8;
 	}
 	.qr-code{
 		display: none;
@@ -1072,9 +1074,11 @@
     	background-size: 100% 100%;
 	}
 	.foot_logo {
-		margin: 5% 0;
+		margin: 5% 0 0;
 	}
-
+	.adress_ul{
+		margin-top: 30px;
+	}
 	.footerpart_two {
 		width: 100%;
 		margin: 20px 0;
