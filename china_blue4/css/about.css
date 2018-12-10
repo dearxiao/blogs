@@ -509,6 +509,9 @@ section>h2{
         font-size: 22px;
         line-height: 40px;
     }
+    .team section{
+        padding-bottom: 80px;
+    }
     .team-left{
         width: 100%;
     }
@@ -531,16 +534,16 @@ section>h2{
     .strength{
         margin: 20px 0;
         padding: 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .strength .s-left{
-        height: 120px;
-        width: 32px;
-        letter-spacing: 2px;
+        height: 140px;
+        width: 35px;
+        letter-spacing: 3px;
     }
     .strength .s-right{
-        padding-left: 40px;
-        line-height: 30px;
+        padding-left: 50px;
+        line-height: 36px;
     }
     .box>p{
         font-size: 20px;
