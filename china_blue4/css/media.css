@@ -462,14 +462,14 @@
 		padding: 10px 80px;
 	}
 	.hid_menu h4{
-		padding: 20px 40px;
+		padding: 25px 40px;
 		border-bottom: 1px solid #fff;
 	}
 	.xl{
 		background: url(../images/top2.png) no-repeat 95%;
 		background-size: 6%;
 	}
-	.xl::before{
+	/* .xl::before{
 		display: inline-block;
 		content: '';
 		width: 10px;
@@ -478,7 +478,7 @@
 		vertical-align: 3px;
 		border-radius: 50%;
 		background-color: #102d59;
-	}
+	} */
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #fff;
 	}
