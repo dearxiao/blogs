@@ -7,12 +7,12 @@ body{
 }
 section{
     width: 1200px;
-    padding: 50px 0;
+    padding: 30px 0;
     margin: 0 auto;
 }
 section>h2{
+    margin-bottom: 30px;
     font-size: 36px;
-    line-height: 76px;
     color: #102D59;
 }
 .tower{
@@ -38,9 +38,6 @@ section>h2{
 .team, .layout{
     position: relative;
     background-color: #F7F7F7;
-}
-.team h2{
-    margin-bottom: 50px;
 }
 .team-left{
     display: inline-block;
@@ -211,8 +208,10 @@ section>h2{
     color: #102D59;
 }
 .team-right ul span{
-    margin-left: 15px;
+    display: inline-block;
+    margin: 0 0 15px 15px;
     font-weight: 600;
+    font-size: 18px;
 }
 .mt5{
     margin-top: 50px;
@@ -249,7 +248,7 @@ section>h2{
     text-align: justify;
 }
 .layout button{
-    margin: 10px 20px 30px 0;
+    margin: 0 20px 30px 0;
     padding: 8px 20px;
     color: #102D59;
     border: 1px solid #102D59;
@@ -263,7 +262,7 @@ section>h2{
 .layout1{
     position: relative;
     height: 64.6vw;
-    background: url(../images/about/ball.png) no-repeat;
+    background: #fff url(../images/about/ball.png) no-repeat;
     background-size: 100%;
 }
 .layout1>div{
@@ -302,9 +301,9 @@ section>h2{
     color: #102D59;
 }
 .lay ul li{
-    font-size: 16px;
+    font-size: 14px;
     color: #102D59;
-    line-height: 30px;
+    line-height: 24px;
     white-space: nowrap;
 }
 .lay ul li::before{
@@ -366,6 +365,7 @@ section>h2{
     line-height: 2;
     font-size: 24px;
     color: #102D59;
+    white-space: nowrap;
 }
 .annotation p{
     font-size: 18px;
@@ -401,7 +401,7 @@ section>h2{
 }
 .layout2>div{
     position: absolute;
-    left: 63.5%;
+    left: 63%;
     width: 430px;
     padding: 10px;
     border-radius: 5px;
@@ -414,6 +414,7 @@ section>h2{
 }
 .layout2 .b{
     top: 20%;
+    /* left: 63%; */
 }
 .layout2 .c{
     top: 29%;
@@ -464,11 +465,25 @@ section>h2{
     width: 100%;
 }
 .layout3 .module p{
+    position: relative;
     padding-left: 20px;
-    margin-top: -60px;
-    font-size: 24px;
-    line-height: 40px;
+    margin: -60px 5px 0;
+    font-size: 22px;
+    line-height: 50px;
     color: #102D59;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 2;
+}
+@media (max-width: 1600px) {
+    .layout1 .e ul{
+        top: -15%;
+    }
+}
+@media (max-width: 1400px) {
+    .layout1 .e ul{
+        top: -23%;
+    }
 }
 @media (max-width: 1200px) {
     .tower{
