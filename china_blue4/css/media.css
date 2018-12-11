@@ -57,7 +57,7 @@
 		height: 880px;
 		background-color: #f3f3f3;
 		padding-left: 115px;
-		padding-top: 120px;
+		padding-top: 40px;
 	}
 
 	.field_yuan {
@@ -65,8 +65,8 @@
 		height: 490px;
 		border-radius: 50%;
 		position: absolute;
-		left: 266px;
-		top: 233px;
+		left: 240px;
+		top: 180px;
 		z-index: 92;
 		background-image: url("../images/yuan.png");
 		background-size: 100% 100%;
@@ -80,8 +80,8 @@
 
 	.field_zx {
 		position: absolute;
-		top: 475px;
-		left: 505px;
+		top: 423px;
+		left: 480px;
 		transform: translate(-50%, -50%);
 		width: 320px;
 		height: 320px;
@@ -129,7 +129,7 @@
 		position: absolute;
 		left: 450px !important;
 		top: 50% !important;
-		margin-right: 20px;
+		margin-right: 40px;
 		transform: translateY(-50%) !important;
 		width: auto !important;
 		max-width: 450px;
@@ -168,7 +168,7 @@
 		width: 296px;
 		height: 5px;
 		position: absolute;
-		left: 90px;
+		left: 80px;
 		top: 52%;
 		transform: translateY(-50%);
 		background-color: #102D59;
@@ -292,7 +292,7 @@
 		border: 1px solid #FFFFFF;
 		position: absolute;
 		right: 0;
-		top: 54%;
+		top: 48%;
 		transform: translateY(-50%);
 		z-index: 90;
 	}

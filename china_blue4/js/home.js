@@ -9566,7 +9566,6 @@
  			}, 2500);
  		})
 
-
  		var time = setInterval(function () {
  			if ($(".new_content_tow").css("display") === "none") {
  				$(".new_content_one").fadeOut()
@@ -9580,11 +9579,7 @@
  				$(".new_one").addClass("new_checked")
  			}
  		}, 2500);
-
-
-
  	}
-
  })
 
  window.onresize = function () {
@@ -14382,7 +14377,6 @@
  		}, 2500);
 
  	}
-
 
  	if (width > 1200 && width < 1600) {
 
