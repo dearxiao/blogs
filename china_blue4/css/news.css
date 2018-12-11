@@ -191,14 +191,22 @@ ul.data_ul.list1, ul.data_ul.list2{
     .paging{
         display: none;
     }
-    /* .right_time p{
+    .right_time{
+        width: 66px;
+        height: 66px;
+        margin: 0;
+    }
+    .right_time p{
         font-size: 18px;
         line-height: 30px;
     }
     .right_time span{
         font-size: 18px;
         line-height: 30px;
-    } */
+    }
+    .right_txt{
+        font-size: 20px;
+    }
     .more{
         display: block;
         width: 90%;
