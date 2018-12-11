@@ -697,6 +697,9 @@
 		left: 50%;
 		margin-left: -120px;
 		bottom: 50px;
+		font-size: 22px;
+		height: 48px;
+		line-height: 48px;
 	}
 
 	.flexslider1 {

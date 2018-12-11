@@ -326,9 +326,7 @@
 				<ul class="slides">
 					<li id="video" class="slides_li">
 						<video muted src="mp4/bg2.mp4" autoplay="autoplay" loop="loop"></video>
-						<a href="javascript:;">
-							<div class="banner_btn">探索深兰</div>
-						</a>
+						<div class="banner_btn">探索深兰</div>
 						<a class="mouse_img" href="javascript:;">
 							<img src="images/mouse.png " />
 						</a>
@@ -347,9 +345,7 @@
 						</div>
 						<div class="banner_border_bottom "></div>
 						<p class="banner_txt">致力于人工智能基础研究和应用开发</p>
-						<a href="#zgsl">
-							<div class="banner_btn">探索深兰</div>
-						</a>
+						<div class="banner_btn">探索深兰</div>
 						<a class="mouse_img" href="javascript:;">
 							<img src="images/mouse.png " />
 						</a>
@@ -1402,18 +1398,28 @@
 					$('.banner1').attr('src', 'images/mobile/banner1.png')
 					$('.banner2').attr('src', 'images/mobile/banner2.png')
 					$('.banner3').attr('src', 'images/mobile/banner3.png')
+					slider_m()
 				}
 				if (width > 768) {
 					$('.banner1').attr('src', 'images/banner1.jpg')
 					$('.banner2').attr('src', 'images/banner2.png')
 					$('.banner3').attr('src', 'images/banner3.png')
+					slider()
 				}
-				slider()
 			}
 			bannerChange()
 			function slider() {
 				$(".flexslider ").flexslider({
 					slideshowSpeed: 60000, //展示时间间隔ms
+					animationSpeed: 400, //滚动时间ms
+					touch: true, //是否支持触屏滑动
+					directionNav: false,
+					controlNav: true
+				});
+			}
+			function slider_m() {
+				$(".flexslider ").flexslider({
+					slideshowSpeed: 5000, //展示时间间隔ms
 					animationSpeed: 400, //滚动时间ms
 					touch: true, //是否支持触屏滑动
 					directionNav: false,
