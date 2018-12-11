@@ -35,7 +35,7 @@
 .swiper-caption button{
     margin-top: 30px;
     padding: 5px 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     border: 1px solid #102D59;
     border-radius: 5px;
@@ -67,7 +67,7 @@ section h1{
 .title button{
     margin: 30px 20px 30px 0;
     padding: 6px 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: #102D59;
     border: 1px solid #102D59;
     border-radius: 8px;
@@ -85,11 +85,24 @@ section h1{
     width: 50%;
     padding-right: 50px;
 }
-.right_time span{
-    font-size: 14px;
-}
 ul.data_ul.list1, ul.data_ul.list2{
     display: none;
+}
+.right_time{
+    height: 48px;
+    width: 48px;
+    margin: 6px 0;
+}
+.right_time p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.right_time span{
+    font-size: 14px;
+    line-height: 24px;
+}
+.right_txt{
+    font-size: 18px;
 }
 .paging{
     margin: 50px 0 0;
