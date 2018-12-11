@@ -43,13 +43,14 @@
 /* 产品详情 */
 main{
     width: 1200px;
-    margin: 30px auto;
+    margin: 50px auto;
 }
 .main-left{
     display: inline-block;
     width: 70%;
 }
 .main-left h1{
+    margin-bottom: 30px;
     font-size: 28px;
     line-height: 2.4;
     color: #102D59;
@@ -59,7 +60,7 @@ main{
     text-align: justify;
     font-size: 16px;
     color: #000;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 .main-left img{
     width: 100%;
@@ -67,7 +68,7 @@ main{
 }
 .main-left h5{
     margin: 30px 0 -5px;
-    font-size: 20px;
+    font-size: 18px;
     color: #102D59;
 }
 .pl{
@@ -85,6 +86,7 @@ main{
 .main-right{
     float: right;
     width: 26%;
+    margin-top: 100px;
 }
 .main-right>div{
     padding: 30px;
@@ -95,6 +97,7 @@ main{
 .main-right h6{
     margin: 0 0 20px;
     font-size: 18px;
+    font-weight: 900;
     color: #102D59;
 }
 .main-right p{
@@ -119,10 +122,14 @@ main{
 }
 .main-right ul{
     margin-top: 60px;
+    padding: 3px 0 30px;
     border: 1px solid #102D59;
+    border-top-width: 3px;
 }
 .main-right ul h4{
     padding: 20px 30px;
+    margin-bottom: 20px;
+    font-weight: 900;
     font-size: 18px;
     border-top: 1px solid #102D59;
     border-bottom: 1px solid #102D59;
@@ -142,6 +149,14 @@ main{
     vertical-align: 3px;
     border-radius: 50%;
     background-color: #102D59;
+}
+.swiper-button-prev{
+    background: url(../images/product-list/arrow-l.png) no-repeat;
+    background-size: 20px 100%;
+}
+.swiper-button-next{
+    background: url(../images/product-list/arrow-r.png) no-repeat;
+    background-size: 20px 100%;
 }
 @media (max-width: 1200px) {
     main{
