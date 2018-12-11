@@ -479,13 +479,13 @@
 			</li>
 		</ul>
 		<div class="paging">
-			<span><</span>
-			<span class="act">1</span>
-			<span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span>5</span>
-			<span>></span>
+			<a href=""><</a>
+			<a class="act" href="">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">4</a>
+			<a href="">5</a>
+			<a href="">></a>
 		</div>
 		<button class="more">加载更多</button>
 	</section>
@@ -604,7 +604,7 @@
 			if (width > 1200) {
 				var mySwiper = new Swiper('.swiper-container', {
 					loop: true, // 循环模式选项
-					// autoplay: true,
+					autoplay: true,
 					// 如果需要分页器
 					pagination: {
 						el: '.swiper-pagination',
@@ -614,7 +614,7 @@
 			} else {
 				var mySwiper = new Swiper('.swiper-container', {
 					loop: true, // 循环模式选项
-					// autoplay: true,
+					autoplay: true,
 					slidesPerView : 1.1,
 					spaceBetween : 10,
 					centeredSlides: true,
