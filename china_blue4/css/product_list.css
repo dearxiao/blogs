@@ -168,6 +168,8 @@ main{
     }
     .main-left h1{
         text-align: center;
+        font-weight: 900;
+        line-height: 3;
     }
     .main-left>p{
         font-size: 20px;
