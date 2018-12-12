@@ -15,6 +15,7 @@ $(function () {
         //     $('button.navbar-toggle span').hide()
         // }
     })
+    
     var fg = false;
     $('.gywm_li .hid_btns').click(function () {
         if (fg == false) {
