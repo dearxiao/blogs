@@ -1,17 +1,19 @@
 $(function () {
-    var zk = false;
+    // var zk = false;
     $('button.navbar-toggle').click(function () {
-        if (zk) {
-            zk = false;
-            $('.navbar-collapse.collapse').css('display', '')
-            $('button.navbar-toggle img').hide()
-            $('button.navbar-toggle span').show()
-        } else {
-            zk = true;
-            $('.navbar-collapse.collapse').attr('style', 'display:block !important')
-            $('button.navbar-toggle img').show()
-            $('button.navbar-toggle span').hide()
-        }
+        $('button.navbar-toggle img').toggle()
+        $('button.navbar-toggle span').toggle()
+        // if (zk) {
+        //     zk = false;
+        //     $('.navbar-collapse.collapse').css('display', '')
+        //     $('button.navbar-toggle img').hide()
+        //     $('button.navbar-toggle span').show()
+        // } else {
+        //     zk = true;
+        //     $('.navbar-collapse.collapse').attr('style', 'display:block !important')
+        //     $('button.navbar-toggle img').show()
+        //     $('button.navbar-toggle span').hide()
+        // }
     })
     var fg = false;
     $('.gywm_li .hid_btns').click(function () {

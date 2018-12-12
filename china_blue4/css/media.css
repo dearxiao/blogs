@@ -2,9 +2,13 @@
 	.navbar-nav>li>a {
 		padding: 0px;
 	}
-
 }
 
+@media (min-width: 768px) and (max-width: 1200px) {
+	.navbar-collapse.collapse{
+		display: none !important;
+	}
+}
 @media (max-width: 1600px) {
 
 	.rgzn_li {
@@ -406,7 +410,6 @@
 	}
 
 	.navbar-collapse.collapse{
-		display: none !important;
 		height: 0 !important;
 		overflow: hidden;
 	}
