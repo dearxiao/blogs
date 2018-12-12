@@ -27,7 +27,7 @@
 }
 .swiper-caption p{
     text-align: justify;
-    font-size: 36px;
+    font-size: 30px;
     color: #051239;
     line-height: 1.4;
     text-shadow: none;
@@ -35,7 +35,7 @@
 .swiper-caption button{
     margin-top: 30px;
     padding: 5px 20px;
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     border: 1px solid #102D59;
     border-radius: 5px;
@@ -67,7 +67,7 @@ section h1{
 .title button{
     margin: 30px 20px 30px 0;
     padding: 6px 40px;
-    font-size: 14px;
+    font-size: 16px;
     color: #102D59;
     border: 1px solid #102D59;
     border-radius: 8px;
@@ -85,20 +85,40 @@ section h1{
     width: 50%;
     padding-right: 50px;
 }
-.right_time span{
-    font-size: 14px;
-}
 ul.data_ul.list1, ul.data_ul.list2{
     display: none;
 }
+.right_time{
+    height: 48px;
+    width: 48px;
+    margin: 6px 0;
+}
+.right_time p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.right_time span{
+    font-size: 14px;
+    line-height: 24px;
+}
+.right_txt{
+    font-size: 18px;
+}
 .paging{
     margin: 50px 0 0;
-    padding-left: 30%;
-    font-size: 16px;
-    color: #051239;
+    text-align: center;
 }
-.paging span{
-    margin: 0 5px;
+.paging a{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #051239;
+    border-radius: 50%;
+}
+.paging .act{
+    color: #fff;
+    background-color: #051239;
 }
 .more{
     display: none;
@@ -149,6 +169,7 @@ ul.data_ul.list1, ul.data_ul.list2{
     section h1{
         text-align: center;
         font-size: 30px;
+        font-weight: 900;
     }
     .title{
         font-size: 0;
@@ -157,7 +178,7 @@ ul.data_ul.list1, ul.data_ul.list2{
         width: 31.33%;
         margin: 30px 1% 30px 1%;
         padding: 8px 0;
-        font-size: 18px;
+        font-size: 20px;
     }
     ul.data_ul{
         display: block;
@@ -170,12 +191,28 @@ ul.data_ul.list1, ul.data_ul.list2{
     .paging{
         display: none;
     }
+    .right_time{
+        width: 66px;
+        height: 66px;
+        margin: 0;
+    }
+    .right_time p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .right_time span{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .right_txt{
+        font-size: 20px;
+    }
     .more{
         display: block;
         width: 90%;
         margin: 5%;
         padding: 10px 0;
-        font-size: 18px;
+        font-size: 20px;
         color: #fff;
         border: 1px solid #102D59;
         border-radius: 8px;

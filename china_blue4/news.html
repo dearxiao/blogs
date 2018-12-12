@@ -333,8 +333,7 @@
 	<section>
 		<h1>全部动态</h1>
 		<div class="title">
-			<button class="act">全部动态</button>
-			<button>官方动态</button>
+			<button class="act">官方动态</button>
 			<button>聚焦媒体</button>
 		</div>
 		<ul class="data_ul list0">
@@ -478,15 +477,15 @@
 				</a>
 			</li>
 		</ul>
-		<div class="paging">
-			<span><</span>
-			<span>1</span>
-			<span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span>5</span>
-			<span>></span>
-		</div>
+		<!-- <div class="paging">
+			<a href=""><</a>
+			<a class="act" href="">1</a>
+			<a href="">2</a>
+			<a href="">3</a>
+			<a href="">4</a>
+			<a href="">5</a>
+			<a href="">></a>
+		</div> -->
 		<button class="more">加载更多</button>
 	</section>
     <div class="footer">
@@ -604,6 +603,7 @@
 			if (width > 1200) {
 				var mySwiper = new Swiper('.swiper-container', {
 					loop: true, // 循环模式选项
+					autoplay: true,
 					// 如果需要分页器
 					pagination: {
 						el: '.swiper-pagination',
@@ -613,6 +613,7 @@
 			} else {
 				var mySwiper = new Swiper('.swiper-container', {
 					loop: true, // 循环模式选项
+					autoplay: true,
 					slidesPerView : 1.1,
 					spaceBetween : 10,
 					centeredSlides: true,
