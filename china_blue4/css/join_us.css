@@ -1,7 +1,9 @@
-
+.img{
+    height: 340px;
+}
 .join{
     width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto 60px;
     font-size: 0;
 }
 .join>h2{
@@ -12,7 +14,7 @@
 }
 .join>p{
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.9;
 }
 .join button{
     margin: 50px 20px 50px 0;
@@ -51,22 +53,31 @@
 .panel-group .panel + .panel{
     margin: 0;
 }
-.panel-title{
-    background: url(../images/product-list/arrow.png) no-repeat right center;
-    background-size: 20px;
-}
 .panel-title a{
-    display: block;
+    display: inline-block;
+    width: 100%;
     font-weight: 600;
+    color: #102D59;
+}
+.panel-title img{
+    float: right;
+    width: 20px;
+    transform: rotate(180deg);
+}
+.panel-title a[aria-expanded="true"] img{
+    transform: rotate(0);
 }
 .panel-body h6{
+    margin: 10px 0;
     font-size: 16px;
+    font-weight: 900;
     line-height: 1.6;
     color: #000;
 }
 .panel-body p{
     font-size: 14px;
-    line-height: 1.6;
+    font-weight: 100;
+    line-height: 1.9;
     color: #000;
 }
 .panel-body h5{
@@ -74,6 +85,10 @@
     font-size: 16px;
     line-height: 1.6;
     color: #102D59;
+}
+.panel-body h5 a{
+    margin-left: 20px;
+    text-decoration: underline;
 }
 @media (max-width: 1200px) {
     .join{

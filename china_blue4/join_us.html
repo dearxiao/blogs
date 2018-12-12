@@ -309,6 +309,7 @@
 					<h4 class="panel-title">
 						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 							机器人高级系统工程师
+							<img src="images/product-list/arrow.png">
 						</a>
 					</h4>
 				</div>
@@ -333,7 +334,7 @@
 						<p>3. 负责机器人多传感器信号处理，后台逻辑处理。</p>
 						<p>4. 负责机器人测试与后期维护，远程升级与优化。</p>
 						<p>5. 负责与UI交互融合对接。</p>
-						<h5>欢迎投递您的简历至 HR@deepblueai.com</h5>
+						<h5>欢迎投递您的简历至 <a href="">HR@deepblueai.com</a></h5>
 					</div>
 				</div>
 			</div>
@@ -342,6 +343,7 @@
 					<h4 class="panel-title">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 							机器人高级系统工程师
+							<img src="images/product-list/arrow.png">
 						</a>
 					</h4>
 				</div>
@@ -351,7 +353,7 @@
 						<p>1. 计算机、通信、自动化控制、电子信息、计算机科学与技术、仪器仪表等相关专业，大学本科以上，硕士优先。</p>
 						<h6>岗位职责：</h6>
 						<p>1. 根据产品需求规划机器人的整体技术方案并能准确描述方案的实施难度和资源需求。</p>
-						<h5>欢迎投递您的简历至 HR@deepblueai.com</h5>
+						<h5>欢迎投递您的简历至 <a href="">HR@deepblueai.com</a></h5>
 					</div>
 				</div>
 			</div>
@@ -360,6 +362,7 @@
 					<h4 class="panel-title">
 						<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 							机器人高级系统工程师
+							<img src="images/product-list/arrow.png">
 						</a>
 					</h4>
 				</div>
@@ -369,7 +372,7 @@
 						<p>1. 计算机、通信、自动化控制、电子信息、计算机科学与技术、仪器仪表等相关专业，大学本科以上，硕士优先。</p>
 						<h6>岗位职责：</h6>
 						<p>1. 根据产品需求规划机器人的整体技术方案并能准确描述方案的实施难度和资源需求。</p>
-						<h5>欢迎投递您的简历至 HR@deepblueai.com</h5>
+						<h5>欢迎投递您的简历至 <a href="">HR@deepblueai.com</a></h5>
 					</div>
 				</div>
 			</div>
@@ -511,6 +514,14 @@
 				$(this).addClass('act')
 				$('.panel-group').hide()
 				$('.panel'+ n +'').show()
+			});
+			$('.panel-title a').click(function () { 
+				var sq = $(this).hasClass('collapsed')
+				if (sq) {
+					$(this).children('img').css('transform', 'rotate(0)')
+				} else {
+					$(this).children('img').css('transform', 'rotate(180deg)')
+				}
 			});
 		})
 	</script>

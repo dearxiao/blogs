@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 500px;
 }
-#dituContent::after{
+/* #dituContent::after{
     content: '';
     display: inline-block;
     position: relative;
@@ -15,7 +15,7 @@ body {
     height: 100%;
     background-color: rgba(1, 36, 87, .3);
     z-index: 15;
-}
+} */
 .iw_poi_title {
     color: #CC5522;
     font-size: 14px;
