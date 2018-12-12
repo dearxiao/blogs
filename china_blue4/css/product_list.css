@@ -33,15 +33,25 @@
     margin: 0 6%;
 }
 @media (max-width: 1200px) {
+    .img{
+        height: 154px;
+    }
     .product{
         width: 100%;
     }
     .product h2{
         padding: 0 3%;
     }
+    .product p{
+        font-size: 20px;
+        line-height: 2.4;
+    }
     .product li{
         width: 44%;
         margin: 0 3% 50px;
+    }
+    .product img{
+        height: 165px;
     }
 }
 /* 产品详情 */

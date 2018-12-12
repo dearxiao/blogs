@@ -229,7 +229,7 @@ main{
     width: 70%;
 }
 .main-left h1{
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     color: #000;
     line-height: 2;
@@ -302,13 +302,14 @@ main{
     }
     .main-left>span{
         font-size: 20px;
+        line-height: 2.6;
     }
     .main-left{
         width: 100%;
     }
     .main-left p{
         font-size: 20px;
-        line-height: 1.8;
+        line-height: 2;
     }
     .switchover{
         font-size: 24px;
@@ -321,6 +322,7 @@ main{
         font-size: 22px;
     }
     .main-right li{
+        margin-bottom: 30px;
         font-size: 20px;
     }
 }
