@@ -137,10 +137,8 @@ iframe {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	/* margin-top: 15px; */
-	/* margin-right: 4%; */
-	padding: 20px;
-	width: 80px;
+	padding: 20px 20px 20px 20%;
+	width: 30%;
 	height: 80px;
 	cursor: pointer;
 }
@@ -161,6 +159,7 @@ iframe {
 }
 
 .hid_menu h4 {
+	height: 72px;
 	color: #102d59;
 	position: relative;
 	font-size: 22px;
