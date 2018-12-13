@@ -157,11 +157,10 @@
         margin: 50% 0;
     }
     .fail img{
-        width: 100%;
+        width: 80%;
     }
     .fail p{
         margin: -10px 0 0 20%;
         color: #102D59;
-        font-size: 16px;
     }
 }
