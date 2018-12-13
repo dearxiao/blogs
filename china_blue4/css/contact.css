@@ -143,6 +143,7 @@ input:focus, .form-control:focus{
 .line select{
     display: inline-block;
     width: 80%;
+    padding: 0 12px;
     border: none;
     background: none;
     box-shadow: none;
