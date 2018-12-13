@@ -177,6 +177,9 @@ input[type='submit']{
 .btn-primary{
     display: none;
 }
+.modal-dialog{
+    top: 30%;
+}
 .modal-content{
     text-align: center;
     font-size: 18px;

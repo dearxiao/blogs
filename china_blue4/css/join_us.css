@@ -142,3 +142,26 @@
         background-color: #5c7691;
     }
 }
+/* 404 */
+.fail{
+    margin: 15% 0;
+    text-align: center;
+}
+.fail p{
+    margin: -30px 0 0 20%;
+    color: #102D59;
+    font-size: 20px;
+}
+@media (max-width: 1200px) {
+    .fail{
+        margin: 50% 0;
+    }
+    .fail img{
+        width: 100%;
+    }
+    .fail p{
+        margin: -10px 0 0 20%;
+        color: #102D59;
+        font-size: 16px;
+    }
+}
