@@ -366,6 +366,12 @@
 		<textarea placeholder="在线留言"></textarea>
 		<input type="submit">
 	</form>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+	<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content"><img src="images/success.png"> 留言成功</div>
+	</div>
+	</div>
 	<div class="attention attention2">
 		<p>欢迎关注我们</p>
 		<img src="images/social/1.png">
@@ -488,9 +494,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/head.js"></script>
 	<script src="js/map.js"></script>
-	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
-	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/messages_zh.min.js"></script>
 	<script>
+		$('input[type=submit]').click(function () {
+			$('.btn-primary').click()
+		})
 		$.validator.setDefaults({
 			submitHandler: function() {
 				alert("提交事件!");

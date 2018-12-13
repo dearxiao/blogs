@@ -53,7 +53,7 @@
 .panel-group .panel + .panel{
     margin: 0;
 }
-.active{
+.panel-group .active{
     border-top: 2px solid #102D59 !important;
     background-color: #f6f6f6 !important;
 }

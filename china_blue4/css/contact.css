@@ -170,6 +170,18 @@ input[type='submit']{
     border-radius: 6px;
     background-color: #58728d;
 }
+.btn-primary{
+    display: none;
+}
+.modal-content{
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+}
+.modal-content img{
+    width: 24px;
+    margin: 0 10px;
+}
 @media (max-width: 1200px) {
     .img{
         height: 155px;
