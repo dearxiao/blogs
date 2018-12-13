@@ -10,7 +10,7 @@
     margin: 50px 0;
     font-size: 32px;
     color: #102D59;
-    font-weight: 600;
+    font-family: 'web_font1';
 }
 .join>p{
     font-size: 16px;
@@ -47,6 +47,7 @@
     background-color: #fff;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body{
+    padding-top: 0;
     border: 0;
     background-color: #f6f6f6;
 }

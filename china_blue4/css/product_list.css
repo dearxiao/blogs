@@ -186,7 +186,7 @@ main{
         line-height: 3;
     }
     .main-left>p{
-        font-size: 20px;
+        font-size: 22px;
         text-indent: 24px;
     }
     .main-left h5{
@@ -210,15 +210,15 @@ main{
         font-size: 24px;
     }
     .main-right p{
-        font-size: 20px;
+        font-size: 22px;
     }
     .main-right button{
-        font-size: 20px;
+        font-size: 22px;
     }
     .main-right ul h4{
         font-size: 24px;
     }
     .main-right ul li{
-        font-size: 20px;
+        font-size: 22px;
     }
 }

@@ -149,7 +149,7 @@ ul.data_ul.list1, ul.data_ul.list2{
     .swiper-caption p{
         white-space: nowrap;
         overflow: hidden;
-        font-size: 24px;
+        font-size: 26px;
         line-height: 3;
     }
     .swiper-caption button{
@@ -205,7 +205,7 @@ ul.data_ul.list1, ul.data_ul.list2{
         line-height: 30px;
     }
     .right_txt{
-        font-size: 20px;
+        font-size: 22px;
     }
     .more{
         display: block;
@@ -308,7 +308,7 @@ main{
         width: 100%;
     }
     .main-left p{
-        font-size: 20px;
+        font-size: 22px;
         line-height: 2;
     }
     .switchover{
@@ -319,10 +319,10 @@ main{
         width: 100%;
     }
     .main-right h6{
-        font-size: 22px;
+        font-size: 24px;
     }
     .main-right li{
         margin-bottom: 30px;
-        font-size: 20px;
+        font-size: 22px;
     }
 }

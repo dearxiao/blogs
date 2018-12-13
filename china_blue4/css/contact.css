@@ -5,12 +5,16 @@ section{
     position: relative;
     width: 1200px;
     margin: 30px auto;
-    overflow: hidden;
+}
+section:after{
+    content: "";
+    display: block;
+    clear: both;
 }
 section h1{
     margin-bottom: 30px;
     font-size: 32px;
-    font-weight: 600;
+    font-family: 'web_font1';
     color: #102D59;
 }
 .attention{
@@ -27,7 +31,7 @@ section h1{
     display: none;
     position: absolute;
     top: 100px;
-    left: 310px;
+    left: -160px;
     width: 150px;
     height: 150px;
 }
@@ -192,6 +196,7 @@ input[type='submit']{
     section h1{
         text-align: center;
         font-size: 28px;
+        font-weight: 600;
     }
     .attention1{
         display: none;
