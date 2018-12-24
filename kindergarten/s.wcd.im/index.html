@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html lang="zh" style="font-size:100px;">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="renderer" content="webkit" />
+	<meta content="width=device-width, minimum-scale=0.5,maximum-scale=1, initial-scale=1, user-scalable=no" name="viewport" servergenerated="true" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>考特幼儿园</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="//cd.faisys.com/image/favIcon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="mask-icon" href="//cd.faisys.com/image/favIcon/safari-pinned-tab.svg" color="#5bbad5">
+
+	<link href="static/css/flyeranimation.min.css" rel="stylesheet" type="text/css" />
+
+	<link href="static/css/comm.min.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/flyer.min.css" rel="stylesheet" type="text/css" />
+	<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+
+<body>
+
+	<div class="loadingPage f_DNSTraffic" id="loadingPage">
+		<div id="loading" class="loading"></div>
+		<img src="static/images/loading.gif">
+		<div class="faiscoSite" data-css="b">
+			<a id="faiscoSiteA" href="" onclick="Flyer && Flyer.logDog && Flyer.logDog(2000045,0);"></a>
+		</div>
+	</div>
+
+
+	<div class="f_music f_DNSTraffic" style="display: block">
+		<div id="pageMusic" data-open="true" data-src="//cd.faisys.com/image/musicLib/defaultMusic/0000005.mp3" data-iconpath="" data-color="#000000" data-usericon="false" data-auto="true" data-loop="true"></div>
+		<div class="musicDiv">
+			<div class="musicIcon " id="musicIcon" style="right: 10px;">
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="pageFooter" class="f_DNSTraffic" data-isOpen="true" data-type="0" data-sysIcon="0" data-color="#fff" data-iconSrc=""></div>
+
+	<div id="mobiPage" class="mobiPage f_DNSTraffic">
+		<div id="pageContent" class="page_content swiper-container" style="height:100%;">
+			<div class="swiper-wrapper" id="flyer-swiper-wrapper"></div>
+			<div id="flyer_page_bar" class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<div id="productDetailLinkPanel" class="productDetailLinkPanel f_DNSTraffic" style="display:none;">
+		<div id="ajaxLoading" class="loadingPage_One">
+			<div class="_ballOne"></div>
+			<div class="_ballTwo"></div>
+			<div class="_ballThree"></div>
+		</div>
+		<div class="productMarkClose"></div>
+	</div>
+	<div id="rotateTipsPanel" class="rotateTipsPanel f_DNSTraffic" style="display:none;">
+	</div>
+
+
+<script src="static/js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	// (function () {
+	// 	var fs = document.createElement("script");
+	// 	fs.src = "//fe.faisys.com/jssdk_1_1/js/hawkEye.min.js?v=201809051514";
+	// 	window.FAI_HAWK_EYE = {};
+	// 	window.FAI_HAWK_EYE.jssdk_report_url = "//report.fkw.com/js/report";
+	// 	window.FAI_HAWK_EYE.jssdk_appid = 6001;
+	// 	window.FAI_HAWK_EYE.fai_aid = 17176129;
+	// 	window.FAI_HAWK_EYE.fai_bs_aid = 3320491;
+	// 	window.FAI_HAWK_EYE.fai_bs_id = 578;
+	// 	window.FAI_HAWK_EYE.fai_bs_wid = 0;
+	// 	var s = document.getElementsByTagName("script")[0];
+	// 	s.parentNode.insertBefore(fs, s);
+	// })();
+</script>
+
+
+
+<script type='text/javascript' src="static/js/b0b6e68500d04eeeb652f370390f81f2.js"></script>
+<script type="text/javascript">
+	if (typeof Flyer == 'undefined' || typeof Flyer.top == 'undefined') {
+		if (typeof Flyer == 'undefined') {
+			Flyer = {};
+		}
+		try {
+			if (!1) {
+				Flyer.top = window;
+			} else {
+				Flyer.top = top;
+			}
+			Flyer.top.test = 1;
+		} catch (err) {
+			Flyer.top = window;
+		}
+	}
+
+	Flyer._updateTimeStamp = 1542246432219;
+	Flyer._loadingSetting = {
+		"loadingAniType": 0,
+		"color": "#4a68ec",
+		"normalMode": {
+			"bgColor": "#ffffff",
+			"bgPicId": "",
+			"bgType": 0,
+			"top": "15%",
+			"bgGradient": 0,
+			"templateType": 0,
+			"useTemplate": -1,
+			"bgCustomColor": "",
+			"tmpNormalBgPicPath": ""
+		},
+		"logoMode": {
+			"bgColor": "#ffffff",
+			"bgPicId": "",
+			"bgType": 0,
+			"logo": {
+				"picId": "",
+				"top": "15%",
+				"width": "28%",
+				"height": "17%",
+				"color": "#4A89DC",
+				"aniType": 0,
+				"speed": "1s",
+				"wtoh": "1.0",
+				"htow": "1.0",
+				"tmpLogoPicPath": ""
+			},
+			"progressBar": {
+				"type": 5,
+				"top": "37%",
+				"color": "#999999"
+			},
+			"templateType": 0,
+			"bgGradient": 0,
+			"useTemplate": -1,
+			"bgCustomColor": "",
+			"tmpLogoBgPicPath": ""
+		},
+		"freeMode": {
+			"templateType": 0
+		}
+	};
+	Flyer._loadingSetting.loadingAniType = 0 || 0;
+	Flyer._loadingSetting.color = Flyer._loadingSetting.color || "#4a68ec";
+	Flyer._gfwSwitch = {
+		"compareTimestamp": 1508839966000,
+		"interactionSwitch": 0,
+		"voteMangeSwitch": 0,
+		"votePreSwitch": 0,
+		"wxSwitch": 0,
+		"manageNoticeWord": "为营造和谐安全的网络环境，提升用户体验，该功能近期正快马加鞭升级中，请耐心等待，造成不便敬请原谅！",
+		"previewNoticeWord": "为保障网络安全，该功能近期正在升级维护中，敬请期待！"
+	};
+
+	Flyer._loadingType = 0 || 0;
+	Flyer._loadingColor = Flyer._loadingSetting.color || "#4a68ec";
+	Flyer._isLowVersion = true; //免费版本
+	Flyer._isOemTriVersion = false;
+	Flyer._isEnjoyVersion = false; //乐享版
+	Flyer._isPrimeVersion = false; //是否是尊享版
+
+	if (Flyer._isLowVersion && Flyer._isOemTriVersion) {
+		Flyer._loadingType = Flyer._loadingType <= 0 ? 1 : Flyer._loadingType;
+	} else if (Flyer._isLowVersion && !Flyer._isOemTriVersion && !false) {
+		Flyer._loadingType = 0;
+	}
+
+	Flyer.pageLogoImgSrc = "//1.s51i.faiusr.com/2/ADMIABACGAAgoKCz3wUo8Iu-lQMwyAE4yAE.jpg";
+	Flyer.top._isPreview = false;
+	//判断是否来自PC，是否调用箭头滑动的方法。
+	Flyer.top._isFromPC =
+		/Android|webOS|iPhone|iPad|iPod|BlackBerry|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ?
+		false : true;
+	Flyer._ta = 0;
+	Flyer._aid = 3320491;
+	Flyer._faiscoAid = 17176129;
+	Flyer._fid = 578;
+	Flyer._identifier = "35albZi2";
+	Flyer._createTime = "1542246428427";
+	Flyer.top._showLoading = 1;
+
+	Flyer._flyerOtherSetting = Flyer._flyerOther.setting;
+
+	Flyer._flyerRegedTitle = {
+		"title": "幼儿园招生啦"
+	};
+	//Flyer._flyerBaseTitle = {"title":"幼儿园招生啦"};
+	Flyer._pvCount = 340;
+	//alert(Flyer._pvCount);
+	Flyer._flyerOtherBulletParam = Flyer._flyerOther.bulletparam;
+	Flyer._flyerOtherOperatorParam = Flyer._flyerOther.operatorParam;
+
+	Flyer._flyerType = 0; //传单类型 大于10代表是参加了H5大赛之类的传单
+	Flyer._flyerVersion = 0; //传单版本 0 免费版 1 商务版 ，分销 110 试用 120 高级
+
+	Flyer._flyerDomain = "s.wcd.im";
+	Flyer._flyerHomeDomain = "wcd.im";
+	Flyer._flyerNewHomeDomain = "cd.fkw.com";
+	Flyer._pageEffect = 0;
+	Flyer._webDebug = false;
+	Flyer._isDep1 = false;
+
+
+
+	Flyer._faiscoSite = ("ontouchstart" in window) ?
+		"http://mp.weixin.qq.com/s?__biz=MzI1ODA3MjQyNw==&mid=400735216&idx=1&sn=c20ee06dc94b2b5f61133ac97302e708&scene=20#wechat_redirect" :
+		"http://wcd.im";
+	Flyer._faiscoSiteText = "点击制作凡科微传单";
+	Flyer.top._isUIManage = true;
+	Flyer.top._isNewUIManage = true;
+	Flyer.top._isOperateManage = false;
+	Flyer.top._isOem = false;
+	Flyer._resRoot = "//cd.faisys.com";
+	//不用考虑分享人=访问人的情况使用
+	Flyer._userInfo_not = {};
+	Flyer._userInfo = {};
+	Flyer._shareUserInfo = {};
+	Flyer._shareLevel = 0;
+	//比较分享人和访问人用
+	Flyer._flyerWXUserId = {
+		userId: 0,
+		shareUserId: 0
+	};
+	Flyer._slv = 0;
+	Flyer._fromType = "null";
+	Flyer._chnlId = "";
+	Flyer._tfriendId = "";
+	Flyer._fromQrCode = "";
+	Flyer._flyerFileRoot = "faiusr.com";
+	Flyer._faiSysDomain = "faisys.com";
+
+	Flyer._isMarketForUPlus = false;
+	Flyer._flyerLoadingText = "凡科微传单";
+
+	Flyer.miniTag = '';
+	Flyer.isMiniProgram = false;
+
+	if (Flyer._templateData.length == 1) {
+		Flyer._flyerOther.loopSlide = false;
+	}
+	Flyer._slideBar = {
+		flyerSlideLoop: Flyer._flyerOther.loopSlide,
+		flyerSlideBar: Flyer._flyerOther.slideBar,
+		flyerSlideBarColor: Flyer._flyerOther.slideBarColor,
+		flyerSlideIdx: Flyer._flyerOther.slideIdx
+	};
+
+	Flyer.wx_openId = "";
+	//2000286统计要通过unionid去重，获取unionid要用到appid（不想在log里面再加一堆判断appid的逻辑，就直接传了，有必要可以改）
+	Flyer.wx_fkwOpenid = "";
+	Flyer.sTkPartnerId = "null";
+	Flyer.wx_openId = Flyer.wx_openId || (localStorage.getItem('wx_openId') ? localStorage.getItem('wx_openId') : '');
+	localStorage.setItem('wx_openId', Flyer.wx_openId);
+
+	//对openid的最后一个字符串做取模处理，用户统计A\B测
+	var tmpStrNum;
+	if (Flyer.wx_openId != "") {
+		var tmpStr = Flyer.wx_openId.charAt(Flyer.wx_openId.length - 1);
+		tmpStrNum = tmpStr.charCodeAt();
+	}
+
+	//点击投诉才getopenid的优化，先注释 dms   =getOpenIdFromCookie%>
+	//Flyer.wx_only_openId = "getOpenIdFromCookie%>";
+	//Flyer._isAClassUser = isNaN(tmpStrNum) ? true : (tmpStrNum % 2 == 0);
+
+	//做A/B测试  随机
+	if (!localStorage.flyerABTestRandom) {
+		localStorage.setItem("flyerABTestRandom", Math.ceil(Math.random() * 2) % 2);
+	}
+	Flyer.flyerABTestRandom = parseInt(localStorage.flyerABTestRandom);
+	Flyer._isAClassUser = (Flyer.flyerABTestRandom == 0) ? true : false;
+
+	//判断当前用户是否是B类用户
+	Flyer._isUserB = Flyer._faiscoAid % 2 !== 0;
+
+	if (Flyer.top._isOem) {
+		Flyer._faiscoSite =
+			"http://mp.weixin.qq.com/s?__biz=MzI1ODA3MjQyNw==&mid=400735216&idx=1&sn=c20ee06dc94b2b5f61133ac97302e708&scene=20#wechat_redirect";
+	}
+
+	if (Flyer._faiscoSite === "http://") {
+		Flyer._faiscoSite = location.href;
+	}
+
+	Flyer._openCommercial = true;
+
+	Flyer.lazyJSPath = {
+		"iscroll": "//cd.faisys.com/js/comm/iscroll.min.js?v=201712111229",
+		"selectScroll": "//cd.faisys.com/js/comm/selectScroll.min.js?v=201805211138",
+		"siriwave9": "//cd.faisys.com/js/comm/siriwave9.min.js?v=201611281839",
+		"shake": "//cd.faisys.com/js/comm/shake.min.js?v=201611281839",
+		"vconsole": "//cd.faisys.com/js/comm/vconsole.min.js?v=201807161146",
+		"orienter": "//cd.faisys.com/js/comm/orienter.min.js?v=201611281839",
+		"jquerySpellShowImages": "//cd.faisys.com/js/comm/jquery/plugins/jquery-spell-show-images.min.js?v=201710161417",
+		"jqueryRoundabout": "//cd.faisys.com/js/comm/jquery/plugins/jquery.roundabout-2.42.min.js?v=201711281839",
+		"jqueryStackImage": "//cd.faisys.com/js/comm/jquery/plugins/jquery.stackImage.min.js?v=201709181155",
+		"jqueryThreeDCard": "//cd.faisys.com/js/comm/jquery/plugins/jquery-threeDCard.min.js?v=201709181155",
+		"cardsRound": "//cd.faisys.com/js/comm/jquery/plugins/cardsRound.min.js?v=201709181155",
+		"effectLayerShow": "//cd.faisys.com/js/comm/effectLayer.min.js?v=201803121142",
+		"VRcss3d": "//cd.faisys.com/js/comm/css3d.min.js?v=201612051737",
+		"pixi": "//cd.faisys.com/js/comm/pixi.min.js?v=201704171736",
+		"chartComponent": "//cd.faisys.com/js/comm/chartComponent.min.js?v=201703201723",
+		"pinchzoom": "//cd.faisys.com/js/comm/pinchzoom.min.js?v=201706051804",
+		"uploadify": "//cd.faisys.com/js/comm/SWFUpload2v/jquery.uploadify.min.js?v=201803121142",
+		"css_editorNav": "//cd.faisys.com/css/comm/editorNav.min.css?v=201810291206",
+		"three": "//cd.faisys.com/js/comm/three.min.js?v=201712111229",
+		"threestats": "//cd.faisys.com/js/comm/threestats.min.js?v=201704171736",
+		"js_provinceCityCountry": "//cd.faisys.com/js/single/mobile/flyerProvinceCityCountyData.min.js?v=201805092020",
+		"jqueryQrcode": "//cd.faisys.com/js/comm/jqueryQrcode.min.js?v=201812101139"
+	};
+
+	Flyer.hasLoadedJs = {};
+
+	Flyer._joinContestInfo = null;
+
+	Flyer.getQueryString = function (name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]);
+		return null;
+	};
+
+	if (Flyer.getQueryString("webView")) {
+		var loadingPage = document.getElementById("loadingPage");
+		if (loadingPage) {
+			loadingPage.style.width = "100%";
+			loadingPage.style.height = "100%";
+		}
+	}
+	Flyer.appId = "";
+	// 刚刚成为推友进入到传单页面的。
+	Flyer.firstBecomeTf = false;
+	Flyer._tfLink = "https://s.wcd.im/inviteTFriend.jsp?id=35albZi2";
+	// 判断是否有推友按钮
+	Flyer.hasTFriendBtn = false;
+	// 是否从小程序创建的传单
+	Flyer._isFromMiniProgram = false;
+
+	Flyer.isDevAccount = false;
+
+	Flyer.isAllTFriend = false; //是否开启全民
+
+	Flyer.isFlyerTFrined = false; //是否是传单推友
+
+	Flyer.createPageRequestAnimation = [];
+
+	// 分离图片控件和layer
+	if (Flyer._layerData && Flyer._layerData.length > 0) {
+		Flyer._imgControlData = [];
+		var tempLayer = [];
+		for (var tempIdx in Flyer._layerData) {
+			var item = Flyer._layerData[tempIdx];
+			if (item.content_type == 1) {
+				Flyer._imgControlData.push(item);
+			} else {
+				tempLayer.push(item);
+			}
+		}
+		Flyer._layerData = tempLayer;
+	}
+</script>
+<script type='text/javascript' src="static/js/polyfill.min.js"></script>
+<script type='text/javascript' src="static/js/jquery-core.min.js"></script>
+<script type='text/javascript' src="static/js/flyerloaded.min.js"></script>
+<script type='text/javascript' src="static/js/iscroll.min.js"></script>
+<script type='text/javascript' src="static/js/html2canvas.min.js"></script>
+<script type='text/javascript' crossorigin="anonymous" src="static/js/flyer.min.js"></script>
+
+<script>
+	
+</script>
+</body>
+</html>

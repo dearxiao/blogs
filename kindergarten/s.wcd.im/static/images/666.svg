@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="100%"  viewBox="0 0 302 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3a393d;
+        fill-rule: evenodd;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+  <g id="画板_1" data-name="画板 1">
+    <path id="形状_1_拷贝_4" data-name="形状 1 拷贝 4" class="cls-1" d="M74,61V83l7.134,1.816v0.7L74,87v2l12.839,2.825v0.65L74,95v4H375V74l-4.945-1.618L375,71V68l-9.7-2.447L376,64V61H74Z" transform="translate(-74 -61)"/>
+  </g>
+</svg>
