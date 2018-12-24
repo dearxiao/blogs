@@ -438,7 +438,7 @@
 		margin: 0 20px;
 	}
 
-	.navbar {
+	.head .navbar {
 		background: #102d59;
 	}
 
@@ -854,10 +854,6 @@
 }
 
 @media (max-width: 1000px) {
-
-	.navbar {
-		background: #102d59;
-	}
 
 	.navbar-header {
 		width: 100%;

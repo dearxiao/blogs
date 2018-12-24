@@ -46,11 +46,13 @@ iframe {
 	width: 70px;
 	height: 70px;
 }
-
+.head .navbar{
+	background: rgba(9, 27, 35, 0.4);
+}
 .navbar {
 	margin-bottom: 0px;
 	min-height: 90px;
-	background: rgba(9, 27, 35, 0.4);
+	background: #102D59;
 	z-index: 9999;
 	border: 0px;
 }
