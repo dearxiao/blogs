@@ -10,18 +10,10 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>考特幼儿园</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="//cd.faisys.com/image/favIcon/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="//cd.faisys.com/image/favIcon/android-chrome-192x192.png" sizes="192x192">
-	<link rel="mask-icon" href="//cd.faisys.com/image/favIcon/safari-pinned-tab.svg" color="#5bbad5">
-
 	<link href="static/css/flyeranimation.min.css" rel="stylesheet" type="text/css" />
-
 	<link href="static/css/comm.min.css" rel="stylesheet" type="text/css" />
 	<link href="static/css/flyer.min.css" rel="stylesheet" type="text/css" />
 	<link href="static/css/style.css" rel="stylesheet" type="text/css" />
-
-
-
 </head>
 
 <body>
@@ -202,9 +194,9 @@
 	Flyer._flyerType = 0; //传单类型 大于10代表是参加了H5大赛之类的传单
 	Flyer._flyerVersion = 0; //传单版本 0 免费版 1 商务版 ，分销 110 试用 120 高级
 
-	Flyer._flyerDomain = "s.wcd.im";
-	Flyer._flyerHomeDomain = "wcd.im";
-	Flyer._flyerNewHomeDomain = "cd.fkw.com";
+	// Flyer._flyerDomain = "s.wcd.im";
+	// Flyer._flyerHomeDomain = "wcd.im";
+	// Flyer._flyerNewHomeDomain = "cd.fkw.com";
 	Flyer._pageEffect = 0;
 	Flyer._webDebug = false;
 	Flyer._isDep1 = false;
@@ -214,12 +206,12 @@
 	Flyer._faiscoSite = ("ontouchstart" in window) ?
 		"http://mp.weixin.qq.com/s?__biz=MzI1ODA3MjQyNw==&mid=400735216&idx=1&sn=c20ee06dc94b2b5f61133ac97302e708&scene=20#wechat_redirect" :
 		"http://wcd.im";
-	Flyer._faiscoSiteText = "点击制作凡科微传单";
+	Flyer._faiscoSiteText = "";
 	Flyer.top._isUIManage = true;
 	Flyer.top._isNewUIManage = true;
 	Flyer.top._isOperateManage = false;
 	Flyer.top._isOem = false;
-	Flyer._resRoot = "//cd.faisys.com";
+	// Flyer._resRoot = "//cd.faisys.com";
 	//不用考虑分享人=访问人的情况使用
 	Flyer._userInfo_not = {};
 	Flyer._userInfo = {};
@@ -239,7 +231,7 @@
 	Flyer._faiSysDomain = "faisys.com";
 
 	Flyer._isMarketForUPlus = false;
-	Flyer._flyerLoadingText = "凡科微传单";
+	Flyer._flyerLoadingText = "";
 
 	Flyer.miniTag = '';
 	Flyer.isMiniProgram = false;
@@ -293,30 +285,30 @@
 
 	Flyer._openCommercial = true;
 
-	Flyer.lazyJSPath = {
-		"iscroll": "//cd.faisys.com/js/comm/iscroll.min.js?v=201712111229",
-		"selectScroll": "//cd.faisys.com/js/comm/selectScroll.min.js?v=201805211138",
-		"siriwave9": "//cd.faisys.com/js/comm/siriwave9.min.js?v=201611281839",
-		"shake": "//cd.faisys.com/js/comm/shake.min.js?v=201611281839",
-		"vconsole": "//cd.faisys.com/js/comm/vconsole.min.js?v=201807161146",
-		"orienter": "//cd.faisys.com/js/comm/orienter.min.js?v=201611281839",
-		"jquerySpellShowImages": "//cd.faisys.com/js/comm/jquery/plugins/jquery-spell-show-images.min.js?v=201710161417",
-		"jqueryRoundabout": "//cd.faisys.com/js/comm/jquery/plugins/jquery.roundabout-2.42.min.js?v=201711281839",
-		"jqueryStackImage": "//cd.faisys.com/js/comm/jquery/plugins/jquery.stackImage.min.js?v=201709181155",
-		"jqueryThreeDCard": "//cd.faisys.com/js/comm/jquery/plugins/jquery-threeDCard.min.js?v=201709181155",
-		"cardsRound": "//cd.faisys.com/js/comm/jquery/plugins/cardsRound.min.js?v=201709181155",
-		"effectLayerShow": "//cd.faisys.com/js/comm/effectLayer.min.js?v=201803121142",
-		"VRcss3d": "//cd.faisys.com/js/comm/css3d.min.js?v=201612051737",
-		"pixi": "//cd.faisys.com/js/comm/pixi.min.js?v=201704171736",
-		"chartComponent": "//cd.faisys.com/js/comm/chartComponent.min.js?v=201703201723",
-		"pinchzoom": "//cd.faisys.com/js/comm/pinchzoom.min.js?v=201706051804",
-		"uploadify": "//cd.faisys.com/js/comm/SWFUpload2v/jquery.uploadify.min.js?v=201803121142",
-		"css_editorNav": "//cd.faisys.com/css/comm/editorNav.min.css?v=201810291206",
-		"three": "//cd.faisys.com/js/comm/three.min.js?v=201712111229",
-		"threestats": "//cd.faisys.com/js/comm/threestats.min.js?v=201704171736",
-		"js_provinceCityCountry": "//cd.faisys.com/js/single/mobile/flyerProvinceCityCountyData.min.js?v=201805092020",
-		"jqueryQrcode": "//cd.faisys.com/js/comm/jqueryQrcode.min.js?v=201812101139"
-	};
+	// Flyer.lazyJSPath = {
+	// 	"iscroll": "//cd.faisys.com/js/comm/iscroll.min.js?v=201712111229",
+	// 	"selectScroll": "//cd.faisys.com/js/comm/selectScroll.min.js?v=201805211138",
+	// 	"siriwave9": "//cd.faisys.com/js/comm/siriwave9.min.js?v=201611281839",
+	// 	"shake": "//cd.faisys.com/js/comm/shake.min.js?v=201611281839",
+	// 	"vconsole": "//cd.faisys.com/js/comm/vconsole.min.js?v=201807161146",
+	// 	"orienter": "//cd.faisys.com/js/comm/orienter.min.js?v=201611281839",
+	// 	"jquerySpellShowImages": "//cd.faisys.com/js/comm/jquery/plugins/jquery-spell-show-images.min.js?v=201710161417",
+	// 	"jqueryRoundabout": "//cd.faisys.com/js/comm/jquery/plugins/jquery.roundabout-2.42.min.js?v=201711281839",
+	// 	"jqueryStackImage": "//cd.faisys.com/js/comm/jquery/plugins/jquery.stackImage.min.js?v=201709181155",
+	// 	"jqueryThreeDCard": "//cd.faisys.com/js/comm/jquery/plugins/jquery-threeDCard.min.js?v=201709181155",
+	// 	"cardsRound": "//cd.faisys.com/js/comm/jquery/plugins/cardsRound.min.js?v=201709181155",
+	// 	"effectLayerShow": "//cd.faisys.com/js/comm/effectLayer.min.js?v=201803121142",
+	// 	"VRcss3d": "//cd.faisys.com/js/comm/css3d.min.js?v=201612051737",
+	// 	"pixi": "//cd.faisys.com/js/comm/pixi.min.js?v=201704171736",
+	// 	"chartComponent": "//cd.faisys.com/js/comm/chartComponent.min.js?v=201703201723",
+	// 	"pinchzoom": "//cd.faisys.com/js/comm/pinchzoom.min.js?v=201706051804",
+	// 	"uploadify": "//cd.faisys.com/js/comm/SWFUpload2v/jquery.uploadify.min.js?v=201803121142",
+	// 	"css_editorNav": "//cd.faisys.com/css/comm/editorNav.min.css?v=201810291206",
+	// 	"three": "//cd.faisys.com/js/comm/three.min.js?v=201712111229",
+	// 	"threestats": "//cd.faisys.com/js/comm/threestats.min.js?v=201704171736",
+	// 	"js_provinceCityCountry": "//cd.faisys.com/js/single/mobile/flyerProvinceCityCountyData.min.js?v=201805092020",
+	// 	"jqueryQrcode": "//cd.faisys.com/js/comm/jqueryQrcode.min.js?v=201812101139"
+	// };
 
 	Flyer.hasLoadedJs = {};
 
@@ -339,7 +331,7 @@
 	Flyer.appId = "";
 	// 刚刚成为推友进入到传单页面的。
 	Flyer.firstBecomeTf = false;
-	Flyer._tfLink = "https://s.wcd.im/inviteTFriend.jsp?id=35albZi2";
+	// Flyer._tfLink = "https://s.wcd.im/inviteTFriend.jsp?id=35albZi2";
 	// 判断是否有推友按钮
 	Flyer.hasTFriendBtn = false;
 	// 是否从小程序创建的传单
@@ -368,14 +360,15 @@
 		Flyer._layerData = tempLayer;
 	}
 </script>
-<script type='text/javascript' src="static/js/polyfill.min.js"></script>
-<script type='text/javascript' src="static/js/jquery-core.min.js"></script>
 <script type='text/javascript' src="static/js/flyerloaded.min.js"></script>
-<script type='text/javascript' src="static/js/iscroll.min.js"></script>
-<script type='text/javascript' src="static/js/html2canvas.min.js"></script>
 <script type='text/javascript' crossorigin="anonymous" src="static/js/flyer.min.js"></script>
 
 <script>
+	$(function () {
+		$('.swiper-slide-5').remove();
+		$('#pageMusic').attr('data-src', 'music.mp3');
+		$('#pageMusic audio').attr('autoplay', 'autoplay');
+	})
 	
 </script>
 </body>

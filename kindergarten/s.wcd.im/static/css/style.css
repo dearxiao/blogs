@@ -18,7 +18,12 @@ body{
     width: 100px;
     margin-left: -50px;
 }
-.pageContentPanel[longpage="false"] .contentEle{
+/* .pageContentPanel[longpage="false"] .contentEle{
     height: 100%;
-    top: 0 !important;
+} */
+.maskShape[uniquename="1_15"],
+.maskShape[uniquename="1_16"],
+.maskShape[uniquename="1_19"],
+.maskShape[uniquename="1_20"]{
+    display: none !important;
 }
