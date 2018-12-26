@@ -798,7 +798,7 @@ Flyer._templateData = [{
         "maskShapeImageId": "",
         "inOneId": "0",
         "isFixed": false,
-        "tmp_pic_path": "//1.s51i.faiusr.com/4/ADMIABAEGAAgnqCz3wUo1uWcvgEw-QQ49QI.png"
+        "tmp_pic_path": "images/ADMIABAEGAAgnqCz3wUo1uWcvgEw-QQ49QI.png"
     }, {
         "top": 245,
         "left": 24,
