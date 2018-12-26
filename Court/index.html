@@ -26,7 +26,6 @@
 		</div>
 	</div>
 
-
 	<div class="f_music f_DNSTraffic" style="display: block">
 		<div id="pageMusic" data-open="true" data-src="music.mp3" data-iconpath="" data-color="#000000" data-usericon="false" data-loop="true"></div>
 		<div class="musicDiv">
@@ -36,16 +35,14 @@
 		</div>
 	</div>
 
-
 	<div id="pageFooter" class="f_DNSTraffic" data-isOpen="true" data-type="0" data-sysIcon="0" data-color="#fff" data-iconSrc=""></div>
-
 	<div id="mobiPage" class="mobiPage f_DNSTraffic">
 		<div id="pageContent" class="page_content swiper-container" style="height:100%;">
 			<div class="swiper-wrapper" id="flyer-swiper-wrapper"></div>
 			<div id="flyer_page_bar" class="swiper-pagination"></div>
 		</div>
+		<img class="down" src="images/down.png">
 	</div>
-
 	<div id="productDetailLinkPanel" class="productDetailLinkPanel f_DNSTraffic" style="display:none;">
 		<div id="ajaxLoading" class="loadingPage_One">
 			<div class="_ballOne"></div>
@@ -352,6 +349,7 @@
 <script>
 	$(function () {
 		$('.swiper-slide-5').remove();
+		$('.down').show()
 		document.addEventListener('DOMContentLoaded', function () {
 			function audioAutoPlay() {
 				var audio = $('audio').get(0)

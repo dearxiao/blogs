@@ -34,3 +34,13 @@ body{
 .f_ptext_4_19{
     display: none !important;
 }
+.down{
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    width: 60px;
+    margin-left: -30px;
+    transform: rotate(180deg);
+    z-index: 20;
+}
