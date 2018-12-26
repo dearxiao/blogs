@@ -28,7 +28,7 @@
 
 
 	<div class="f_music f_DNSTraffic" style="display: block">
-		<div id="pageMusic" data-open="true" data-src="//cd.faisys.com/image/musicLib/defaultMusic/0000005.mp3" data-iconpath="" data-color="#000000" data-usericon="false" data-auto="true" data-loop="true"></div>
+		<div id="pageMusic" data-open="true" data-src="music.mp3" data-iconpath="" data-color="#000000" data-usericon="false" data-loop="true"></div>
 		<div class="musicDiv">
 			<div class="musicIcon " id="musicIcon" style="right: 10px;">
 				<div></div>
@@ -366,8 +366,9 @@
 <script>
 	$(function () {
 		$('.swiper-slide-5').remove();
-		$('#pageMusic').attr('data-src', 'music.mp3');
-		$('#pageMusic audio').attr('autoplay', 'autoplay');
+		// document.addEventListener('WeixinJSBridgeReady', function() {
+		// 	$('audio')[0].play()
+		// })
 	})
 	
 </script>
