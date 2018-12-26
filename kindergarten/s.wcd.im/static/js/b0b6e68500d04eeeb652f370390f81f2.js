@@ -10492,7 +10492,7 @@ Flyer._templateData = [{
         "largerPic": false,
         "inOneId": "0",
         "isFixed": false,
-        "tmp_pic_path": "static/images/qr-code.png"
+        "tmp_pic_path": "images/qr-code.png"
     }],
     "bgwidth": "750",
     "bgheight": "auto",
