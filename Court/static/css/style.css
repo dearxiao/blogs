@@ -30,3 +30,7 @@ body{
 .swiper-slide-4.blurPage{
     filter: none;
 }
+.f_ptext_4_18,
+.f_ptext_4_19{
+    display: none !important;
+}

@@ -8506,8 +8506,8 @@ Flyer._templateData = [{
         "tmp_pic_path": "//1.s51i.faiusr.com/4/ADMIABAEGAAgn6Cz3wUoz_a63QYwqAQ4qAQ.png"
     }, {
         "top": 440,
-        "left": 179,
-        "w": 420,
+        "left": 199,
+        "w": 380,
         "h": 222,
         "rotate": 0,
         "opacity": 0,
@@ -9829,7 +9829,7 @@ Flyer._templateData = [{
         "rotate": 0,
         "opacity": 0,
         "type": "ptext",
-        "con": "<div class=\"wcdfontwrap\" ftsize=\"54\" style=\"font-size: 54px;\"><div><p><b style=\"height: auto;\">报名开始啦！<\/b><\/p><\/div><\/div>",
+        "con": "<div class=\"wcdfontwrap\" ftsize=\"54\" style=\"font-size: 54px;\"><div><p><b style=\"height: auto;\">Come on !!!<\/b><\/p><\/div><\/div>",
         "show": "fadeInNormal",
         "speed": 0.6,
         "delay": "0.5",
@@ -10291,8 +10291,8 @@ Flyer._templateData = [{
             "textEmphaAnimationDir": "sequence"
         }
     }, {
-        "top": 928,
-        "left": 101,
+        "top": 780,
+        "left": 140,
         "w": 482,
         "h": 55,
         "rotate": 0,
