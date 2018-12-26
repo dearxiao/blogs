@@ -363,7 +363,7 @@
 			audioAutoPlay();
 		});
 	
-		if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+		// if (/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
 			$(document).one('touchstart',
 				function(e) {
 					$('audio').get(0).touchstart = true;
@@ -371,7 +371,7 @@
 					return false;
 				}
 			);
-		}
+		// }
 
 	})
 	
