@@ -1,0 +1,85 @@
+body{
+    padding-top: 1.2rem;
+}
+header .right{
+    margin-top: -1.3rem;
+    text-align: center;
+}
+header .right img{
+    width: .4rem;
+}
+header .right p{
+    font-size: .32rem;
+    line-height: 1;
+    color: #333;
+}
+.grade{
+    height: 3.5rem;
+    padding-top: 1rem;
+    margin-bottom: .2rem;
+    text-align: center;
+    color: #fff;
+    background: url(../images/upgrade-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.grade p{
+    font-size: .37rem;
+    line-height: 2;
+}
+.grade span{
+    font-size: .42rem;
+}
+.upgrade>button{
+    width: 4rem;
+    margin: .6rem 3rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    border-radius: .2rem;
+    background-color: #6813d2;
+}
+.remit h2{
+    padding-left: 1rem;
+    margin-bottom: .2rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    background: #fff url(../images/remit.png) no-repeat .3rem;
+    background-size: .4rem;
+}
+.remit div{
+    padding: 0 .3rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    background-color: #fff;
+}
+.remit span{
+    color: #6813d2;
+}
+.remit a{
+    float: right;
+    text-decoration: underline;
+    color: #5daffb;
+}
+/* 上级详情 */
+.superior .msg{
+    margin: .3rem;
+    padding: .2rem;
+    font-size: .37rem;
+    line-height: .7rem;
+    border-radius: .2rem;
+    background-color: #fff;
+}
+.superior .msg span{
+    color: #5daffb;
+}
+.superior .msg button{
+    width: 4rem;
+    margin: .6rem 2.5rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    border-radius: .2rem;
+    background-color: #6813d2;
+}

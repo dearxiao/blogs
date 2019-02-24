@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+}
+.sign{
+    position: relative;
+    height: 100%;
+    background: url(../images/bg1.png) no-repeat;
+    background-size: 100%;
+}
+.sign form{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12.2rem;
+    padding-top: 1rem;
+    text-align: center;
+    background: url(../images/login-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.line{
+    display: inline-block;
+    width: 80%;
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+    font-size: 0;
+    border-radius: 1rem;
+    background-color: #f9f0da;
+}
+.line input{
+    width: 100%;
+    font-size: .37rem;
+    line-height: 1rem;
+    border: 0;
+    background: none;
+}
+.code input{
+    width: 80%;
+}
+.code img{
+    float: right;
+    width: 20%;
+    height: .95rem;
+}
+input[type="submit"]{
+    width: 3rem;
+    padding: 0 0 .1rem;
+    line-height: 1.2rem;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    background: url(../images/btn-bg.png) no-repeat;
+    background-size: 100%;
+}
+.sign .forget{
+    display: inline-block;
+    width: 100%;
+    font-size: .32rem;
+    color: #94b7e8;
+    line-height: 1rem;
+}
+/* 注册 */
+.acquire{
+    float: right;
+    width: 20%;
+    font-size: .37rem;
+    line-height: 1rem;
+    color: #71cd7d;
+}

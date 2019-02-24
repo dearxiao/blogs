@@ -1,0 +1,168 @@
+
+body{
+    padding-top: 1.2rem;
+    font-size: 0;
+}
+header .right{
+    margin-top: -1.3rem;
+    text-align: center;
+}
+header .right img{
+    width: .4rem;
+}
+header .right p{
+    font-size: .32rem;
+    line-height: 1;
+    color: #333;
+}
+.swiper-container img{
+    width: 100%;
+}
+.goods li{
+    padding-bottom: .2rem;
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+.goods li img{
+    width: 100%;
+}
+.goods li p{
+    text-indent: .3rem;
+    font-size: .37rem;
+    color: #333;
+}
+.goods li span{
+    display: inline-block;
+    text-indent: .3rem;
+    font-size: .37rem;
+    color: #ff2a2a;
+}
+.goods li a, footer button{
+    float: right;
+    width: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    line-height: .8rem;
+    background: url(../images/btn-bg2.png) no-repeat;
+    background-size: 100%;
+}
+/* 详情 */
+.detail{
+    padding: 0 .3rem 1rem;
+    font-size: .37rem;
+    line-height: 1.4;
+    background: #fff;
+}
+.detail h2{
+    padding-left: .8rem;
+    margin-bottom: .2rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    border-bottom: 1px solid #e6e6e6;
+    background: url(../images/detail.png) no-repeat left;
+    background-size: .4rem;
+}
+.detail img{
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: .2rem .3rem;
+    background-color: #fff;
+    box-shadow: 3px 0 4px rgba(0, 0, 0, .3);
+}
+footer span{
+    vertical-align: top;
+    font-size: .37rem;
+    line-height: .8rem;
+    color: #ff2a2a;
+}
+.btm{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 .3rem;
+    background-color: #fff;
+}
+.btm h6{
+    text-align: center;
+    padding-left: .4rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.btm h6 img{
+    float: right;
+    width: .4rem;
+    margin: .3rem 0;
+}
+.btm>div{
+    font-size: .32rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.btm>div div{
+    float: right;
+    margin-top: -.2rem;
+    line-height: .7rem;
+}
+.btm .info{
+    padding: .2rem 0;
+}
+.btm>div b{
+    float: right;
+    font-weight: 500;
+    color: #6813d2;
+}
+.btm>div .color1{
+    color: #ff2a2a;
+}
+.btm button{
+    width: 4rem;
+    margin: .6rem 3rem;
+    line-height: 1rem;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    border-radius: .2rem;
+    background-color: #6813d2;
+}
+/* 我的订单 */
+.order li{
+    margin-top: .2rem;
+    padding: .2rem .3rem 0;
+    background-color: #fff;
+}
+.order li img{
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: top;
+}
+.order .info{
+    display: inline-block;
+    font-size: .37rem;
+    line-height: .6rem;
+}
+.order .info span{
+    color: #ff2a2a;
+}
+.order .time{
+    margin-top: .2rem;
+    font-size: .37rem;
+    line-height: .8rem;
+    border-top: 1px solid #e6e6e6;
+}
+.order .time b{
+    float: right;
+    font-weight: 500;
+    color: #75deea;
+}
+.order .time .color1{
+    color: #ff2a2a;
+}
