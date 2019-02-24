@@ -2,11 +2,10 @@
 $(function () {
 	$('.shade').on('click', function(){
 		$('.shade, .hint').hide()
-		$('.btm').slideUp();
 	})
-	$("form").ajaxForm(function (res) {
-		tips(res)
-	});
+	// $("form").ajaxForm(function (res) {
+	// 	tips(res)
+	// });
 	// 获取验证码
 	$('.acquire').on('click', function () {
 		var that = this

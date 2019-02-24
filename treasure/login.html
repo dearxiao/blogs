@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login">
+        <h1>登录</h1>
+        <form action="index.html" method="post">
+            <img class="logo" src="images/logo.png">
+            <div class="line">
+                <img src="images/login1.png">
+                <input type="text" placeholder="请输入用户名/手机号">
+            </div>
+            <div class="line">
+                <img src="images/login2.png">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <div class="line code">
+                <img src="images/login1.png">
+                <input type="text" placeholder="请输入验证码">
+                <img class="CAPTCHA" src="images/logo.png">
+            </div>
+            <a class="forget" href="password.html">忘记密码?</a><br>
+            <button>登录</button>
+            <a class="register" href="register.html">立即注册</a>
+        </form>
+    </div>
+    <div class="shade"></div>
+    <div class="hint">
+        <img src="images/lose.png">
+        <p></p>
+        <span>确定</span>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

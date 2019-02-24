@@ -1,210 +1,104 @@
 body{
     padding-top: 1.2rem;
 }
-header .right{
-    float: right;
-    height: .5rem;
-    margin-top: -.85rem;
-}
-.top{
-    padding: .5rem 0;
-    text-align: center;
-    background: url(../images/index-bg.png) no-repeat;
-    background-size: 100% 100%;
-}
-.top>img{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-}
-.top p{
-    font-size: .37rem;
-    color: #fff;
-    line-height: .8rem;
-}
-.top p img{
-    width: .5rem;
-}
-.middle{
-    margin: .3rem 0;
+.index{
     font-size: 0;
-    background-color: #fff;
+    padding-bottom: 1.5rem;
 }
-.middle a{
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    font-size: .37rem;
-    line-height: 1rem;
-    color: #333;
+.swiper-wrapper img{
+    width: 100%;
 }
-.middle a:nth-child(1){
-    border-right: 1px solid #e6e6e6;
-}
-nav a{
-    display: block;
+.notice{
     padding: .2rem .3rem;
+    border-bottom: 1px solid #ebebeb;
     background-color: #fff;
 }
-nav a{
-    margin-bottom: .2rem;
-    line-height: .6rem;
-    font-size: .37rem;
-    color: #333;
-}
-nav a img:nth-child(1){
-    height: .6rem;
-    margin-right: .3rem;
-    vertical-align: top;
-}
-nav .arrow{
-    float: right;
+.notice img{
     height: .4rem;
     margin: .1rem 0;
-}
-/* 设置 */
-.setting nav{
-    margin-top: .3rem;
-}
-/* 我的账户 */
-.yue{
-    height: 4rem;
-    padding-top: 1rem;
-    margin-bottom: .2rem;
-    text-align: center;
-    color: #fff;
-    background: url(../images/acount-bg.png) no-repeat;
-    background-size: 100% 100%;
-}
-.yue p{
-    font-size: .37rem;
-    line-height: 2;
-}
-.yue span{
-    font-size: .42rem;
-}
-/* 我的团队 */
-.team li{
-    margin-top: .2rem;
-    padding: .2rem .3rem;
-    background-color: #fff;
-}
-.team li img{
-    width: 1.2rem;
-    height: 1.2rem;
     vertical-align: top;
 }
-.team li div{
-    display: inline-block;
-    padding: .1rem .2rem;
-    line-height: .5rem;
-}
-.team li p{
-    font-size: .37rem;
-    color: #6813d2;
-}
-.team li span{
-    font-size: .32rem;
-    color: #aaa;
-}
-/* 个人资料 */
-.line{
-    margin-top: .2rem;
-    padding: .1rem .3rem;
-    background-color: #fff;
-}
-.line span{
-    vertical-align: top;
-    font-size: .37rem;
-    line-height: .8rem;
-}
-.line input{
-    float: right;
-    width: 60%;
-    text-align: right;
-    font-size: .37rem;
-    line-height: .8rem;
-    color: #aaa;
-    border: 0;
-}
-input[type="submit"]{
-    width: 4rem;
-    margin: .6rem 3rem;
-    line-height: 1rem;
-    font-size: .37rem;
-    color: #fff;
-    border: 0;
-    border-radius: .2rem;
-    background-color: #6813d2;
-}
-.personal form>p{
-    padding: .2rem .3rem;
-    font-size: .32rem;
-    color: #aaa;
-}
-.line label img{
-    float: right;
-    width: .8rem;
-    height: .8rem;
-    border-radius: 50%;
-}
-#tx{
-    display: none;
-}
-/* 我要推广 */
-.generalize>img{
-    width: 100%;
-}
-/* 客服中心 */
-.service .logo{
-    width: 3rem;
-    margin: 1rem 3.5rem;
-}
-.service>p{
-    padding: 0 .3rem;
-    margin-bottom: .2rem;
-    font-size: .37rem;
-    line-height: 1rem;
-    background-color: #fff;
-}
-.service>p span{
-    float: right;
-    color: #aaa;
-}
-/* 系统公告 */
-.notice{
-    padding-top: .2rem;
-}
-.notice nav a span{
-    display: inline-block;
+marquee{
     width: 80%;
-    vertical-align: top;
-    white-space: nowrap;
-    overflow: hidden;
+    font-size: .37rem;
+    color: #b5b5b5;
+    line-height: .6rem;
 }
-.notice-detail h5{
-    line-height: .8rem;
+nav a{
+    display: inline-block;
+    width: 25%;
+    padding: .2rem .3rem;
     text-align: center;
-    font-size: .42rem;
+    background-color: #fff;
 }
-.notice-detail .time{
-    margin: 0 .3rem;
-    text-align: center;
-    font-size: .32rem;
-    line-height: .8rem;
-    color: #aaa;
-    border-bottom: 1px solid #c1c1c1;
+nav img{
+    width: 60%;
 }
-.notice-detail .content{
+nav p{
+    font-size: .37rem;
+    line-height: .6rem;
+    color: #616161;
+}
+.market{
+    margin: .2rem 0;
+    background: #fff;
+}
+.market>h2{
+    padding: .2rem .3rem;
+    font-size: .37rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid #ebebeb;
+    background: url(../images/stock.png) no-repeat .3rem;
+    background-size: .4rem;
+}
+.market ul{
     padding: .3rem;
 }
-.notice-detail .content p{
-    text-indent: .6rem;
-    text-align: justify;
-    line-height: 1.6;
-    font-size: .37rem;
-    color: #777;
+.market li{
+    display: inline-block;
+    width: 32%;
+    overflow: hidden;
+    text-align: center;
+    color: #dc4046;
+    background: #f4f4f4;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
 }
-.notice-detail .content img{
-    width: 100%;
+.market li:nth-of-type(2){
+    margin: 0 2%;
+}
+.market li.down{
+    color: #1486ce;
+}
+.market li h3{
+    font-size: .32rem;
+    color: #fff;
+    line-height: .6rem;
+    background-color: #e67780;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+.market li h3.down{
+    background-color: #6eb2dd;
+}
+.market li p{
+    padding-left: .3rem;
+    font-size: .42rem;
+    line-height: .8rem;
+    background: url(../images/up.png) no-repeat .6rem;
+    background-size: .2rem;
+}
+.market li p.down{
+    background: url(../images/down.png) no-repeat .6rem;
+    background-size: .2rem;
+}
+.market li span{
+    font-size: .37rem;
+    line-height: .8rem;
+}
+.market li span:nth-of-type(1){
+    float: left;
+    padding-left: .2rem;
+}
+.market li span:nth-of-type(2){
+    float: right;
+    padding-right: .2rem;
 }
