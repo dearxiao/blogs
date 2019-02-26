@@ -22,6 +22,14 @@ $(function () {
 			}, 1000)
 		}
 	})
+	// 选项卡
+	$('.title span').click(function () {
+		var i = $(this).index()
+		$('.title span').removeClass('active');
+		$(this).addClass('active');
+		$('.tab').hide();
+		$('.tab' + i + '').show();
+	});
 })
 function tips (e) {
 	if (e.error_code == 200) {

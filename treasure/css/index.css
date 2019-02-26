@@ -102,3 +102,108 @@ nav p{
     float: right;
     padding-right: .2rem;
 }
+.stock{
+    background: #fff;
+}
+.stock h2{
+    padding: .2rem .3rem .2rem .8rem;
+    font-size: .37rem;
+    line-height: .6rem;
+    background: url(../images/stock.png) no-repeat .3rem center;
+    background-size: .4rem;
+}
+.stock h2 a{
+    float: right;
+    color: #dc2333;
+}
+.stock h2 span{
+    float: right;
+    margin-right: .5rem;
+    color: #1486ce;
+}
+.stock li{
+    padding: .2rem .3rem;
+    border-top: 1px solid #ebebeb;
+}
+.stock li>img{
+    display: none;
+    width: .5rem;
+    margin: .25rem .3rem 0 0;
+}
+.stock .li-left{
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    font-size: .37rem;
+    line-height: .5rem;
+}
+.stock .li-left span{
+    font-size: .32rem;
+    color: #a2a2a2;
+}
+.stock li>p{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+    vertical-align: top;
+    font-size: .37rem;
+    line-height: 1rem;
+}
+.stock li>span{
+    float: right;
+    font-size: .37rem;
+    line-height: 1rem;
+    color: #dc2333;
+}
+.empty{
+    padding: .5rem 0;
+    text-align: center;
+    font-size: .37rem;
+    color: #1486ce;
+}
+.empty img{
+    width: 3rem;
+}
+/* 添加 */
+.add{
+    font-size: 0;
+}
+.add header{
+    background: #fff;
+}
+.search{
+    display: inline-block;
+    width: 80%;
+    margin: .2rem .3rem;
+    padding: .1rem 0;
+    border-radius: 1rem;
+    background: #f7f7f7;
+}
+.search img{
+    width: .4rem;
+    margin: .1rem .2rem;
+    vertical-align: top;
+}
+.search input{
+    width: calc(100% - .8rem);
+    font-size: .37rem;
+    line-height: .6rem;
+    background: none;
+    border: 0;
+}
+.add header span{
+    float: right;
+    width: 10%;
+    margin: .3rem 0;
+    font-size: .37rem;
+    line-height: .6rem;
+}
+.add .stock img{
+    display: inline-block;
+    float: right;
+}
+.nothing img{
+    display: none;
+    width: 4rem;
+    margin: 5rem 3rem;
+}
