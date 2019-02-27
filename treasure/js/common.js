@@ -1,7 +1,10 @@
 
 $(function () {
-	$('.shade').on('click', function(){
+	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()
+	})
+	$('.hint2 button').on('click', function(){
+		$('.shade, .hint2').hide()
 	})
 	// $("form").ajaxForm(function (res) {
 	// 	tips(res)
@@ -25,8 +28,8 @@ $(function () {
 	// 选项卡
 	$('.title span').click(function () {
 		var i = $(this).index()
-		$('.title span').removeClass('active');
-		$(this).addClass('active');
+		$(this).siblings('span').removeClass('act');
+		$(this).addClass('act');
 		$('.tab').hide();
 		$('.tab' + i + '').show();
 	});

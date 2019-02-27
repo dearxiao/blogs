@@ -1,0 +1,103 @@
+
+.top{
+    padding-top: 1.2rem;
+    background: url(../images/my-bg.png) no-repeat;
+    background-size: 100%;
+}
+h1{
+    padding-left: .3rem;
+    text-align: left;
+    background: rgba(255, 255, 255, .1);
+}
+h1 img{
+    float: right;
+    height: .6rem;
+    margin: .3rem;
+}
+.msg{
+    padding: .5rem 0 .3rem;
+    text-align: center;
+}
+.msg img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.msg span{
+    display: inline-block;
+    margin: .2rem 0;
+    padding: .1rem .3rem .1rem .8rem;
+    font-size: .37rem;
+    color: #fff;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .1) url(../images/phone.png) no-repeat .2rem center;
+    background-size: .4rem;
+}
+.yue{
+    padding: .2rem 0 .6rem;
+    text-align: center;
+    background: #f24232;
+}
+.yue div{
+    display: inline-block;
+    width: 50%;
+    font-size: .37rem;
+    color: #fff;
+}
+.yue div:nth-child(1){
+    border-right: 1px solid #f88f84;
+}
+.yue p{
+    color: #ffb7b3;
+}
+nav{
+    position: relative;
+    z-index: 2;
+    margin: -.5rem .3rem 0;
+    padding: .1rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background-color: #fff;
+}
+nav a{
+    display: inline-block;
+    width: 33.33%;
+    padding: .2rem .3rem;
+    text-align: center;
+}
+nav img{
+    width: 50%;
+}
+nav p{
+    font-size: .37rem;
+    line-height: .6rem;
+    color: #838383;
+}
+.nav{
+    margin-top: -2rem;
+    padding-top: 2.2rem;
+    background: #fff;
+}
+.nav a{
+    display: block;
+    padding: .3rem .3rem;
+    font-size: .37rem;
+    color: #838383;
+    line-height: .5rem;
+    border-bottom: 1px solid  #f0f0f0;
+    background: #fff;
+}
+.nav a img:nth-child(1){
+    width: .5rem;
+    margin-right: .2rem;
+    vertical-align: top;
+}
+.nav .arrow{
+    float: right;
+    height: .3rem;
+    margin: .1rem 0;
+}
+/* 充值 */
+.recharge{
+    padding-top: 1.2rem;
+}

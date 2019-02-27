@@ -4,6 +4,9 @@ html{
 body, input, button{
     font-family: '苹方';
 }
+body>div{
+    font-size: 0;
+}
 h1{
     position: fixed;
     width: 100%;
@@ -19,8 +22,10 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     padding: 0 .3rem;
     background-color: #dc2333;
+    z-index: 9;
 }
 header a:nth-child(1) img{
     float: left;
@@ -106,6 +111,15 @@ header .right{
 }
 .hint2 button:nth-of-type(1){
     border-right: 1px solid #d3d3d3;
+}
+.up{
+    color: #dc2333 !important;
+}
+.down{
+    color: #1486ce !important;
+}
+.tab1, .tab2{
+    display: none;
 }
 footer{
     position: fixed;

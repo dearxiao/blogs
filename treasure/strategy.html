@@ -15,14 +15,14 @@
         <header>
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>创建策略</h3>
-            <a href="javascript: history.back()"><img class="search" src="images/search2.png"></a>
+            <a href="add.html"><img class="search" src="images/search2.png"></a>
         </header>
         <div class="title">
             <span class="act">点买</span>
             <span>持仓</span>
             <span>历史</span>
         </div>
-        <div class="tab">
+        <div class="tab tab0">
             <div class="info">
                 <div>
                     <p>大众公用</p>
@@ -34,6 +34,98 @@
                 <span>-0.51%</span>
                 <img class="arrow" src="images/arrow.png">
             </div>
+            <div class="data">
+                <ul>
+                    <li>
+                        <p>今开</p>
+                        <p>735.00</p>
+                        <p>昨收</p>
+                        <p>730.76</p>
+                    </li>
+                    <li>
+                        <p>最高</p>
+                        <p>735.00</p>
+                        <p>最低</p>
+                        <p>716.06</p>
+                    </li>
+                    <li>
+                        <p>成交量</p>
+                        <p>3788237</p>
+                        <p>成交额</p>
+                        <p>2749898</p>
+                    </li>
+                    <li>
+                        <p>涨停价</p>
+                        <p>803.94</p>
+                        <p>跌停价</p>
+                        <p>657.68</p>
+                    </li>
+                </ul>
+                <div class="title2">
+                    <span class="act">分时</span>
+                    <span>K线</span>
+                </div>
+                <div class="chart chart0">
+                    <div id="chart1"></div>
+                    <div class="orders">
+                        <ul class="buy">
+                            <li>
+                                <span>卖5</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>卖4</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>卖3</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>卖2</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>卖1</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                        </ul>
+                        <ul class="sale">
+                            <li>
+                                <span>买1</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>买2</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>买3</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>买4</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                            <li>
+                                <span>买5</span>
+                                <span>723.00</span>
+                                <span>800</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chart chart1" id="chart2"></div>
+            </div>
             <form action="" method="post">
                 <div class="line">
                     <span>买入金额</span>
@@ -41,7 +133,7 @@
                 </div>
                 <div class="line">买入金额(元)</div>
                 <ul class="money">
-                    <li>1万</li>
+                    <li class="act">1万</li>
                     <li>2万</li>
                     <li>5万</li>
                     <li>10万</li>
@@ -52,11 +144,92 @@
                 </ul>
                 <div class="line">履约保证金(元)</div>
                 <ul class="deposit">
-                    <li>1000</li>
+                    <li class="act">1000</li>
                     <li>1250</li>
                     <li>1666</li>
                 </ul>
+                <div class="stop">
+                    <span>触发止损<b>-700</b></span>
+                    <span>交易综合费<b>42元</b></span>
+                </div>
+                <div class="protocol">
+                    <p>阅读并同意以下协议</p>
+                    <a href="">《财富策略人参与卢深A股交易合作涉及费用及收费标准》</a><br>
+                    <a href="">《财富策略投资人与点买人与卢深A股交易合作协议》</a><br>
+                    <a href="">《财富策略服务协议》</a>
+                </div>
+                <p class="yue">账户可用余额：2000元</p>
+                <button class="buy">策略点买</button>
             </form>
+        </div>
+        <div class="tab tab1">
+            <div class="intro">
+                <div class="top">
+                    <span>大众股份</span>
+                    <a href="deposit.html">+保证金</a>
+                    <button>点卖</button>
+                </div>
+                <div class="semicircle-l"></div>
+                <div class="semicircle-r"></div>
+                <div class="center">
+                    <div>
+                        <p>50000</p>
+                        <span>金额(元)</span>
+                    </div>
+                    <div>
+                        <p>4900</p>
+                        <span>股数</span>
+                    </div>
+                    <div>
+                        <p class="down">-588</p>
+                        <span>盈亏(元)</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span>止损(元)：-45570.00</span>
+                    <div class="right">
+                        <p>买入(元)：<b>10.02</b></p>
+                        <p>当前(元)：<b>10.08</b></p>
+                    </div>
+                </div>
+                <img class="arrow" src="images/arrow.png">
+                <ul class="detail">
+                    <li>买入时间:<span>2018-06-05</span></li>
+                    <li>浮动盈亏比(%):<span>-1.18%</span></li>
+                    <li>交易号:<span>35062</span></li>
+                    <li>保证金(元):<span>64500.00</span></li>
+                    <li>+保证金:<span>14500.00</span></li>
+                    <li>止损价(元):<span>9.27</span></li>
+                    <li>递延天数(天):<span>16</span></li>
+                    <li>递延费(元):<span>14400.00</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab tab2">
+            <div class="intro">
+                <div class="top">
+                    <span>大众股份 2019-04-20</span>
+                </div>
+                <div class="semicircle-l"></div>
+                <div class="semicircle-r"></div>
+                <div class="center">
+                    <div>
+                        <p class="down">-588.00</p>
+                        <span>盈亏(元)</span>
+                    </div>
+                </div>
+                <img class="arrow" src="images/arrow.png">
+                <ul class="detail">
+                    <li>买入时间:<span>2018-06-05</span></li>
+                    <li>浮动盈亏比(%):<span>-1.18%</span></li>
+                    <li>交易号:<span>35062</span></li>
+                    <li>保证金(元):<span>64500.00</span></li>
+                    <li>+保证金:<span>14500.00</span></li>
+                    <li>止损价(元):<span>9.27</span></li>
+                    <li>递延天数(天):<span>16</span></li>
+                    <li>递延费(元):<span>14400.00</span></li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer>
@@ -79,8 +252,43 @@
         <p></p>
         <span>确定</span>
     </div>
+    <div class="hint2">
+        <p>确定要点卖该股？</p>
+        <button>取消</button>
+        <button>确定</button>
+    </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/echart.js"></script>
+    <script src="js/echart2.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $('form').on('click', 'li', function () { 
+                $(this).siblings('li').removeClass('act')
+                $(this).addClass('act');
+            });
+            // 选项卡
+            $('.title2 span').click(function () {
+                var i = $(this).index()
+                $(this).siblings('span').removeClass('act');
+                $(this).addClass('act');
+                $('.chart').hide();
+                $('.chart' + i + '').show();
+            });
+            $('.top button').click(function () { 
+                $('.shade, .hint2').show()
+            });
+            $('.info .arrow').click(function () { 
+                $('.data').toggle();
+                $(this).toggleClass('arrow2');
+            });
+            $('.intro .arrow').click(function () { 
+                $(this).next('ul.detail').toggle();
+                $(this).toggleClass('arrow2');
+            });
+        })
+    </script>
 </body>
 </html>

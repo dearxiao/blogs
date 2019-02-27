@@ -32,15 +32,15 @@
                 <img src="images/nav1.png">
                 <p>免费体验</p>
             </a>
-            <a href="">
+            <a href="noob.html">
                 <img src="images/nav2.png">
                 <p>新手引导</p>
             </a>
-            <a href="">
+            <a href="news.html">
                 <img src="images/nav3.png">
                 <p>行业资讯</p>
             </a>
-            <a href="">
+            <a href="notice.html">
                 <img src="images/nav4.png">
                 <p>公告通知</p>
             </a>
@@ -69,7 +69,7 @@
             </ul>
         </div>
         <div class="stock">
-            <h2>自选股 <a href="add.html">添加</a><span>编辑</span></h2>
+            <h2>自选股 <a href="add.html">添加</a><span class="edit">编辑</span></h2>
             <ul>
                 <li>
                     <img src="images/minus.png">
@@ -101,8 +101,12 @@
             <p>我的</p>
         </a>
     </footer>
+    <script src="js/jquery-1.11.3.js"></script>
     <script src="swiper/swiper.min.js"></script>
     <script>
+        $('.edit').click(function () { 
+            $('.stock li img').toggle();
+        });
         var mySwiper = new Swiper ('.swiper-container', {
             autoplay: true,
             loop: true, // 循环模式选项
