@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>资金记录</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+    <div class="fund">
+        <header>
+            <a href="javascript: history.back()"><img src="images/back.png"></a>
+            <h3>资金记录</h3>
+            <span class="right filtrate">筛选</span>
+        </header>
+        <ul class="record">
+            <li>
+                <span>充值</span>
+                <div>
+                    <p>后台手动充值</p>
+                    <span>2019-04-22 11:31:56</span>
+                </div>
+                <div>
+                    <p>+200元</p>
+                    <span>充值成功</span>
+                </div>
+            </li>
+            <li>
+                <span>提现</span>
+                <div>
+                    <p>申请提现</p>
+                    <span>2019-04-22 11:31:56</span>
+                </div>
+                <div>
+                    <p>200元</p>
+                    <span>审核中</span>
+                </div>
+            </li>
+        </ul>
+        <div class="shade"></div>
+        <ul class="type">
+            <li class="act">不限</li>
+            <li>充值</li>
+            <li>提现</li>
+            <li>佣金</li>
+            <li>递延费</li>
+            <li>策略盈亏</li>
+            <li>交易管理</li>
+            <li>保证金补充</li>
+            <li>点买保证金冻结</li>
+            <li>点买保证金解冻</li>
+        </ul>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $('.filtrate').click(function () { 
+                $('.shade').toggle();
+                $('.type').slideToggle();
+            });
+        })
+    </script>
+</body>
+</html>

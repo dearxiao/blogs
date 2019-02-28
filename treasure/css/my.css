@@ -23,6 +23,9 @@ h1 img{
     height: 2rem;
     border-radius: 50%;
 }
+input[type=file]{
+    display: none;
+}
 .msg span{
     display: inline-block;
     margin: .2rem 0;
@@ -98,6 +101,136 @@ nav p{
     margin: .1rem 0;
 }
 /* 充值 */
-.recharge{
+.recharge, .transfer, .fund{
     padding-top: 1.2rem;
+}
+/* 支付宝转账 */
+.transfer h4{
+    padding-left: .3rem;
+    font-size: .37rem;
+    color: #1c1c1c;
+    line-height: 1rem;
+}
+.step1{
+    padding: .3rem;
+    background: #fff;
+}
+.step1 img{
+    width: 1.2rem;
+    vertical-align: top;
+}
+.step1 div{
+    display: inline-block;
+    padding-left: .2rem;
+    font-size: .37rem;
+    color: #1c1c1c;
+    line-height: .6rem;
+}
+.step1 div input{
+    font-size: .37rem;
+    color: #1486ce;
+    line-height: .6rem;
+    border: 0;
+}
+.step1 button{
+    float: right;
+    width: 1.6rem;
+    margin: .2rem 0;
+    font-size: .37rem;
+    color: #fff;
+    line-height: .8rem;
+    border: 0;
+    border-radius: .2rem;
+    background: #dc2333;
+}
+.tishi{
+    margin-top: .3rem;
+    padding: .3rem 0 0;
+    font-size: .32rem;
+    color: #dc2333;
+    border-top: 1px solid #d9d9d9;
+}
+.step2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .3rem 0;
+    background: #fff;
+}
+.step2>img{
+    height: .6rem;
+}
+.step2 div{
+    width: 40%;
+    text-align: center;
+}
+.step2 div img{
+    width: 1rem;
+}
+.step2 p{
+    font-size: .37rem;
+}
+.tishi2{
+    padding: .3rem;
+    font-size: .32rem;
+    color: #dc2333;
+}
+.transfer>button{
+    width: 9rem;
+    margin: 1rem .5rem;
+    line-height: 1.1rem;
+    font-size: .37rem;
+    color: #fff;
+    border: 0;
+    border-radius: .2rem;
+    background-color: #dc2333;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+/* 资金记录 */
+.record li{
+    padding: .2rem .3rem;
+    background: #fff;
+}
+.record li>span{
+    display: inline-block;
+    width: 1rem;
+    margin-right: .2rem;
+    text-align: center;
+    vertical-align: top;
+    font-size: .37rem;
+    color: #dc2333;
+    line-height: 1rem;
+    border: 1px solid #dc2333;
+    border-radius: 50%;
+}
+.record li div{
+    display: inline-block;
+    font-size: .37rem;
+    color: #1c1c1c;
+    line-height: .55rem;
+}
+.record li div span{
+    color: #9d9d9d;
+}
+.record li div:nth-of-type(2){
+    float: right;
+    text-align: right;
+}
+.type{
+    display: none;
+    position: fixed;
+    top: 1.2rem;
+    width: 100%;
+    background: #fff;
+}
+.type li{
+    text-align: center;
+    font-size: .37rem;
+    color: #1c1c1c;
+    line-height: 1rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+.type .act{
+    background: url(../images/dui.png) no-repeat 90%;
+    background-size: .5rem;
 }

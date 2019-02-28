@@ -15,7 +15,10 @@
         <div class="top">
             <h1>个人中心 <a href="login.html"><img src="images/quit.png"></a></h1>
             <div class="msg">
-                <img src="images/headimg.png"><br>
+                <form action="" method="post">
+                    <label for="tx"><img class="img" src="images/headimg.png"></label>
+                    <input id="tx" onchange="upload(this)" type="file" name="" accept="image/*">
+                </form>
                 <span>15863163838</span>
             </div>
             <div class="yue">
@@ -75,5 +78,22 @@
             <p class="act">我的</p>
         </a>
     </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        function upload(e) {
+            var file = e.files[0]
+            if (e.files) {
+                var reader = new FileReader()
+                reader.readAsDataURL(e.files[0]); //发起异步请求
+                reader.onload = function (e) {
+                    //console.log(e)
+                    var src = this.result
+                    $('.img').attr('src', src)
+                }
+            }
+        }
+    </script>
 </body>
 </html>

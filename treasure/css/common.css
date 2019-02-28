@@ -42,6 +42,8 @@ header h3{
 header .right{
     float: right;
     margin-top: -.85rem;
+    font-size: .32rem;
+    color: #fff;
 }
 .strip{
     height: .2rem;
