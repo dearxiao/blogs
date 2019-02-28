@@ -21,10 +21,10 @@
             <img src="images/zfb2.png">
             <div>
                 <span>支付宝帐号</span>
-                <input type="text" value="15863163838">
+                <input id="url" type="text" value="15863163838">
                 <p>财富策略有限公司</p>
             </div>
-            <button>复制</button>
+            <button onclick="copy()">复制</button>
             <p class="tishi">注：请务必在转账备注中填写注册手机号，以方便您的汇款信息</p>
         </div>
         <h4>step2：手机打开支付宝，快速转账</h4>
@@ -42,5 +42,13 @@
         <p class="tishi2">如不能正常打开，请按照上面的步骤手动转账</p>
         <button>去转账</button>
     </div>
+    <script>
+		function copy(){
+			var url=document.getElementById("url");
+			url.select(); // 选择对象
+			document.execCommand("Copy"); // 执行浏览器复制命令
+			alert("已复制好，可贴粘。");
+		}
+    </script>
 </body>
 </html>
