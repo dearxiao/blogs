@@ -321,7 +321,7 @@ button.buy{
     transform: rotate(0deg);
 }
 ul.detail{
-    display: none;
+    /* display: none; */
     width: 9rem;
     margin-left: -.3rem;
     padding: .2rem;

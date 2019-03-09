@@ -1,0 +1,838 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="UTF-8">
+	<title>财富策略</title>
+	<link rel="stylesheet" type="text/css" href="../home/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../home/css/buy.css">
+	<link rel="stylesheet" type="text/css" href="../home/css/member.css">
+	<link rel="stylesheet" type="text/css" href="../home/css/pageturn.css">
+</head>
+
+<body class="membercenter logged-in>
+	<div>
+		<!--头部-->
+		<header class="ml_header br-w100">
+			<div class="h_top br-w100">
+				<div class="w1024 br-clearfix">
+					<div class="h_topL br-fl">
+						服务热线：400-8888-666
+					</div>
+					<div id="page_shared_layout_login" class="h_topR br-fr" style="display:none">
+						<a class="login" href="javascript:;">登录</a>
+						<a class="register" href="/reg.html">注册</a>
+					</div>
+					<ul id="page_shared_layout_unlogin" class="top-links f-right" style="display:block">
+						<li class="show-login" style="display: block;">您好，&nbsp;</li>
+						<li class="show-login top-user-wrapper" style="display: block;">
+							<span class="top-username">
+								<a id="page_shared_layout_login_name" href="index.html">ygr123</a>
+								<i class="icon icon-arrow-drop-down"></i>
+							</span>
+							<div class="overlay-account">
+								<div class="group account-group">
+									<span class="f-left">可用<b class="account-val" id="shared_header_mb">982286.00</b></span>
+									<a name="realnameAuth" class="f-right" href="payment.html">充值</a>
+								</div>
+								<div class="account-links group">
+									<a class="f-left" href="index.html">个人中心</a>
+									<span class="f-left sep">|</span>
+									<a class="f-right js-logout" href="../login.html">安全退出</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="h_bot br-w100">
+				<div class="w1364 br-clearfix">
+					<div class="h_botL br-fl">
+						<a href="../index.html"><img src="../home/img/logo.png" style="height:60px; "></a>
+					</div>
+					<div class="h_botR br-fr">
+						<ul class="br-clearfix" id="menu-ul">
+							<li class="br-fl"><a href="../index.html" class="active">首页</a></li>
+							<li class="br-fl"><a href="../buy.html">创建策略</a></li>
+							<li class="br-fl"><a href="../freeTrial.html">免费体验</a></li>
+							<li class="br-fl"><a href="../mobile.html">手机版</a></li>
+							<li class="br-fl"><a href="../guild.html">新手引导</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<!--个人中心-充值-->
+	<div class="br-content">
+		<div class="w1200" style="padding-top: 120px;">
+			<!--主体-->
+			<section class="page-main page-personal">
+				<div class="container clearfix">
+					<!--public左边-->
+					<div>
+						<link rel="stylesheet" type="text/css" href="../home/fonts/iconfont.css">
+						<aside class="col-left">
+							<div class="userinfo">
+								<form name="user_head" id="user_head">
+									<input type="file" name="file" id="img_upload">
+									<div class="img_download">
+										<img class="user-pic" id="headImg" src="../home/img/user.png">
+									</div>
+								</form>
+								<!--<img src="/public/static/home/img/user.png" alt="" class="user-pic">-->
+								<p class="user-info">Hi，<strong id="shared_layout_mem_lnm">ygr123</strong></p>
+								<div class="iconrow">
+									<a href="security.html"><span class="user-2"></span></a>
+									<a href="security.html"><span class="user-3"></span></a>
+									<a href="security.html"><span class="user-4"></span></a>
+								</div>
+							</div>
+							<nav id="personal-nav" class="left-nav">
+								<ul>
+									<li class="active"><a href="index.html"><span class="iconfont icon-zhanghuzonglan"></span>账户总览</a></li>
+									<li class=""><a href="bankcards.html"><span class="iconfont icon-bankcard_icon"></span>银行卡管理</a></li>
+									<li class=""><a href="security.html"><span class="iconfont icon-zhanghuanquan"></span>账户安全</a></li>
+									<li class=""><a href="payment.html"><span class="iconfont icon-chongzhi"></span>充值</a></li>
+									<li class=""><a href="withdraw.html"><span class="iconfont icon-tixian1"></span>提现</a></li>
+									<li class=""><a href="invite.html"><span class="iconfont icon-yaoqinghaoyou"></span>全民经纪人</a></li>
+								</ul>
+							</nav>
+						</aside>
+					</div>
+					<!--右边-->
+					<div id="page_member_index" class="col-main">
+						<section class="personal-section">
+							<div class="new-section-sub-title">
+								<p class="inner-sub-title"><span style="display: block;">账户余额(元)</span><strong class="p-unit" id="账户余额">982286.00</strong></p>
+							</div>
+							<div class="p-money clearfix">
+								<p class="diyongquan br-fl"><span class="ticket">保证金(元)</span><span id="diyongquan">17000.00</span></p>
+							</div>
+							<div class="money_box p-money br-fr">
+								<a id="recharge2" class="btn-1" href="payment.html">充值</a>
+								<a id="withdraw2" class="btn-2" href="withdraw.html">提现</a>
+							</div>
+						</section>
+						<div style="margin-top:-30px;"><img width="100%" src="../home/img/personal_numbg.png"> </div>
+						<div class="mid-gap">
+							<h4>资金明细<span>(资金流向)</span></h4>
+						</div>
+						<section class="moneydetails">
+							<div class="table-control-bar clearfix">
+								<ul class="f-left filter" id="money-flow">
+									<li type="0"><a class="active">全部</a></li>
+									<li type="1"><a>充值</a></li>
+									<li type="2"><a>提现</a></li>
+									<li type="3"><a>佣金</a></li>
+									<li type="4"><a>递延费</a></li>
+									<li type="5"><a>策略盈亏</a></li>
+									<li type="6"><a>交易综合费</a></li>
+									<li type="7"><a>保证金补充</a></li>
+									<li type="8"><a>点买保证金冻结</a></li>
+									<li type="9"><a>点买保证金解冻</a></li>
+									<li type="10"><a>免费体验</a></li>
+									<li type="11"><a>撤单</a></li>
+								</ul>
+
+							</div>
+							<table id="asset-details-tbl" class="std-tbl">
+								<colgroup>
+									<col class="col1">
+									<col class="col2">
+									<col class="col3">
+									<col class="col4">
+									<col class="col5">
+									<col class="col6">
+								</colgroup>
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>时间</th>
+										<th>类型</th>
+										<th>收入/支出(元)</th>
+										<th>说明</th>
+									</tr>
+								</thead>
+								<tbody id="member_bh_list" class="std-tbl-tbody">
+									<tr>
+										<td class="a-center">1</td>
+										<td class="a-center">2019-03-07 09:54:08</td>
+										<td class="a-center">交易管理费</td>
+										<td class="a-center"><span class="green">-714</span></td>
+										<td class="a-center">点买交易综合费</td>
+									</tr>
+									<tr>
+										<td class="a-center">2</td>
+										<td class="a-center">2019-03-07 09:54:07</td>
+										<td class="a-center">点买保证金冻结</td>
+										<td class="a-center"><span class="green">-17000</span></td>
+										<td class="a-center">点买保证金转入</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<ul class="pages_box">
+								<li class="pages_one">第<span>1</span>页/共<span>1</span>页</li>
+								<li class="firstpag" datapage="1">首页</li>
+								<li class="prevp">上一页</li>
+								<li class="pages_num"><a class="active_p noclick" datapage="1">1</a></li>
+								<li class="nextp noclick">下一页</li>
+								<li class="lastpag noclick" datapage="1">尾页</li>
+							</ul>
+						</section>
+						<section id="noPlanSection" class="group personal-section personal-empty hide">
+							<p><a href="javascript:void(0);" class="btn btn-pri">我要交易</a>
+							</p>
+							<p><a href="/freeTrial">免费体验</a>
+							</p>
+							<p><a href="/help">了解交易</a>
+							</p>
+						</section>
+						<!--/ 交易列表start-->
+						<div id="member_index_plan_list">
+						</div>
+						<!--/交易列表end-->
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+	<!--Start Pop-ups-->
+	<div class="mask"></div>
+	<div class="popup" id="popup-p-confirm">
+		<div class="popup-header group">
+			<h2>提示</h2>
+		</div>
+		<div class="popup-body group">
+			<div class="btn-row group">
+				<a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+				<a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup-yeepay">
+		<div id="yeepayPopupContent" class="popup-header group">
+			<h2>提示</h2>
+		</div>
+		<div class="popup-body group">
+			<div class="btn-row group">
+				<a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:；">开设账户</a>
+				<a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup-yeepay-confirm">
+		<div id="yeepayConfirmContent" class="popup-header group">
+			<h2>提示</h2>
+		</div>
+		<div class="popup-body group">
+			<div class="btn-row group">
+				<a class="btn btn-pri js-close-popup" href="javascript:；">是</a>
+				<a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+			</div>
+		</div>
+	</div>
+	<div id="popup-p-error" class="popup">
+		<div class="popup-header group">
+			<h2>提示</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<p id="popup-p-error-msg">提示信息</p>
+		</div>
+	</div>
+	<div class="popup" id="popup-feedback">
+		<div class="popup-header group">
+			<h2>意见反馈</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<form action="#">
+				<div class="field-row group">
+					<label>留言类型：</label>
+					<div class="field-val">
+						<select id="留言类型s">
+							<option value="">请选择留言类型</option>
+							<option value="1">交易问题</option>
+							<option value="2">充值/提款问题</option>
+							<option value="3">交易问题</option>
+							<option value="4">我要投诉</option>
+							<option value="5">意见反馈</option>
+							<option value="6">其它</option>
+						</select>
+					</div>
+				</div>
+				<div class="field-row group show-logout">
+					<label>手机/邮箱：</label>
+					<div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+				</div>
+				<div class="field-row group">
+					<label>&nbsp;</label>
+					<div class="field-val">
+						<textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+					</div>
+				</div>
+				<div class="btn-row group">
+					<a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--/#popup-feedback-->
+	<div class="popup" id="popup-id-verify">
+		<div class="popup-header group">
+			<h2>认证银行卡</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<div class="field-row group" style="text-align:center">
+				<ol class="popup-note">
+					<li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+					<li style="text-align:left;">请务必认真填写真实资料</li>
+					<li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+					<li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+				</ol>
+				<p>为了保障您的账户安全，请先绑定银行卡</p>
+			</div>
+			<div class="btn-row group">
+				<a class="btn btn-pri" href="/ucenter/BankCards.html">去绑定</a>
+				<a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup-realname-auth">
+		<div class="popup-header group">
+			<h2>实名认证</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<div class="field-row group" style="text-align:center">
+				<ol class="popup-note">
+					<li style="text-align:left;">一个身份证对应一个账号</li>
+
+					<li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+				</ol>
+				<p>为了保障您的账户安全，请先进行实名认证</p>
+			</div>
+			<div class="field-row group">
+				<label>真实姓名：</label>
+				<div class="field-val"><input id="姓名i" type="text" class="text" onchange="user_updateid_zsxm_valid()"></div>
+			</div>
+			<div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none">
+				<div><i class="icon icon-x-altx-alt"></i>未填写姓名</div>
+			</div>
+			<div class="field-row group">
+				<label>身份证号：</label>
+				<div class="field-val">
+					<div class="field-val">
+						<input id="身份证i" type="text" class="text" onchange="user_updateid_sfzh_valid()">
+					</div>
+				</div>
+			</div>
+			<div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none">
+				<div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div>
+			</div>
+			<div class="btn-row group">
+				<a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+				<a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup-small" id="popup-user-login">
+		<div class="popup-header group">
+			<h2>账户登录</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<div class="group section-form" style=" margin-bottom: 0px; margin-top: 10px;" id="popup-login-section">
+				<div class="form">
+					<div class="field-wrapper">
+						<input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+					</div>
+					<div class="error-wrapper" style="display:none; margin-top:5px;">
+						<div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>用户名不能为空！</div>
+					</div>
+					<div class="field-wrapper">
+						<input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd" onkeydown="if (event.keyCode == 13) { user_Login() }">
+					</div>
+					<div class="error-wrapper" style="display:none; margin-top:5px;">
+						<div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>密码不能为空！</div>
+					</div>
+					<div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+						<input type="text" class="text" style="width:100px; margin-right:5px; float: left;" placeholder="4位验证码" name="txt_valid_code">
+						<img name="img-block" class="captcha-img" alt="">
+						<a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+					</div>
+					<div class="error-wrapper" style="display:none; margin-top:5px;">
+						<div><i class="icon icon-x-altx-alt" style="font-size:13px;"></i>验证码错误！</div>
+					</div>
+					<div class="link-wrapper group">
+						<a href="/forgot_pass.html">忘记密码</a>
+					</div>
+					<div class="error-wrapper" style="display:none;  margin-top:5px;">
+						<div><i class="icon icon-x-altx-alt" style="font-size:13px;" id="popup_user_login_msg"></i></div>
+					</div>
+					<div class="btn-wrapper">
+						<a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+					</div>
+				</div>
+				<div class="quick-link-wrapper group" style=" padding-bottom:0px;text-align: center;margin-top: 10px;">
+					<p>还没账号? <a href="/reg.html" style="color:#d42b2e;">马上注册</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/#popup-add-deposit（终止操盘）-->
+	<div class="popup" id="popup-early" style="display: none; top: 0px;">
+		<div class="popup-header group">
+			<h2>终止操盘</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<form action="#">
+				<div class="btn-row group">
+					<a id="plan_earlyA" class="btn btn-pri js-close-popup" href="javascript:plan_early_Insert()">确定</a>
+					<a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--/#popup-add-deposit（追加保证金）-->
+	<div class="popup" id="popup-add-deposit">
+		<div class="popup-header group">
+			<h2>追加保证金</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<p class="note-msg">每次追加保证金不能小于当前方案中操盘资金的1%，最低100元，每天可追加或取消保证金的次数为5次。</p>
+			<form action="#">
+				<div class="field-row group">
+					<label>追加金额：</label>
+					<div class="field-val"><input id="追加金额i" type="text" class="text" onkeyup="this.value=this.value.replace(/\D/g,'')"
+						 onafterpaste="this.value=this.value.replace(/\D/g,'')"><span class="field-note" id="最低添加保证金">最低-元</span></div>
+				</div>
+				<div class="btn-row group">
+					<a id="plan_addmarginA" class="btn btn-pri" href="javascript:plan_madd_Insert()">立即追加</a>
+				</div>
+				<p class="chance-count">今日次数: <span>5</span></p>
+			</form>
+		</div>
+	</div>
+	<!--/#popup-renew（申请续约）-->
+	<div class="popup" id="popup-renew" style="display: none; top: 0px;">
+		<div class="popup-header group">
+			<h2>申请续约</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<p class="note-msg">申请续约后，我们会进行审核，不保证续约一定成功。</p>
+			<form action="#">
+				<div class="field-row group">
+					<label>续约时间：</label>
+					<div class="field-val">
+						<select id="续约时间s">
+							<option selected="selected" value="1">一个月</option>
+							<option value="2">二个月</option>
+							<option value="3">三个月</option>
+						</select>
+					</div>
+				</div>
+				<div class="btn-row group">
+					<a id="plan_deferA" class="btn btn-pri js-close-popup" href="javascript:plan_defer_Insert()">确定</a>
+					<a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!--/#popup-get-profit（利润提取）-->
+	<div class="popup" id="popup-get-profit" style="display: none; top: 0px;">
+		<div class="popup-header group">
+			<h2>利润提取</h2>
+			<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+		</div>
+		<div class="popup-body group">
+			<p class="note-msg">
+				1，当日卖出股票的资金到第二日，资金可用<br>
+				2，总利润需保留总操盘资金的10%<br>
+				3，单笔最少提3%，最少100元<br>
+				4，每周可提取利润两次
+			</p>
+			<form action="#">
+				<div class="field-row group">
+					<label>可提金额：</label>
+					<div class="field-val" id="可提金额">- 元</div>
+				</div>
+				<div class="field-row group">
+					<label>最少可提：</label>
+					<div class="field-val" id="最少可提">- 元</div>
+				</div>
+				<div class="field-row group">
+					<label>提取金额：</label>
+					<div class="field-val"><input id="提取金额i" type="text" class="text" onkeyup="this.value=this.value.replace(/\D/g,'')"
+						 onafterpaste="this.value=this.value.replace(/\D/g,'')"><span class="unit">元</span></div>
+				</div>
+				<div class="btn-row group">
+					<a id="plan_wdA" class="btn btn-pri js-close-popup" href="javascript:plan_withdraw_Insert()">确定</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div>
+		<!--底部-->
+		<footer class="br-w100">
+			<div class="footer_top">
+				<a href="/company.html">关于财富策略</a>
+				<a href="/contact.html">联系财富策略</a>
+			</div>
+			<div class="footer_bot">
+				<div class="w1024 br-clearfix">
+					<div class="bot_l br-fl">
+						<p>全国统一服务热线 ：400-8888-666<br>客服服务时间工作日：9:00-18:00</p>
+					</div>
+					<div class="bot_r br-fr br-text-center">
+						<div class="bot_r_img br-clearfix ">
+							<span class="br-fl"><img src="../home/img/f1.png"></span>
+							<span class="br-fr"><img src="../home/img/f2.png"></span>
+						</div>
+						<p>粤ICP备18137245号 投资有风险 入市需谨慎</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--Start Pop-ups-->
+		<!--遮罩层-->
+		<div class="mask"></div>
+		<!--确认，取消提示框-->
+		<div class="popup" id="popup-p-confirm">
+			<div class="popup-header group">
+				<h2>提示</h2>
+			</div>
+			<div class="popup-body group">
+				<div class="btn-row group">
+					<a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+					<a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+				</div>
+			</div>
+		</div>
+		<!--开设账户提示-->
+		<div class="popup" id="popup-yeepay">
+			<div id="yeepayPopupContent" class="popup-header group">
+				<h2>提示</h2>
+			</div>
+			<div class="popup-body group">
+				<div class="btn-row group">
+					<a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:;">开设账户</a>
+					<a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+				</div>
+			</div>
+		</div>
+		<!--是，否提示框-->
+		<div class="popup" id="popup-yeepay-confirm">
+			<div id="yeepayConfirmContent" class="popup-header group">
+				<h2>提示</h2>
+			</div>
+			<div class="popup-body group">
+				<div class="btn-row group">
+					<a class="btn btn-pri js-close-popup" href="javascript:;">是</a>
+					<a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+				</div>
+			</div>
+		</div>
+		<!--提示信息提示框-->
+		<div id="popup-p-error" class="popup">
+			<div class="popup-header group">
+				<h2>提示</h2>
+				<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+			</div>
+			<div class="popup-body group">
+				<p id="popup-p-error-msg">提示信息</p>
+			</div>
+		</div>
+		<!--意见反馈提示框-->
+		<div class="popup" id="popup-feedback">
+			<div class="popup-header group">
+				<h2>意见反馈</h2>
+				<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+			</div>
+			<div class="popup-body group">
+				<form action="#">
+					<div class="field-row group">
+						<label>留言类型：</label>
+						<div class="field-val">
+							<select id="留言类型s">
+								<option value="">请选择留言类型</option>
+								<option value="1">交易问题</option>
+								<option value="2">充值/提款问题</option>
+								<option value="3">交易问题</option>
+								<option value="4">我要投诉</option>
+								<option value="5">意见反馈</option>
+								<option value="6">其它</option>
+							</select>
+						</div>
+					</div>
+					<div class="field-row group show-logout">
+						<label>手机/邮箱：</label>
+						<div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+					</div>
+					<div class="field-row group">
+						<label>&nbsp;</label>
+						<div class="field-val">
+							<textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+						</div>
+					</div>
+					<div class="btn-row group">
+						<a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--账户登录提示框-->
+		<div class="popup popup-small" id="popup-user-login">
+			<div class="popup-header group">
+				<h2>账户登录</h2>
+				<a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+			</div>
+			<div class="popup-body group" style="padding-bottom:10px">
+				<div class="group section-form" style="margin: 0px;" id="popup-login-section">
+					<div class="form">
+						<div class="field-wrapper">
+							<input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+						</div>
+						<div id="error_name" class="error-wrapper" style="display:none; margin-top:5px;">
+							<div>用户名不能为空！</div>
+						</div>
+						<div class="field-wrapper">
+							<input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd">
+						</div>
+						<div id="error_psw" class="error-wrapper" style="display:none; margin-top:5px;">
+							<div>密码不能为空！</div>
+						</div>
+						<div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+							<input type="text" class="text" style="width:100px; margin-right:5px; float: left;" placeholder="4位验证码" name="txt_valid_code">
+							<img name="img-block" class="captcha-img" alt="">
+							<a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+						</div>
+						<div class="error-wrapper" style="display:none; margin-top:5px;">
+							<div>验证码错误！</div>
+						</div>
+
+						<!--<div class="error-wrapper" style="display:none;  margin-top:5px;"><div></div></div>-->
+
+						<div class="btn-wrapper">
+							<a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+						</div>
+						<div class="link-wrapper group clearfix" style="margin-top:10px;">
+							<a href="/forgot_pass.html" class="f-left">忘记密码</a><a href="/reg.html" class="f-right">马上注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 浮窗 -->
+		<ul class="side-pannel" style="display: block">
+			<li class="wechat">
+				<i class="icon-kf"></i>
+				<span>客服电话</span>
+				<div class="wechat" style="top: 0px; height: 30px; line-height: 30px; color: rgb(249, 89, 86); display: none;">
+					400-8888-666
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void(0);" onclick="window.open('tencent://message/?uin=3588392858&amp;Site=qq&amp;Menu=yes');">
+					<i class="icon-qq"></i>
+					<span>QQ客服</span>
+				</a>
+			</li>
+			<li class="wechat">
+				<i class="icon-wechat"></i>
+				<span>微信</span>
+				<div class="wechat" style="display: none;">
+					<i class="tb2"><em></em></i>
+					<img src="../home/img/ewm1.jpg" width="180" height="180" style="margin-top:5px;">
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<script src="../libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+	<script src="../home/js/common.js"></script>
+	<script src="../home/js/pageturn.js"></script>
+	<script src="../home/js/general.js"></script>
+	<script src="../home/js/ajaxfileupload.js"></script>
+	<script>
+		$(function () {
+			/**
+			 * active
+			 */
+			//console.log(window.location.pathname)
+			// $('#personal-nav li').removeClass('active');
+
+			//遍历
+			$('#personal-nav li>a').each(function () {
+				if ($($(this))[0].getAttribute('href') == String(window.location.pathname)) {
+					$(this).parent().addClass('active');
+				}
+			});
+
+			/**
+			 * 上传头像
+			 */
+			//       $('#img_upload').AjaxFileUpload({
+			// 	//处理文件上传操作的服务器端地址
+			// 	//上传图片，返回图片地址
+			// 	action: '/doImgUpload',
+			// 	onComplete: function(filename, resp) { //服务器响应成功时的处理函数
+			// 		if(resp.code == '0') {
+			// 			$('#headImg').attr('src', resp.data);
+			// 			var params = {};
+			// 			params['headImg'] = resp.data;
+			// 			//保存图片到数据库，分两个地址是为了在很多地方公用
+			// 			$.post("/ucenter/savePeopleImg", params, function(data) {
+			// 				if(data.code == '0') {
+			// 					tool.popup_err_msg("修改成功");
+			// 				} else {
+			// 					tool.popup_err_msg(data.msg);
+			// 				}
+			// 			}, 'json');
+			// 		} else {
+			// 			tool.popup_err_msg(resp.msg );
+			// 		}
+			// 	}
+			// });	
+			function getObjectURL(file) {
+				var url = null;
+				if (window.createObjectURL != undefined) { // basic
+					url = window.createObjectURL(file);
+				} else if (window.URL != undefined) { // mozilla(firefox)
+					url = window.URL.createObjectURL(file);
+				} else if (window.webkitURL != undefined) { // webkit or chrome
+					url = window.webkitURL.createObjectURL(file);
+				}
+				return url;
+			}
+
+			$("#img_upload").click(function () {
+				$("#img_upload").on("change", function () {
+					var base = $(this);
+					var objUrl = getObjectURL(this.files[0]); //获取图片的路径，该路径不是图片在本地的路径
+					console.log(objUrl);
+					if (objUrl) {
+						$("#img_upload").attr("src", objUrl); //将图片路径存入src中，显示出图片
+						$.ajaxFileUpload({
+							url: "/user/avatarUpload",
+							fileElementId: "img_upload", //文件上传域的ID，这里是input的ID，而不是img的
+							dataType: 'json', //返回值类型 一般设置为json
+							contentType: "application/x-www-form-urlencoded; charset=utf-8",
+							success: function (data) {
+								if (data.code == "0") {
+									$("#headImg").attr("src", objUrl);
+									//将图片换成默认的+图片
+								}
+							},
+							error: function (e) {
+								console.log(e);
+							}
+						});
+					}
+				});
+			})
+			// $.ajax({
+			// 	type: "get",
+			// 	url: "/user/getUserInfo",
+			// 	dataType: "json",
+			// 	success: function (res) {
+			// 		if (res.code === "0") {
+			// 			if (res.data.headImg != null && res.data.headImg != "") {
+			// 				$("#headImg").attr("src", res.data.headImg);
+			// 			}
+			// 			if (res.data.status === "1") {
+			// 				$(".user-3").css({
+			// 					"background": "url('/home/img/idcard_ok.png') no-repeat center center",
+			// 					"background-size": "100% 100%"
+			// 				})
+			// 			} else if (res.data.status === "2") {
+			// 				$(".user-3").css({
+			// 					"background": "url('/home/img/idcard_ok.png') no-repeat center center",
+			// 					"background-size": "100% 100%"
+			// 				})
+			// 				$(".user-4").css({
+			// 					"background": "url('/home/img/bank_ok.png') no-repeat center center",
+			// 					"background-size": "100% 100%"
+			// 				})
+			// 			}
+			// 		}
+			// 	}
+			// })
+
+		});
+
+		/* $("#search-times").change(function(e){
+			var recent = $(this).val();
+			var flowText = $("#money-flow > li > a[class='active']").html();
+			var flow = "";
+			if (flowText == '收入') {
+				flow = "1";
+			} else if (flowText == '支出') {
+				flow = "2";
+			}
+			location.href = "/ucenter/index?recent=" + recent + "&flow=" + flow;
+		});   */
+
+
+		var moneyclass = ["", "充值", "提现", "佣金", "递延费", "策略盈亏", "交易管理费", "保证金补充", "点买保证金冻结", "点买保证金解冻", "免费体验", "撤单"]
+		var typeclass = "0";
+
+		function plist(curr) {
+			var data = "";
+			typeclass == 0 ? data = {
+				page: curr,
+				size: 10
+			} : data = {
+				type: typeclass,
+				page: curr,
+				size: 10
+			}
+			$.ajax({
+				url: "/user/queryFundRecord",
+				type: "get",
+				dataType: "json",
+				data: data,
+				success: function (res) {
+					if (res.code === "0") {
+						if (res.data.recordList.length !== 0) {
+							var totalPage = Math.ceil(res.data.total / 10),
+								dom, da, i = 0,
+								ind;
+							ind = (curr - 1) * 10 + 1;
+							da = res.data.recordList;
+							for (; i < da.length; i++) {
+								dom += '<tr><td class="a-center">' + (ind + i) + '</td>' +
+									'<td class="a-center">' + da[i].createTime + '</td>' +
+									'<td class="a-center">' + moneyclass[da[i].type] + '</td>' +
+									'<td class="a-center"><span class="' + (da[i].flow == 1 ? "red" : "green") + '">' + (da[i].flow == 1 ? da[i]
+										.amount : -da[i].amount) + '</span></td>' +
+									'<td class="a-center">' + da[i].remark + '</td></tr>'
+							}
+							$("#member_bh_list").html(dom);
+							btn(totalPage, curr);
+						} else {
+							$("#member_bh_list").html('<tr><td colspan="5">暂无数据</td></tr>');
+							$(".pages_box").html("")
+						}
+					}
+				}
+			})
+		}
+		// plist(1);
+		$("#money-flow li").on("click", function () {
+			$(this).children("a").addClass("active");
+			$(this).siblings().children("a").removeClass("active");
+			typeclass = $(this).attr("type");
+			plist(1);
+		})
+	</script>
+
+</body>
+
+</html>

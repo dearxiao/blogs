@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>财富策略-股票点买_股票点买公司_炒股点买_点买炒股公司_安全的股票点买平台-财富策略【官网】</title>
+    <meta name="keywords" content="财富策略,财富策略官网,股票点买,A股点买平台,股票点买平台,股票点买公司,股票配资,配资公司,点买平台,点买公司" />
+    <meta name="description" content="财富策略是一个专业的股票点买服务平台。专业的服务团队,专家级的指导帮您用最少的资金赚取最大的利润。财富策略是专业、安全、高效的股票点买服务平台，是目前国内利息最低、网站最稳定的股票点买网站" />
+    <meta charset="UTF-8">
+    <link href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="home/css/buy.css" />
+    <link rel="stylesheet" type="text/css" href="libs/swiper/swiper.css" />
+    <link rel="stylesheet" type="text/css" href="home/css/index1.css" />
+</head>
+
+<body class="index_body">
+    <div>
+        <link rel="stylesheet" type="text/css" href="home/css/common.css" />
+        <!--头部-->
+        <header class="ml_header br-w100">
+            <div class="h_top br-w100">
+                <div class="w1024 br-clearfix">
+                    <div class="h_topL br-fl">
+                        服务热线：400-8888-666
+                    </div>
+                    <div id="page_shared_layout_login" class="h_topR br-fr" style="display:block">
+                        <a class="login" href="javascript:;">登录</a>
+                        <a class="register" href="reg.html">注册</a>
+                    </div>
+                    <ul id="page_shared_layout_unlogin" class="top-links f-right" style="display:block">
+                        <li class="show-login" style="display: block;">您好，&nbsp;</li>
+                        <li class="show-login top-user-wrapper" style="display: block;">
+                            <span class="top-username">
+                                <a id="page_shared_layout_login_name" href="ucenter/index.html">ygr123</a>
+                                <i class="icon icon-arrow-drop-down"></i>
+                            </span>
+                            <div class="overlay-account">
+                                <div class="group account-group">
+                                    <span class="f-left">可用<b class="account-val" id="shared_header_mb">982286.00</b></span>
+                                    <a name="realnameAuth" class="f-right" href="ucenter/payment.html">充值</a>
+                                </div>
+                                <div class="account-links group">
+                                    <a class="f-left" href="ucenter/index.html">个人中心</a>
+                                    <span class="f-left sep">|</span>
+                                    <a class="f-right js-logout" href="login.html">安全退出</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_bot br-w100">
+                <div class="w1364 br-clearfix">
+                    <div class="h_botL br-fl">
+                        <a href="index.html"><img src="home/img/logo.png" style="height:60px; " /></a>
+                    </div>
+                    <div class="h_botR br-fr">
+                        <ul class="br-clearfix" id="menu-ul">
+                            <li class="br-fl"><a href="index.html" class="active">首页</a></li>
+                            <li class="br-fl"><a href="buy.html">创建策略</a></li>
+                            <li class="br-fl"><a href="freeTrial.html">免费体验</a></li>
+                            <li class="br-fl"><a href="mobile.html">手机版</a></li>
+                            <li class="br-fl"><a href="guild.html">新手引导</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script src="libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+        <script src="home/js/general.js"></script>
+        <script>
+            //自动选中active
+            $(function(){
+                var menuArr = [];
+                menuArr[0] = ["index"  ];
+                menuArr[1] = ["buy", "sell","history" ];
+                menuArr[2] = ["freeTrial", "freeTrialSell", "freeTrialHistory"];
+                menuArr[3] = ["mobile" ];
+                menuArr[4] = [ "guild"];
+                for(var i = 0 ; i < menuArr.length; i++ ){
+                    for(var j = 0 ; j < menuArr[i].length; j++){
+                        if(location.href.indexOf(menuArr[i][j]) > 0){
+                            $("#menu-ul > li a").removeClass("active");
+                            $("#menu-ul > li").eq(i).find("a").eq(0).addClass("active");
+                            $("#menu-ul > li").eq(i).find("a").eq(j+1).addClass("active");
+                            return;
+                        }
+                    }
+                }
+            });
+        </script>
+    </div>
+    <div class="view-content">
+        <div class="men-carousel">
+            <div class="carousel_banner">
+                <div class="carousel_banner_list" id="carousel_banner_list">
+                    <a><img src="home/img/banner1.png" alt=""></a>
+                    <a><img src="home/img/banner2.png" alt=""></a>
+                </div>
+                <ul class="carousel_pointer"></ul>
+                <div class="carousel_btn">
+                    <span class="car_prev">&lsaquo;</span>
+                    <span class="car_next">&rsaquo;</span>
+                </div>
+            </div>
+            <div class="lg-reg">
+                <ul class="lg-bg">
+                    <li>
+                        <div>用户登录</div>
+                    </li>
+                    <li><input id="username" type="text" value="" placeholder="请输入有效账号" /></li>
+                    <li><input type="password" id="password" value="" placeholder="请输入正确密码" />
+                        </br><span id="err1">请输入有效账号</span><span id="err2">请输入密码</span>
+                    </li>
+                    <li><a class="btn_login">登录</a><a href="reg.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="background:#F6F7F7;">
+            <div class="banner-content" style="background:#F6F7F7;width:1250px;">
+                <div class="titlebig">四大优势，让您了解财富策略</div>
+                <div class="titlesm">财富策略是撮合策略人和投资人的线上交易平台，交易双方提供安全,稳定,可靠的交易体验</div>
+                <div class="imgshow">
+                    <img src="home/img/newadd3.png"></img>
+                    <img src="home/img/newadd1.png"></img>
+                    <img src="home/img/newadd2.png"></img>
+                    <img src="home/img/newadd4.png"></img>
+                </div>
+            </div>
+        </div>
+        <div class="down-reg">
+            <div class="titlebig" style="color:#fff">了解创建策略</div>
+            <div class="graspcont">
+                <img src="home/img/shiyi.png">
+                <p>
+                    <span>什么是创建股票策略</span>
+                    <br />
+                    <br /><span>T+1交易，时间2~20交易日，策略人提供交易策略</span>
+                    <br /><span>投资人提供资金，平台撮合双方，风险共同承担，收益共享</span>
+                </p>
+            </div>
+            <div class="btnreg">
+                <a class="whbtn" href="guild.htm">如何创建策略</a>
+                <a class="redbtn" href="buy.htm">立即创建策略</a>
+            </div>
+        </div>
+        <div>
+            <div class="banner-content">
+                <div class="titlebig">客户端下载</div>
+                <div class="titlesm">财富策略是撮合策略人和投资人的线上交易平台，交易双方提供安全,稳定,可靠的交易体验</div>
+                <div class="app-down">
+                    <span>移动端APP下载 手机玩A股</span></br>
+                    <span>信息随时推送好行情不再错过</span></br>
+                    <span>随时随地股票交易</span>
+                    <img src="home/img/new_banner_code.png">
+                    <p style="color: #333;text-align: right;font-size: 24px;position: relative;right: 30px;">扫一扫下载APP
+                        苹果安卓通用</p>
+                </div>
+            </div>
+        </div>
+        <div class="down-reg">
+            <div class="titlebig" style="color:#fff">合作伙伴</div>
+            <div class="partners">
+                <img src="home/img/new_partner1.png">
+                <img src="home/img/new_partner2.png">
+                <img src="home/img/new_partner3.png">
+                <img src="home/img/new_partner4.png">
+                <img src="home/img/new_partner5.png">
+                <img src="home/img/new_partner6.png">
+                <img src="home/img/new_partner7.png">
+                <img src="home/img/new_partner8.png">
+                <img src="home/img/new_partner9.png">
+                <img src="home/img/new_partner10.png">
+                <img src="home/img/new_partner11.png">
+                <img src="home/img/new_partner12.png">
+                <img src="home/img/new_partner13.png">
+                <img src="home/img/new_partner14.png">
+                <img src="home/img/new_partner15.png">
+            </div>
+        </div>
+        <div>
+            <!DOCTYPE html>
+            <html xmlns="http://www.w3.org/1999/xhtml">
+            <!--底部-->
+            <footer class="br-w100">
+                <div class="footer_top">
+                    <a href="company.html">关于财富策略</a>
+                    <a href="contact.html">联系财富策略</a>
+                </div>
+                <div class="footer_bot">
+                    <div class="w1024 br-clearfix">
+                        <div class="bot_l br-fl">
+                            <p>全国统一服务热线 ：400-8888-666<br>客服服务时间工作日：9:00-18:00</p>
+                        </div>
+                        <div class="bot_r br-fr br-text-center">
+                            <div class="bot_r_img br-clearfix ">
+                                <span class="br-fl"><img src="home/img/f1.png" /></span>
+                                <span class="br-fr"><img src="home/img/f2.png" /></span>
+                            </div>
+                            <p>粤ICP备18137245号 投资有风险 入市需谨慎</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--Start Pop-ups-->
+            <!--遮罩层-->
+            <div class="mask"></div>
+            <!--确认，取消提示框-->
+            <div class="popup" id="popup-p-confirm">
+                <div class="popup-header group">
+                    <h2>提示</h2>
+                </div>
+                <div class="popup-body group">
+                    <div class="btn-row group">
+                        <a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+                        <a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+                    </div>
+                </div>
+            </div>
+            <!--开设账户提示-->
+            <div class="popup" id="popup-yeepay">
+                <div id="yeepayPopupContent" class="popup-header group">
+                    <h2>提示</h2>
+                </div>
+                <div class="popup-body group">
+                    <div class="btn-row group">
+                        <a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:;">开设账户</a>
+                        <a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+                    </div>
+                </div>
+            </div>
+            <!--是，否提示框-->
+            <div class="popup" id="popup-yeepay-confirm">
+                <div id="yeepayConfirmContent" class="popup-header group">
+                    <h2>提示</h2>
+                </div>
+                <div class="popup-body group">
+                    <div class="btn-row group">
+                        <a class="btn btn-pri js-close-popup" href="javascript:;">是</a>
+                        <a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+                    </div>
+                </div>
+            </div>
+            <!--提示信息提示框-->
+            <div id="popup-p-error" class="popup">
+                <div class="popup-header group">
+                    <h2>提示</h2>
+                    <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+                </div>
+                <div class="popup-body group">
+                    <p id="popup-p-error-msg">提示信息</p>
+                </div>
+            </div>
+            <!--意见反馈提示框-->
+            <div class="popup" id="popup-feedback">
+                <div class="popup-header group">
+                    <h2>意见反馈</h2>
+                    <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+                </div>
+                <div class="popup-body group">
+                    <form action="index_2.htm#">
+                        <div class="field-row group">
+                            <label>留言类型：</label>
+                            <div class="field-val">
+                                <select id="留言类型s">
+                                    <option value="">请选择留言类型</option>
+                                    <option value="1">交易问题</option>
+                                    <option value="2">充值/提款问题</option>
+                                    <option value="3">交易问题</option>
+                                    <option value="4">我要投诉</option>
+                                    <option value="5">意见反馈</option>
+                                    <option value="6">其它</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-row group show-logout">
+                            <label>手机/邮箱：</label>
+                            <div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+                        </div>
+                        <div class="field-row group">
+                            <label>&nbsp;</label>
+                            <div class="field-val">
+                                <textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="btn-row group">
+                            <a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--账户登录提示框-->
+            <div class="popup popup-small" id="popup-user-login">
+                <div class="popup-header group">
+                    <h2>账户登录</h2>
+                    <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+                </div>
+                <div class="popup-body group" style="padding-bottom:10px">
+                    <div class="group section-form" style="margin: 0px;" id="popup-login-section">
+                        <div class="form">
+                            <div class="field-wrapper">
+                                <input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+                            </div>
+                            <div id="error_name" class="error-wrapper" style="display:none; margin-top:5px;">
+                                <div>用户名不能为空！</div>
+                            </div>
+                            <div class="field-wrapper">
+                                <input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd">
+                            </div>
+                            <div id="error_psw" class="error-wrapper" style="display:none; margin-top:5px;">
+                                <div>密码不能为空！</div>
+                            </div>
+                            <div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+                                <input type="text" class="text" style="width:100px; margin-right:5px; float: left;"
+                                    placeholder="4位验证码" name="txt_valid_code">
+                                <img name="img-block" class="captcha-img" alt="">
+                                <a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+                            </div>
+                            <div class="error-wrapper" style="display:none; margin-top:5px;">
+                                <div>验证码错误！</div>
+                            </div>
+                            <!--<div class="error-wrapper" style="display:none;  margin-top:5px;"><div></div></div>-->
+                            <div class="btn-wrapper">
+                                <a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+                            </div>
+                            <div class="link-wrapper group clearfix" style="margin-top:10px;">
+                                <a href="forgot_pass.html" class="f-left">忘记密码</a><a href="reg.html" class="f-right">马上注册</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 浮窗 -->
+            <ul class="side-pannel" style="display: block">
+                <li class="wechat">
+                    <i class="icon-kf"></i>
+                    <span>客服电话</span>
+                    <div class="wechat" style="top: 0px; height: 30px; line-height: 30px; color: rgb(249, 89, 86); display: none;">
+                        400-8888-666
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="window.open('tencent://message/?uin=3588392858&amp;Site=qq&amp;Menu=yes');">
+                        <i class="icon-qq"></i>
+                        <span>QQ客服</span>
+                    </a>
+                </li>
+
+                <li class="wechat">
+                    <i class="icon-wechat"></i>
+                    <span>微信</span>
+                    <div class="wechat" style="display: none;">
+                        <i class="tb2"><em></em></i>
+                        <img src="home/img/ewm1.jpg" width="180" height="180" style="margin-top:5px;">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--认证银行卡-提示绑定-->
+    <div class="popup" id="popup-id-verify">
+        <div class="popup-header group">
+            <h2>认证银行卡</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <div class="field-row group" style="text-align:center">
+                <ol class="popup-note">
+                    <li style="text-align:left;">提现和免费体验前必须先绑定一张银行卡</li>
+                    <li style="text-align:left;">请务必认真填写真实资料</li>
+                    <li style="text-align:left;">银行卡采用实名认证，一个身份证只能绑定一个账号</li>
+                    <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+                </ol>
+                <p>为了保障您的账户安全，请先绑定银行卡</p>
+            </div>
+            <div class="btn-row group">
+                <a class="btn btn-pri" href="http://www.cftmoney.com/ucenter/bankCards.html">去绑定</a>
+                <a class="btn btn-pri js-close-popup" href="javascript:;">暂不绑定</a>
+            </div>
+        </div>
+    </div>
+    <!--实名认证-->
+    <div class="popup" id="popup-realname-auth">
+        <div class="popup-header group">
+            <h2>实名认证</h2>
+            <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+        </div>
+        <div class="popup-body group">
+            <div class="field-row group" style="text-align:center">
+                <ol class="popup-note">
+                    <li style="text-align:left;">一个身份证对应一个账号</li>
+
+                    <li style="text-align:left;">如遇到问题，请联系客服 <label id="m_basic_mobile">021-80321818</label></li>
+                </ol>
+                <p>为了保障您的账户安全，请先进行实名认证</p>
+            </div>
+            <div class="field-row group">
+                <label>真实姓名：</label>
+                <div class="field-val"><input id="姓名i" type="text" class="text"></div>
+            </div>
+            <div id="zsxm_err1" class="error-wrapper" style="margin-left:100px; display:none">
+                <div><i class="icon icon-x-altx-alt"></i>未填写姓名</div>
+            </div>
+            <div class="field-row group">
+                <label>身份证号：</label>
+                <div class="field-val">
+                    <div class="field-val">
+                        <input id="身份证i" type="text" class="text">
+                    </div>
+                </div>
+            </div>
+            <div id="sfzh_err1" class="error-wrapper" style="margin-left:100px; display:none">
+                <div><i class="icon icon-x-altx-alt"></i>请填写准确的身份证</div>
+            </div>
+            <div class="btn-row group">
+                <a id="user_UpdateSelfIdA" class="btn btn-pri" href="javascript:void(0)">确认</a>
+                <a class="btn btn-sec js-close-popup" href="javascript:;">取消</a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup-eve-show" style="width:1000px;margin-left: -500px;">
+        <div class="popup-header group">
+            <h2>财富策略投资系统风险提示书</h2>
+        </div>
+        <div style="width:950px;height:500px;margin:auto;">
+            <div style="height:100%;overflow-y:scroll;width:950px;font-size:14px;color:#333;">
+                <p>尊敬的投资者：
+                    </br>&nbsp;&nbsp;&nbsp;&nbsp;当您在运用财富策略系统进行投资时可能获得较高收益，但同时也存在一定的风险。为了帮助您更好地了解其中风险，依据国家现行有关法律法规、规章政策和交易所业务规则等，特提供本《风险提示书》。请您在投资前务必认真、详细阅读并完全理解本告知书中的全部内容，并对自身的风险理解能力、风险承受能力、风险控制能力以及财务经济状况、投资经验等做出理性判断。
+                    请您仔细阅读以下内容，在您选择同意确认知晓并进入交易市场进行交易后，则视为已仔细阅读《风险提示书》并自愿承担投资市场衍生的各种风险。
+                    我们强调，本系统所提供的仅仅是可辅助进行交易的交易软件，软件本身有可能存在瑕疵。运用本软件进行投资时，您应当知晓使用本软件除了其它交易手段共同具有的风险外，还存在且不限于下列风险：
+                </p>
+                <p>一、由于您电脑或手机故障以及网络数据传输等原因，指令可能会出现中断、延迟、停顿、数据错误、交易滑点等情况，不能完全保证所有的交易都严格在限定的参数内完成交易。</p>
+                <p>二、本系统只是交易辅助工具，仅协助您进行创建策略、清算策略操作，并不能保证全部交易能够获利。</p>
+                <p>三、由于国家有关法律、法规、规章或政策的改变、紧急措施的出台、行业规范和交易所规定（如：持仓限制、开仓数量限制等）导致本系统无法正常交易的情况，本系统不承担责任。</p>
+                <p>四、本系统服务器与北京时间同步，因为时间不同步导致产生的交易风险，本系统不承担责任。</p>
+                <p>五、您运用本系统进行投资时，应积极采取安全防范措施，例如定期维护手机及联网设备、采用防病毒及防黑客产品、妥善保管个人资料等，以防范电子化交易可能发生的泄密风险。</p>
+                <p>六、您对自行设置、留存和修改的帐号、密码负有妥善保管义务。所有通过您账号及密码的系统操作，交易市场均视为您本人行为，对因您密码的不慎泄露、盗用或使用不当所产生的一切后果，本系统不承担责任。</p>
+                <p>七、由于地震、水灾、火灾、暴动、罢工、战争、政府管制、国际或国内的禁止或限制以及停电、技术故障、电子故障、黑客入侵等不可抗力因素导致的交易中断、延误等，可能造成您的指令无法成交或者无法全部成交，本系统不承担责任，但应在条件允许的范围内采取必要的补救措施以减少因不可抗力造成的损失。</p>
+                <p>八、倘若发生黑客入侵破坏行为或不可抗拒之灾害导致系统故障或资料损坏、丢失等情况，我们将以本系统平台备份资料为最终处理依据。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;本《风险提示书》所列上述风险告知事项仅为列举性质，未能详尽的列明有关交易的所有潜在风险，无法揭示全部风险。故您在运用本系统进行交易之前，务必仔细研究并清楚认知本系统。
+                    如果您不了解或者不能承受采用本系统的投资风险，财富策略平台建议您不要使用本系统进行投资。如果您申请或已使用本系统进行投资，我们将认为您已经清晰认知使用本系统进行投资的风险，能够承受风险并准备承担由可能此带来的相关损失。
+                    本《风险提示书》在进入本系统之前已向本单位（本人）出示，本单位（本人）已详细阅读并完全理解和接受，对该系统的使用风险已经有清晰认知，并自愿承担因运用本系统进行投资时可能产生的潜在风险和损失。</p>
+            </div>
+        </div>
+        <a class="btn btn-pri" id="close-show-eve" style="display:inline-block;margin-left:260px;width: 200px;margin-top: 20px;margin-bottom: 40px;">我同意</a><a
+            class="btn btn-pri" id="close-show-eve2" style="display:inline-block;margin-left: 20px;width: 200px;margin-top: 20px;margin-bottom: 40px;background:#f2f2f2;color:#333 !important">我不同意</a>
+    </div>
+    <script src="libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+    <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="libs/jquery-2.2.0/jquery.cookie.js"></script>
+    <script src="libs/swiper/swiper.js"></script>
+    <script src="home/js/index.js"></script>
+    <script src="home/js/common.js"></script>
+</body>
+
+</html>

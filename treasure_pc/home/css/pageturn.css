@@ -1,0 +1,54 @@
+﻿
+.pages_box{
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.pages_box>li{
+		display:inline-block;
+		color:#666;
+}
+.firstpag , .lastpag , .prevp , .nextp{
+	padding:2px 6px;
+	background-color:#F7F7F7;
+	border-radius:2px;
+	border:solid 1px #dadada;
+	user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+.firstpag{
+	margin-left:10px;
+	margin-right:5px;
+}
+.lastpag{
+	margin-left:5px;
+}
+
+.pages_num>a{
+	display:inline-block;
+	padding:2px 9px;
+	background-color:#F7F7F7;
+	margin-left:5px;
+	margin-right:5px;
+	border-radius:2px;
+	border:solid 1px #dadada;
+	color:#666;
+	user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+.pages_num .active_p{
+	color:#fff;
+	background-color:#ff4030;
+	border:solid 1px #ff4030;
+}
+.noclick{
+	pointer-events: none;
+}
+
+

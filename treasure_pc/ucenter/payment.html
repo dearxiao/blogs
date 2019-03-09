@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>财富策略</title>
+    <link rel="stylesheet" type="text/css" href="../home/css/common.css" />
+</head>
+
+<body class="membercenter logged-in">
+    <div>
+        <!--头部-->
+        <header class="ml_header br-w100">
+            <div class="h_top br-w100">
+                <div class="w1024 br-clearfix">
+                    <div class="h_topL br-fl">
+                        服务热线：400-8888-666
+                    </div>
+
+                    <div id="page_shared_layout_login" class="h_topR br-fr" style="display:none">
+                        <a class="login" href="javascript:;">登录</a>
+                        <a class="register" href="/reg.html">注册</a>
+                    </div>
+                    <ul id="page_shared_layout_unlogin" class="top-links f-right" style="display:block">
+                        <li class="show-login" style="display: block;">您好，&nbsp;</li>
+                        <li class="show-login top-user-wrapper" style="display: block;">
+                            <span class="top-username">
+                                <a id="page_shared_layout_login_name" href="index.html">ygr123</a>
+                                <i class="icon icon-arrow-drop-down"></i>
+                            </span>
+                            <div class="overlay-account">
+                                <div class="group account-group">
+                                    <span class="f-left">可用<b class="account-val" id="shared_header_mb">982286.00</b></span>
+                                    <a name="realnameAuth" class="f-right" href="payment.html">充值</a>
+                                </div>
+                                <div class="account-links group">
+                                    <a class="f-left" href="index.html">个人中心</a>
+                                    <span class="f-left sep">|</span>
+                                    <a class="f-right js-logout" href="../login.html">安全退出</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="h_bot br-w100">
+                <div class="w1364 br-clearfix">
+                    <div class="h_botL br-fl">
+                        <a href="../index.html"><img src="../home/img/logo.png" style="height:60px; "></a>
+                    </div>
+                    <div class="h_botR br-fr">
+                        <ul class="br-clearfix" id="menu-ul">
+                            <li class="br-fl"><a href="../index.html" class="active">首页</a></li>
+                            <li class="br-fl"><a href="../buy.html">创建策略</a></li>
+                            <li class="br-fl"><a href="../freeTrial.html">免费体验</a></li>
+                            <li class="br-fl"><a href="../mobile.html">手机版</a></li>
+                            <li class="br-fl"><a href="../guild.html">新手引导</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <link rel="stylesheet" type="text/css" href="../home/css/buy.css" />
+    <link rel="stylesheet" type="text/css" href="../home/css/member.css" />
+
+    <!--个人中心-充值-->
+    <div class="br-content">
+        <div class="w1200" style="padding-top: 120px;">
+            <!--主体-->
+            <section class="page-main page-personal">
+                <div class="container clearfix">
+                    <!--public左边-->
+                    <div>
+                        <!DOCTYPE html>
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+                        <link rel="stylesheet" type="text/css" href="../home/fonts/iconfont.css" />
+                        <aside class="col-left">
+                            <div class="userinfo">
+                                <form name="user_head" id="user_head">
+                                    <input type="file" name="file" id="img_upload" />
+                                    <div class="img_download">
+                                        <img class="user-pic" id="headImg" src="../home/img/user.png">
+                                    </div>
+                                </form>
+                                <!--<img src="/public/static../home/img/user.png" alt="" class="user-pic">-->
+                                <p class="user-info">Hi，<strong id="shared_layout_mem_lnm">ygr123</strong></p>
+                                <div class="iconrow">
+									<a href="security.html"><span class="user-2"></span></a>
+									<a href="security.html"><span class="user-3"></span></a>
+									<a href="security.html"><span class="user-4"></span></a>
+								</div>
+                            </div>
+                            <nav id="personal-nav" class="left-nav">
+                                <ul>
+                                    <li class=""><a href="index.html"><span class="iconfont icon-zhanghuzonglan"></span>账户总览</a></li>
+                                    <li class=""><a href="bankcards.html"><span class="iconfont icon-bankcard_icon"></span>银行卡管理</a></li>
+                                    <li class=""><a href="security.html"><span class="iconfont icon-zhanghuanquan"></span>账户安全</a></li>
+                                    <li class="active"><a href="payment.html"><span class="iconfont icon-chongzhi"></span>充值</a></li>
+                                    <li class=""><a href="withdraw.html"><span class="iconfont icon-tixian1"></span>提现</a></li>
+                                    <li class=""><a href="invite.html"><span class="iconfont icon-yaoqinghaoyou"></span>全民经纪人</a></li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                    <!--右边-->
+                    <div id="page_member_payment" class="col-main page-member-payment">
+                        <div class="tabs-wrapper" id="pay-method-tabs">
+                            <div class="rech_balance">
+                                <p class="rechL"><img src="../home/img/recharge_safe.png"><span>财富策略全程为您的资金保驾护航</span></p>
+                                <p class="rechR">账户余额：<span id="账户余额">982286.00</span><span>元</span></p>
+                            </div>
+                            <nav style="border-bottom: solid 1px #dadada;">
+                                <ul class="clearfix">
+
+                                    <!-- <li><a href="javascript:;" id="pm2">微信转账</a></li> -->
+                                    <li class="active"><a href="javascript:;" id="pm5">认证支付 </a></li>
+                                    <li><a href="javascript:;" id="pm1">网银支付 </a></li>
+                                    <li><a href="javascript:;" id="pm3">支付宝转账</a></li>
+                                    <li><a href="javascript:;" id="pm4">银行卡转账</a></li>
+                                </ul>
+                            </nav>
+                            <div class="tabs">
+                                <div class="tab-item hide" id="tab-pm1">
+                                    <form action="/user/payment" id="payForm" target="_blank" method="post">
+                                        <div class="field-row group">
+                                            <label>充值金额:</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="text  b-pay-amount" id="pay_amount" name="amount"
+                                                    onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-row group">
+                                            <button class="btn btn-pri-no" disabled="disabled">请先绑定银行卡</button>
+                                        </div>
+
+                                        <div id="bankRecharge_rmk" class="field-row group" style="display: none">
+                                            <label>特别说明:</label>
+                                            <div class="input-wrapper">
+                                                <span class="acount-val"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="bank-notes">
+                                        <h3>温馨提示</h3>
+                                        <ol>
+                                            <li>单笔充值金额不得高于5万元；</li>
+                                            <!-- <li>为了您的资金安全，您的账户资金将由第三方银行托管；</li> -->
+                                            <li>充值前请注意您的银行卡充值限制，以免造成不便；</li>
+                                            <li>禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用；</li>
+                                            <li>为了您的资金安全，建议充值前进行实名认证、手机绑定；</li>
+                                            <li>如果充值遇到任何问题，请联系客服：<label>400-8888-666</label>。</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="tab-item" id="tab-pm5">
+                                    <form action="/user/authPay" id="payAuthForm" target="_blank" method="post">
+
+                                        <div class="field-row group" style="padding-left:117px;color:#666;">
+                                            <label>单笔限额<span style="color: #ff4030;">0</span>万</label>
+                                            <label>单日限额<span style="color: #ff4030;">0</span>万</label>
+                                            <label>单月限额<span style="color: #ff4030;">0</span>万</label>
+                                        </div>
+                                        <div class="field-row group">
+                                            <label>充值金额:</label>
+                                            <div class="input-wrapper">
+                                                <input type="text" class="text  b-pay-amount" placeholder="请输入充值金额50元起充"
+                                                    id="pay_auth_amount" name="amount" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="btn-row group">
+                                            <button id="authBankRecharge" type="button" class="btn btn-pri-no" disabled="disabled">请先绑定银行卡</button>
+                                        </div>
+                                        <div class="field-row group" style="display: none">
+                                            <label>特别说明:</label>
+                                            <div class="input-wrapper">
+                                                <span class="acount-val"></span>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                    <div class="bank-notes">
+                                        <h3>温馨提示</h3>
+                                        <ol>
+                                            <li>单笔充值金额不得高于5万元；</li>
+                                            <!-- <li>为了您的资金安全，您的账户资金将由第三方银行托管；</li> -->
+                                            <li>充值前请注意您的银行卡充值限制，以免造成不便；</li>
+                                            <li>禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用；</li>
+                                            <li>为了您的资金安全，建议充值前进行实名认证、手机绑定；</li>
+                                            <li>如果充值遇到任何问题，请联系客服：<label>400-8888-666</label>。</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <!--/.tab-item -->
+
+                                <div class="tab-item hide" id="tab-pm3">
+                                    <div class="alipay-trans-wrapper">
+                                        <form action="#">
+                                            <input type="hidden" name="tab-pm1-bank" value="">
+                                            <!---->
+                                            <img src="../home/img/alipay.png" style="width:250px;margin-left:140px; display:block; margin-bottom:20px;">
+                                            <p>
+                                                <span style="color: red">请扫码充值，并务必在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。</span><br>
+                                                转账成功后请第一时间告知您的专属客服以便及时帮您处理
+                                                <br>
+                                                <br>账号：3588392858@qq.com
+                                                <br>户名：广州煌枫锦咨询有限公司‍
+                                            </p>
+                                        </form>
+                                        <div class="bank-notes">
+                                            <p>如需马上到帐或长时间未到帐，请拨打客服电话：<label>400-8888-666</label><br>08：30- 17：00
+                                                （30分钟内到账）<br>17:00以后 （次日09：00前到账）
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-item hide" id="tab-pm2">
+                                    <div class="alipay-trans-wrapper">
+                                        <form action="#">
+                                            <input type="hidden" name="tab-pm1-bank" value="">
+                                            <!---->
+                                            <p>
+                                                <span style="color: red">请扫码充值，并务必在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。</span><br>
+                                                转账成功后，请拨打客服热线<label>400-8888-666</label>以便我们及时帮您处理
+                                                <br>账号：广州煌枫锦咨询有限公司
+                                                &lt;!&ndash;<br>户名：广州煌枫锦咨询有限公司‍&ndash;&gt;
+                                            </p>
+                                        </form>
+                                        <div class="bank-notes">
+                                            <p>如需马上到帐或长时间未到帐，请拨打客服电话：<label>400-8888-666</label><br>08：30- 17：00
+                                                （30分钟内到账）<br>17:00以后 （次日09：00前到账）
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.tab-item  -->
+                                <!--<div class="tab-item hide" id="tab-pm2">-->
+                                <!--<div class="alipay-trans-wrapper">-->
+                                <!--<form action="#">-->
+                                <!--<input type="hidden"  name="tab-pm1-bank" value="">-->
+                                <!---->
+                                <!--<img th:src="@{../home/img/wxpay.png}" style="width:250px;margin-left:140px; display:block; margin-bottom:20px;">-->
+                                <!--<p>请用微信扫描二维码</p>-->
+                                <!--<p>-->
+                                <!--<span style="color: red">请扫码充值，并务必在转账备注中填写注册手机号，这样方便我们多重信息确认您的汇款。</span><br>-->
+                                <!--转账成功后，请拨打客服热线<label>400-8888-666</label>以便我们及时帮您处理-->
+                                <!--<br>账号：广州煌枫锦咨询有限公司-->
+                                <!--&lt;!&ndash;<br>户名：广州煌枫锦咨询有限公司‍&ndash;&gt;-->
+                                <!--</p>-->
+                                <!--</form>-->
+                                <!--<div class="bank-notes">-->
+                                <!--<p>如需马上到帐或长时间未到帐，请拨打客服电话：<label>400-8888-666</label><br>08：30- 17：00 （30分钟内到账）<br>17:00以后 （次日09：00前到账）-->
+                                <!--</p>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--/.tab-item -->
+                                <div class="tab-item hide" id="tab-pm4">
+
+                                    <h3><strong>您可以通过手机银行、银行柜台或ATM机向<label>我们</label>转账</strong>
+                                    </h3>
+
+                                    <table class="simple-tbl">
+                                        <colgroup>
+                                            <col class="col1">
+                                            <col class="col2">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td><span class="bank-logo bank-logo-cmb" style="background-image: url(../home/img/bbb.png);width:150px;background-size:contain;background-position:center"></span></td>
+                                                <td>帐号：<label id="m_basic_bankNo">6217 0033 2005 0180 481</label><br>户名：<label
+                                                        id="m_basic_bankOn">佘思鸣</label><br>开户行：<label id="m_basic_bankNm">建设银行股份有限公司广州白云区人和支行</label></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <div class="group upload-screenshot-wrapper">
+                                        <div class="col-12">
+                                            <p>转账之后，请务必保留网银转账成功时的截图，并在资金或者转账用途中备注清自己要转入的<label id="m_basic_netName">财富策略</label>用户名，转账成功后请第一时间告知您的专属客服以便及时帮您处理！
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <!--/.tab-item -->
+                                <!--/.tabs-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <div>
+        <!DOCTYPE html>
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <!--底部-->
+        <footer class="br-w100">
+            <div class="footer_top">
+                <a href="/company.html">关于财富策略</a>
+                <a href="/contact.html">联系财富策略</a>
+            </div>
+            <div class="footer_bot">
+                <div class="w1024 br-clearfix">
+                    <div class="bot_l br-fl">
+                        <p>全国统一服务热线 ：400-8888-666<br>客服服务时间工作日：9:00-18:00</p>
+                    </div>
+                    <div class="bot_r br-fr br-text-center">
+                        <div class="bot_r_img br-clearfix ">
+                            <span class="br-fl"><img src="../home/img/f1.png" /></span>
+                            <span class="br-fr"><img src="../home/img/f2.png" /></span>
+                        </div>
+                        <p>粤ICP备18137245号 投资有风险 入市需谨慎</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Start Pop-ups-->
+        <!--遮罩层-->
+        <div class="mask"></div>
+        <!--确认，取消提示框-->
+        <div class="popup" id="popup-p-confirm">
+            <div class="popup-header group">
+                <h2>提示</h2>
+            </div>
+            <div class="popup-body group">
+                <div class="btn-row group">
+                    <a class="btn btn-pri js-close-popup" href="javascript:popup_confirm_go()">确定</a>
+                    <a class="btn btn-pri js-close-popup" href="javascript:;">取消</a>
+                </div>
+            </div>
+        </div>
+        <!--开设账户提示-->
+        <div class="popup" id="popup-yeepay">
+            <div id="yeepayPopupContent" class="popup-header group">
+                <h2>提示</h2>
+            </div>
+            <div class="popup-body group">
+                <div class="btn-row group">
+                    <a id="yeepayNextLink" target="_blank" class="btn btn-pri" href="javascript:;">开设账户</a>
+                    <a class="btn btn-pri js-close-popup" href="javascript:;">暂不充值</a>
+                </div>
+            </div>
+        </div>
+        <!--是，否提示框-->
+        <div class="popup" id="popup-yeepay-confirm">
+            <div id="yeepayConfirmContent" class="popup-header group">
+                <h2>提示</h2>
+            </div>
+            <div class="popup-body group">
+                <div class="btn-row group">
+                    <a class="btn btn-pri js-close-popup" href="javascript:;">是</a>
+                    <a class="btn btn-pri js-close-popup" href="javascript:;">否</a>
+                </div>
+            </div>
+        </div>
+        <!--提示信息提示框-->
+        <div id="popup-p-error" class="popup">
+            <div class="popup-header group">
+                <h2>提示</h2>
+                <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+            </div>
+            <div class="popup-body group">
+                <p id="popup-p-error-msg">提示信息</p>
+            </div>
+        </div>
+        <!--意见反馈提示框-->
+        <div class="popup" id="popup-feedback">
+            <div class="popup-header group">
+                <h2>意见反馈</h2>
+                <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+            </div>
+            <div class="popup-body group">
+                <form action="#">
+                    <div class="field-row group">
+                        <label>留言类型：</label>
+                        <div class="field-val">
+                            <select id="留言类型s">
+                                <option value="">请选择留言类型</option>
+                                <option value="1">交易问题</option>
+                                <option value="2">充值/提款问题</option>
+                                <option value="3">交易问题</option>
+                                <option value="4">我要投诉</option>
+                                <option value="5">意见反馈</option>
+                                <option value="6">其它</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field-row group show-logout">
+                        <label>手机/邮箱：</label>
+                        <div class="field-val"><input type="text" class="text" placeholder="请输入手机号或邮箱"></div>
+                    </div>
+                    <div class="field-row group">
+                        <label>&nbsp;</label>
+                        <div class="field-val">
+                            <textarea id="留言内容i" placeholder="请填写留言内容" class="textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-row group">
+                        <a class="btn btn-pri" href="javascript:feedback_Insert()">提交</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--账户登录提示框-->
+        <div class="popup popup-small" id="popup-user-login">
+            <div class="popup-header group">
+                <h2>账户登录</h2>
+                <a href="javascript:;" class="js-close-popup"><i class="icon icon-close"></i></a>
+            </div>
+            <div class="popup-body group" style="padding-bottom:10px">
+                <div class="group section-form" style="margin: 0px;" id="popup-login-section">
+                    <div class="form">
+                        <div class="field-wrapper">
+                            <input type="text" class="text" placeholder="用户名/手机号" name="phone" id="popup_user_login_name">
+                        </div>
+                        <div id="error_name" class="error-wrapper" style="display:none; margin-top:5px;">
+                            <div>用户名不能为空！</div>
+                        </div>
+                        <div class="field-wrapper">
+                            <input type="password" class="text" placeholder="请输入密码" name="pwd" id="popup_user_login_pwd">
+                        </div>
+                        <div id="error_psw" class="error-wrapper" style="display:none; margin-top:5px;">
+                            <div>密码不能为空！</div>
+                        </div>
+                        <div class="field-wrapper" id="popup-user-login-valid-img" style="display:none;">
+                            <input type="text" class="text" style="width:100px; margin-right:5px; float: left;"
+                                placeholder="4位验证码" name="txt_valid_code">
+                            <img name="img-block" class="captcha-img" alt="">
+                            <a name="btn-change-img" style="font-size:13px; line-height:45px;" href="javascript:void(0)">看不清楚？</a>
+                        </div>
+                        <div class="error-wrapper" style="display:none; margin-top:5px;">
+                            <div>验证码错误！</div>
+                        </div>
+
+                        <!--<div class="error-wrapper" style="display:none;  margin-top:5px;"><div></div></div>-->
+
+                        <div class="btn-wrapper">
+                            <a href="javascript:void(0);" id="popup_user_login_submit" class="btn btn-pri">登录</a>
+                        </div>
+                        <div class="link-wrapper group clearfix" style="margin-top:10px;">
+                            <a href="/forgot_pass.html" class="f-left">忘记密码</a><a href="/reg.html" class="f-right">马上注册</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- 浮窗 -->
+        <ul class="side-pannel" style="display: block">
+            <li class="wechat">
+                <i class="icon-kf"></i>
+                <span>客服电话</span>
+                <div class="wechat" style="top: 0px; height: 30px; line-height: 30px; color: rgb(249, 89, 86); display: none;">
+                    400-8888-666
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="window.open('tencent://message/?uin=3588392858&amp;Site=qq&amp;Menu=yes');">
+                    <i class="icon-qq"></i>
+                    <span>QQ客服</span>
+                </a>
+            </li>
+
+            <li class="wechat">
+                <i class="icon-wechat"></i>
+                <span>微信</span>
+                <div class="wechat" style="display: none;">
+                    <i class="tb2"><em></em></i>
+                    <img src="../home/img/ewm1.jpg" width="180" height="180" style="margin-top:5px;">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
+    <script src="../home/js/ajaxfileupload.js"></script>
+    <script src="../home/js/general.js"></script>
+    <script src="../home/js/common.js"></script>
+    <script type="text/javascript">
+        $('#bankRecharge').click(function () {
+            var _val = $('#pay_amount').val();
+            if (_val == 0) {
+                tool.popup_err_msg("请输入充值金额");
+                return false;
+            }
+            var a = /^[0-9]*(\.[0-9]{1,2})?$/;
+            if (!a.test(_val)) {
+                tool.popup_err_msg("充值金额格式不正确");
+                return false;
+            } else if (parseInt(_val) > 50000) {
+                tool.popup_err_msg("单笔充值金额不得高于5万元");
+                return false;
+            }
+
+            $("#payForm").submit();
+        });
+
+        $('#authBankRecharge').click(function () {
+            var _val = $('#pay_auth_amount').val();
+            if (_val == 0) {
+                tool.popup_err_msg("请输入充值金额");
+                return false;
+            }
+            var a = /^[0-9]*(\.[0-9]{1,2})?$/;
+            if (!a.test(_val)) {
+                tool.popup_err_msg("充值金额格式不正确");
+                return false;
+            } else if (parseInt(_val) > 50000) {
+                tool.popup_err_msg("单笔充值金额不得高于5万元");
+                return false;
+            }
+            $("#payAuthForm").submit();
+        });
+        $(function () {
+            /**
+             * active
+             */
+            //console.log(window.location.pathname)
+            // $('#personal-nav li').removeClass('active');
+
+            //遍历
+            $('#personal-nav li>a').each(function () {
+                if ($($(this))[0].getAttribute('href') == String(window.location.pathname)) {
+                    $(this).parent().addClass('active');
+                }
+            });
+
+
+            /**
+             * 上传头像
+             */
+            //       $('#img_upload').AjaxFileUpload({
+            // 	//处理文件上传操作的服务器端地址
+            // 	//上传图片，返回图片地址
+            // 	action: '/doImgUpload',
+            // 	onComplete: function(filename, resp) { //服务器响应成功时的处理函数
+            // 		if(resp.code == '0') {
+            // 			$('#headImg').attr('src', resp.data);
+            // 			var params = {};
+            // 			params['headImg'] = resp.data;
+            // 			//保存图片到数据库，分两个地址是为了在很多地方公用
+            // 			$.post("/ucenter/savePeopleImg", params, function(data) {
+            // 				if(data.code == '0') {
+            // 					tool.popup_err_msg("修改成功");
+            // 				} else {
+            // 					tool.popup_err_msg(data.msg);
+            // 				}
+            // 			}, 'json');
+            // 		} else {
+            // 			tool.popup_err_msg(resp.msg );
+            // 		}
+            // 	}
+            // });	
+            function getObjectURL(file) {
+                var url = null;
+                if (window.createObjectURL != undefined) { // basic
+                    url = window.createObjectURL(file);
+                } else if (window.URL != undefined) { // mozilla(firefox)
+                    url = window.URL.createObjectURL(file);
+                } else if (window.webkitURL != undefined) { // webkit or chrome
+                    url = window.webkitURL.createObjectURL(file);
+                }
+                return url;
+            }
+
+            $("#img_upload").click(function () {
+                $("#img_upload").on("change", function () {
+                    var base = $(this);
+                    var objUrl = getObjectURL(this.files[0]); //获取图片的路径，该路径不是图片在本地的路径
+                    console.log(objUrl);
+                    if (objUrl) {
+                        $("#img_upload").attr("src", objUrl); //将图片路径存入src中，显示出图片
+                        $.ajaxFileUpload({
+                            url: "/user/avatarUpload",
+                            fileElementId: "img_upload", //文件上传域的ID，这里是input的ID，而不是img的
+                            dataType: 'json', //返回值类型 一般设置为json
+                            contentType: "application/x-www-form-urlencoded; charset=utf-8",
+                            success: function (data) {
+                                if (data.code == "0") {
+                                    $("#headImg").attr("src",
+                                        objUrl);
+                                    //将图片换成默认的+图片
+                                }
+                            },
+                            error: function (e) {
+                                console.log(e);
+                            }
+
+                        });
+                    }
+                });
+
+            })
+            // $.ajax({
+            //     type: "get",
+            //     url: "/user/getUserInfo",
+            //     dataType: "json",
+            //     success: function (res) {
+            //         if (res.code === "0") {
+            //             if (res.data.headImg != null && res.data.headImg != "") {
+            //                 $("#headImg").attr("src", res.data.headImg);
+            //             }
+            //             if (res.data.status === "1") {
+            //                 $(".user-3").css({
+            //                     "background": "url('../home/img/idcard_ok.png') no-repeat center center",
+            //                     "background-size": "100% 100%"
+            //                 })
+            //             } else if (res.data.status === "2") {
+            //                 $(".user-3").css({
+            //                     "background": "url('../home/img/idcard_ok.png') no-repeat center center",
+            //                     "background-size": "100% 100%"
+            //                 })
+            //                 $(".user-4").css({
+            //                     "background": "url('../home/img/bank_ok.png') no-repeat center center",
+            //                     "background-size": "100% 100%"
+            //                 })
+            //             }
+            //         }
+            //     }
+            // })
+        });
+    </script>
+</body>
+
+</html>

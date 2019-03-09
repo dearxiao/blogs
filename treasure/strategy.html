@@ -192,7 +192,7 @@
                         <p>当前(元)：<b>10.08</b></p>
                     </div>
                 </div>
-                <img class="arrow" src="images/arrow.png">
+                <!-- <img class="arrow" src="images/arrow.png"> -->
                 <ul class="detail">
                     <li>买入时间:<span>2018-06-05</span></li>
                     <li>浮动盈亏比(%):<span>-1.18%</span></li>
@@ -202,6 +202,7 @@
                     <li>止损价(元):<span>9.27</span></li>
                     <li>递延天数(天):<span>16</span></li>
                     <li>递延费(元):<span>14400.00</span></li>
+                    <li>卖出时间:<span>2018-06-05</span></li>
                 </ul>
             </div>
         </div>
@@ -218,7 +219,7 @@
                         <span>盈亏(元)</span>
                     </div>
                 </div>
-                <img class="arrow" src="images/arrow.png">
+                <!-- <img class="arrow" src="images/arrow.png"> -->
                 <ul class="detail">
                     <li>买入时间:<span>2018-06-05</span></li>
                     <li>浮动盈亏比(%):<span>-1.18%</span></li>
@@ -228,6 +229,7 @@
                     <li>止损价(元):<span>9.27</span></li>
                     <li>递延天数(天):<span>16</span></li>
                     <li>递延费(元):<span>14400.00</span></li>
+                    <li>卖出时间:<span>2018-06-05</span></li>
                 </ul>
             </div>
         </div>
@@ -281,7 +283,7 @@
                 $('.shade, .hint2').show()
             });
             $('.info .arrow').click(function () { 
-                $('.data').toggle();
+                $('.data').slideToggle();
                 $(this).toggleClass('arrow2');
             });
             $('.intro .arrow').click(function () { 
