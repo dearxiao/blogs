@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <div class="index">
         <h1>财富策略</h1>
@@ -103,19 +105,30 @@
     </footer>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="swiper/swiper.min.js"></script>
+    <script src="vue/vue.js"></script>
     <script>
-        $('.edit').click(function () { 
+        $('.edit').click(function () {
             $('.stock li img').toggle();
         });
-        var mySwiper = new Swiper ('.swiper-container', {
+        var mySwiper = new Swiper('.swiper-container', {
             autoplay: true,
             loop: true, // 循环模式选项
-            
+
             // 如果需要分页器
             pagination: {
                 el: '.swiper-pagination',
             },
-        })  
+        })
+        // 回调执行函数
+        function onBack(res) {
+            alert(JSON.stringify(res));
+        }
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        // 传参并指定回调执行函数为onBack
+        script.src = 'http://hq.sinajs.cn?callback=onBack&list=sh000001,sz399001,sz399006';
+        document.head.appendChild(script);
     </script>
 </body>
+
 </html>
