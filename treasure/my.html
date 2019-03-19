@@ -13,7 +13,7 @@
 <body>
     <div class="my">
         <div class="top">
-            <h1>个人中心 <a href="login.html"><img src="images/quit.png"></a></h1>
+            <h1>个人中心 <img class="quit" src="images/quit.png"></h1>
             <div class="msg">
                 <form action="" method="post">
                     <label for="tx"><img class="img" src="images/headimg.png"></label>
@@ -82,6 +82,20 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
     <script>
+        $(function () {
+            $('.quit').click(function () { 
+                $.ajax({
+                    type: "get",
+                    url: url + "api/out_login",
+                    success: function (res) {
+                        console.log(res)
+                        if (res.code == 200) {
+                            location.href = "login.html"
+                        }
+                    }
+                });
+            });
+        })
         function upload(e) {
             var file = e.files[0]
             if (e.files) {

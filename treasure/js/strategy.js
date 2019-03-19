@@ -1,9 +1,17 @@
 $(function () {
     $.ajax({
         type: "get",
-        url: url + "api/treasure_history/sh600001",
+        url: url + "api/treasure_history/sh600010",
         success: function (res) {
             console.log(JSON.parse(res))
+        }
+    });
+    // 历史
+    $.ajax({
+        type: "get",
+        url: url + "api/history_order",
+        success: function (res) {
+            console.log(res)
         }
     });
     $('form').on('click', 'li', function () { 

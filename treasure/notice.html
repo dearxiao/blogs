@@ -25,5 +25,22 @@
             </li>
         </ul>
     </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: "get",
+                url: url + "api/get_banner",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

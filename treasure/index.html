@@ -119,7 +119,34 @@
             },
         })
         $(function () {
-            
+            // 多个股票
+            $.ajax({
+                type: "get",
+                url: url + "api/get_treasure_msg",
+                data: {
+                    treasure_code: 'sh000001,sz399001'
+                },
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        
+                    }
+                }
+            });
+            // 单个股票
+            $.ajax({
+                type: "get",
+                url: url + "api/treasure_msg",
+                data: {
+                    treasure_code: 'sh600519'
+                },
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        
+                    }
+                }
+            });
             // 编辑
             $('.edit').click(function () {
                 $('.stock li img').toggle();

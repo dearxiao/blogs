@@ -1,4 +1,4 @@
-var config = {
+var option = {
     animation: false,
     title: {
         show: false
@@ -19,7 +19,7 @@ var config = {
         hideDelay: 10,
         transitionDuration: 0.1,
         borderWidth: 1,
-        backgroundColor: "#ffffff",
+        backgroundColor: "#fff",
         textStyle: {
             color: "#666",
             fontSize: 11,
