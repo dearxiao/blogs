@@ -265,32 +265,6 @@
     <script src="js/echart.js"></script>
     <script src="js/echart2.js"></script>
     <script src="js/common.js"></script>
-    <script>
-        $(function () {
-            $('form').on('click', 'li', function () { 
-                $(this).siblings('li').removeClass('act')
-                $(this).addClass('act');
-            });
-            // 选项卡
-            $('.title2 span').click(function () {
-                var i = $(this).index()
-                $(this).siblings('span').removeClass('act');
-                $(this).addClass('act');
-                $('.chart').hide();
-                $('.chart' + i + '').show();
-            });
-            $('.top button').click(function () { 
-                $('.shade, .hint2').show()
-            });
-            $('.info .arrow').click(function () { 
-                $('.data').slideToggle();
-                $(this).toggleClass('arrow2');
-            });
-            $('.intro .arrow').click(function () { 
-                $(this).next('ul.detail').toggle();
-                $(this).toggleClass('arrow2');
-            });
-        })
-    </script>
+    <script src="js/strategy.js"></script>
 </body>
 </html>

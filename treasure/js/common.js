@@ -1,4 +1,4 @@
-
+var url = 'http://192.168.0.107/', session_id
 $(function () {
 	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()
@@ -6,9 +6,9 @@ $(function () {
 	$('.hint2 button').on('click', function(){
 		$('.shade, .hint2').hide()
 	})
-	// $("form").ajaxForm(function (res) {
-	// 	tips(res)
-	// });
+	$("form").ajaxForm(function (res) {
+		tips(res)
+	});
 	// 获取验证码
 	$('.acquire').on('click', function () {
 		var that = this

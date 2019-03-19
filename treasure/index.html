@@ -105,11 +105,10 @@
     </footer>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="swiper/swiper.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
     <script src="vue/vue.js"></script>
     <script>
-        $('.edit').click(function () {
-            $('.stock li img').toggle();
-        });
         var mySwiper = new Swiper('.swiper-container', {
             autoplay: true,
             loop: true, // 循环模式选项
@@ -119,15 +118,13 @@
                 el: '.swiper-pagination',
             },
         })
-        // 回调执行函数
-        function onBack(res) {
-            alert(JSON.stringify(res));
-        }
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        // 传参并指定回调执行函数为onBack
-        script.src = 'http://hq.sinajs.cn?callback=onBack&list=sh000001,sz399001,sz399006';
-        document.head.appendChild(script);
+        $(function () {
+            
+            // 编辑
+            $('.edit').click(function () {
+                $('.stock li img').toggle();
+            });
+        })
     </script>
 </body>
 
