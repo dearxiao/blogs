@@ -17,7 +17,7 @@
             <h3>行业资讯</h3>
         </header>
         <ul>
-            <li>
+            <!-- <li>
                 <img src="images/news.png">
                 <div class="li-right">
                     <a href="news_detail.html">
@@ -27,8 +27,39 @@
                     <span class="time">2019-05-06 </span>
                     <span class="eye">123</span>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: "get",
+                url: url + "api/news",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        for (let i = 0; i < res.data.length; i++) {
+                            var li="<li>"+
+                                "<img src="+res.data[i].intruce_url+">"+
+                                "<div class=\"li-right\">"+
+                                    "<a href=\"news_detail.html?id="+res.data[i].id+"\">"+
+                                        "<h4>"+res.data[i].title+"</h4>"+
+                                        "<p>"+res.data[i].introduce+"</p>"+
+                                    "</a>"+
+                                    "<span class=\"time\">"+res.data[i].create_time+"</span>"+
+                                    // "<span class=\"eye\">123</span>"+
+                                "</div>"+
+                            "</li>"
+                            $('ul').append(li);
+                        }
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

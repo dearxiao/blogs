@@ -161,7 +161,7 @@ button.buy{
     z-index: 2;
 }
 .data{
-    display: none;
+    /* display: none; */
     background: #fff;
 }
 .data>ul{

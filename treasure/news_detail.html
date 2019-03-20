@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>行业资讯</title>
+    <title>公告详情</title>
     <script src="js/flexible.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
@@ -14,12 +14,32 @@
     <div class="news">
         <header>
             <a href="javascript: history.back()"><img src="images/back.png"></a>
-            <h3>行业资讯</h3>
+            <h3>公告详情</h3>
         </header>
-        <h5>比特币价格上涨，突破新高？</h5>
+        <h5></h5>
         <div class="content">
-            <p>很多时候，渐渐开始理解何为世事无常。昨晚，周末，和曹先生一起去参加了他的同事聚会，其实就是同事们自己组的局，自己做饭，大家嗨皮的那种聚会。饭桌上有对年轻的小夫妻，男人在大家一起起哄时候，语重心长的说，真是后悔结婚了呀!</p>
+            <p></p>
         </div>
     </div>
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            var id = getQueryVariable('id')
+            $.ajax({
+                type: "get",
+                url: url + "api/news_detail/" + id,
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('h5').text(res.data.title);
+                        $('.content p').text(res.data.introduce);
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

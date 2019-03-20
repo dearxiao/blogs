@@ -49,7 +49,7 @@
         </nav>
         <div class="market">
             <h2>A股指数</h2>
-            <ul>
+            <!-- <ul>
                 <li>
                     <h3>上证指数</h3>
                     <p>2755.62</p>
@@ -68,12 +68,12 @@
                     <span>-7.56</span>
                     <span>-0.53%</span>
                 </li>
-            </ul>
+            </ul> -->
         </div>
         <div class="stock">
             <h2>自选股 <a href="add.html">添加</a><span class="edit">编辑</span></h2>
             <ul>
-                <li>
+                <!-- <li>
                     <img src="images/minus.png">
                     <div class="li-left">
                         <p>大众公用</p>
@@ -81,13 +81,19 @@
                     </div>
                     <p>5.00</p>
                     <span>+3.73%</span>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="empty">
             <a href="add.html"><img src="images/add+.png"></a>
             <p>暂无自选股，点击添加</p>
         </div>
+    </div>
+    <div class="shade"></div>
+    <div class="hint">
+        <img src="images/lose.png">
+        <p></p>
+        <span>确定</span>
     </div>
     <footer>
         <a href="index.html">
@@ -106,53 +112,9 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="swiper/swiper.min.js"></script>
     <script src="js/jquery.form.js"></script>
-    <script src="js/common.js"></script>
     <script src="vue/vue.js"></script>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            autoplay: true,
-            loop: true, // 循环模式选项
-
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        })
-        $(function () {
-            // 多个股票
-            $.ajax({
-                type: "get",
-                url: url + "api/get_treasure_msg",
-                data: {
-                    treasure_code: 'sh000001,sz399001'
-                },
-                success: function (res) {
-                    console.log(res)
-                    if (res.code == 200) {
-                        
-                    }
-                }
-            });
-            // 单个股票
-            $.ajax({
-                type: "get",
-                url: url + "api/treasure_msg",
-                data: {
-                    treasure_code: 'sh600519'
-                },
-                success: function (res) {
-                    console.log(res)
-                    if (res.code == 200) {
-                        
-                    }
-                }
-            });
-            // 编辑
-            $('.edit').click(function () {
-                $('.stock li img').toggle();
-            });
-        })
-    </script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

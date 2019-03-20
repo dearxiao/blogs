@@ -1,11 +1,5 @@
 $(function () {
-    $.ajax({
-        type: "get",
-        url: url + "api/treasure_history/sh600010",
-        success: function (res) {
-            console.log(JSON.parse(res))
-        }
-    });
+    
     // 历史
     $.ajax({
         type: "get",

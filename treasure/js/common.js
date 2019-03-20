@@ -1,4 +1,5 @@
-var url = 'http://www.36xye0.com/', session_id
+// var url = 'http://www.36xye0.com/', session_id
+var url = 'http://192.168.0.113/', session_id
 $(function () {
 	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()
@@ -35,8 +36,8 @@ $(function () {
 	});
 })
 function tips (e) {
-	if (e.error_code == 200) {
-		$('.hint img').attr('src', '../images/success.png')
+	if (e.code == 200) {
+		$('.hint img').attr('src', 'images/success.png')
 	}
 	$('.hint p').text(e.msg)
 	$('.hint, .shade').show()

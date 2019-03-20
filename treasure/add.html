@@ -21,26 +21,62 @@
             <span>搜索</span>
         </header>
         <div class="stock">
-            <ul>
-                <li>
-                    <div class="li-left">
-                        <p>大众公用</p>
-                        <span>600635</span>
-                    </div>
-                    <img src="images/minus.png">
-                </li>
-                <li>
-                    <div class="li-left">
-                        <p>云海金属</p>
-                        <span>002182</span>
-                    </div>
-                    <img src="images/add.png">
-                </li>
-            </ul>
+            <ul></ul>
         </div>
         <div class="nothing">
             <img src="images/nothing.png">
         </div>
     </div>
+    <div class="shade"></div>
+    <div class="hint">
+        <img src="images/lose.png">
+        <p></p>
+        <span>确定</span>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/stock_arr.js"></script>
+    <script>
+        $(function () {
+            // 模糊搜索
+            $('.search input').on('input', function () {
+                var val = $(this).val(), z = 0
+                $('ul').html('')
+                for (let i = 0; i < stock_arr.length; i++) {
+                    if (stock_arr[i].indexOf(val) != -1) {
+                        var arr = stock_arr[i].split(',')
+                        var li ="<li>"+
+                            "<div class=\"li-left\">"+
+                                "<p>"+arr[0]+"</p>"+
+                                "<span>"+arr[1]+"</span>"+
+                            "</div>"+
+                            "<img src=\"images/add.png\" treasure_code="+arr[1]+">"+
+                        "</li>"
+                        $('ul').append(li);
+                        z++
+                    }
+                    if (z > 5) {
+                        return false
+                    }
+                }
+            });
+            // 添加自选股
+            $('.stock ul').on('click', 'img', function () {
+                var treasure_code = $(this).attr('treasure_code')
+                $.ajax({
+                    type: "post",
+                    url: url + "api/add_treasure",
+                    data: {
+                        treasure_code: treasure_code
+                    },
+                    success: function (res) {
+                        console.log(res)
+                        tips(res)
+                    }
+                });
+            })
+        })
+    </script>
 </body>
 </html>

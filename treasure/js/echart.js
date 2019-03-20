@@ -1,205 +1,117 @@
-var option = {
-    animation: false,
-    title: {
-        show: false
-    },
-    grid: {
-        x: 40,
-        x2: 45,
-        y: 5,
-        y2: 5,
-        borderColor: "#eee",
-        top: "15",
-        left: "8%",
-    },
-    tooltip: {
-        trigger: 'axis',
-        borderColor: "#ccc",
-        showDelay: 10,
-        hideDelay: 10,
-        transitionDuration: 0.1,
-        borderWidth: 1,
-        backgroundColor: "#fff",
-        textStyle: {
-            color: "#666",
-            fontSize: 11,
-            fontFamily: "微软雅黑"
-        },
-        padding: 10,
-        formatter: function (data) {
-            //时间
-            var date = new Date(data[0].name - 0);
-            var y = date.getFullYear(); //year
-            var m = (date.getMonth() + 1) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1); //month 
-            var d = date.getDate() < 10 ? '0' + date.getDate() : date.getDate(); //day 
-            var h = date.getHours() < 10 ? '0' + date.getHours() : date.getHours(); //h
-            var mm = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes(); //m
-            var s = date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds(); //s
-            var price = data[0].data;
-            if (price != "-") {
-                var dom = y + '年' + m + '月' + d + '日';
-                price = parseFloat(price);
-                var p = (price - json.y_close).toFixed(2);
-                var pr = (p / json.y_close * 100).toFixed(2) + "%";
-                dom += "<br/>时间：" + h + ':' + mm + ':' + s;
-                dom += "<br/>价格：<span style='color:" + (p > 0 ? "red" : "green") + ";'>" + price.toFixed(2) + "</span>";
-                dom += "<br/>涨跌：<span style='color:" + (p > 0 ? "red" : "green") + ";'>" + p + "</span>";
-                dom += "<br/>涨跌幅：<span style='color:" + (p > 0 ? "red" : "green") + ";'>" + pr + "</span>";
-            } else {
-                var dom = b_y + '年' + b_m + '月' + b_d + '日';
-                dom += "<br/>时间：-";
-                dom += "<br/>价格：-";
-                dom += "<br/>涨跌：-";
-                dom += "<br/>涨跌幅：-";
-            }
-            return dom;
-        },
-        axisPointer: {
-            lineStyle: {
-                color: '#ccc',
-                width: 1,
-                type: 'solid'
-            }
-        }
-    },
-    legend: {
-        show: false,
-        data: ['-']
-    },
-    toolbox: {
-        show: false
-    },
-    calculable: false,
-    xAxis: [{
-        type: 'category',
-        boundaryGap: false,
-        data: xdata,
-        axisLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        splitNumber: 0,
-        splitLine: {
-            show: false,
-            lineStyle: {
-                color: ['#ccc'],
-                width: 1,
-                type: 'dashed'
-            }
-        }
-    }],
-    yAxis: [{
-            show: true,
-            type: 'value',
-            position: 'left',
-            min: ymin,
-            max: ymax,
-            boundaryGap: false,
-            splitNumber: 4,
-            axisLine: {
-                show: false
-            },
-            axisTick: {
-                show: false
-            },
-            axisLabel: {
-                formatter: function (data) {
-                    return data.toFixed(2);
-                },
-                textStyle: {
-                    color: function (data) {
-                        var d = 1 * (+data).toFixed(2);
-                        if (d > json.y_close) return '#dd2200';
-                        if (d < json.y_close) return '#33aa60';
-                        if (json.y_close == "--") return '#c8c8c8';
-                        return '#c8c8c8';
-                    },
+$(function () {
+	var minute_data, // 分时线数据
+		xdata = [], // 时间
+		ydata = [], //价格
+		ydata2 = [], //成交量
+		ydata3 = [] //涨跌幅百分比
 
-                }
-            },
-            splitLine: {
-                show: true,
-                lineStyle: {
-                    color: ['#ccc'],
-                    width: 1,
-                    type: 'dashed',
-                }
-            }
-        },
-        {
-            type: 'value',
-            position: 'right',
-            min: (ymin - json.y_close) / json.y_close * 100,
-            max: (ymax - json.y_close) / json.y_close * 100,
-            boundaryGap: false,
-            splitLine: {
-                lineStyle: {
-                    color: '#f1f1f1',
-                    width: 1,
-                    type: 'solid'
-                }
-            },
-            axisLine: {
-                lineStyle: {
-                    color: '#f1f1f1',
-                    width: 0,
-                    type: 'solid'
-                }
-            },
-            splitNumber: 4,
-            axisLabel: {
-                formatter: function (data) {
-                    return Math.abs(data).toFixed(2) + "%";
-                },
-                textStyle: {
-                    color: function (data) {
-                        if (json.y_close == "--") return '#c8c8c8';
-                        var d = 1 * parseFloat(data).toFixed(3);
-                        if (d >= 0.001) return '#dd2200';
-                        if (d < 0) return '#33aa60';
-                        return '#c8c8c8';
-                    }
-                }
-            }
-        }
-    ],
-    series: [{
-        name: '-',
-        type: 'line',
-        itemStyle: {
-            normal: {
-                areaStyle: {
-                    type: 'default'
-                },
-                color: "#d5e1f2",
-                borderColor: "#3b98d3",
-                lineStyle: {
-                    width: 1,
-                    color: ['#3b98d3']
-                },
-            }
-        },
-        data: ydata,
-        symbol: "circle",
-        symbolSize: 5,
-        markLine: {
-            symbol: "none",
-            clickable: false,
-            large: true,
-            itemStyle: {
-                normal: {
-                    lineStyle: {
-                        color: ['#F96900'],
-                        width: 1,
-                        type: 'dashed'
-                    }
-                }
-            },
-            data: markLineData
-        }
-    }]
-};
-var myChart = echarts.init(document.getElementById('chart1'))
-myChart.setOption(option)
+	minute_k()
+	function minute_k() {
+		$.ajax({
+			type: "get",
+			url: url + "api/treasure_minute/sh600010",
+			success: function (res) {
+				minute_data = JSON.parse(res).data
+				console.log(minute_data)
+				for (let i = 0; i < minute_data.length; i++) {
+					xdata.push(minute_data[i][0])
+				}
+				for (let i = 0; i < minute_data.length; i++) {
+					ydata.push(minute_data[i][1])
+				}
+				for (let i = 0; i < minute_data.length; i++) {
+					ydata2.push(minute_data[i][2])
+				}
+				for (let i = 0; i < minute_data.length; i++) {
+					ydata3.push(minute_data[i][3])
+				}
+				
+				console.log(xdata, ydata, ydata2, ydata3)
+			}
+		});
+	}
+
+	option = {
+		grid: {
+			left: 20,
+			right: 20,
+			top: 0,
+			bottom: 30
+		},
+		tooltip: {
+			trigger: 'axis',
+			axisPointer: {
+				type: 'cross',
+				crossStyle: {
+					color: '#999'
+				}
+			}
+		},
+		xAxis: [{
+			type: 'category',
+			data: xdata,
+			axisLine: {
+				show: false,
+			},
+			axisTick: {
+				show: false,
+			},
+			axisPointer: {
+				type: 'shadow'
+			}
+		}],
+		yAxis: [{
+				type: 'value',
+				name: '水量',
+				min: 0,
+				max: 250,
+				interval: 50,
+				axisLine: {
+					show: false,
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLabel: {
+					formatter: '{value} ml'
+				}
+			},
+			{
+				type: 'value',
+				name: '温度',
+				min: 0,
+				max: 25,
+				interval: 5,
+				axisLine: {
+					show: false,
+				},
+				axisTick: {
+					show: false,
+				},
+				axisLabel: {
+					formatter: '{value} °C'
+				}
+			}
+		],
+		series: [{
+				name: '蒸发量',
+				type: 'bar',
+				data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+			},
+			{
+				name: '降水量',
+				type: 'bar',
+				data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+			},
+			{
+				name: '平均温度',
+				type: 'line',
+				yAxisIndex: 1,
+				data: [2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+			}
+		]
+	};
+
+	var myChart = echarts.init(document.getElementById('chart1'))
+	myChart.setOption(option)
+})

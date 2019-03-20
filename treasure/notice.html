@@ -16,14 +16,7 @@
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>系统公告</h3>
         </header>
-        <ul>
-            <li>
-                <h4>比特币价格上涨，突破新高</h4>
-                <p>比特币（BitCoin）的概念最初由中本聪</p>
-                <span class="eye">123</span>
-                <a href="notice_detail.html">查看详情</a>
-            </li>
-        </ul>
+        <ul> </ul>
     </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
@@ -32,11 +25,19 @@
         $(function () {
             $.ajax({
                 type: "get",
-                url: url + "api/get_banner",
+                url: url + "api/notice",
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {
-                        
+                        for (let i = 0; i < res.data.length; i++) {
+                            var li="<li>"+
+                                "<h4>"+res.data[i].title+"</h4>"+
+                                "<p>"+res.data[i].introduce+"</p>"+
+                                "<span>"+res.data[i].create_time+"</span>"+
+                                "<a href=\"notice_detail.html?id="+res.data[i].id+"\">查看详情</a>"+
+                            "</li>"
+                            $('ul').append(li);
+                        }
                     }
                 }
             });
