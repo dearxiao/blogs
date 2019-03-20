@@ -16,16 +16,16 @@
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>提现</h3>
         </header>
-        <form action="" method="post">
+        <form action="http://www.36xye0.com/api/do_withdraw" method="post">
             <div class="line">
                 <label><img src="images/money2.png"></label>
-                <input type="text" placeholder="请输入提现金额">
+                <input type="text" name="money" placeholder="请输入提现金额">
             </div>
             <div class="line">
                 <label><img class="yh" src="images/yh.png"></label>
-                <span>交通银行(尾号1234)</span>
+                <span class="bank_name">交通银行(尾号1234)</span>
             </div>
-            <b>可用余额：666</b>
+            <b>可用余额：<span></span></b>
             <span class="total">全部提现</span>
             <button>确定</button>
         </form>
@@ -39,5 +39,20 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                type: "get",
+                url: url + "api/my_msg",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('.bank_name').text(res.data.bank_name);
+                        $('form b span').text(res.data.money);
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

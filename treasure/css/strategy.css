@@ -2,6 +2,9 @@
 body{
     padding-top: 1.2rem;
 }
+.strategy{
+    padding-bottom: 1.5rem;
+}
 .search{
     float: right;
     width: .5rem;
@@ -25,7 +28,7 @@ body{
     border-bottom: 1px solid #dc2333;
 }
 .tab0{
-    padding-bottom: 3.5rem;
+    padding-bottom: 2rem;
 }
 .info{
     padding: .2rem .3rem;
@@ -233,7 +236,7 @@ button.buy{
 }
 .intro{
     position: relative;
-    margin: .2rem .5rem;
+    margin: .2rem .5rem .5rem;
     padding: 0 .3rem;
     background: #fff;
     border-radius: .3rem;

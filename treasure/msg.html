@@ -16,14 +16,14 @@
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>实名认证</h3>
         </header>
-        <form action="" method="post">
+        <form action="http://www.36xye0.com/api/update_name" method="post">
             <div class="line">
                 <label>姓名</label>
-                <input type="text" placeholder="请输入您的手机号">
+                <input type="text" name="realy_name" placeholder="请输入您的手机号">
             </div>
             <div class="line">
                 <label>身份证号</label>
-                <input type="text" placeholder="请输入您的身份证号">
+                <input type="text" name="card_number" placeholder="请输入您的身份证号">
             </div>
             <p class="tishi">*请准确填写身份信息，以便充值和提现</p>
             <button>确定</button>
@@ -38,19 +38,5 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
-    <script>
-        $(function () {
-            $.ajax({
-                type: "get",
-                url: url + "api/get_banner",
-                success: function (res) {
-                    console.log(res)
-                    if (res.code == 200) {
-                        
-                    }
-                }
-            });
-        })
-    </script>
 </body>
 </html>
