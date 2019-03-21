@@ -16,30 +16,30 @@
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>添加银行卡</h3>
         </header>
-        <form action="" method="post">
+        <form action="http://www.36xye0.com/api/update_bank" method="post">
             <div class="line">
                 <label>姓名</label>
-                <input type="text" placeholder="请输入您的手机号">
+                <input type="text" name="realy_name" placeholder="请输入您的手机号">
             </div>
             <div class="line">
                 <label>开户银行</label>
-                <input type="text" placeholder="请输入开户银行">
+                <input type="text" name="bank_name" placeholder="请输入开户银行">
             </div>
             <div class="line">
                 <label>开户省</label>
-                <input type="text" placeholder="请输入开户省">
+                <input type="text" name="bank_province" placeholder="请输入开户省">
             </div>
             <div class="line">
                 <label>开户市</label>
-                <input type="text" placeholder="请输入开户市">
+                <input type="text" name="bank_city" placeholder="请输入开户市">
             </div>
             <div class="line">
                 <label>开户支行</label>
-                <input type="text" placeholder="请输入开户支行">
+                <input type="text" name="bank_branch" placeholder="请输入开户支行">
             </div>
             <div class="line">
                 <label>银行卡号</label>
-                <input type="text" placeholder="请输入银行卡号">
+                <input type="text" name="bank_number" placeholder="请输入银行卡号">
             </div>
             <p class="tishi">*请准确填写身份信息，以便充值和提现</p>
             <button>确定</button>
@@ -65,5 +65,25 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            // 个人信息
+            $.ajax({
+                type: "get",
+                url: url + "api/bank_msg",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('.line:eq(0) input').val(res.data.realy_name)
+                        $('.line:eq(1) input').val(res.data.bank_name)
+                        $('.line:eq(2) input').val(res.data.bank_province)
+                        $('.line:eq(3) input').val(res.data.bank_city)
+                        $('.line:eq(4) input').val(res.data.bank_branch)
+                        $('.line:eq(5) input').val(res.data.bank_number)
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

@@ -73,9 +73,15 @@
                     success: function (res) {
                         console.log(res)
                         tips(res)
+                        return false
                     }
                 });
             })
+            // 跳转创建策略
+            $('.stock').on('click', '.li-left', function () { 
+                var code = $(this).find('span').text()
+                location.href = "strategy.html?code="+code
+            });
         })
     </script>
 </body>

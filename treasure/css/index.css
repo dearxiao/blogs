@@ -139,6 +139,9 @@ nav p{
     font-size: .37rem;
     line-height: .5rem;
 }
+.add .stock .li-left{
+    width: 80%;
+}
 .stock .li-left span{
     font-size: .32rem;
     color: #a2a2a2;

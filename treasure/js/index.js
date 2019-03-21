@@ -6,6 +6,15 @@ var mySwiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 })
+var myDate = new Date();
+var day = myDate.getDay();
+var mytime = myDate.toLocaleTimeString()
+var market_open = false
+if (day != 0 && day != 6) {
+    if ('09:30' < mytime && mytime < '15:00') {
+        market_open = true
+    }
+}
 $(function () {
     var my_stocks //自选股数组
     // 轮播图
@@ -64,10 +73,16 @@ $(function () {
             }
         });
     }
-    setInterval(function () {
+    if (market_open) {
+        setInterval(function () {
+            stocks()
+            my_stock()
+        }, 1000)
+    } else {
         stocks()
         my_stock()
-    }, 1000)
+    }
+    
     // 自选股票
     $.ajax({
         type: "get",
@@ -93,7 +108,7 @@ $(function () {
                                         cla = 'down'
                                         rise = ''
                                     }
-                                    var li = "<li>" +
+                                    var li = "<li onclick=\"location.href='strategy.html?code=" + res.data[i].number + "'\">" +
                                         "<img class=\"del\" src=\"images/minus.png\" treasure_code=" + res.data[i].number + ">" +
                                         "<div class=\"li-left\">" +
                                         "<p>" + res.data[i].name + "</p>" +

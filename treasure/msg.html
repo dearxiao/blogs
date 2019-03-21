@@ -38,5 +38,22 @@
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
+    <script>
+        $(function () {
+            // 个人信息
+            $.ajax({
+                type: "get",
+                url: url + "api/realy_name",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('.line:eq(0) input').val(res.data.realy_name).attr('readonly', true)
+                        $('.line:eq(1) input').val(res.data.card_number).attr('readonly', true)
+                        $('form button').attr('disabled', true).text('已实名').css('background', '#999');
+                    }
+                }
+            });
+        })
+    </script>
 </body>
 </html>

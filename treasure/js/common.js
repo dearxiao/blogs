@@ -1,5 +1,5 @@
 var url = 'http://www.36xye0.com/', session_id
-// var url = 'http://192.168.0.113/', session_id
+// var url = 'http://192.168.0.109/', session_id
 $(function () {
 	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()
@@ -37,6 +37,9 @@ $(function () {
 	});
 })
 function tips (e) {
+	if (e.code == 202) {
+		location.href = 'index.html'
+	}
 	if (e.code == 200) {
 		$('.hint img').attr('src', 'images/success.png')
 	}

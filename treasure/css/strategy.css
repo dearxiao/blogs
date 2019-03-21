@@ -47,10 +47,11 @@ body{
 .info span.up{
     color: #dc2333;
 }
-.info .add{
+.info .operate{
     width: .5rem;
     margin: .25rem .3rem;
     vertical-align: top;
+    opacity: 0;
 }
 .info>span{
     display: inline-block;
@@ -164,7 +165,7 @@ button.buy{
     z-index: 2;
 }
 .data{
-    /* display: none; */
+    display: none;
     background: #fff;
 }
 .data>ul{
@@ -225,14 +226,13 @@ button.buy{
 .orders li span:nth-of-type(2){
     color: #dc2333;
 }
-.orders .buy{
+.orders .sale{
     margin: .25rem 0 .5rem;
 }
 #chart2{
     display: none;
-    width: 9rem;
+    width: 10rem;
     height: 7rem;
-    margin: 0 .5rem;
 }
 .intro{
     position: relative;
