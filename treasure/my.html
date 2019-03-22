@@ -25,7 +25,7 @@
             </div>
             <div class="yue">
                 <div>
-                    <span>66600.00</span>
+                    <span>0.00</span>
                     <p>账户余额(元)</p>
                 </div>
                 <div>
@@ -96,6 +96,19 @@
                         }
                     }
                 });
+            });
+            
+            // 账户余额
+            $.ajax({
+                type: "get",
+                url: url + "api/my_msg",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('.yue div:eq(0) span').text(res.data.money);
+                        $('.yue div:eq(1) span').text(res.data.account_money);
+                    }
+                }
             });
         })
 

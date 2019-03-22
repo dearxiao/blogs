@@ -8,10 +8,17 @@ var mySwiper = new Swiper('.swiper-container', {
 })
 var myDate = new Date();
 var day = myDate.getDay();
-var mytime = myDate.toLocaleTimeString()
+var onedate = myDate.toLocaleString('chinese', {
+    hour12: false
+}).slice(10)
+var hours = parseInt(onedate.slice(0, 2))
+var minute = parseInt(onedate.slice(3, 5))
 var market_open = false
 if (day != 0 && day != 6) {
-    if ('09:30' < mytime && mytime < '15:00') {
+    if ((hours == 9 && minute >= 30) || (hours == 11 && minute < 30) || hours == 10) {
+        market_open = true
+    }
+    if (hours >= 13 && hours < 15) {
         market_open = true
     }
 }
@@ -20,13 +27,13 @@ $(function () {
     // 轮播图
     $.ajax({
         type: "get",
-        url: url+"api/get_banner",
+        url: url + "api/get_banner",
         success: function (res) {
             console.log(res)
             if (res.code == 200) {
                 for (let i = 0; i < res.data.length; i++) {
-                    var banner = "<div class=\"swiper-slide\"><img src="+res.data[i]+"></div>"
-                    // $('.swiper-wrapper').append(banner);
+                    var banner = "<div class=\"swiper-slide\"><img src="+url+"" + res.data[i] + "></div>"
+                    $('.swiper-wrapper').append(banner);
                 }
             }
         }
@@ -82,7 +89,7 @@ $(function () {
         stocks()
         my_stock()
     }
-    
+
     // 自选股票
     $.ajax({
         type: "get",

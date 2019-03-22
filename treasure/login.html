@@ -13,7 +13,7 @@
 <body>
     <div class="login">
         <h1>登录</h1>
-        <form action="http://www.36xye0.com/api/do_login" method="post">
+        <form action="" method="post">
             <img class="logo" src="images/logo.png">
             <div class="line">
                 <img src="images/login1.png">
@@ -44,6 +44,7 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
     <script>
+        $('form').attr('action', url+'api/do_login');
         function catptcha_code() {
             $.ajax({
                 type: "get",

@@ -13,9 +13,8 @@
 <body>
     <div class="strategy">
         <header>
-            <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>创建策略</h3>
-            <a href="add.html"><img class="search" src="images/search2.png"></a>
+            <a href="add.html?way=strategy"><img class="search" src="images/search2.png"></a>
         </header>
         <div class="title">
             <span class="act">点买</span>
@@ -126,114 +125,49 @@
                 </div>
                 <div class="chart chart1" id="chart2"></div>
             </div>
-            <form action="http://www.36xye0.com/api/buy" method="post">
-                <div class="line">
+            <form action="" method="post">
+                <!-- <div class="line">
                     <span>买入金额</span>
                     <input type="text">
-                </div>
+                </div> -->
                 <div class="line">买入金额(元)</div>
                 <ul class="money">
-                    <li class="act">1万</li>
-                    <li>2万</li>
-                    <li>5万</li>
-                    <li>10万</li>
-                    <li>20万</li>
-                    <li>30万</li>
-                    <li>50万</li>
-                    <li>100万</li>
+                    <li class="act" buy_type="0" money="1">1万</li>
+                    <li buy_type="1" money="2">2万</li>
+                    <li buy_type="2" money="5">5万</li>
+                    <li buy_type="3" money="10">10万</li>
+                    <li buy_type="4" money="20">20万</li>
+                    <li buy_type="5" money="30">30万</li>
+                    <li buy_type="6" money="50">50万</li>
+                    <li buy_type="7" money="100">100万</li>
                 </ul>
                 <div class="line">履约保证金(元)</div>
                 <ul class="deposit">
-                    <li class="act">1000</li>
-                    <li>1250</li>
-                    <li>1666</li>
+                    <li class="act"acction_type="0">1000</li>
+                    <li acction_type="1">1250</li>
+                    <li acction_type="2">1666</li>
                 </ul>
                 <div class="stop">
                     <span>触发止损<b>-700</b></span>
-                    <span>交易综合费<b>42元</b></span>
+                    <span>交易综合费<b>42</b>元</span>
                 </div>
+                <input type="hidden" name="type" value="1">
                 <input type="hidden" name="treasure_code">
+                <input type="hidden" name="price">
+                <input type="hidden" name="buy_type" value="0">
+                <input type="hidden" name="acction_type" value="0">
                 <div class="protocol">
                     <p>阅读并同意以下协议</p>
                     <a href="">《财富策略人参与卢深A股交易合作涉及费用及收费标准》</a><br>
                     <a href="">《财富策略投资人与点买人与卢深A股交易合作协议》</a><br>
                     <a href="">《财富策略服务协议》</a>
                 </div>
-                <p class="yue">账户可用余额：2000元</p>
-                <button class="buy">策略点买</button>
+                <p class="yue">账户可用余额：<span>0.00</span>元</p>
+                <button class="buy">交易时间：工作日 09:30~11:30 13:00~:15:00</button>
             </form>
         </div>
-        <div class="tab tab1">
-            <!-- <div class="intro">
-                <div class="top">
-                    <span>大众股份</span>
-                    <a href="deposit.html">+保证金</a>
-                    <button>点卖</button>
-                </div>
-                <div class="semicircle-l"></div>
-                <div class="semicircle-r"></div>
-                <div class="center">
-                    <div>
-                        <p>50000</p>
-                        <span>金额(元)</span>
-                    </div>
-                    <div>
-                        <p>4900</p>
-                        <span>股数</span>
-                    </div>
-                    <div>
-                        <p class="down">-588</p>
-                        <span>盈亏(元)</span>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <span>止损(元)：-45570.00</span>
-                    <div class="right">
-                        <p>买入(元)：<b>10.02</b></p>
-                        <p>当前(元)：<b>10.08</b></p>
-                    </div>
-                </div>
-                <img class="arrow" src="images/arrow.png">
-                <ul class="detail">
-                    <li>买入时间:<span>2018-06-05</span></li>
-                    <li>浮动盈亏比(%):<span>-1.18%</span></li>
-                    <li>交易号:<span>35062</span></li>
-                    <li>保证金(元):<span>64500.00</span></li>
-                    <li>+保证金:<span>14500.00</span></li>
-                    <li>止损价(元):<span>9.27</span></li>
-                    <li>递延天数(天):<span>16</span></li>
-                    <li>递延费(元):<span>14400.00</span></li>
-                    <li>卖出时间:<span>2018-06-05</span></li>
-                </ul>
-            </div> -->
-        </div>
-        <div class="tab tab2">
-            <!-- <div class="intro">
-                <div class="top">
-                    <span>大众股份 2019-04-20</span>
-                </div>
-                <div class="semicircle-l"></div>
-                <div class="semicircle-r"></div>
-                <div class="center">
-                    <div>
-                        <p class="down">-588.00</p>
-                        <span>盈亏(元)</span>
-                    </div>
-                </div>
-                <img class="arrow" src="images/arrow.png">
-                <ul class="detail">
-                    <li>买入时间:<span>2018-06-05</span></li>
-                    <li>浮动盈亏比(%):<span>-1.18%</span></li>
-                    <li>交易号:<span>35062</span></li>
-                    <li>保证金(元):<span>64500.00</span></li>
-                    <li>+保证金:<span>14500.00</span></li>
-                    <li>止损价(元):<span>9.27</span></li>
-                    <li>递延天数(天):<span>16</span></li>
-                    <li>递延费(元):<span>14400.00</span></li>
-                    <li>卖出时间:<span>2018-06-05</span></li>
-                </ul>
-            </div> -->
-        </div>
+        <div class="tab tab1"></div>
+        <div class="tab tab2"></div>
     </div>
     <footer>
         <a href="index.html">

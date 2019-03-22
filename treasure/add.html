@@ -77,10 +77,11 @@
                     }
                 });
             })
-            // 跳转创建策略
-            $('.stock').on('click', '.li-left', function () { 
+            // 跳转 创建策略 免费体验
+            var way = getQueryVariable('way')
+            $('.stock').on('click', '.li-left', function () {
                 var code = $(this).find('span').text()
-                location.href = "strategy.html?code="+code
+                location.href = ""+way+".html?code="+code
             });
         })
     </script>

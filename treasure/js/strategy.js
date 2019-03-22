@@ -1,11 +1,21 @@
 var code = getQueryVariable('code').toLowerCase()
+$('input[name=treasure_code]').val(code)
+$('form').attr('action', url+'api/buy');    
 var myDate = new Date();
 var day = myDate.getDay();
-var mytime = myDate.toLocaleTimeString()
+var onedate = myDate.toLocaleString('chinese', { hour12: false }).slice(10)
+var hours = parseInt(onedate.slice(0, 2))
+var minute = parseInt(onedate.slice(3, 5))
 var market_open = false
 if (day != 0 && day != 6) {
-    if ('09:30' < mytime && mytime < '15:00') {
+    if ((hours == 9 && minute >= 30) || (hours == 11 && minute < 30) || hours == 10) {
         market_open = true
+    }
+    if (hours >= 13 && hours < 15) {
+        market_open = true
+    }
+    if (market_open) {
+        $('button.buy').text('策略点买').css('background', '#dc2333');
     }
 }
 
@@ -119,7 +129,7 @@ $(function () {
                 treasure_code: code
             },
             success: function (res) {
-                console.log('实时价格', res)
+                // console.log('实时价格', res)
                 if (res.code == 200) {
                     var data = res.data[0]
                     var cla = '', rise = ''
@@ -128,13 +138,13 @@ $(function () {
                         rise = '+'
                     }
                     $('.info .price').text(data.price);
-                    $('.info .zd').text(data.differ_price).addClass(cla);
+                    $('input[name=price]').val(data.price);
+                    $('.info .zd').text((data.differ_price).toFixed(2)).addClass(cla);
                     $('.info .zdf').text(rise + data.differ_scale + '%').addClass(cla);
                 }
             }
         });
     }
-    
     // 持仓
     $.ajax({
         type: "get",
@@ -153,7 +163,7 @@ $(function () {
                     var intro = "<div class=\"intro\">"+
                         "<div class=\"top\">"+
                             "<span>"+data[i].name+"</span>"+
-                            "<a href=\"deposit.html\">+保证金</a>"+
+                            "<a href=\"deposit.html?id="+data[i].id+"\">+保证金</a>"+
                             "<button cid="+data[i].id+">点卖</button>"+
                         "</div>"+
                         "<div class=\"semicircle-l\"></div>"+
@@ -173,22 +183,21 @@ $(function () {
                             "</div>"+
                         "</div>"+
                         "<div class=\"bottom\">"+
-                            "<span>止损(元)："+data[i].win_sum+"</span>"+
+                            "<span>止损(元)："+data[i].zhisun_price+"</span>"+
                             "<div class=\"right\">"+
                                 "<p>买入(元)：<b>"+data[i].buy_price+"</b></p>"+
                                 "<p>当前(元)：<b>"+data[i].now_price+"</b></p>"+
                             "</div>"+
                         "</div>"+
                         "<ul class=\"detail\">"+
-                            "<li>买入时间:<span>"+data[i].create_time+"</span></li>"+
-                            "<li>浮动盈亏比(%):<span>"+data[i].buy_scale+"</span></li>"+
-                            "<li>交易号:<span>"+data[i].id+"</span></li>"+
-                            "<li>保证金(元):<span>"+data[i].days+"</span></li>"+
-                            "<li>+保证金:<span>"+data[i].days+"</span></li>"+
-                            "<li>止损价(元):<span>"+data[i].days+"</span></li>"+
+                            "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
+                            "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
+                            "<li>浮动盈亏比(%):<span>"+data[i].scale+"</span></li>"+
+                            "<li>保证金(元):<span>"+data[i].account_money+"</span></li>"+
+                            "<li>+保证金:<span>"+data[i].more_account_money+"</span></li>"+
+                            "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
                             "<li>递延天数(天):<span>"+data[i].days+"</span></li>"+
                             "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
-                            "<li>卖出时间:<span>"+data[i].update_time+"</span></li>"+
                         "</ul>"+
                     "</div>"
                     $('.tab1').append(intro);
@@ -198,22 +207,23 @@ $(function () {
     });
     // 点卖
     $('.tab1').on('click', '.top button',function () {
-        var id = $(this).attr('cid')
+        var id = $(this).attr('cid'), that = this
         $('.shade, .hint2').show()
-        $('.confirm_sale').off('click').click(function () { 
+        $('.confirm_sale').off('click').click(function () {
+            $('.shade, .hint2').hide()
             $.ajax({
                 type: "post",
                 url: url + "api/sale?id="+id,
                 success: function (res) {
                     console.log('点卖', res)
+                    tips(res)
                     if (res.code == 200) {
-                        
+                        $(this).parent('.top').parent('.intro')
                     }
                 }
             });
         });
     });
-    
     // 历史
     $.ajax({
         type: "get",
@@ -242,15 +252,14 @@ $(function () {
                             "</div>"+
                         "</div>"+
                         "<ul class=\"detail\">"+
-                            "<li>买入时间:<span>"+data[i].create_time+"</span></li>"+
-                            "<li>浮动盈亏比(%):<span>"+data[i].buy_scale+"</span></li>"+
-                            "<li>交易号:<span>"+data[i].id+"</span></li>"+
-                            "<li>保证金(元):<span>"+data[i].days+"</span></li>"+
-                            "<li>+保证金:<span>"+data[i].days+"</span></li>"+
-                            "<li>止损价(元):<span>"+data[i].days+"</span></li>"+
-                            "<li>递延天数(天):<span>"+data[i].days+"</span></li>"+
+                            "<li>买入价格(元):<span>"+data[i].buy_price+"</span></li>"+
+                            "<li>卖出价格(元):<span>"+data[i].account_money+"</span></li>"+
+                            "<li>保证金:<span>"+data[i].account_money+"</span></li>"+
+                            "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
                             "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
-                            "<li>卖出时间:<span>"+data[i].update_time+"</span></li>"+
+                            "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
+                            "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
+                            "<li class=\"w100\">卖出时间:<span>"+data[i].update_time+"</span></li>"+
                         "</ul>"+
                     "</div>"
                     $('.tab2').append(intro);
@@ -258,9 +267,37 @@ $(function () {
             }
         }
     });
-    $('form').on('click', 'li', function () { 
+    // 买入金额
+    $('form .money').on('click', 'li', function () {
+        var buy_type = $(this).attr('buy_type')
+        var money = $(this).attr('money')
+        $('input[name=buy_type]').val(buy_type);
+        $('.deposit li:eq(0)').text(1000 * money);
+        $('.deposit li:eq(1)').text(1250 * money);
+        $('.deposit li:eq(2)').text(1666 * money);
+        $('.stop span:eq(1) b').text(42 * money); // 交易综合费
         $(this).siblings('li').removeClass('act')
         $(this).addClass('act');
+    });
+    // 履约保证金
+    $('form .deposit').on('click', 'li', function () {
+        var acction_type = $(this).attr('acction_type')
+        var cash = $(this).text();
+        $('input[name=acction_type]').val(acction_type);
+        $('.stop span:eq(0) b').text((cash * -0.7).toFixed(2));  // 触发止损
+        $(this).siblings('li').removeClass('act')
+        $(this).addClass('act');
+    });
+    // 账户余额
+    $.ajax({
+        type: "get",
+        url: url + "api/my_msg",
+        success: function (res) {
+            console.log('账户余额', res)
+            if (res.code == 200) {
+                $('.yue span').text(res.data.money);
+            }
+        }
     });
     // 选项卡
     $('.title2 span').click(function () {

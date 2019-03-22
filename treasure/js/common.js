@@ -1,5 +1,5 @@
-var url = 'http://www.36xye0.com/', session_id
-// var url = 'http://192.168.0.109/', session_id
+// var url = 'http://www.36xye0.com/', session_id
+var url = 'http://192.168.0.109/', session_id
 $(function () {
 	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()

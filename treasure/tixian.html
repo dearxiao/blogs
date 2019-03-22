@@ -16,7 +16,7 @@
             <a href="javascript: history.back()"><img src="images/back.png"></a>
             <h3>提现</h3>
         </header>
-        <form action="http://www.36xye0.com/api/do_withdraw" method="post">
+        <form action="" method="post">
             <div class="line">
                 <label><img src="images/money2.png"></label>
                 <input type="text" name="money" placeholder="请输入提现金额">
@@ -41,6 +41,7 @@
     <script src="js/common.js"></script>
     <script>
         $(function () {
+            $('form').attr('action', url+'api/do_withdraw');    
             $.ajax({
                 type: "get",
                 url: url + "api/my_msg",
@@ -49,6 +50,9 @@
                     if (res.code == 200) {
                         $('.bank_name').text(res.data.bank_name);
                         $('form b span').text(res.data.money);
+                        $('.total').click(function () { 
+                            $('.line:eq(0) input').val(res.data.money)
+                        });
                     }
                 }
             });

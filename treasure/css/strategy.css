@@ -161,7 +161,7 @@ button.buy{
     color: #fff;
     line-height: 1rem;
     border: 0;
-    background: #dc2333;
+    background: #999;
     z-index: 2;
 }
 .data{
@@ -336,6 +336,9 @@ ul.detail li{
     width: 50%;
     font-size: .37rem;
     color: #616161;
+}
+ul.detail .w100{
+    width: 100%;
 }
 ul.detail li span{
     color: #191818;

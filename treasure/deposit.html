@@ -19,14 +19,10 @@
             <h3>+保证金</h3>
         </header>
         <form action="" method="post">
-            <div class="line">履约保证金(元)</div>
-            <ul class="deposit">
-                <li class="act">1000</li>
-                <li>1250</li>
-                <li>1666</li>
-            </ul>
-            <p class="yue">账户可用余额：2000元</p>
-            <button class="buy">策略点买</button>
+            <div class="line">履约保证金(元) <input type="text" name="money"></div>
+            <input type="hidden" name="id">
+            <p class="yue">账户可用余额：<span>0.00</span>元</p>
+            <button class="buy">交易时间：工作日 09:30~15:00</button>
         </form>
     </div>
     <div class="shade"></div>
@@ -40,7 +36,41 @@
     <script src="js/common.js"></script>
     <script>
         $(function () {
-            $('form').on('click', 'li', function () { 
+            var id = getQueryVariable('id')
+            $('input[name=id]').val(id);
+            $('form').attr('action', url+'api/more_account');
+
+            // 账户余额
+            $.ajax({
+                type: "get",
+                url: url + "api/my_msg",
+                success: function (res) {
+                    console.log(res)
+                    if (res.code == 200) {
+                        $('.yue span').text(res.data.money);
+                    }
+                }
+            });
+            var myDate = new Date();
+            var day = myDate.getDay();
+            var onedate = myDate.toLocaleString('chinese', {
+                hour12: false
+            }).slice(10)
+            var hours = parseInt(onedate.slice(0, 2))
+            var minute = parseInt(onedate.slice(3, 5))
+            var market_open = false
+            if (day != 0 && day != 6) {
+                if ((hours == 9 && minute >= 30) || (hours == 11 && minute < 30) || hours == 10) {
+                    market_open = true
+                }
+                if (hours >= 13 && hours < 15) {
+                    market_open = true
+                }
+                if (market_open) {
+                    $('button.buy').text('策略点买').css('background', '#dc2333');
+                }
+            }
+            $('form').on('click', 'li', function () {
                 $(this).siblings('li').removeClass('act')
                 $(this).addClass('act');
             });
