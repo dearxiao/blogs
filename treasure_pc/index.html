@@ -26,7 +26,7 @@
                         <a class="login" href="javascript:;">登录</a>
                         <a class="register" href="reg.html">注册</a>
                     </div>
-                    <ul id="page_shared_layout_unlogin" class="top-links f-right" style="display:block">
+                    <ul id="page_shared_layout_unlogin" class="top-links f-right">
                         <li class="show-login" style="display: block;">您好，&nbsp;</li>
                         <li class="show-login top-user-wrapper" style="display: block;">
                             <span class="top-username">
@@ -51,7 +51,7 @@
             <div class="h_bot br-w100">
                 <div class="w1364 br-clearfix">
                     <div class="h_botL br-fl">
-                        <a href="index.html"><img src="home/img/logo.png" style="height:60px; " /></a>
+                        <a href="index.html"><img src="home/img/logo.png" style="height:60px;" /></a>
                     </div>
                     <div class="h_botR br-fr">
                         <ul class="br-clearfix" id="menu-ul">
@@ -65,36 +65,13 @@
                 </div>
             </div>
         </header>
-        <script src="libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
-        <script src="home/js/general.js"></script>
-        <script>
-            //自动选中active
-            $(function(){
-                var menuArr = [];
-                menuArr[0] = ["index"  ];
-                menuArr[1] = ["buy", "sell","history" ];
-                menuArr[2] = ["freeTrial", "freeTrialSell", "freeTrialHistory"];
-                menuArr[3] = ["mobile" ];
-                menuArr[4] = [ "guild"];
-                for(var i = 0 ; i < menuArr.length; i++ ){
-                    for(var j = 0 ; j < menuArr[i].length; j++){
-                        if(location.href.indexOf(menuArr[i][j]) > 0){
-                            $("#menu-ul > li a").removeClass("active");
-                            $("#menu-ul > li").eq(i).find("a").eq(0).addClass("active");
-                            $("#menu-ul > li").eq(i).find("a").eq(j+1).addClass("active");
-                            return;
-                        }
-                    }
-                }
-            });
-        </script>
     </div>
     <div class="view-content">
         <div class="men-carousel">
             <div class="carousel_banner">
                 <div class="carousel_banner_list" id="carousel_banner_list">
-                    <a><img src="home/img/banner1.png" alt=""></a>
-                    <a><img src="home/img/banner2.png" alt=""></a>
+                    <img src="home/img/banner1.png" alt="">
+                    <img src="home/img/banner2.png" alt="">
                 </div>
                 <ul class="carousel_pointer"></ul>
                 <div class="carousel_btn">
@@ -449,8 +426,8 @@
     <script src="libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="libs/jquery-2.2.0/jquery.cookie.js"></script>
     <script src="libs/swiper/swiper.js"></script>
-    <script src="home/js/index.js"></script>
     <script src="home/js/common.js"></script>
+    <script src="home/js/index.js"></script>
 </body>
 
 </html>

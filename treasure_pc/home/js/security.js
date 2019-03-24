@@ -23,10 +23,10 @@ var security={
                     $('#sfzh_err1').show()
                     return;
                 }
-                $.post("/user/realNameAuth", {realName:realName, idNumber:IDnumber}, function(data){
+                $.post(url+"api/update_name", {realy_name:realName, card_number:IDnumber}, function(data){
                         $("#姓名i").val('');
                         $("#身份证i").val('');
-                        if(data.code != '0'){
+                        if(data.code != 200){
                             tool.popup_err_msg(data.msg);
                         }else{
                             tool.popup_err_msg("保存成功");
@@ -223,17 +223,18 @@ var security={
            		if($('#当前登录密码i').val().length!=0 && $('#新密码i').val().length!=0 && $('#确认密码i').val()==$('#新密码i').val()){
            			$.ajax({
            				type:"post",
-           				url:"/user/updatePassword",
+           				url: url + "api/update_pwd",
            				data:{
-                            oldPassword:$('#当前登录密码i').val(),
-                            newPassword:$('#新密码i').val(),
+                            old_password:$('#当前登录密码i').val(),
+                            password:$('#新密码i').val(),
+                            password:$('#确认密码i').val(),
            				},
            				dataType:'json',
            				success:function(data){
            					//$("#当前登录密码i").val('');
            					//$("#新密码i").val('');
 	                        //$("#确认密码i").val('');
-	                        if(data.code != '0'){
+	                        if(data.code != 200){
 								$("#bdsjjym_err7").html(data.msg).show();
 	                        }else{
 								$("#bdsjjym_err7").hide();

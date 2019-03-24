@@ -151,9 +151,9 @@ var index_login = {
 			return;
 		}
 		$.ajax({
-			url: '/user/login',
+			url: url + 'api/do_login',
 			data: {
-				username: $("#username").val(),
+				phone: $("#username").val(),
 				password: $("#password").val(),
 			},
 			type: 'post',
@@ -162,17 +162,30 @@ var index_login = {
 				if (data == null) {
 					return
 				};
-				if (data.code != '0') {
+				if (data.code != 200) {
 					tool.popup_err_msg(data.msg);
 					return;
 				} else {
 					tool.popup_err_msg("登录成功");
-					location.href = "/ucenter/index.html";
+					location.href = "ucenter/index.html";
 				}
 			}
 		})
 	},
 }
+//轮播图
+$.ajax({
+	type: "get",
+	url: url+"api/get_banner",
+	success: function (res) {
+		if (res.code == 200) {
+			for (let i = 0; i < res.data.length; i++) {
+				var banner = "<img src="+url+"" + res.data[i] + ">"
+				$('.carousel_banner_list').append(banner);
+			}
+		}
+	}
+});
 //初始化
 $(function () {
 	var ci = 0;

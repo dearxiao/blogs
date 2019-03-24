@@ -40,9 +40,9 @@ var user_Login = {
 			return;
 		}
 		$.ajax({
-			url: '/user/login',
+			url: url + 'api/do_login',
 			data: {
-				username: $("#用户名i").val(),
+				phone: $("#用户名i").val(),
 				password: $("#登录密码i").val(),
 			},
 			dataType: 'json',
@@ -51,12 +51,12 @@ var user_Login = {
 				if (data == null) {
 					return
 				};
-				if (data.code != '0') {
+				if (data.code != 200) {
 					tool.popup_err_msg(data.msg);
 					return;
 				} else {
 					tool.popup_err_msg("登录成功");
-					location.href = data.data.redirectUrl;
+					location.href = 'index.html';
 				}
 			}
 		})

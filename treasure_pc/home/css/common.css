@@ -296,6 +296,7 @@ header.ml_header {
 }
 
 .top-links {
+	display: none;
 	position: relative;
 }
 

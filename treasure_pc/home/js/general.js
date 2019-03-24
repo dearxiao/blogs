@@ -1,5 +1,5 @@
 //这里放全局都能用到的函数
-
+var url = "http://www.36xye0.com/", session_id
 //全局公用的工具
 function pagesimple(pageall, curr, func, node, obj) {
     addfunc(pageall, curr, node);
@@ -308,9 +308,9 @@ var general = {
         }
 
         $.ajax({
-            url: '/user/login',
+			url: url + 'api/do_login',
             data: {
-                username: $("#popup_user_login_name").val(),
+                phone: $("#popup_user_login_name").val(),
                 password: $("#popup_user_login_pwd").val(),
             },
             type: 'post',
@@ -319,7 +319,7 @@ var general = {
                 if (data == null) {
                     return
                 };
-                if (data.code != '0') {
+                if (data.code != 200) {
                     tool.popup_err_msg(data.msg);
                     return;
                 } else {

@@ -1,5 +1,5 @@
 $(function () {
-    // 悬浮穿
+    // 悬浮窗
     $(".side-pannel>li.wechat").hover(function () {
         $(this).children("div.wechat").show();
     }, function () {
