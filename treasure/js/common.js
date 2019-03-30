@@ -1,5 +1,6 @@
-// var url = 'http://www.36xye0.com/', session_id
-var url = 'http://192.168.0.109/', session_id
+var url = 'http://www.36xye0.com//',
+// var url = 'http://192.168.0.108/',
+	session_id = localStorage.getItem('session_id')
 $(function () {
 	$('.hint span').on('click', function(){
 		$('.shade, .hint').hide()
@@ -11,22 +12,6 @@ $(function () {
 		console.log(res)
 		tips(res)
 	});
-	// 获取验证码
-	$('.acquire').on('click', function () {
-		var that = this
-		second = 119
-		if ($(that).text() == '获取') {
-			$(that).text('120')
-			var countDown = setInterval(function () {
-				$(that).text(second)
-				second--
-				if (second == 1) {
-					clearInterval(countDown)
-					$(that).text('获取')
-				}
-			}, 1000)
-		}
-	})
 	// 选项卡
 	$('.title span').click(function () {
 		var i = $(this).index()
@@ -46,6 +31,13 @@ function tips (e) {
 	$('.hint p').text(e.msg)
 	$('.hint, .shade').show()
 	setTimeout("$('.hint, .shade').hide()", 1500)
+}
+// 网络错误
+function error() {
+	tips({msg: '网络错误'})
+    setTimeout(function () {
+        location.href = 'login.html'
+    }, 2000)
 }
 //获取url问号后边的参数
 function getQueryVariable(variable){

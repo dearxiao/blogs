@@ -103,10 +103,10 @@
 					<div id="page_member_index" class="col-main">
 						<section class="personal-section">
 							<div class="new-section-sub-title">
-								<p class="inner-sub-title"><span style="display: block;">账户余额(元)</span><strong class="p-unit" id="账户余额">982286.00</strong></p>
+								<p class="inner-sub-title"><span style="display: block;">账户余额(元)</span><strong class="p-unit" id="账户余额">0.00</strong></p>
 							</div>
 							<div class="p-money clearfix">
-								<p class="diyongquan br-fl"><span class="ticket">保证金(元)</span><span id="diyongquan">17000.00</span></p>
+								<p class="diyongquan br-fl"><span class="ticket">保证金(元)</span><span id="diyongquan">0.00</span></p>
 							</div>
 							<div class="money_box p-money br-fr">
 								<a id="recharge2" class="btn-1" href="payment.html">充值</a>
@@ -831,6 +831,20 @@
 			typeclass = $(this).attr("type");
 			plist(1);
 		})
+		// 余额
+		$.ajax({
+			type: "get",
+			url: url + "api/my_msg",
+			success: function (res) {
+				console.log(res)
+				if (res.code == 200) {
+					yue = res.data.money
+					$('#账户余额').text(res.data.money);
+					$('#diyongquan').text(res.data.account_money);
+				}
+				
+			}
+		});
 	</script>
 
 </body>

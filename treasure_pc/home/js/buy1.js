@@ -7,7 +7,7 @@ var stopShare = true;
 //选中的股票代码
 var codeid = getParameterByName("codeid");
 if (codeid == "" || codeid == undefined) {
-	var selectedCode = "600519";
+	var selectedCode = "sh600519";
 } else {
 	var selectedCode = codeid;
 	//$("#stockName").html(codeid)
@@ -59,7 +59,6 @@ $('#searchTxt1').focus().off('keyup').on('keyup', function (e) {
 
 //});
 
-
 //取消
 $('#searchCancel').click(function () {
 	$('#searchTxt1').val("");
@@ -75,7 +74,6 @@ $('body').click(function (e) {
 	cue.hide();
 	initInput();
 })
-
 
 //---封装的函数
 //第一个亮
@@ -99,35 +97,35 @@ function searchCue(keywords) {
 	//		console.log(tbody+'00')
 	$("#search_history").hide(); //历史框隐藏掉
 	//发送请求
-	// $.ajax({
-	// 	type: "get",
-	// 	url: "/quotation/getSharesByKeywords",
-	// 	data: {
-	// 		keywords: keywords
-	// 	},
-	// 	dataType: 'json',
-	// 	success: function (data) {
-	// 		//1.清空tbody
-	// 		cue.find("tbody").html("");
-	// 		//2.渲染(if如果没数据，else如果有数据)
-	// 		var html = '';
-	// 		if (data.data == null || data.data == '') {
-	// 			html = '<tr class="empty"><td colspan="3">暂无数据</td></tr>';
-	// 		} else {
-	// 			for (var i = 0; i < data.data.length && i < 10; i++) {
-	// 				html += '<tr><td>' + data.data[i].name + '</td><td>' + data.data[i].code + '</td><td>' + data.data[i].pinyin + '</td></tr>';
-	// 			}
-	// 		}
-	// 		tbody.html(html);
-	// 		//3.cue框显示
-	// 		cue.show();
-	// 		//4.亮第一个
-	// 		selectInit();
-	// 		//5.选中股票，改变标题，隐藏搜索框
-	// 		selectAShare($('#search_cue tr'));
-	// 		//6.发送给后台查询股票行情
-	// 	}
-	// });
+	$.ajax({
+		type: "get",
+		url: "/quotation/getSharesByKeywords",
+		data: {
+			keywords: keywords
+		},
+		dataType: 'json',
+		success: function (data) {
+			//1.清空tbody
+			cue.find("tbody").html("");
+			//2.渲染(if如果没数据，else如果有数据)
+			var html = '';
+			if (data.data == null || data.data == '') {
+				html = '<tr class="empty"><td colspan="3">暂无数据</td></tr>';
+			} else {
+				for (var i = 0; i < data.data.length && i < 10; i++) {
+					html += '<tr><td>' + data.data[i].name + '</td><td>' + data.data[i].code + '</td><td>' + data.data[i].pinyin + '</td></tr>';
+				}
+			}
+			tbody.html(html);
+			//3.cue框显示
+			cue.show();
+			//4.亮第一个
+			selectInit();
+			//5.选中股票，改变标题，隐藏搜索框
+			selectAShare($('#search_cue tr'));
+			//6.发送给后台查询股票行情
+		}
+	});
 }
 
 /**
@@ -172,7 +170,6 @@ function goUp(tbody) {
 	}
 }
 
-
 /**
  * 将输入框以及下方弹框恢复默认属性
  */
@@ -200,19 +197,16 @@ $('#chartKContro').on('click', function () {
 //初始化页面 获取股票实时数据、分时数据、K线图
 function stockInit() {
 	//获取股票实时数据
-	// getStockInfo();
+	getStockInfo();
 
 	//获取分时数据
-	// getTimeLine();
+	getTimeLine();
 }
-
 
 //获取分时数据
 function getTimeLine() {
-	$.post("/quotation/getTimeLine", {
-		code: selectedCode
-	}, function (data) {
-
+	$.get(url + "api/treasure_minute/"+selectedCode, function (data) {
+		console.log('分时', data)
 		if (data.showapi_res_code != '0' || data.showapi_res_body.ret_code != '0') {
 			return;
 		}
@@ -270,9 +264,10 @@ function getStockInfo() {
 	$('#btn_buy').html('点买').attr('disabled', false).css({
 		'background': '#E11923'
 	})
-	$.post("/quotation/getStockInfo", {
-		code: selectedCode
+	$.post(url + "api/treasure_msg", {
+		treasure_code: selectedCode,
 	}, function (data) {
+		console.log('实时', data)
 		if (data.code != '0') {
 			return;
 		}
@@ -369,7 +364,6 @@ function getStockInfo() {
 	}, 'json')
 }
 
-
 $(function () {
 	//loading
 	$('.loading').show();
@@ -378,11 +372,8 @@ $(function () {
 	stockInit();
 
 	//获取股票K线图。只在页面打开时加载一次，不需要再刷新
-	// initKChart();
-
-
+	initKChart();
 });
-
 
 var freshTimeInterval = 10 * 1000;
 var freshTimes = 0;
@@ -403,7 +394,6 @@ setInterval(function () {
 
 }, 2000);
 
-
 //定时器 获取分时数据
 setInterval(function () {
 	return;
@@ -411,10 +401,8 @@ setInterval(function () {
 		return;
 	}
 	//获取分时数据
-	// getTimeLine();
+	getTimeLine();
 }, 60 * 1000);
-
-
 
 function isTradingTime() {
 	var date = new Date();
@@ -442,11 +430,6 @@ function isTradingTime() {
 	}
 	return false;
 }
-
-
-
-
-
 
 function splitData(rawData) {
 	var categoryData = [];
@@ -477,12 +460,10 @@ function calculateMA(dayCount) {
 	return result;
 }
 
-
-
 function initKChart() {
-	$.post("/quotation/getKLine", {
-		code: selectedCode
-	}, function (data) {
+	$.get(url + "api/treasure_year/2019/"+selectedCode, function (data) {
+		console.log(1)
+		console.log('日K', data)
 		if (data.showapi_res_code != '0' || data.showapi_res_body.ret_code != '0') {
 			return;
 		}

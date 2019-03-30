@@ -28,6 +28,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/get_banner",
+        data: {
+            session_id: session_id
+        },
         success: function (res) {
             console.log(res)
             if (res.code == 200) {
@@ -36,12 +39,21 @@ $(function () {
                     $('.swiper-wrapper').append(banner);
                 }
             }
+            if (res.error_code == 1111) {
+                error()
+            }
+        },
+        error: function () {
+            error()
         }
     });
     // 公告
     $.ajax({
         type: "get",
         url: url + "api/notice",
+        data: {
+            session_id: session_id,
+        },
         success: function (res) {
             console.log(res)
             if (res.code == 200) {
@@ -55,6 +67,7 @@ $(function () {
             type: "post",
             url: url + "api/get_treasure_msg",
             data: {
+                session_id: session_id,
                 treasure_code: 'sh000001,sz399001,sz399006'
             },
             success: function (res) {
@@ -94,6 +107,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/self_treasure_list",
+        data: {
+            session_id: session_id
+        },
         success: function (res) {
             console.log('自选股票代码', res)
             if (res.code == 200) {
@@ -103,6 +119,7 @@ $(function () {
                         type: "post",
                         url: url + "api/get_treasure_msg",
                         data: {
+                            session_id: session_id,
                             treasure_code: res.data.join(',')
                         },
                         success: function (res) {
@@ -142,12 +159,16 @@ $(function () {
             $.ajax({
                 type: "get",
                 url: url + "api/self_treasure_list",
+                data: {
+                    session_id: session_id
+                },
                 success: function (res) {
                     if (res.code == 200) {
                         $.ajax({
                             type: "post",
                             url: url + "api/get_treasure_msg",
                             data: {
+                                session_id: session_id,
                                 treasure_code: res.data.join(',')
                             },
                             success: function (res) {
@@ -181,6 +202,7 @@ $(function () {
             type: "post",
             url: url + "api/del_treasure",
             data: {
+                session_id: session_id,
                 treasure_code: treasure_code
             },
             success: function (res) {

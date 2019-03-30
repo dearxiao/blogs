@@ -21,15 +21,16 @@
         <form action="" method="post">
             <div class="line">履约保证金(元) <input type="text" name="money"></div>
             <input type="hidden" name="id">
+            <input type="hidden" name="session_id">
             <p class="yue">账户可用余额：<span>0.00</span>元</p>
-            <button class="buy">交易时间：工作日 09:30~15:00</button>
+            <button class="buy">交易时间：工作日 09:30~11:30 13:00~:15:00</button>
         </form>
     </div>
     <div class="shade"></div>
-    <div class="hint2">
+    <div class="hint">
+        <img src="images/lose.png">
         <p></p>
-        <button>取消</button>
-        <button>确定</button>
+        <span>确定</span>
     </div>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/jquery.form.js"></script>
@@ -38,12 +39,16 @@
         $(function () {
             var id = getQueryVariable('id')
             $('input[name=id]').val(id);
+            $('input[name=session_id]').val(session_id);
             $('form').attr('action', url+'api/more_account');
 
             // 账户余额
             $.ajax({
                 type: "get",
                 url: url + "api/my_msg",
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {

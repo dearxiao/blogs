@@ -499,10 +499,6 @@ b {
     margin-bottom: 14px;
 }
 
-.stock-buy .stock-info li.amount {
-    width: 45%;
-}
-
 .stock-buy .stock-info span.l {
     padding: 2px 0;
     height: 100%;

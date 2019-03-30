@@ -208,6 +208,11 @@ button.buy{
     width: 6rem;
     height: 7rem;
 }
+.loading{
+    display: block;
+    margin: 3rem auto;
+    width: 1rem;
+}
 .orders{
     float: right;
     width: 4rem;

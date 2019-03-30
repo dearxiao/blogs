@@ -56,7 +56,8 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
     <script>
-        $('form').attr('action', url+'api/update_pwd');    
+        $('input[name=session_id]').val(session_id);
+        $('form').attr('action', url+'api/');    
     </script>
 </body>
 </html>

@@ -66,7 +66,9 @@
                     <span>K线</span>
                 </div>
                 <div class="chart chart0">
-                    <div id="chart1"></div>
+                    <div id="chart1">
+                        <img class="loading" src="images/loading.gif">
+                    </div>
                     <div class="orders">
                         <ul class="sale">
                             <li>
@@ -124,7 +126,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="chart chart1" id="chart2"></div>
+                <div class="chart chart1" id="chart2">
+                    <img class="loading" src="images/loading.gif">
+                </div>
             </div>
             <form action="" method="post">
                 <div class="line">
@@ -136,14 +140,18 @@
                     <span>触发止损<b>-700</b></span>
                     <span>交易综合费<b>42元</b></span>
                 </div>
+                <input type="hidden" name="type" value="1">
+                <input type="hidden" name="treasure_code">
+                <input type="hidden" name="price">
+                <input type="hidden" name="buy_type" value="10000">
                 <div class="protocol">
                     <p>阅读并同意以下协议</p>
-                    <a href="">《财富策略人参与卢深A股交易合作涉及费用及收费标准》</a><br>
-                    <a href="">《财富策略投资人与点买人与卢深A股交易合作协议》</a><br>
-                    <a href="">《财富策略服务协议》</a>
+                    <a href="protocol_1.html">《财富策略人参与卢深A股交易合作涉及费用及收费标准》</a><br>
+                    <a href="protocol_2.html">《财富策略投资人与点买人与卢深A股交易合作协议》</a><br>
+                    <a href="protocol_3.html">《财富策略服务协议》</a>
                 </div>
                 <p class="yue">账户可用余额：<span>0.00</span>元</p>
-                <button class="buy">策略点买</button>
+                <button class="buy">交易时间：工作日 09:30~11:30 13:00~:15:00</button>
             </form>
         </div>
         <div class="tab tab1"></div>
@@ -167,32 +175,5 @@
     <script src="js/strategy.js"></script>
     <script src="js/echart.js"></script>
     <script src="js/echart2.js"></script>
-    <script>
-        $(function () {
-            // $('form').on('click', 'li', function () { 
-            //     $(this).siblings('li').removeClass('act')
-            //     $(this).addClass('act');
-            // });
-            // // 选项卡
-            // $('.title2 span').click(function () {
-            //     var i = $(this).index()
-            //     $(this).siblings('span').removeClass('act');
-            //     $(this).addClass('act');
-            //     $('.chart').hide();
-            //     $('.chart' + i + '').show();
-            // });
-            // $('.top button').click(function () { 
-            //     $('.shade, .hint2').show()
-            // });
-            // $('.info .arrow').click(function () { 
-            //     $('.data').toggle();
-            //     $(this).toggleClass('arrow2');
-            // });
-            // $('.intro .arrow').click(function () { 
-            //     $(this).next('ul.detail').toggle();
-            //     $(this).toggleClass('arrow2');
-            // });
-        })
-    </script>
 </body>
 </html>

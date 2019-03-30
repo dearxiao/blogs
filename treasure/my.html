@@ -21,7 +21,7 @@
                     <label for="tx"><img class="img" src="images/headimg.png"></label>
                     <!-- <input id="tx" onchange="upload(this)" type="file" name="" accept="image/*"> -->
                 </form>
-                <span>15863163838</span>
+                <span></span>
             </div>
             <div class="yue">
                 <div>
@@ -89,9 +89,12 @@
                 $.ajax({
                     type: "get",
                     url: url + "api/out_login",
+                    data: {
+                        session_id: session_id,
+                    },
                     success: function (res) {
                         console.log(res)
-                        if (res.code == 200) {
+                        if (res.code == '退出成功') {
                             location.href = "login.html"
                         }
                     }
@@ -102,12 +105,22 @@
             $.ajax({
                 type: "get",
                 url: url + "api/my_msg",
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {
                         $('.yue div:eq(0) span').text(res.data.money);
                         $('.yue div:eq(1) span').text(res.data.account_money);
+                        $('.msg>span').text(res.data.phone);
                     }
+                    if (res.error_code == 1111) {
+                        error()
+                    }
+                },
+                error: function () {
+                    error()
                 }
             });
         })

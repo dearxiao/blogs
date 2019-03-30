@@ -309,6 +309,7 @@ header.ml_header {
 	float: left;
 	line-height: 32px;
 	position: relative;
+	color: #cacaca;
 }
 
 body .show-logout {

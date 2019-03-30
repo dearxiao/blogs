@@ -7,8 +7,11 @@ var data0
 $.ajax({
     type: "get",
     url: url + "api/treasure_year/2019/sh600010",
+    data: {
+        session_id: session_id,
+    },
     success: function (res) {
-        // console.log(JSON.parse(res))
+        console.log(JSON.parse(res))
         data0 = splitData(JSON.parse(res).data)
         option = {
             tooltip: {

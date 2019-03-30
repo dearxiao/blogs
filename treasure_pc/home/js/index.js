@@ -159,6 +159,7 @@ var index_login = {
 			type: 'post',
 			dataType: 'json',
 			success: function (data) {
+				console.log(data)
 				if (data == null) {
 					return
 				};
@@ -174,18 +175,22 @@ var index_login = {
 	},
 }
 //轮播图
-$.ajax({
-	type: "get",
-	url: url+"api/get_banner",
-	success: function (res) {
-		if (res.code == 200) {
-			for (let i = 0; i < res.data.length; i++) {
-				var banner = "<img src="+url+"" + res.data[i] + ">"
-				$('.carousel_banner_list').append(banner);
-			}
-		}
-	}
-});
+// $.ajax({
+// 	type: "get",
+// 	url: url+"api/get_banner",
+// 	data: {
+// 		session_id: session_id,
+// 	},
+// 	success: function (res) {
+// 		console.log(res)
+// 		if (res.code == 200) {
+// 			for (let i = 0; i < res.data.length; i++) {
+// 				var banner = "<img src="+url+"" + res.data[i] + ">"
+// 				$('.carousel_banner_list').append(banner);
+// 			}
+// 		}
+// 	}
+// });
 //初始化
 $(function () {
 	var ci = 0;

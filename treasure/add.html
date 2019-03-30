@@ -68,6 +68,9 @@
                     type: "post",
                     url: url + "api/add_treasure",
                     data: {
+                        session_id: session_id,
+                    },
+                    data: {
                         treasure_code: treasure_code
                     },
                     success: function (res) {

@@ -186,13 +186,13 @@
                                     <section class="stock-info" id="stock-info">
                                         <ul class="row">
                                             <li class="open"><span class="l">今开</span><br /><span class="r">--</span></li>
-                                            <li class="amplitude"><span class="l">振幅</span><br /><span class="r">--</span></li>
+                                            <li class="closed"><span class="l">昨收</span><br /><span class="r">--</span></li>
                                             <li class="high"><span class="l">最高</span><br /><span class="r">--</span></li>
                                             <li class="low"><span class="l">最低</span><br /><span class="r">--</span></li>
-                                            <li class="max"><span class="l">涨停价</span><br /><span class="r">--</span></li>
-                                            <li class="min"><span class="l">跌停价</span><br /><span class="r">--</span></li>
                                             <li class="volume"><span class="l">成交量</span><br /><span class="r">--手</span></li>
                                             <li class="amount"><span class="l">成交额</span><br /><span class="r">--万</span></li>
+                                            <li class="max"><span class="l">涨停价</span><br /><span class="r">--</span></li>
+                                            <li class="min"><span class="l">跌停价</span><br /><span class="r">--</span></li>
                                         </ul>
                                     </section>
                                 </div>
@@ -281,20 +281,12 @@
                                     <li data-val="5">-1700</li>
                                 </ul>
                             </div>
-                            <!-- <div class="open-time">
-                     <span>盈利分配</span>
-                    <div class="delay_tip"><i class="icon icon-help"></i><div class="showtip">当点买盈利时，</br>点买人将获得大部分盈利</div></div>
-                    <ul class="work-interval">
-                        <li class="active" th:text="${#numbers.formatDecimal(strategy.profitFee * 100,1,0) + '%'}"></li>
-                    </ul>
-                </div> -->
                             <div class="com_fee">
                                 <span>交易综合费</span>
                                 <div class="delay_tip"><i class="icon icon-help"></i>
                                     <div class="showtip">交易综合费包含第一天的交易费，第二天的递延费，每万元点买金的交易综合费为42元，每万元点买金的递延费<p>18</p>元/天。</div>
                                 </div>
                                 <span class="delete_price"><strong id="publicFee">42</strong>元 （包括前两日）</span>
-
                             </div>
                             <div class="perf_bond">
                                 <span>触发止损</span>
@@ -570,7 +562,8 @@
     <script src="libs/jquery-2.2.0/jquery-2.2.0.min.js"></script>
     <script src="home/js/echarts.min.js"></script>
     <script src="home/js/general.js"></script>
-    <script src="home/js/buy1.js"></script>
+    <script src="home/js/buy.js"></script>
+    <script src="home/js/echart2.js"></script>
     <script src="home/js/common.js"></script>
     <script>
         var dealPoundage = parseInt("");

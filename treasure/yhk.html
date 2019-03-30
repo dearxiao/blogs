@@ -67,11 +67,15 @@
     <script src="js/common.js"></script>
     <script>
         $(function () {
+            $('input[name=session_id]').val(session_id);
             $('form').attr('action', url+'api/update_bank');
             // 个人信息
             $.ajax({
                 type: "get",
                 url: url + "api/bank_msg",
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {

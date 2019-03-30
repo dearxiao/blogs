@@ -26,6 +26,9 @@
             $.ajax({
                 type: "get",
                 url: url + "api/notice",
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {

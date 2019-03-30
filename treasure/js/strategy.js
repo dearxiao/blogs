@@ -1,5 +1,6 @@
 var code = getQueryVariable('code').toLowerCase()
 $('input[name=treasure_code]').val(code)
+$('input[name=session_id]').val(session_id);
 $('form').attr('action', url+'api/buy');    
 var myDate = new Date();
 var day = myDate.getDay();
@@ -24,6 +25,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/self_treasure_list",
+        data: {
+            session_id: session_id
+        },
         success: function (res) {
             console.log('已添加股票代码', res)
             if (res.code == 200) {
@@ -35,6 +39,12 @@ $(function () {
                 }
                 $('.operate').css('opacity', '1')
             }
+            if (res.error_code == 1111) {
+                error()
+            }
+        },
+        error: function () {
+            error()
         }
     });
     // 添加删除
@@ -51,6 +61,7 @@ $(function () {
             type: "post",
             url: url + "api/" + way,
             data: {
+                session_id: session_id,
                 treasure_code: code
             },
             success: function (res) {
@@ -68,6 +79,7 @@ $(function () {
             type: "post",
             url: url + "api/treasure_msg",
             data: {
+                session_id: session_id,
                 treasure_code: code
             },
             success: function (res) {
@@ -115,17 +127,16 @@ $(function () {
         setInterval(function () {
             price_s()
         }, 1000)
-    } else {
-        data_m()
-        price_s()
     }
-    
+    data_m()
+    price_s()
     // 实时价格  每秒请求
     function price_s() {
         $.ajax({
             type: "post",
             url: url + "api/get_treasure_msg",
             data: {
+                session_id: session_id,
                 treasure_code: code
             },
             success: function (res) {
@@ -139,7 +150,7 @@ $(function () {
                     }
                     $('.info .price').text(data.price);
                     $('input[name=price]').val(data.price);
-                    $('.info .zd').text((data.differ_price).toFixed(2)).addClass(cla);
+                    $('.info .zd').text(rise + (data.differ_price).toFixed(2)).addClass(cla);
                     $('.info .zdf').text(rise + data.differ_scale + '%').addClass(cla);
                 }
             }
@@ -149,6 +160,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/order",
+        data: {
+            session_id: session_id,
+        },
         success: function (res) {
             console.log('持仓', res)
             if (res.code == 200) {
@@ -214,6 +228,9 @@ $(function () {
             $.ajax({
                 type: "post",
                 url: url + "api/sale?id="+id,
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log('点卖', res)
                     tips(res)
@@ -228,6 +245,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/history_order",
+        data: {
+            session_id: session_id,
+        },
         success: function (res) {
             console.log('历史', res)
             if (res.code == 200) {
@@ -235,7 +255,7 @@ $(function () {
                     var data = res.data
                     var cla = 'up',
                         rise = '+'
-                    if (res.data[i].differ_price < 0) {
+                    if (res.data[i].win_sum < 0) {
                         cla = 'down'
                         rise = ''
                     }
@@ -275,6 +295,7 @@ $(function () {
         $('.deposit li:eq(0)').text(1000 * money);
         $('.deposit li:eq(1)').text(1250 * money);
         $('.deposit li:eq(2)').text(1666 * money);
+        $('.stop span:eq(0) b').text(($('.deposit .act').text() * -0.7).toFixed(2));  // 触发止损
         $('.stop span:eq(1) b').text(42 * money); // 交易综合费
         $(this).siblings('li').removeClass('act')
         $(this).addClass('act');
@@ -292,6 +313,9 @@ $(function () {
     $.ajax({
         type: "get",
         url: url + "api/my_msg",
+        data: {
+            session_id: session_id,
+        },
         success: function (res) {
             console.log('账户余额', res)
             if (res.code == 200) {

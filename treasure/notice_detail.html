@@ -17,9 +17,7 @@
             <h3>行业资讯</h3>
         </header>
         <h5></h5>
-        <div class="content">
-            <p>!</p>
-        </div>
+        <div class="content"></div>
     </div>
     
     <script src="js/jquery-1.11.3.js"></script>
@@ -31,11 +29,14 @@
             $.ajax({
                 type: "get",
                 url: url + "api/notice_detail/" + id,
+                data: {
+                    session_id: session_id,
+                },
                 success: function (res) {
                     console.log(res)
                     if (res.code == 200) {
                         $('h5').text(res.data.title);
-                        $('.content p').text(res.data.introduce);
+                        $('.content').html(res.data.content.replace(/src="/g, "src=\"" + url));
                     }
                 }
             });

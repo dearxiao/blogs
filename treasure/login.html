@@ -53,6 +53,7 @@
                     console.log(res)
                     $('.code span').text(res.captcha_code);
                     session_id = res.session_id
+                    localStorage.setItem('session_id', session_id)
                     $('input[name=session_id]').val(session_id);
                 }
             });

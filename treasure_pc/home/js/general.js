@@ -1,5 +1,5 @@
 //这里放全局都能用到的函数
-var url = "http://www.36xye0.com/", session_id
+var url = "http://www.36xye0.com/", yue
 //全局公用的工具
 function pagesimple(pageall, curr, func, node, obj) {
     addfunc(pageall, curr, node);
@@ -241,6 +241,7 @@ var general = {
         //-----登录按钮弹出登录框-----
         $('a.login').on('click', function () {
             tool.popup.showPopup($('#popup-user-login'));
+            sessionId()
         })
 
         //-----登录框的登录-----
@@ -334,7 +335,6 @@ var general = {
         })
     }
 }
-
 $(function () {
     //全局初始化
     general.init();

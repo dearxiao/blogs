@@ -100,11 +100,11 @@ function dealstep() {
                 btnflag = true;
                 $.ajax({
                     type: "post",
-                    url: "/user/addDeposit",
+                    url: url + "api/more_account",
                     dataType: "json",
                     data: {
-                        orderId: thisId,
-                        amount: addval
+                        id: thisId,
+                        type: 1
                     },
                     async: true,
                     success: function (data) {
@@ -133,13 +133,12 @@ function dealstep() {
 function getlist(curr) {
     $.ajax({
         type: "get",
-        url: "/user/position",
-        async: true,
+        url: url + "api/order",
         dataType: "json",
-        data: {
-            page: curr,
-            size: "10"
-        },
+        // data: {
+        //     page: curr,
+        //     size: "10"
+        // },
         success: function (e) {
             if (e.code == "0") {
                 $("#myhave").find(".mark").remove();
@@ -150,27 +149,58 @@ function getlist(curr) {
                     ol = e.data.orderList.sort(function (a, b) {
                         return a.id - b.id
                     })
-                    for (; i < ol.length; i++) {
-                        var pf = eval(ol[i].profitAmount) > 0 ? "<span class='c-red'>" + ol[i].profitAmount +
-                            "</span>" : "<span class='c-green'>" + ol[i].profitAmount + "</span>"
-                        list += '<tr class="mark"><td>' + (i + 1) + '</td>' +
-                            '<td>' + ol[i].id + '</td>' +
-                            '<td>' + ol[i].createTime.slice(0, 10) + '<br/>' + ol[i].createTime.slice(
-                                10, 19) + '</td>' +
-                            '<td>' + ol[i].stockName + '<br/>' + ol[i].stockCode + '</td>' +
-                            '<td>' + ol[i].guaranteeFee + '</td>' +
-                            '<td>' + ol[i].dealPrice + '</td>' +
-                            '<td>' + ol[i].nowPrice + '</td>' +
-                            '<td>' + ol[i].rate + '%' + '</td>' +
-                            '<td>' + pf + '</td>' +
-                            '<td>' + ol[i].dealQuantity + '</td>' +
-                            '<td>' + ol[i].loss + '</td>' +
-                            '<td><a id="' + ol[i].id + '" ' + 'index="' + i +
-                            '" class="myhave-btn addAssure  coloradd">增加保证金</a>' +
-                            '<a id="' + ol[i].id + '" ' + 'index="' + i +
-                            '" class="myhave-btn  btnSell colorsell">点卖</a></td></tr>'
+                    for (let i = 0; i < res.list_data.length; i++) {
+                        var data = res.list_data
+                        var cla = 'up',
+                            rise = '+'
+                        if (res.list_data[i].win_sum < 0) {
+                            cla = 'down'
+                            rise = ''
+                        }
+                        var intro = "<div class=\"intro\">"+
+                            "<div class=\"top\">"+
+                                "<span>"+data[i].name+"</span>"+
+                                "<a href=\"deposit.html?id="+data[i].id+"\">+保证金</a>"+
+                                "<button cid="+data[i].id+">点卖</button>"+
+                            "</div>"+
+                            "<div class=\"semicircle-l\"></div>"+
+                            "<div class=\"semicircle-r\"></div>"+
+                            "<div class=\"left\">"+
+                                "<div class=\"left-t\">"+
+                                    "<div>"+
+                                        "<p>"+data[i].buy_money+"</p>"+
+                                        "<span>金额(元)</span>"+
+                                    "</div>"+
+                                    "<div>"+
+                                        "<p>"+data[i].treasure_sum+"</p>"+
+                                        "<span>股数</span>"+
+                                    "</div>"+
+                                    "<div>"+
+                                        "<p class="+cla+">" + rise + ""+data[i].win_sum+"</p>"+
+                                        "<span>盈亏(元)</span>"+
+                                    "</div>"+
+                                "</div>"+
+                                "<div class=\"bottom\">"+
+                                    "<span>止损(元)："+data[i].zhisun_price+"</span>"+
+                                    "<div class=\"right\">"+
+                                        "<p>买入(元)：<b>"+data[i].buy_price+"</b></p>"+
+                                        "<p>当前(元)：<b>"+data[i].now_price+"</b></p>"+
+                                    "</div>"+
+                                "</div>"+
+                            "</div>"+
+                            "<ul class=\"detail\">"+
+                                "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
+                                "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
+                                "<li>浮动盈亏比(%):<span>"+data[i].scale+"</span></li>"+
+                                "<li>保证金(元):<span>"+data[i].account_money+"</span></li>"+
+                                "<li>+保证金:<span>"+data[i].more_account_money+"</span></li>"+
+                                "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
+                                "<li>递延天数(天):<span>"+data[i].days+"</span></li>"+
+                                "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
+                            "</ul>"+
+                        "</div>"
+                        $('.tab1').append(intro);
                     }
-                    $("#myhave").append(list);
                     var pageall = Math.ceil(e.data.total / 10);
                     pagesimple(pageall, curr, getlist, "page");
                     dealstep();
@@ -185,4 +215,4 @@ function getlist(curr) {
         }
     });
 }
-// getlist(1)
+getlist(1)
