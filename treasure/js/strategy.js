@@ -4,10 +4,11 @@ $('input[name=session_id]').val(session_id);
 $('form').attr('action', url+'api/buy');    
 var myDate = new Date();
 var day = myDate.getDay();
-var onedate = myDate.toLocaleString('chinese', { hour12: false }).slice(10)
+var onedate = myDate.toLocaleString('chinese', { hour12: false }).slice(-8)
 var hours = parseInt(onedate.slice(0, 2))
 var minute = parseInt(onedate.slice(3, 5))
 var market_open = false
+console.log(('2091/4/3 13:11:00').slice(-8))
 if (day != 0 && day != 6) {
     if ((hours == 9 && minute >= 30) || (hours == 11 && minute < 30) || hours == 10) {
         market_open = true

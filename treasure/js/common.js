@@ -1,4 +1,4 @@
-var url = 'http://www.36xye0.com//',
+var url = 'http://www.36xye0.com/',
 // var url = 'http://192.168.0.108/',
 	session_id = localStorage.getItem('session_id')
 $(function () {
