@@ -157,72 +157,86 @@ $(function () {
             }
         });
     }
+    // 策略点买
+    $('button.buy').click(function () {
+        $('.hint2 p').text('确认买入该股？');
+        $('.shade, .hint2').show()
+        $('.confirm_sale').off('click').click(function () {
+            $('.shade, .hint2').hide()
+            $('.tab0 form').submit();
+            chicang ()
+        });
+    });
     // 持仓
-    $.ajax({
-        type: "get",
-        url: url + "api/order",
-        data: {
-            session_id: session_id,
-        },
-        success: function (res) {
-            console.log('持仓', res)
-            if (res.code == 200) {
-                for (let i = 0; i < res.list_data.length; i++) {
-                    var data = res.list_data
-                    var cla = 'up',
-                        rise = '+'
-                    if (res.list_data[i].win_sum < 0) {
-                        cla = 'down'
-                        rise = ''
+    chicang ()
+    function chicang () {
+        $.ajax({
+            type: "get",
+            url: url + "api/order",
+            data: {
+                session_id: session_id,
+            },
+            success: function (res) {
+                console.log('持仓', res)
+                if (res.code == 200) {
+                    for (let i = 0; i < res.list_data.length; i++) {
+                        var data = res.list_data
+                        var cla = 'up',
+                            rise = '+'
+                        if (res.list_data[i].win_sum < 0) {
+                            cla = 'down'
+                            rise = ''
+                        }
+                        var intro = "<div class=\"intro\">"+
+                            "<div class=\"top\">"+
+                                "<span>"+data[i].name+"</span>"+
+                                "<a href=\"deposit.html?id="+data[i].id+"\">+保证金</a>"+
+                                "<button cid="+data[i].id+">点卖</button>"+
+                            "</div>"+
+                            "<div class=\"semicircle-l\"></div>"+
+                            "<div class=\"semicircle-r\"></div>"+
+                            "<div class=\"center\">"+
+                                "<div>"+
+                                    "<p>"+data[i].buy_money+"</p>"+
+                                    "<span>金额(元)</span>"+
+                                "</div>"+
+                                "<div>"+
+                                    "<p>"+data[i].treasure_sum+"</p>"+
+                                    "<span>股数</span>"+
+                                "</div>"+
+                                "<div>"+
+                                    "<p class="+cla+">" + rise + ""+data[i].win_sum+"</p>"+
+                                    "<span>盈亏(元)</span>"+
+                                "</div>"+
+                            "</div>"+
+                            "<div class=\"bottom\">"+
+                                "<span>止损(元)："+data[i].zhisun_price+"</span>"+
+                                "<div class=\"right\">"+
+                                    "<p>买入(元)：<b>"+data[i].buy_price+"</b></p>"+
+                                    "<p>当前(元)：<b>"+data[i].now_price+"</b></p>"+
+                                "</div>"+
+                            "</div>"+
+                            "<ul class=\"detail\">"+
+                                "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
+                                "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
+                                "<li>浮动盈亏比(%):<span>"+data[i].scale+"</span></li>"+
+                                "<li>保证金(元):<span>"+data[i].account_money+"</span></li>"+
+                                "<li>+保证金:<span>"+data[i].more_account_money+"</span></li>"+
+                                "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
+                                "<li>递延天数(天):<span>"+data[i].days+"</span></li>"+
+                                "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
+                            "</ul>"+
+                        "</div>"
+                        $('.tab1').append(intro);
                     }
-                    var intro = "<div class=\"intro\">"+
-                        "<div class=\"top\">"+
-                            "<span>"+data[i].name+"</span>"+
-                            "<a href=\"deposit.html?id="+data[i].id+"\">+保证金</a>"+
-                            "<button cid="+data[i].id+">点卖</button>"+
-                        "</div>"+
-                        "<div class=\"semicircle-l\"></div>"+
-                        "<div class=\"semicircle-r\"></div>"+
-                        "<div class=\"center\">"+
-                            "<div>"+
-                                "<p>"+data[i].buy_money+"</p>"+
-                                "<span>金额(元)</span>"+
-                            "</div>"+
-                            "<div>"+
-                                "<p>"+data[i].treasure_sum+"</p>"+
-                                "<span>股数</span>"+
-                            "</div>"+
-                            "<div>"+
-                                "<p class="+cla+">" + rise + ""+data[i].win_sum+"</p>"+
-                                "<span>盈亏(元)</span>"+
-                            "</div>"+
-                        "</div>"+
-                        "<div class=\"bottom\">"+
-                            "<span>止损(元)："+data[i].zhisun_price+"</span>"+
-                            "<div class=\"right\">"+
-                                "<p>买入(元)：<b>"+data[i].buy_price+"</b></p>"+
-                                "<p>当前(元)：<b>"+data[i].now_price+"</b></p>"+
-                            "</div>"+
-                        "</div>"+
-                        "<ul class=\"detail\">"+
-                            "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
-                            "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
-                            "<li>浮动盈亏比(%):<span>"+data[i].scale+"</span></li>"+
-                            "<li>保证金(元):<span>"+data[i].account_money+"</span></li>"+
-                            "<li>+保证金:<span>"+data[i].more_account_money+"</span></li>"+
-                            "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
-                            "<li>递延天数(天):<span>"+data[i].days+"</span></li>"+
-                            "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
-                        "</ul>"+
-                    "</div>"
-                    $('.tab1').append(intro);
                 }
             }
-        }
-    });
+        });
+    }
     // 点卖
     $('.tab1').on('click', '.top button',function () {
         var id = $(this).attr('cid'), that = this
+        $('.hint2 p').text('确认卖出该股？');
         $('.shade, .hint2').show()
         $('.confirm_sale').off('click').click(function () {
             $('.shade, .hint2').hide()
@@ -253,7 +267,7 @@ $(function () {
             console.log('历史', res)
             if (res.code == 200) {
                 for (let i = 0; i < res.data.length; i++) {
-                    var data = res.data
+                    var data = res.data.reverse()
                     var cla = 'up',
                         rise = '+'
                     if (res.data[i].win_sum < 0) {

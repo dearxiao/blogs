@@ -60,7 +60,7 @@
             var day = myDate.getDay();
             var onedate = myDate.toLocaleString('chinese', {
                 hour12: false
-            }).slice(10)
+            }).slice(-8)
             var hours = parseInt(onedate.slice(0, 2))
             var minute = parseInt(onedate.slice(3, 5))
             var market_open = false
