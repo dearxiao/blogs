@@ -1,5 +1,5 @@
 var url = 'http://www.36xye0.com/',
-// var url = 'http://192.168.0.108/',
+// var url = 'http://192.168.0.109/',
 	session_id = localStorage.getItem('session_id')
 $(function () {
 	$('.hint span').on('click', function(){

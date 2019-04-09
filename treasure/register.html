@@ -18,31 +18,36 @@
         </header>
         <form action="" method="post">
             <div class="line">
+                <label>用户名</label>
+                <input type="text" name="username" placeholder="请输入用户名">
+            </div>
+            <div class="line">
                 <label>手机号</label>
-                <input type="text" placeholder="请输入您的手机号">
+                <input type="text" name="phone" placeholder="请输入您的手机号">
             </div>
             <div class="line">
                 <label>登录密码</label>
-                <input type="password" placeholder="请输入登录密码">
+                <input type="password" name="password" placeholder="请输入登录密码">
             </div>
             <div class="line">
                 <label>确认密码</label>
-                <input type="password" placeholder="请确认登录密码">
+                <input type="password" name="password_confirm" placeholder="请确认登录密码">
             </div>
             <div class="line code">
-                <label>图形验证码</label>
-                <input type="text" placeholder="请输入图形验证码">
-                <img class="CAPTCHA" src="images/logo.png">
+                <label>验证码</label>
+                <input type="text" name="captcha" placeholder="请输入验证码">
+                <span class="CAPTCHA"></span>
             </div>
             <div class="line code">
                 <label>短信验证码</label>
-                <input type="text" placeholder="请输入短信验证码">
+                <input type="text" name="captcha_code" placeholder="请输入短信验证码">
                 <span class="acquire">获取</span>
             </div>
             <div class="line">
                 <label>激活码</label>
-                <input type="text" placeholder="请输入激活码">
+                <input type="text" name="agent_code" placeholder="请输入激活码">
             </div>
+            <input type="hidden" name="session_id">
             <button>确定</button>
         </form>
     </div>
@@ -56,8 +61,51 @@
     <script src="js/jquery.form.js"></script>
     <script src="js/common.js"></script>
     <script>
-        $('input[name=session_id]').val(session_id);
-        $('form').attr('action', url+'api/');    
+        $('form').attr('action', url+'api/register')
+        function catptcha_code() {
+            $.ajax({
+                type: "get",
+                url: url + "api/catptcha_code",
+                success: function (res) {
+                    console.log(res)
+                    $('.CAPTCHA').text(res.captcha_code);
+                    $('input[name=session_id]').val(res.session_id);
+                }
+            });
+        }
+        catptcha_code()
+        $('.CAPTCHA').click(function () { 
+            catptcha_code()
+        });
+        $('.acquire').on('click', function () {
+            var that = this,
+                second = 119,
+                phone = $('input[name="phone"]').val()
+            if ($(that).text() == '获取' && phone != '') {
+                $.ajax({
+                    type: "post",
+                    url: url + "api/send_sms",
+                    data: {
+                        type: 3,
+                        session_id: $('input[name=session_id]').val(),
+                        phone: phone
+                    },
+                    success: function (res) {
+                        console.log(res)
+                        tips(res)
+                    }
+                });
+                $(that).text('120')
+                var countDown = setInterval(function () {
+                    $(that).text(second)
+                    second--
+                    if (second == 1) {
+                        clearInterval(countDown)
+                        $(that).text('获取')
+                    }
+                }, 1000)
+            }
+        })
     </script>
 </body>
 </html>

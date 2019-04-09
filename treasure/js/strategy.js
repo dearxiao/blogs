@@ -164,7 +164,13 @@ $(function () {
         $('.confirm_sale').off('click').click(function () {
             $('.shade, .hint2').hide()
             $('.tab0 form').submit();
-            chicang ()
+            $("form").ajaxForm(function (res) {
+                console.log(res)
+                if (res.code == 200) {
+                    chicang ()
+                }
+            });
+            
         });
     });
     // 持仓
@@ -179,6 +185,7 @@ $(function () {
             success: function (res) {
                 console.log('持仓', res)
                 if (res.code == 200) {
+                    $('.tab1').html('')
                     for (let i = 0; i < res.list_data.length; i++) {
                         var data = res.list_data
                         var cla = 'up',
@@ -210,7 +217,7 @@ $(function () {
                                 "</div>"+
                             "</div>"+
                             "<div class=\"bottom\">"+
-                                "<span>止损(元)："+data[i].zhisun_price+"</span>"+
+                                "<span>止损(元)："+data[i].zhisun_sum+"</span>"+
                                 "<div class=\"right\">"+
                                     "<p>买入(元)：<b>"+data[i].buy_price+"</b></p>"+
                                     "<p>当前(元)：<b>"+data[i].now_price+"</b></p>"+
@@ -282,16 +289,18 @@ $(function () {
                         "<div class=\"semicircle-r\"></div>"+
                         "<div class=\"center\">"+
                             "<div>"+
-                                "<p class="+cla+">" + rise + ""+data[i].win_sum+"</p>"+
+                                "<p class="+cla+">" + rise + ""+data[i].jiaoyi_sum+"</p>"+
                                 "<span>盈亏(元)</span>"+
                             "</div>"+
                         "</div>"+
                         "<ul class=\"detail\">"+
                             "<li>买入价格(元):<span>"+data[i].buy_price+"</span></li>"+
-                            "<li>卖出价格(元):<span>"+data[i].account_money+"</span></li>"+
+                            "<li>卖出价格(元):<span>"+data[i].sale_price+"</span></li>"+
                             "<li>保证金:<span>"+data[i].account_money+"</span></li>"+
                             "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
                             "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
+                            "<li>交易综合费:<span>"+data[i].buy_scale+"</span></li>"+
+                            "<li>交易分配额:<span>"+data[i].win_sum+"</span></li>"+
                             "<li class=\"w100\">买入时间:<span>"+data[i].create_time+"</span></li>"+
                             "<li class=\"w100\">交易号:<span>"+data[i].order_num+"</span></li>"+
                             "<li class=\"w100\">卖出时间:<span>"+data[i].update_time+"</span></li>"+

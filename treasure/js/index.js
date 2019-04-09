@@ -1,11 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
-    autoplay: true,
-    loop: true, // 循环模式选项
-    // 如果需要分页器
-    pagination: {
-        el: '.swiper-pagination',
-    },
-})
+
 var myDate = new Date();
 var day = myDate.getDay();
 var onedate = myDate.toLocaleString('chinese', {
@@ -38,6 +31,14 @@ $(function () {
                     var banner = "<div class=\"swiper-slide\"><img src="+url+"" + res.data[i] + "></div>"
                     $('.swiper-wrapper').append(banner);
                 }
+                var mySwiper = new Swiper('.swiper-container', {
+                    autoplay: true,
+                    loop: true, // 循环模式选项
+                    // 如果需要分页器
+                    pagination: {
+                        el: '.swiper-pagination',
+                    },
+                })
             }
             if (res.error_code == 1111) {
                 error()
