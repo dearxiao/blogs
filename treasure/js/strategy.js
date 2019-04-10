@@ -283,7 +283,7 @@ $(function () {
                     }
                     var intro = "<div class=\"intro\">"+
                         "<div class=\"top\">"+
-                            "<span>"+data[i].name+" "+data[i].update_time+"</span>"+
+                            "<span>"+data[i].name+"</span>"+
                         "</div>"+
                         "<div class=\"semicircle-l\"></div>"+
                         "<div class=\"semicircle-r\"></div>"+
@@ -297,6 +297,7 @@ $(function () {
                             "<li>买入价格(元):<span>"+data[i].buy_price+"</span></li>"+
                             "<li>卖出价格(元):<span>"+data[i].sale_price+"</span></li>"+
                             "<li>保证金:<span>"+data[i].account_money+"</span></li>"+
+                            "<li>+保证金:<span>"+data[i].more_account_money+"</span></li>"+
                             "<li>止损价(元):<span>"+data[i].zhisun_price+"</span></li>"+
                             "<li>递延费(元):<span>"+data[i].diyan_sum+"</span></li>"+
                             "<li>交易综合费:<span>"+data[i].buy_scale+"</span></li>"+
