@@ -1,6 +1,25 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #dc2333;
+    z-index: 9;
+}
+header a:nth-child(1) img{
+    float: left;
+    height: 40px;
+    margin: 30px 20px;
+}
+header h3{
+    margin-right: 36px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    line-height: 100px;
+}
 .agree-wrap {
-    width: 900px;
-    padding: 0 50px 50px;
+    padding: 100px 50px 50px;
     margin: 0 auto;
     border: 1px solid #DBDBDB;
     background-color: #FFFFFF;
