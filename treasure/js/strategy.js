@@ -316,11 +316,14 @@ $(function () {
     $('form .money').on('click', 'li', function () {
         var buy_type = $(this).attr('buy_type')
         var money = $(this).attr('money')
+        console.log(cash, times)
         $('input[name=buy_type]').val(buy_type);
-        $('.deposit li:eq(0)').text(1000 * money);
-        $('.deposit li:eq(1)').text(1250 * money);
-        $('.deposit li:eq(2)').text(1666 * money);
-        $('.stop span:eq(0) b').text(($('.deposit .act').text() * -0.7).toFixed(2));  // 触发止损
+       // $('.deposit li:eq(0)').text(1000 * money);
+        $('.deposit li:eq(0)').text(1250 * money);
+        $('.deposit li:eq(1)').text(1666 * money);
+        var cash = $('.deposit .act').text();
+        var times = $('.deposit .act').attr('times')
+        $('.stop span:eq(0) b').text((cash * times).toFixed(2));  // 触发止损
         $('.stop span:eq(1) b').text(42 * money); // 交易综合费
         $(this).siblings('li').removeClass('act')
         $(this).addClass('act');
@@ -329,8 +332,9 @@ $(function () {
     $('form .deposit').on('click', 'li', function () {
         var acction_type = $(this).attr('acction_type')
         var cash = $(this).text();
+        var times = $(this).attr('times')
         $('input[name=acction_type]').val(acction_type);
-        $('.stop span:eq(0) b').text((cash * -0.7).toFixed(2));  // 触发止损
+        $('.stop span:eq(0) b').text((cash * times).toFixed(2));  // 触发止损
         $(this).siblings('li').removeClass('act')
         $(this).addClass('act');
     });
