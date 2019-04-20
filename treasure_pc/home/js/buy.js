@@ -289,7 +289,7 @@ function stockInit() {
 $(function () {
 	//loading
 	$('.loading').show();
-	stockInit()
+	// stockInit()
 });
 
 var freshTimeInterval = 10 * 1000;
