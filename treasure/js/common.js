@@ -36,7 +36,7 @@ function tips (e) {
 function error() {
 	tips({msg: '网络错误'})
     setTimeout(function () {
-        location.href = 'login.html'
+        // location.href = 'login.html'
     }, 2000)
 }
 //获取url问号后边的参数
